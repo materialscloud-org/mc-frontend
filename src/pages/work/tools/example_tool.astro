@@ -1,0 +1,16 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const breadcrumbs = [
+  { name: "Work", href: "/work" },
+  { name: "Tools", href: "/work/tools" },
+  { name: "Example tool", href: "/work/tools/example_tool" },
+];
+---
+
+<Layout breadcrumbs={breadcrumbs}>
+  <h1>EXAMPLE TOOL</h1>
+  <p>Some content.</p>
+  <p>More content.</p>
+</Layout>
+

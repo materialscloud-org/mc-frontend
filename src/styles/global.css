@@ -1,0 +1,69 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.info-page,
+.fixed-width-page {
+  margin: 40px auto;
+  min-width: 350px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+body {
+  color: #222;
+  font-weight: 400;
+}
+h1 {
+  font-size: 40px;
+  color: #0d47a1;
+}
+h2 {
+  font-size: 32px;
+  color: #0d47a1;
+}
+h3 {
+  font-size: 22px;
+  color: #1565c0;
+}
+h4 {
+  font-size: 16px;
+  color: #1565c0;
+}
+h5 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1565c0;
+}
+b,
+strong,
+th {
+  font-weight: 700;
+}
+pre,
+code,
+.numbers-font-family {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  color: #455860;
+  background: #f0f3f3;
+}
+a {
+  cursor: pointer;
+}
+blockquote {
+  border-left: 3px solid #d7dfe2;
+}
+p,
+ul,
+li {
+  font-size: 16px;
+  font-weight: 400;
+}

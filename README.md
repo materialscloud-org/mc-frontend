@@ -1,3 +1,7 @@
+# New Materials Cloud main frontend
+
+Using Astro, which allows for a simple but powerful way to build the static frontend.
+
 # Astro Starter Kit: Basics
 
 ```sh
