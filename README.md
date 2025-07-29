@@ -13,6 +13,10 @@ Legacy repositories:
 - [frontend-explore](https://github.com/materialscloud-org/frontend-explore)
 - [legacy-frontend-docker](https://github.com/materialscloud-org/legacy-frontend-docker)
 
+Development notes:
+
+- when linking to pages/resources don't use the leading flash (so use e.g. `<a href="work">` or `<img src="images/logos/mc3d.png">`). This will use the `base:` subpath correctly.
+
 # Astro Starter Kit: Basics
 
 ```sh
