@@ -5,6 +5,8 @@ const { breadcrumbs = [] } = Astro.props;
 
 const activeSection = breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
 
+const baseHref = (import.meta.env.BASE_URL || "/").replace(/\/?$/, "/"); // also add trailing slash if not present
+
 const LogoSvg = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 72">
   <defs>
@@ -29,7 +31,9 @@ const LogoSvg = `
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <!-- <link rel="stylesheet" href="/mcloud_theme.css" /> -->
+
+    <base href={baseHref} />
+
     <title>DEV Materials Cloud</title>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -52,22 +56,22 @@ const LogoSvg = `
   <body>
     <header class="mc-header">
       <nav class="mc-nav">
-        <a class="mc-navbrand" href="/" set:html={LogoSvg}></a>
-        <a class={`mc-navlink ${activeSection === 'learn' ? 'active' : ''}`} href="/learn">LEARN</a>
-        <a class={`mc-navlink ${activeSection === 'work' ? 'active' : ''}`} href="/work">WORK</a>
-        <a class={`mc-navlink ${activeSection === 'discover' ? 'active' : ''}`} href="/discover">DISCOVER</a>
-        <a class={`mc-navlink ${activeSection === 'explore' ? 'active' : ''}`} href="/explore">EXPLORE</a>
+        <a class="mc-navbrand" href="" set:html={LogoSvg}></a>
+        <a class={`mc-navlink ${activeSection === 'learn' ? 'active' : ''}`} href="learn">LEARN</a>
+        <a class={`mc-navlink ${activeSection === 'work' ? 'active' : ''}`} href=`work`>WORK</a>
+        <a class={`mc-navlink ${activeSection === 'discover' ? 'active' : ''}`} href=`discover`>DISCOVER</a>
+        <a class={`mc-navlink ${activeSection === 'explore' ? 'active' : ''}`} href=`explore`>EXPLORE</a>
         <a class="mc-navlink" href="https://materialscloud.org/archive">ARCHIVE</a>
         <div class="mc-more-dropdown" style="margin-left: auto; position: relative;">
           <a class="mc-navlink" href="#" id="mc-more-link">More ▾</a>
           <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;">
-            <a class="mc-drop-link" href="/policies">Policies</a>
-            <a class="mc-drop-link" href="/dmp">Data Management Plan</a>
-            <a class="mc-drop-link" href="/termssummary">Terms of Use</a>
-            <a class="mc-drop-link" href="/infrastructure">Infrastructure</a>
-            <a class="mc-drop-link" href="/team">Team & Contact</a>
-            <a class="mc-drop-link" href="/home#partners">Partners</a>
-            <a class="mc-drop-link" href="/explore/connect">Connect your REST API</a>
+            <a class="mc-drop-link" href="policies">Policies</a>
+            <a class="mc-drop-link" href="dmp">Data Management Plan</a>
+            <a class="mc-drop-link" href="termssummary">Terms of Use</a>
+            <a class="mc-drop-link" href="infrastructure">Infrastructure</a>
+            <a class="mc-drop-link" href="team">Team & Contact</a>
+            <a class="mc-drop-link" href="home#partners">Partners</a>
+            <a class="mc-drop-link" href="explore/connect">Connect your REST API</a>
           </div>
         </div>
       </nav>
