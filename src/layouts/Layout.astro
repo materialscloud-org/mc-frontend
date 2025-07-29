@@ -3,6 +3,8 @@ import "../styles/global.css";
 
 const { breadcrumbs = [] } = Astro.props;
 
+const activeSection = breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
+
 const LogoSvg = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 72">
   <defs>
@@ -51,11 +53,11 @@ const LogoSvg = `
     <header class="mc-header">
       <nav class="mc-nav">
         <a class="mc-navbrand" href="/" set:html={LogoSvg}></a>
-        <a class="mc-navlink" href="/learn">LEARN</a>
-        <a class="mc-navlink" href="/work">WORK</a>
-        <a class="mc-navlink" href="/discover">DISCOVER</a>
-        <a class="mc-navlink" href="/explore">EXPLORE</a>
-        <a class="mc-navlink" href="/archive">ARCHIVE</a>
+        <a class={`mc-navlink ${activeSection === 'learn' ? 'active' : ''}`} href="/learn">LEARN</a>
+        <a class={`mc-navlink ${activeSection === 'work' ? 'active' : ''}`} href="/work">WORK</a>
+        <a class={`mc-navlink ${activeSection === 'discover' ? 'active' : ''}`} href="/discover">DISCOVER</a>
+        <a class={`mc-navlink ${activeSection === 'explore' ? 'active' : ''}`} href="/explore">EXPLORE</a>
+        <a class="mc-navlink" href="https://materialscloud.org/archive">ARCHIVE</a>
         <div class="mc-more-dropdown" style="margin-left: auto; position: relative;">
           <a class="mc-navlink" href="#" id="mc-more-link">More ▾</a>
           <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;">
@@ -70,7 +72,7 @@ const LogoSvg = `
         </div>
       </nav>
     </header>
-    {breadcrumbs.length > 0 && (
+    {breadcrumbs.length > 0 ? (
       <ul class="mc-breadcrumb">
         {breadcrumbs.map((crumb, index) => (
           <li>
@@ -79,8 +81,10 @@ const LogoSvg = `
               : <a href={crumb.href}>{crumb.name}</a>}
           </li>
         ))}
-  </ul>
-)}
+      </ul>
+    ) : (
+      <div class="mc-breadcrumb-placeholder"></div>
+    )}
     <div style="display: flex; justify-content: center;">
       <div class="mc-page-content">
         <slot />
@@ -171,6 +175,11 @@ const LogoSvg = `
   background-color: #fbfcfc;
 }
 
+.mc-breadcrumb-placeholder {
+  margin: 20px 15px 30px 15px;
+  height: 30px;
+}
+
 .mc-breadcrumb {
   padding: 7px 10px 7px 20px;
   list-style: none;
@@ -249,11 +258,14 @@ const LogoSvg = `
 }
 
 .mc-page-content {
-  padding: 40px 100px;
+  padding: 20px 40px;
   background-color: #ffffff;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   display: inline-block;
+  min-width: 350px;
+  max-width: 1000px;
+  width: 100%;
 }
 
 </style>

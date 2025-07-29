@@ -9,14 +9,6 @@ img {
   max-width: 100%;
 }
 
-.info-page,
-.fixed-width-page {
-  margin: 40px auto;
-  min-width: 350px;
-  max-width: 1000px;
-  width: 100%;
-}
-
 body {
   color: #222;
   font-weight: 400;
