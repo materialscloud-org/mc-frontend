@@ -2,6 +2,8 @@
 
 Using Astro, which allows for a simple but powerful way to build the static frontend.
 
+`main` branch is automatically deployed to https://materialscloud-org.github.io/mc-frontend.
+
 # Astro Starter Kit: Basics
 
 ```sh
