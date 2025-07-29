@@ -4,6 +4,15 @@ Using Astro, which allows for a simple but powerful way to build the static fron
 
 `main` branch is automatically deployed to https://materialscloud-org.github.io/mc-frontend.
 
+Legacy repositories:
+
+- [frontend-common](https://github.com/materialscloud-org/frontend-common)
+- [frontend-learn](https://github.com/materialscloud-org/frontend-learn)
+- [frontend-work](https://github.com/materialscloud-org/frontend-work)
+- [frontend-discover](https://github.com/materialscloud-org/frontend-discover)
+- [frontend-explore](https://github.com/materialscloud-org/frontend-explore)
+- [legacy-frontend-docker](https://github.com/materialscloud-org/legacy-frontend-docker)
+
 # Astro Starter Kit: Basics
 
 ```sh
