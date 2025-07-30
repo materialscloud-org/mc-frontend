@@ -1,0 +1,124 @@
+---
+import {
+  Info,
+  Globe,
+  Newspaper,
+  BarChart2,
+  Users,
+  FileText,
+} from "lucide-astro";
+
+import Vision from "./tabcontent/Vision.astro";
+import News from "./tabcontent/News.astro";
+
+import DMP from "./tabcontent/OSandDMPs.astro";
+import Statistics from "./tabcontent/Statistics.astro";
+import Partners from "./tabcontent/Partners.astro";
+
+// we populate the html via this array -
+// currently this is not used in the script tag - this should probably be changed to ease development / reduce desync likelyhood.
+const tabs = [
+  { id: "vision", label: "Vision", Icon: Info, Content: Vision },
+  { id: "news", label: "News", Icon: Globe, Content: News },
+  { id: "dmp", label: "DMP", Icon: FileText, Content: DMP },
+  {
+    id: "statistics",
+    label: "Statistics",
+    Icon: BarChart2,
+    Content: Statistics,
+  },
+  { id: "partners", label: "Partners", Icon: Users, Content: Partners },
+];
+---
+
+<script type="module" client:visible>
+  let activeTab = window.location.hash
+    ? window.location.hash.substring(1)
+    : "vision";
+
+  const validTabs = ["vision", "news", "dmp", "statistics", "partners"];
+
+  function selectTab(tab, updateHash = true) {
+    activeTab = tab;
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.setAttribute(
+        "aria-selected",
+        btn.dataset.tab === tab ? "true" : "false"
+      );
+    });
+    document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
+      if (panel.id === `panel-${tab}`) {
+        panel.classList.remove("hidden");
+      } else {
+        panel.classList.add("hidden");
+      }
+    });
+
+    if (updateHash) {
+      history.replaceState(null, "", `#${tab}`);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const initialTab = validTabs.includes(activeTab) ? activeTab : "vision";
+    selectTab(initialTab, false);
+
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.addEventListener("click", () => selectTab(btn.dataset.tab));
+    });
+  });
+</script>
+
+<div class="w-full py-10">
+  <div
+    class="tabs flex flex-col sm:flex-row border-b border-gray-300"
+    role="tablist"
+  >
+    {
+      tabs.map(({ id, label, Icon }) => (
+        <button
+          class="
+            tab-button
+            flex flex-1 flex-col items-center justify-center
+            px-4 py-2
+            font-semibold
+            text-indigo-200
+            cursor-pointer
+            transition-colors
+
+            border-b border-gray-300 last:border-b-0
+            sm:border-none sm:border-r sm:last:border-r-0
+
+            aria-selected:text-red-600
+            aria-selected:cursor-default
+
+            not-aria-selected:hover:text-blue-500
+            not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+          "
+          role="tab"
+          data-tab={id}
+          aria-selected="false"
+          aria-controls={`panel-${id}`}
+          type="button"
+          id={`tab-${id}`}
+        >
+          <Icon class="w-8 h-8 mb-1" />
+          {label}
+        </button>
+      ))
+    }
+  </div>
+</div>
+
+{
+  tabs.map(({ id, Content }) => (
+    <div
+      id={`panel-${id}`}
+      class="tab-content hidden"
+      role="tabpanel"
+      aria-labelledby={`tab-${id}`}
+    >
+      <Content />
+    </div>
+  ))
+}

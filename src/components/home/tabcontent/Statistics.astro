@@ -1,0 +1,155 @@
+---
+import { ENV } from "../../../config/env";
+
+// Note - images here could do with an update / crop
+// They currently have a lot of white space
+// and dont play nicely with tw-flexbox
+
+// To replace the angular build method (which uses controllers)
+// we do fetching in the astro header.
+
+// Fetch statistics
+const res = await fetch(
+  `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/archive`
+);
+
+const archiveStats = await res.json();
+
+const res2 = await fetch(
+  `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/explore`
+);
+const exploreStats = await res2.json();
+
+// Safely use statistics
+const structureNumber =
+  archiveStats?.data?.n_structures?.toLocaleString("de-CH") ?? "N/A";
+const dftStructureNumber =
+  archiveStats?.data?.dft_structures?.toLocaleString("de-CH") ?? "N/A";
+
+const totalNodes = exploreStats?.data?.nodes?.toLocaleString("de-CH") ?? "N/A";
+const totalProcesses =
+  exploreStats?.data?.total_processes?.toLocaleString("de-CH") ?? "N/A";
+
+const dateObj = archiveStats?.data?.time_interval
+  ? new Date(archiveStats.data.time_interval[1])
+  : new Date();
+const archiveDate =
+  dateObj.toLocaleString("default", { month: "short" }) +
+  " " +
+  dateObj.getUTCDate() +
+  ", " +
+  dateObj.getFullYear();
+---
+
+<div id="statistics" class="space-y-2">
+  <div class="space-y-6">
+    <h3 class="text-center">Materials Cloud statistics</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="text-center space-y-2">
+        <h3 class="text-2xl font-bold">{structureNumber}</h3>
+        <h4 class="text-base font-medium">crystal structures*</h4>
+        <p class="text-gray-900">
+          downloadable from the <br />
+          <a href="https://archive.materialscloud.org/"
+            >Materials Cloud Archive</a
+          >
+        </p>
+      </div>
+      <div class="text-center space-y-2">
+        <h3 class="text-2xl font-bold">{dftStructureNumber}</h3>
+        <h4 class="text-base font-medium">structures</h4>
+        <p class="text-gray-900">
+          in the
+          <a href="https://archive.materialscloud.org/"
+            >Materials Cloud Archive</a
+          ><br />
+          with associated DFT SCF calculations
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="text-center space-y-2">
+        <h3 class="text-2xl font-bold">{totalNodes}</h3>
+        <h4 class="text-base font-medium">data and calculation nodes</h4>
+        <p class="text-gray-900">
+          in the
+          <a href="https://materialscloud.org/explore/menu">Explore section</a
+          >,<br />
+          with full AiiDA provenance
+        </p>
+      </div>
+      <div class="text-center space-y-2">
+        <h3 class="text-2xl font-bold">{totalProcesses}</h3>
+        <h4 class="text-base font-medium">reproducible calculations</h4>
+        <p class="text-gray-900">
+          in the
+          <a href="https://materialscloud.org/explore/menu">Explore section</a
+          >,<br />
+          with full AiiDA provenance
+        </p>
+      </div>
+    </div>
+
+    <p class="text-gray-600 text-sm leading-relaxed text-center">
+      Results based on records published on Materials Cloud Archive before {
+        archiveDate
+      }<br />
+      *Structures counted with an automated script, no check for duplicates has been
+      performed
+    </p>
+
+    <div class="text-center space-y-2 pt-5">
+      <h4 class="text-lg font-medium">
+        Number of unique page visits per month and per country<br />
+        (last update Oct 25, 2024)
+      </h4>
+      <h6 class="text-sm text-gray-600">
+        Materials Cloud uses <a
+          href="https://plausible.io/data-policy"
+          target="_blank">Plausible</a
+        >
+        to count its pages views without tracking users or storing cookies.
+      </h6>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
+      <div>
+        <img
+          class="w-full"
+          title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
+          src="/images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
+          alt="Monthly visits"
+        />
+      </div>
+      <div>
+        <img
+          class="w-full"
+          title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
+          src="/images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
+          alt="Visits by country"
+        />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <img
+          class="w-full"
+          title="Statistics of traffic to the archive.materialscloud.org site."
+          src="/images/plausible/archive_materialscloud_org_n_visits_months.png"
+          alt="Archive monthly visits"
+        />
+      </div>
+      <div>
+        <img
+          class="w-full"
+          title="Statistics of traffic to the archive.materialscloud.org site."
+          src="/images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
+          alt="Archive visits by country"
+        />
+      </div>
+    </div>
+  </div>
+</div>

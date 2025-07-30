@@ -1,0 +1,28 @@
+---
+// currently we render the news via an iframe, using knightlabs API.
+// This may be unsafe if their site goes down and
+// should probably be moved to using inline JS
+
+// Additionally this is invoked on page load,
+// this is perhaps really bad for performance, since most users may not even click the news page.
+const timelineId = "1nSOakYvr0edaU24mZfO7jp2f6OxcqdWBaVbnL5Anm7Q";
+const initialZoom = 5;
+const height = 500;
+const timenavHeight = 200;
+const animation = 250;
+
+const iframeSrc =
+  `https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html
+   ?source=${timelineId}
+   &initial_zoom=${initialZoom}
+   &height=${height}
+   &start_at_end=true
+   &timenav_height=${timenavHeight}
+   &animation=${animation}`.replace(/\s+/g, "");
+---
+
+<h3 class="text-xl font-medium pb-4">Latest News</h3>
+<div class="flex justify-center">
+  <iframe src={iframeSrc} width="950px" height={`${height}px`} allowfullscreen
+  ></iframe>
+</div>

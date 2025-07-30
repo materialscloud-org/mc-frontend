@@ -1,61 +1,84 @@
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+@import "tailwindcss";
+/* the following are required for legacy - these should be rewritten as tailwind css where appropriate. */
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    color: #222;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 40px;
+    color: #0d47a1;
+  }
+  h2 {
+    font-size: 32px;
+    color: #0d47a1;
+  }
+  h3 {
+    font-size: 22px;
+    color: #1565c0;
+  }
+  h4 {
+    font-size: 16px;
+    color: #1565c0;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1565c0;
+  }
+  b,
+  strong,
+  th {
+    font-weight: 700;
+  }
+  pre,
+  code,
+  .numbers-font-family {
+    font-family: "Space Mono", monospace;
+    font-size: 14px;
+    color: #455860;
+    background: #f0f3f3;
+  }
+  a {
+    cursor: pointer;
+    color: #7499d1;
+  }
+  a:hover {
+    text-decoration: underline; /* or your preferred hover style */
+    color: #3e70bb;
+  }
+  blockquote {
+    border-left: 3px solid #d7dfe2;
+  }
+  p,
+  ul,
+  li {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
-img {
-  max-width: 100%;
-}
+@layer components {
+  .homepage-links a {
+    @apply inline-block min-w-28 text-center px-1 py-1 text-base font-bold rounded text-slate-700 bg-sky-50 border border-slate-600 transition;
+  }
 
-body {
-  color: #222;
-  font-weight: 400;
-}
-h1 {
-  font-size: 40px;
-  color: #0d47a1;
-}
-h2 {
-  font-size: 32px;
-  color: #0d47a1;
-}
-h3 {
-  font-size: 22px;
-  color: #1565c0;
-}
-h4 {
-  font-size: 16px;
-  color: #1565c0;
-}
-h5 {
-  font-weight: 700;
-  font-size: 14px;
-  color: #1565c0;
-}
-b,
-strong,
-th {
-  font-weight: 700;
-}
-pre,
-code,
-.numbers-font-family {
-  font-family: "Space Mono", monospace;
-  font-size: 14px;
-  color: #455860;
-  background: #f0f3f3;
-}
-a {
-  cursor: pointer;
-}
-blockquote {
-  border-left: 3px solid #d7dfe2;
-}
-p,
-ul,
-li {
-  font-size: 16px;
-  font-weight: 400;
+  .homepage-links a:hover {
+    @apply bg-slate-50 text-slate-500 border-slate-400;
+  }
+
+  .partner-card {
+    @apply flex items-center space-x-4 px-6 py-0 bg-white;
+  }
 }

@@ -1,9 +1,12 @@
 ---
+// This will probably be well served by being converted to be tailwinded.
+// It will ease development a little bit if the borderpadding of the main content is controlled in a tailwind style.
 import "../styles/global.css";
 
 const { breadcrumbs = [] } = Astro.props;
 
-const activeSection = breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
+const activeSection =
+  breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
 
 const baseHref = (import.meta.env.BASE_URL || "/").replace(/\/?$/, "/"); // also add trailing slash if not present
 
@@ -36,18 +39,19 @@ const LogoSvg = `
 
     <title>DEV Materials Cloud</title>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const moreLink = document.getElementById('mc-more-link');
-        const dropMenu = document.getElementById('mc-drop-menu');
+      document.addEventListener("DOMContentLoaded", function () {
+        const moreLink = document.getElementById("mc-more-link");
+        const dropMenu = document.getElementById("mc-drop-menu");
         if (!moreLink || !dropMenu) return;
-        moreLink.addEventListener('click', function (e) {
+        moreLink.addEventListener("click", function (e) {
           e.preventDefault();
-          dropMenu.style.display = dropMenu.style.display === 'block' ? 'none' : 'block';
+          dropMenu.style.display =
+            dropMenu.style.display === "block" ? "none" : "block";
         });
-        document.addEventListener('click', function (e) {
+        document.addEventListener("click", function (e) {
           const target = e.target as Node;
           if (!moreLink.contains(target) && !dropMenu.contains(target)) {
-            dropMenu.style.display = 'none';
+            dropMenu.style.display = "none";
           }
         });
       });
@@ -56,13 +60,32 @@ const LogoSvg = `
   <body>
     <header class="mc-header">
       <nav class="mc-nav">
-        <a class="mc-navbrand" href="" set:html={LogoSvg}></a>
-        <a class={`mc-navlink ${activeSection === 'learn' ? 'active' : ''}`} href="learn">LEARN</a>
-        <a class={`mc-navlink ${activeSection === 'work' ? 'active' : ''}`} href=`work`>WORK</a>
-        <a class={`mc-navlink ${activeSection === 'discover' ? 'active' : ''}`} href=`discover`>DISCOVER</a>
-        <a class={`mc-navlink ${activeSection === 'explore' ? 'active' : ''}`} href=`explore`>EXPLORE</a>
-        <a class="mc-navlink" href="https://materialscloud.org/archive">ARCHIVE</a>
-        <div class="mc-more-dropdown" style="margin-left: auto; position: relative;">
+        <a class="mc-navbrand inline-block w-24 h-auto" href="">
+          <div class="w-full h-full" set:html={LogoSvg} />
+        </a>
+        <a
+          class={`mc-navlink ${activeSection === "learn" ? "active" : ""}`}
+          href="learn">LEARN</a
+        >
+        <a
+          class={`mc-navlink ${activeSection === "work" ? "active" : ""}`}
+          href=`work`>WORK</a
+        >
+        <a
+          class={`mc-navlink ${activeSection === "discover" ? "active" : ""}`}
+          href=`discover`>DISCOVER</a
+        >
+        <a
+          class={`mc-navlink ${activeSection === "explore" ? "active" : ""}`}
+          href=`explore`>EXPLORE</a
+        >
+        <a class="mc-navlink" href="https://materialscloud.org/archive"
+          >ARCHIVE</a
+        >
+        <div
+          class="mc-more-dropdown"
+          style="margin-left: auto; position: relative;"
+        >
           <a class="mc-navlink" href="#" id="mc-more-link">More ▾</a>
           <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;">
             <a class="mc-drop-link" href="policies">Policies</a>
@@ -71,26 +94,34 @@ const LogoSvg = `
             <a class="mc-drop-link" href="infrastructure">Infrastructure</a>
             <a class="mc-drop-link" href="team">Team & Contact</a>
             <a class="mc-drop-link" href="home#partners">Partners</a>
-            <a class="mc-drop-link" href="explore/connect">Connect your REST API</a>
+            <a class="mc-drop-link" href="explore/connect"
+              >Connect your REST API</a
+            >
           </div>
         </div>
       </nav>
     </header>
-    {breadcrumbs.length > 0 ? (
-      <ul class="mc-breadcrumb">
-        {breadcrumbs.map((crumb, index) => (
-          <li>
-            {index === breadcrumbs.length - 1 || !crumb.href
-              ? <a>{crumb.name}</a>
-              : <a href={crumb.href}>{crumb.name}</a>}
-          </li>
-        ))}
-      </ul>
-    ) : (
-      <div class="mc-breadcrumb-placeholder"></div>
-    )}
+    {
+      breadcrumbs.length > 0 ? (
+        <ul class="mc-breadcrumb">
+          {breadcrumbs.map((crumb, index) => (
+            <li>
+              {index === breadcrumbs.length - 1 || !crumb.href ? (
+                <a>{crumb.name}</a>
+              ) : (
+                <a href={crumb.href}>{crumb.name}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="mc-breadcrumb-placeholder" />
+      )
+    }
     <div style="display: flex; justify-content: center;">
-      <div class="mc-page-content">
+      <div
+        class="mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm inline-block min-w-[350px] max-w-[1000px] w-full"
+      >
         <slot />
       </div>
     </div>
@@ -107,169 +138,157 @@ const LogoSvg = `
     /* background-color: #ffffff; */
     /* background-color: orange; */
   }
-.mc-header {
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  margin: 0;
-}
-.mc-header .mc-nav {
-  display: flex;
-  align-items: center;
-  border-bottom: 3px solid #dee6e6;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  box-sizing: border-box;
-  height: 65px;
-  line-height: 65px;
-}
-.mc-header .mc-navbrand {
-  min-width: 58px;
-  font-size: 0;
-  padding: 7px 15px 5px 22px;
-  float: left;
-  line-height: 0;
-}
-.mc-nav .mc-navlink {
-  display: inline-block;
-  padding: 14px 15px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 32px;
-  height: 60px;
-  box-sizing: border-box;
-  text-align: center;
-  color: #455860;
-  text-decoration: none;
-}
-.mc-header .mc-navlink:hover {
-  color: #8fa5af;
-}
-.mc-nav .mc-navlink.active {
-  color: #cc1b30;
-  pointer-events: none;
-  cursor: default;
-}
-.mc-header .mc-more-dropdown {
-  position: relative;
-  z-index: 200;
-}
-.mc-header .mc-drop-menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #fff;
-  min-width: 220px;
-  border-radius: 6px;
-  border: 2px solid #dee6e6;
-  z-index: 100;
-  padding: 5px 0;
-  margin-top: -8px;
-}
-.mc-header .mc-drop-menu a {
-  display: block;
-  color: #455860;
-  font-weight: 300;
-  padding: 10px 14px;
-  font-size: 16px;
-  line-height: 10px;
-  text-decoration: none;
-}
-.mc-header .mc-drop-menu a:hover {
-  background-color: #fbfcfc;
-}
+  .mc-header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    margin: 0;
+  }
+  .mc-header .mc-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #dee6e6;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 65px;
+    line-height: 65px;
+  }
+  .mc-header .mc-navbrand {
+    min-width: 58px;
+    font-size: 0;
+    padding: 7px 15px 5px 22px;
+    float: left;
+    line-height: 0;
+  }
+  .mc-nav .mc-navlink {
+    display: inline-block;
+    padding: 14px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #455860;
+    text-decoration: none;
+  }
+  .mc-header .mc-navlink:hover {
+    color: #8fa5af;
+  }
+  .mc-nav .mc-navlink.active {
+    color: #cc1b30;
+    pointer-events: none;
+    cursor: default;
+  }
+  .mc-header .mc-more-dropdown {
+    position: relative;
+    z-index: 200;
+  }
+  .mc-header .mc-drop-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 220px;
+    border-radius: 6px;
+    border: 2px solid #dee6e6;
+    z-index: 100;
+    padding: 5px 0;
+    margin-top: -8px;
+  }
+  .mc-header .mc-drop-menu a {
+    display: block;
+    color: #455860;
+    font-weight: 300;
+    padding: 10px 14px;
+    font-size: 16px;
+    line-height: 10px;
+    text-decoration: none;
+  }
+  .mc-header .mc-drop-menu a:hover {
+    background-color: #fbfcfc;
+  }
 
-.mc-breadcrumb-placeholder {
-  margin: 20px 15px 30px 15px;
-  height: 30px;
-}
+  .mc-breadcrumb-placeholder {
+    margin: 20px 15px 30px 15px;
+    height: 30px;
+  }
 
-.mc-breadcrumb {
-  padding: 7px 10px 7px 20px;
-  list-style: none;
-  /* background-color: #f5f5f5; */
-  /* background-color: #f0f0f0; */
-  /* background-color: #ffffff; */
-  background-color: #fafafa;
-  border-radius: 2px;
-  /* border: 1px solid #b2b2b2; */
-  border: 1px solid #d2d2d2;
-  /* border-bottom: 3px solid #dee6e6; */
-  font-size: 16px;
-  font-weight: 300;
-  font-family: sans-serif;
-  text-align: left;
-  margin: 20px 15px 30px 15px;
-  overflow: hidden;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
-}
+  .mc-breadcrumb {
+    padding: 7px 10px 7px 20px;
+    list-style: none;
+    /* background-color: #f5f5f5; */
+    /* background-color: #f0f0f0; */
+    /* background-color: #ffffff; */
+    background-color: #fafafa;
+    border-radius: 2px;
+    /* border: 1px solid #b2b2b2; */
+    border: 1px solid #d2d2d2;
+    /* border-bottom: 3px solid #dee6e6; */
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-align: left;
+    margin: 20px 15px 30px 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+  }
 
-.mc-breadcrumb li {
-  color: #303f9f;
-  display: inline;
-  line-height: 1;
-  font-size: 16px;
-  margin-right: 46px;
-  position: relative;
-}
-.mc-breadcrumb li a {
-  text-decoration: none;
-}
-.mc-breadcrumb li a[href]:hover {
-  text-decoration: underline;
-}
+  .mc-breadcrumb li {
+    color: #303f9f;
+    display: inline;
+    line-height: 1;
+    font-size: 16px;
+    margin-right: 46px;
+    position: relative;
+  }
+  .mc-breadcrumb li a {
+    text-decoration: none;
+  }
+  .mc-breadcrumb li a[href]:hover {
+    text-decoration: underline;
+  }
 
-.mc-breadcrumb li a::after {
-  content: " ";
-  display: block;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  /* border-left: 30px solid #f5f5f5; */
-  border-left: 30px solid #fafafa;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  z-index: 2;
-  right: 0;
-  transform: translate(30px, 0);
-}
-.mc-breadcrumb li a::before {
-  content: " ";
-  display: block;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid #d2d2d2;
-  /* border-left: 30px solid #ffffff; */
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: 2px;
-  right: 0;
-  z-index: 1;
-  transform: translate(32px, 0);
-}
-.mc-breadcrumb li:last-child a {
-  background: transparent !important;
-  color: #303f9f;
-}
-.mc-breadcrumb li:last-child a::after,
-.mc-breadcrumb li:last-child a::before {
-  border: 0;
-  display: none;
-}
-
-.mc-page-content {
-  padding: 20px 40px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  display: inline-block;
-  min-width: 350px;
-  max-width: 1000px;
-  width: 100%;
-}
-
+  .mc-breadcrumb li a::after {
+    content: " ";
+    display: block;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    /* border-left: 30px solid #f5f5f5; */
+    border-left: 30px solid #fafafa;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 2;
+    right: 0;
+    transform: translate(30px, 0);
+  }
+  .mc-breadcrumb li a::before {
+    content: " ";
+    display: block;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #d2d2d2;
+    /* border-left: 30px solid #ffffff; */
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 2px;
+    right: 0;
+    z-index: 1;
+    transform: translate(32px, 0);
+  }
+  .mc-breadcrumb li:last-child a {
+    background: transparent !important;
+    color: #303f9f;
+  }
+  .mc-breadcrumb li:last-child a::after,
+  .mc-breadcrumb li:last-child a::before {
+    border: 0;
+    display: none;
+  }
 </style>

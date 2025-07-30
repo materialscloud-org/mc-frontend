@@ -1,0 +1,101 @@
+supporters:
+  - name: "MARVEL NCCR"
+    url: "http://nccr-marvel.ch/"
+    logo: "marvel_nccr.png"
+  - name: "MaX Centre"
+    url: "http://www.max-centre.eu/"
+    logo: "max.png"
+  - name: "SNSF"
+    url: "http://www.snf.ch/en/"
+    logo: "snsf.png"
+  - name: "EPFL"
+    url: "http://www.epfl.ch"
+    logo: "epfl.png"
+  - name: "swissuniversities"
+    url: "https://www.swissuniversities.ch/"
+    url2: "https://www.materialscloud.org/swissuniversities"
+    url2_str: "Go to project page"
+    logo: "swissuniversities.png"
+  - name: "Paul Scherrer Institut"
+    url: https://www.psi.ch/en/lms
+    logo: psi.svg
+  - name: "BIG-MAP"
+    url: https://www.big-map.eu/
+    logo: big-map.png
+  - name: "University of Bremen"
+    url: https://www.uni-bremen.de/u-bremen-excellence-chairs
+    logo: bremen.png
+  - name: "H2020 MarketPlace"
+    url: https://www.the-marketplace-project.eu/
+    logo: marketplace.png
+  - name: "H2020 Intersect"
+    url: http://intersect-project.eu
+    logo: intersect.png
+  - name: "OSSCAR"
+    url: https://www.osscar.org/
+    logo: osscar.png
+    url2: "https://www.epfl.ch/research/open-science/in-practice/open-science-fund/"
+    url2_str: "EPFL Open Science Fund"
+  - name: "ERC"
+    url: https://erc.europa.eu/homepage
+    logo: erc.png
+  - name: "PASC"
+    url: https://pasc-ch.org/
+    logo: pasc.png
+  - name: "PRACE"
+    url: http://www.prace-ri.eu
+    logo: PRACE.png
+  - name: "NFFA and NEP"
+    url: http://www.nffa.eu
+    logo: nffa.png
+  - name: "EMMC"
+    url: http://www.emmc.info
+    logo: emmc.png
+  - name: "DOME 4.0 - EU Project"
+    url: http://www.dome40.eu
+    logo: dome.png
+  - name: "H2020 OpenModel"
+    url: http://www.open-model.eu
+    logo: openmodel.png
+  - name: "2D-PRINTABLE"
+    url: http://www.2d-printable.eu
+    logo: logo-2d-printable.png
+
+supercomps:
+  - name: "CSCS"
+    url: "https://www.cscs.ch/"
+    logo: cscs.png
+  - name: "CINECA"
+    url: "https://www.cineca.it/en"
+    logo: cineca.png
+  - name: "FZ-Jülich"
+    url: "http://www.fz-juelich.de"
+    logo: juelich.png
+
+recommendors:
+  - name: "Scientific Data"
+    url: https://www.nature.com/sdata/policies/repositories#materials
+    logo: sdata.png
+  - name: "Open Research Europe"
+    url: https://open-research-europe.ec.europa.eu/for-authors/data-guidelines
+    logo: ore.png
+  - name: "SNSF"
+    url: https://www.snf.ch/en/WtezJ6qxuTRnSYgF/topic/open-research-data-which-data-repositories-can-be-used
+    logo: snsf.png
+
+indexed:
+  - name: "Registry of Research Data Repositories"
+    url: https://www.re3data.org/repository/r3d100012611
+    logo: r3.png
+  - name: "FAIRsharing"
+    url: https://fairsharing.org/10.25504/FAIRsharing.tlbUpj
+    logo: fairsharing.svg
+  - name: "GO FAIR"
+    url: https://www.go-fair.org/implementation-networks/overview/materials-cloud/
+    logo: gofair.png
+  - name: "B2FIND"
+    url: https://b2find.eudat.eu/organization/materialscloud
+    logo: b2find.png
+  - name: "Google Dataset search"
+    url: https://datasetsearch.research.google.com/search?query=Materials%20Cloud&docid=L2cvMTF3NHM5eWpzMw%3D%3D
+    logo: google.png

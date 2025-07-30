@@ -13,11 +13,56 @@ Legacy repositories:
 - [frontend-explore](https://github.com/materialscloud-org/frontend-explore)
 - [legacy-frontend-docker](https://github.com/materialscloud-org/legacy-frontend-docker)
 
-Development notes:
+Development notes - tips for development:
 
 - when linking to pages/resources don't use the leading flash (so use e.g. `<a href="work">` or `<img src="images/logos/mc3d.png">`). This will use the `base:` subpath correctly.
+- enviroment variables are set (mostly for backend fetches) via the `.env.development` and `.env.production` files and assigned in `./src/config/env.js`. Astro will automatically use prod and dev backends depending on the command ran...
+  - for an example file using these env variables see `./src/components/home/Statistics.astro`
+-
 
-# Astro Starter Kit: Basics
+- ASTRO JS scripts are bundled smartly to the client and some performance gains may be free:
+
+  - `client:load`
+
+    - Good for critical UI that must be interactive immediately (e.g. navigation, modals, etc).
+    - Downside: it adds JS cost up front, which can slow page load.
+
+  - `client:idle`
+
+    - Non-critical interactivity: e.g. analytics widgets, optional animations.
+    - Hydration waits until main thread is less busy → less impact on LCP.
+
+  - `client:visible`
+
+    - Best for below-the-fold or rarely viewed content (e.g. FAQ accordions, tab panels far down).
+    - No JS loads/hydrates until the element is actually scrolled into view → great for performance.
+
+  - `client:media="(min-width: 768px)"`
+
+    - Only loads/hydrates if the viewport matches that media query. For example, skip hydration on mobile.
+
+  - `client:only` - Disables SSR completely. Component is empty HTML until JS loads.
+    Useful when the component must render entirely on client (e.g. depends on browser-only APIs).
+
+- This project attempts to use modern standards while also maintaining most of the UI prior, changes are as follows:
+
+- bootstrap &rarr; tailwindcss via
+
+  - [Installation Documentation for tailwind astro.](https://docs.astro.build/en/guides/styling/#tailwind)
+  - Quick [link](https://tailscan.com/colors) to colors, custom color schemes (either in file or globally.) can be made.
+  - Full [documentation](https://v2.tailwindcss.com/docs) for tailwindcss
+  - Useful documentation sections:
+
+    - Layout: [Containers](https://v2.tailwindcss.com/docs/container), [Flexbox/Grid](https://v2.tailwindcss.com/docs/flex-direction)
+    - [Spacing](https://v2.tailwindcss.com/docs/padding)
+    - [Fontsizing](https://v2.tailwindcss.com/docs/font-size)
+
+  - Tailwind aims to have all styling inline via pre-existing classes. Some of our sections are inconsistant (I will try add a globalised styling to these.)
+
+- bootstrap-icons &rarr; lucide astro `npm install lucide-astro`
+  - Should be lighter as these are SVGs optimised for the web
+
+# ASTRO QUICKSTART BELOW
 
 ```sh
 npm create astro@latest -- --template basics

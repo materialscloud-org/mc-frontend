@@ -1,0 +1,131 @@
+---
+import fs from "fs";
+import yaml from "js-yaml";
+
+// Load YAML data at build time
+const file = fs.readFileSync("./src/data/partners.yml", "utf8");
+const data = yaml.load(file);
+
+const supporters = data.supporters || ["test"];
+const supercomps = data.supercomps || ["test"];
+const reccers = data.recommendors || ["test"];
+const indexers = data.indexed || ["test"];
+---
+
+<div id="supporters" class="space-y-4">
+  <h3 class="text-xl text-center">Supported by</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {
+      supporters.map((entry) => (
+        <div class="partner-card">
+          <div class="flex-shrink-0 w-25 h-25">
+            <img
+              src={`images/endorsers/${entry.logo}`}
+              alt={`${entry.name} logo`}
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h4 class="text-lg font-medium">{entry.name}</h4>
+            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+              {new URL(entry.url).hostname}
+            </a>
+
+            {entry.url2 && entry.url2_str && (
+              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
+                {entry.url2_str.replace(/^https?:\/\//, "")}
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <h3 class="text-xl text-center">Partners - Supercomputing Centers</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {
+      supercomps.map((entry) => (
+        <div class="partner-card">
+          <div class="flex-shrink-0 w-24 h-24">
+            <img
+              src={`images/endorsers/${entry.logo}`}
+              alt={`${entry.name} logo`}
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h4 class="text-lg font-medium">{entry.name}</h4>
+            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+              {new URL(entry.url).hostname}
+            </a>
+
+            {entry.url2 && entry.url2_str && (
+              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
+                {entry.url2_str.replace(/^https?:\/\//, "")}
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <h3 class="text-xl text-center">Recommended by</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {
+      reccers.map((entry) => (
+        <div class="partner-card">
+          <div class="flex-shrink-0 w-24 h-24">
+            <img
+              src={`images/endorsers/${entry.logo}`}
+              alt={`${entry.name} logo`}
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h4 class="text-lg font-medium">{entry.name}</h4>
+            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+              {new URL(entry.url).hostname}
+            </a>
+
+            {entry.url2 && entry.url2_str && (
+              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
+                {entry.url2_str.replace(/^https?:\/\//, "")}
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <h3 class="text-xl text-center">Indexed by</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {
+      indexers.map((entry) => (
+        <div class="partner-card">
+          <div class="flex-shrink-0 w-24 h-24">
+            <img
+              src={`images/endorsers/${entry.logo}`}
+              alt={`${entry.name} logo`}
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h4 class="text-lg font-medium">{entry.name}</h4>
+            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+              {new URL(entry.url).hostname}
+            </a>
+
+            {entry.url2 && entry.url2_str && (
+              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
+                {entry.url2_str.replace(/^https?:\/\//, "")}
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
