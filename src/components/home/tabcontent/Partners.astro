@@ -10,15 +10,19 @@ const supporters = data.supporters || ["test"];
 const supercomps = data.supercomps || ["test"];
 const reccers = data.recommendors || ["test"];
 const indexers = data.indexed || ["test"];
+
+const partnerCardStyle = "flex items-center space-x-4 px-6 py-2 bg-white";
+const gridStyle = "grid grid-cols-1 md:grid-cols-2 gap-4";
+const logoStyle = "flex-shrink-0 w-24 h-24";
 ---
 
 <div id="supporters" class="space-y-4">
   <h3 class="text-xl text-center">Supported by</h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class={gridStyle}>
     {
       supporters.map((entry) => (
-        <div class="partner-card">
-          <div class="flex-shrink-0 w-25 h-25">
+        <div class={partnerCardStyle}>
+          <div class={logoStyle}>
             <img
               src={`images/endorsers/${entry.logo}`}
               alt={`${entry.name} logo`}
@@ -43,11 +47,11 @@ const indexers = data.indexed || ["test"];
   </div>
 
   <h3 class="text-xl text-center">Partners - Supercomputing Centers</h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class={gridStyle}>
     {
       supercomps.map((entry) => (
-        <div class="partner-card">
-          <div class="flex-shrink-0 w-24 h-24">
+        <div class={partnerCardStyle}>
+          <div class={logoStyle}>
             <img
               src={`images/endorsers/${entry.logo}`}
               alt={`${entry.name} logo`}
@@ -72,11 +76,11 @@ const indexers = data.indexed || ["test"];
   </div>
 
   <h3 class="text-xl text-center">Recommended by</h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class={gridStyle}>
     {
       reccers.map((entry) => (
-        <div class="partner-card">
-          <div class="flex-shrink-0 w-24 h-24">
+        <div class={partnerCardStyle}>
+          <div class={logoStyle}>
             <img
               src={`images/endorsers/${entry.logo}`}
               alt={`${entry.name} logo`}
@@ -101,11 +105,11 @@ const indexers = data.indexed || ["test"];
   </div>
 
   <h3 class="text-xl text-center">Indexed by</h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class={gridStyle}>
     {
       indexers.map((entry) => (
-        <div class="partner-card">
-          <div class="flex-shrink-0 w-24 h-24">
+        <div class={partnerCardStyle}>
+          <div class={logoStyle}>
             <img
               src={`images/endorsers/${entry.logo}`}
               alt={`${entry.name} logo`}

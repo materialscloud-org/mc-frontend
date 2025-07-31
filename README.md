@@ -17,32 +17,8 @@ Development notes - tips for development:
 
 - when linking to pages/resources don't use the leading flash (so use e.g. `<a href="work">` or `<img src="images/logos/mc3d.png">`). This will use the `base:` subpath correctly.
 - enviroment variables are set (mostly for backend fetches) via the `.env.development` and `.env.production` files and assigned in `./src/config/env.js`. Astro will automatically use prod and dev backends depending on the command ran...
+
   - for an example file using these env variables see `./src/components/home/Statistics.astro`
--
-
-- ASTRO JS scripts are bundled smartly to the client and some performance gains may be free:
-
-  - `client:load`
-
-    - Good for critical UI that must be interactive immediately (e.g. navigation, modals, etc).
-    - Downside: it adds JS cost up front, which can slow page load.
-
-  - `client:idle`
-
-    - Non-critical interactivity: e.g. analytics widgets, optional animations.
-    - Hydration waits until main thread is less busy → less impact on LCP.
-
-  - `client:visible`
-
-    - Best for below-the-fold or rarely viewed content (e.g. FAQ accordions, tab panels far down).
-    - No JS loads/hydrates until the element is actually scrolled into view → great for performance.
-
-  - `client:media="(min-width: 768px)"`
-
-    - Only loads/hydrates if the viewport matches that media query. For example, skip hydration on mobile.
-
-  - `client:only` - Disables SSR completely. Component is empty HTML until JS loads.
-    Useful when the component must render entirely on client (e.g. depends on browser-only APIs).
 
 - This project attempts to use modern standards while also maintaining most of the UI prior, changes are as follows:
 

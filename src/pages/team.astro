@@ -1,0 +1,275 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/team.yml", "utf8");
+const data = yaml.load(file);
+
+const { contacts, projectLeaders, teamLeaders, coreDevelopers } = data;
+
+const flexContainerStyle = "flex flex-col w-full sm:w-[calc(50%-2rem)] ml-4";
+
+// object-cover makes images square via cropping...
+const personImageStyle = "w-36 h-36 object-cover rounded";
+const personDetailsStyle = "flex-1";
+const personTitleStyle = "text-gray-600 text-sm";
+const websiteLinkStyle = "underline mr-2";
+---
+
+<Layout>
+  <div class="space-y-10 pb-6">
+    <section class="space-y-4">
+      <h2 class="text-3xl">Contact</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <table class="min-w-full">
+        <tbody>
+          {
+            contacts.map((c) => (
+              <tr class="odd:bg-gray-50">
+                <td class="p-2 py-2">
+                  <a
+                    href={`mailto:${c.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {c.email}
+                  </a>
+                </td>
+                <td class="py-2" set:html={c.desc} />
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-3xl">Team</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <div class="flex flex-wrap gap-6">
+        <h3 class="w-full">Project Leaders</h3>
+        {
+          projectLeaders.map((p) => (
+            <div class={flexContainerStyle}>
+              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <div class={personDetailsStyle}>
+                <h4>{p.name}</h4>
+                <p class={personTitleStyle}>{p.title}</p>
+                <div>
+                  {p.websites.map((w) => (
+                    <a href={w.url} target="_blank" class={websiteLinkStyle}>
+                      {w.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex flex-wrap gap-6 mt-12">
+        <h3 class="w-full">Team Leaders</h3>
+        {
+          teamLeaders.map((p) => (
+            <div class={flexContainerStyle}>
+              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <div class={personDetailsStyle}>
+                <h4>{p.name}</h4>
+                <p class={personTitleStyle}>{p.title}</p>
+                <div>
+                  {p.websites.map((w) => (
+                    <a href={w.url} target="_blank" class={websiteLinkStyle}>
+                      {w.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex flex-wrap gap-6 mt-12">
+        <h3 class="w-full">Core Developers</h3>
+        {
+          coreDevelopers.map((p) => (
+            <div class={flexContainerStyle}>
+              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <div class={personDetailsStyle}>
+                <h4>{p.name}</h4>
+                <p class={personTitleStyle}>{p.title}</p>
+                <div>
+                  {p.websites.map((w) => (
+                    <a href={w.url} target="_blank" class={websiteLinkStyle}>
+                      {w.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <h3>Former Members</h3>
+      <ul>
+        <li>
+          Carl Simon Adorf (2019-2022), formerly THEOS, EPFL. Moved to NVIDIA
+        </li>
+        <li>Marco Borelli (2017-2022), formerly THEOS, EPFL.</li>
+        <li>
+          Leopold Talirz (2017-2021), formerly LSMO, EPFL. Moved to Microsoft
+          Azure Quantum
+        </li>
+        <li>
+          Casper W. Andersen (2018-2021), formerly THEOS, EPFL. Moved to SINTEF,
+          Norway
+        </li>
+        <li>
+          Elsa Passaro (2017-2021), formerly THEOS, EPFL. Moved to Red Hat
+        </li>
+        <li>
+          Sebastiaan Philippe Huber (2016-2020), formerly THEOS, EPFL. Moved to
+          NCCR Catalysis, EPFL, Switzerland
+        </li>
+        <li>
+          Snehal Kumbhar (2015-2020), formerly THEOS, EPFL. Moved to UNIL,
+          Switzerland
+        </li>
+        <li>
+          Martin Uhrin (2015-2019), formerly THEOS, EPFL. Moved to DTU, Denmark
+        </li>
+        <li>
+          Spyros Zoupanos (2015-2019), formerly THEOS, EPFL. Moved to IAPR,
+          Greece
+        </li>
+        <li>
+          Nicolas Mounet (2015-2018), formerly THEOS, EPFL. Moved to CERN,
+          Switzerland
+        </li>
+        <li>
+          Fernando Gargiulo (2015-2017), formerly THEOS, EPFL. Moved to ENEL,
+          Italy
+        </li>
+        <li>
+          Ole Schütt (2017), formerly nanotech@surfaces laboratory, Empa. Moved
+          to Google Zurich, Switzerland
+        </li>
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-3xl">Team</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <h3>
+        The Executive Committee of Materials Cloud is currently formed by:
+      </h3>
+      <ul>
+        <li>
+          <a href="http://people.epfl.ch/kristjan.eimre?lang=en" target="_blank"
+            >Kristjan Eimre</a
+          > (EPFL, Switzerland) [2022-] (representative of the Materials Cloud developers)
+        </li>
+        <li>
+          <a href="http://people.epfl.ch/sara.bonella" target="_blank"
+            >Sara Bonella</a
+          > (EPFL and CECAM, Switzerland) [2020-]
+        </li>
+        <li>
+          <a href="https://www.empa.ch/web/s205/carlo-pignedoli" target="_blank"
+            >Carlo Pignedoli</a
+          > (Empa, Switzerland) [2020-]
+        </li>
+        <li>
+          <a href="http://people.epfl.ch/nicola.marzari" target="_blank"
+            >Nicola Marzari</a
+          > (EPFL, Switzerland) [2018-]
+        </li>
+        <li>
+          <a href="http://www.nano.cnr.it/?mod=peo&id=174" target="_blank"
+            >Elisa Molinari</a
+          > (Unimore and CNR Nano, Italy) [2018-]
+        </li>
+        <li>
+          <a
+            href="https://www.psi.ch/en/lms/people/giovanni-pizzi"
+            target="_blank">Giovanni Pizzi</a
+          > (PSI, Switzerland) [2018-]
+        </li>
+        <li>
+          <a href="http://people.epfl.ch/berend.smit" target="_blank"
+            >Berend Smit</a
+          > (EPFL, Switzerland) [2018-]
+        </li>
+        <li>
+          <a
+            href="https://itp.phys.ethz.ch/people/person-detail.html?persid=90106"
+            target="_blank">Joost VandeVondele</a
+          > (ETHZ and CSCS, Switzerland) [2018-]
+        </li>
+        <li>
+          <a
+            href="https://www.dtu.dk/english/service/phonebook/person?id=5334"
+            target="_blank">Tejs Vegge</a
+          > (DTU, Denmark) [2020-]
+        </li>
+      </ul>
+
+      <h3>Former members:</h3>
+      <ul>
+        <li>
+          <a href="http://people.epfl.ch/leopold.talirz" target="_blank"
+            >Leopold Talirz</a
+          > (EPFL, Switzerland) [2018-2022] (representative of the Materials Cloud
+          developers)
+        </li>
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-3xl">Materials Cloud@HPC Board</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+      <h3>
+        The Materials Cloud@HPC Board, created in late 2020, is currently formed
+        by:
+      </h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.hpc.cineca.it/staff/affinito-fabio"
+            target="_blank">Fabio Affinito</a
+          > (CINECA, Italy)
+        </li>
+        <li>
+          <a href="https://www.csc.fi/en/careers-pekka" target="_blank"
+            >Pekka Manninen</a
+          > (CSC, Finland)
+        </li>
+        <li>
+          <a
+            href="https://www.psi.ch/en/lms/people/giovanni-pizzi"
+            target="_blank">Giovanni Pizzi</a
+          > (PSI, Switzerland) (Materials Cloud representative)
+        </li>
+        <li>
+          <a
+            href="https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/pleiter_d.html"
+            target="_blank">Dirk Pleiter</a
+          > (JSC, Germany)
+        </li>
+        <li>
+          <a
+            href="https://itp.phys.ethz.ch/people/person-detail.html?persid=90106"
+            target="_blank">Joost VandeVondele</a
+          > (CSCS, Switzerland)
+        </li>
+      </ul>
+    </section>
+  </div>
+</Layout>

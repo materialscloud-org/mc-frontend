@@ -1,0 +1,274 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const buttonStyle =
+  "px-2 py-1 bg-blue-800 text-white text-xs rounded hover:bg-blue-900";
+---
+
+<Layout>
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h2 class="text-3xl">Data Management Plan</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>
+        In order to support researchers using the Materials Cloud to prepare
+        grant applications or to comply with agencies' requirements, we provide
+        here below templates for data management plans (DMPs) that use the
+        Materials Cloud.
+      </p>
+
+      <p>
+        Dissemination can be as simple as depositing data freely (and in any
+        format) on the Archive, or, if using AiiDA, disseminating entire
+        workflows, raw and curated data in the Explore or Discover sections.
+        AiiDA plugins and workflows can also be distributed through the AiiDA
+        plugin repository, while simulation services can be exposed through
+        AiiDAlab, either in a virtual machine environment (the Quantum Mobile)
+        or on the cloud (e.g. on the European Open Science Cloud).
+      </p>
+
+      <p>
+        Feel free to <a href="mailto:archive@materialscloud.org">contact us</a> with
+        any questions regarding the use of the Materials Cloud Archive as part of
+        your data management plan.
+      </p>
+
+      <table class="min-w-full">
+        <thead>
+          <tr>
+            <th class="px-4 py-2 text-left">Funding Body</th>
+            <th class="px-4 py-2 text-left">
+              DMP template (using <a href="http://www.aiida.net">
+                <img
+                  src="images/aiida-logo-128.png"
+                  alt="AiiDA"
+                  class="h-4 inline"
+                />
+                <span>AiiDA</span></a
+              >)
+            </th>
+            <th class="px-4 py-2 text-left">DMP template (no AiiDA)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-50">
+            <td class="px-4 py-2">
+              <a
+                href="http://www.snf.ch/en/theSNSF/research-policies/open_research_data/Pages/data-management-plan-dmp-guidelines-for-researchers.aspx"
+                >SNF</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1uXr_aYakTxg6mZBR2xYCS6xsXbm8FrnbW0P9N5oeRgo"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1uXr_aYakTxg6mZBR2xYCS6xsXbm8FrnbW0P9N5oeRgo"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1uXr_aYakTxg6mZBR2xYCS6xsXbm8FrnbW0P9N5oeRgo"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1rta1i1ZJSdMwp1sMzTuh_xuiBIthqO6vlafzVPmRD8M"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1rta1i1ZJSdMwp1sMzTuh_xuiBIthqO6vlafzVPmRD8M"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1rta1i1ZJSdMwp1sMzTuh_xuiBIthqO6vlafzVPmRD8M"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+          </tr>
+
+          <tr class="bg-gray-0">
+            <td class="px-4 py-2">
+              <a
+                href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf"
+                >H2020</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1g-LQ3_sBTj41oiB3yDpoBehAi4cxLsi2JH_QfAIbgf4"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1g-LQ3_sBTj41oiB3yDpoBehAi4cxLsi2JH_QfAIbgf4"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1g-LQ3_sBTj41oiB3yDpoBehAi4cxLsi2JH_QfAIbgf4"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1UJsRichO2M8IhFtvpkEvWexlBTdbIGyIaxLquLk05bQ"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1UJsRichO2M8IhFtvpkEvWexlBTdbIGyIaxLquLk05bQ"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1UJsRichO2M8IhFtvpkEvWexlBTdbIGyIaxLquLk05bQ"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+          </tr>
+
+          <tr class="bg-gray-50">
+            <td class="px-4 py-2">
+              <a
+                href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon"
+                >Horizon Europe</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1SldzdFH3_nJyqFa94IBPwG59K4XziF9pRh3nyZZTq0Q"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1SldzdFH3_nJyqFa94IBPwG59K4XziF9pRh3nyZZTq0Q"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1SldzdFH3_nJyqFa94IBPwG59K4XziF9pRh3nyZZTq0Q"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+            <td class="px-4 py-2 space-x-2">
+              <a
+                href="https://docs.google.com/document/export?format=docx&id=1KUvJaCO-fjDBOvHrxW_PYS9KfSB4C4W6pqlQcFrCuw0"
+                class={buttonStyle}>.docx</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=odt&id=1KUvJaCO-fjDBOvHrxW_PYS9KfSB4C4W6pqlQcFrCuw0"
+                class={buttonStyle}>.odt</a
+              >
+              <a
+                href="https://docs.google.com/document/export?format=pdf&id=1KUvJaCO-fjDBOvHrxW_PYS9KfSB4C4W6pqlQcFrCuw0"
+                class={buttonStyle}>.pdf</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Please also note the
+        <a
+          href="https://www.epfl.ch/campus/library/services-researchers/rdm-guides-templates/"
+        >
+          resources provided by EPFL</a
+        >, including extensive DMP templates for many different project types
+        (SNSF, ERC, H2020, ...).
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h3 class="text-xl">
+        Materials Cloud fulfils the requirements for data repositories
+      </h3>
+
+      <p>
+        The Materials Cloud Archive fulfils the SNF requirements for data
+        repositories and is a
+        <a
+          href="https://www.snf.ch/en/WtezJ6qxuTRnSYgF/topic/open-research-data-which-data-repositories-can-be-used"
+        >
+          recommended repository
+        </a>
+        for materials sciences.
+      </p>
+
+      <ul>
+        <li>
+          <b>Non-commercial:</b>
+          <a
+            href="https://www.re3data.org/repository/r3d100012611#tab_institutions"
+          >
+            Yes, all backing institutions are non-profit
+          </a>
+        </li>
+        <li>
+          <b>Usage of globally unique and persistent identifiers:</b>
+          <a
+            href="https://www.re3data.org/repository/r3d100012611#tab_standards"
+          >
+            Yes, uses DOI as permanent identifier system
+          </a>
+        </li>
+        <li>
+          <b
+            >Possibility to upload intrinsic and submitter-specified metadata:</b
+          > Yes, basic intrinsic data is entered in specific (required) fields. "Free
+          text" fields are available for entering additional information. The submitter
+          is free to upload README files with even more detailed information.
+        </li>
+        <li>
+          <b
+            >License for data is clearly defined, or can be chosen by the
+            submitter:</b
+          >
+          <a href="https://www.materialscloud.org/policies">
+            Yes, user-provided metadata is stored in a structured format (JSON)
+            and validated (JSON schema + validator). Metadata are served in a
+            number of machine-readable formats:
+          </a>
+        </li>
+        <li>
+          <b
+            >Metadata are always publicly available (even if access is
+            restricted):</b
+          >
+          <a href="https://www.materialscloud.org/policies">
+            Yes, licensed under CC-BY-SA-4.0
+          </a>
+        </li>
+        <li>
+          <b>Machine readable/interoperable metadata:</b>
+          Yes, stored as JSON and served via:
+          <ul class="list-[circle] text-gray-900 ml-8">
+            <li>
+              HTML meta tags (<a
+                href="https://www.dublincore.org/specifications/dublin-core/dc-html/"
+                >Dublin Core</a
+              >) embedded in landing pages
+            </li>
+            <li>
+              JSON-LD (<a href="http://www.schema.org">schema.org</a>) embedded
+              in landing pages
+            </li>
+            <li>
+              OAI-PMH (
+              <a href="http://www.openarchives.org/pmh/">OAI-PMH 2.0</a>,
+              <a href="http://dublincore.org/schemas/xmls/">Dublin Core</a>),
+              <a
+                href="https://archive.materialscloud.org/oai2d?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:materialscloud.org:16"
+              >
+                see example
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Long-term preservation:</b> Yes, all data is stored at the Swiss National
+          Supercomputing Centre (CSCS) and guaranteed to be preserved for at least
+          10 years after deposition, irrespective of future funding for MARVEL or
+          the Materials Cloud Archive.
+        </li>
+      </ul>
+    </section>
+  </div>
+</Layout>

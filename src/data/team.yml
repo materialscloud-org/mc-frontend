@@ -1,0 +1,124 @@
+contacts:
+  - email: info@materialscloud.org
+    desc: For general inquiries concerning Materials Cloud
+  - email: https://github.com/materialscloud-org/issues
+    desc: For reporting issues encountered on Materials Cloud
+  - email: aiidalab@materialscloud.org
+    desc: 'For questions concerning the <a href="https://aiidalab.materialscloud.org" target="_blank">AiiDAlab</a>'
+  - email: archive@materialscloud.org
+    desc: 'For questions and submissions to the <a href="https://archive.materialscloud.org" target="_blank">Materials Cloud Archive</a>'
+
+projectLeaders:
+  - name: Nicola Marzari
+    img: images/team/nicola_marzari.png
+    title: |
+      Chair, Theory and Simulation of Materials, EPFL
+      Director, National Centre for Competence in Research NCCR MARVEL, EPFL
+      Laboratory Head, Laboratory for Materials Simulations, PSI
+    websites:
+      - url: http://people.epfl.ch/nicola.marzari
+        label: epfl.ch
+      - url: http://nccr-marvel.ch/en/people/profile/nicola-marzari
+        label: nccr-marvel.ch
+      - url: https://www.psi.ch/en/lms/people/nicola-marzari
+        label: psi.ch
+
+  - name: Thomas Schulthess
+    img: images/team/thomas_schilthess.png
+    title: |
+      Full Professor of computational physics, ETH
+      Director, Swiss National Supercomputing Center, CSCS
+    websites:
+      - url: http://www.itp.phys.ethz.ch/people/professors/schulthess.html
+        label: ethz.ch
+      - url: http://www.cscs.ch/about/staff
+        label: cscs.ch
+
+  - name: Berend Smit
+    img: images/team/berend_smit.png
+    title: Chair, Laboratory of molecular simulation, EPFL
+    websites:
+      - url: http://people.epfl.ch/berend.smit
+        label: epfl.ch
+      - url: http://nccr-marvel.ch/people/profile/berend-smit
+        label: nccr-marvel.ch
+
+teamLeaders:
+  - name: Giovanni Pizzi
+    img: images/team/giovanni_pizzi.png
+    title: Group leader, Materials Software and Data Group, PSI
+    websites:
+      - url: https://www.psi.ch/en/lms/people/giovanni-pizzi
+        label: psi.ch
+
+  - name: Joost VandeVondele
+    img: images/team/joost_vandeVondele.png
+    title: Associate Director, Swiss National Supercomputing Center, CSCS
+    websites:
+      - url: https://itp.phys.ethz.ch/people/person-detail.html?persid=90106
+        label: ethz.ch
+      - url: http://www.cscs.ch/about/staff
+        label: cscs.ch
+
+  - name: Carlo Pignedoli
+    img: images/team/carlo_pignedoli.jpeg
+    title: Deputy Group Leader, nanotech@surfaces laboratory, Empa
+    websites:
+      - url: https://www.empa.ch/web/s205/carlo-pignedoli
+        label: empa.ch
+
+coreDevelopers:
+  - name: "Roberto Bendinelli"
+    img: "images/team/bendinelli.png"
+    title: "Software developer, CECAM & Theory and Simulation of Materials, EPFL"
+    websites:
+      - url: "https://people.epfl.ch/roberto.bendinelli?lang=en"
+        label: "epfl.ch"
+  - name: "Dou Du"
+    img: "images/team/dou_du.png"
+    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+    websites:
+      - url: "https://people.epfl.ch/dou.du?lang=en"
+        label: "epfl.ch"
+  - name: "Kristjan Eimre"
+    img: "images/team/kristjan_eimre.png"
+    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+    websites:
+      - url: "https://people.epfl.ch/kristjan.eimre?lang=en"
+        label: "epfl.ch"
+  - name: "Guillaume Fraux"
+    img: "images/team/guillaume_fraux.png"
+    title: "PostDoc Research Scientist, Laboratory of Computational Science and Modelling, EPFL"
+    websites:
+      - url: "https://people.epfl.ch/guillaume.fraux?lang=en"
+        label: "epfl.ch"
+  - name: "Valeria Granata"
+    img: "images/team/valeria_granata.png"
+    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+    websites:
+      - url: "https://people.epfl.ch/198324?lang=en"
+        label: "epfl.ch"
+  - name: "François Liot"
+    img: "images/team/francois_liot.png"
+    title: "PostDoc Web Engineer, Theory and Simulation of Materials, EPFL"
+    websites:
+      - url: "http://people.epfl.ch/francois.liot?lang=en"
+        label: "epfl.ch"
+  - name: "Xing Wang"
+    img: "images/team/xing_wang.png"
+    title: "PostDoc, Materials Software and Data Group, PSI"
+    websites:
+      - url: "https://www.psi.ch/en/lms/people/xing-wang"
+        label: "psi.ch"
+  - name: "Aliaksandr Yakutovich"
+    img: "images/team/aliaksandr_yakutovich.png"
+    title: "Research Scientist, nanotech@surfaces laboratory, Empa"
+    websites:
+      - url: "https://www.empa.ch/web/s205/aliaksandr-yakutovich"
+        label: "empa.ch"
+  - name: "Jusong Yu"
+    img: "images/team/jusong_yu.jpg"
+    title: "PostDoc, Materials Software and Data Group, PSI"
+    websites:
+      - url: "https://www.psi.ch/de/lms/people/jusong-yu"
+        label: "psi.ch"

@@ -1,14 +1,16 @@
 ---
-import styles from "../../styles/global.css";
-
 // Currently spacing between Discover/Explore is smaller than the rest
 // could fix this by enforcing a minheight but the same thing is happening in the live version its just less apparent
+
+const buttonContainerStyle = "flex items-center space-x-4";
+const buttonStyle =
+  "inline-block min-w-24 text-center px-1 py-1 text-base font-bold rounded text-slate-700 bg-sky-50 border border-slate-600 transition";
 ---
 
 <div class="inner-container container-fluid">
-  <div class="flex flex-wrap gap-4 px-4">
+  <div class="flex flex-wrap gap-0 px-4">
     <div
-      class="w-full md:w-10/24 flex justify-center md:justify-start items-center"
+      class="w-full lg:w-10/24 flex justify-center lg:justify-start items-center"
     >
       <div class="logo">
         <object
@@ -20,32 +22,37 @@ import styles from "../../styles/global.css";
         Built for seamless sharing of resources in computational materials science.
       </p> -->
     </div>
-    <div class="w-full md:w-13/24 pt-4">
-      <div class="space-y-2 homepage-links">
-        <div class="flex items-center space-x-4">
-          <a href="learn">LEARN</a>
+    <div class="w-full lg:w-14/24 pt-4">
+      <div class="space-y-2">
+        <div class={buttonContainerStyle}>
+          <a class={buttonStyle} href="learn">LEARN</a>
           <span>Lectures and tutorials in computational materials science</span>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="work">WORK</a>
+        <div class={buttonContainerStyle}>
+          <a class={buttonStyle} href="work">WORK</a>
           <span
             >Simulation tools and services - in the cloud or on your computer</span
           >
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="discover">DISCOVER</a>
+        <div class={buttonContainerStyle}>
+          <a class={buttonStyle} href="discover">DISCOVER</a>
           <span>Curated research data with tailored visualizations</span>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="explore">EXPLORE</a>
+        <div class={buttonContainerStyle}>
+          <a class={buttonStyle} href="explore">EXPLORE</a>
           <span>Interactive browser for AiiDA provenance graphs</span>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="archive">ARCHIVE</a>
+        <div class={buttonContainerStyle}>
+          <a
+            class={buttonStyle}
+            href="https://archive.materialscloud.org/"
+            target="_blank"
+            rel="noopener noreferrer">ARCHIVE</a
+          >
           <span
             >An open-access, moderated repository for research data in
             computational materials science</span

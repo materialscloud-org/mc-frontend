@@ -15,8 +15,6 @@ import DMP from "./tabcontent/OSandDMPs.astro";
 import Statistics from "./tabcontent/Statistics.astro";
 import Partners from "./tabcontent/Partners.astro";
 
-// we populate the html via this array -
-// currently this is not used in the script tag - this should probably be changed to ease development / reduce desync likelyhood.
 const tabs = [
   { id: "vision", label: "Vision", Icon: Info, Content: Vision },
   { id: "news", label: "News", Icon: Globe, Content: News },
@@ -29,14 +27,30 @@ const tabs = [
   },
   { id: "partners", label: "Partners", Icon: Users, Content: Partners },
 ];
+
+const buttonStyle = `
+  flex flex-1 flex-col items-center justify-center
+  px-4 py-2
+  font-semibold text-indigo-200
+  cursor-pointer
+  transition-colors
+  border-b border-gray-300 last:border-b-0
+  sm:border-none sm:border-r sm:last:border-r-0
+  aria-selected:text-red-600
+  aria-selected:cursor-default
+  not-aria-selected:hover:text-blue-500
+  not-aria-selected:hover:bg-gradient-to-t 
+  not-aria-selected:hover:from-indigo-50 
+  not-aria-selected:hover:to-white
+`;
 ---
 
-<script type="module" client:visible>
+<script type="module">
   let activeTab = window.location.hash
     ? window.location.hash.substring(1)
-    : "vision";
+    : null;
 
-  const validTabs = ["vision", "news", "dmp", "statistics", "partners"];
+  let validTabs = [];
 
   function selectTab(tab, updateHash = true) {
     activeTab = tab;
@@ -60,12 +74,24 @@ const tabs = [
   }
 
   window.addEventListener("DOMContentLoaded", () => {
-    const initialTab = validTabs.includes(activeTab) ? activeTab : "vision";
+    validTabs = Array.from(document.querySelectorAll('[role="tab"]'))
+      .map((btn) => btn.dataset.tab)
+      .filter(Boolean);
+
+    const initialTab = validTabs.includes(activeTab) ? activeTab : validTabs[0];
     selectTab(initialTab, false);
 
     document.querySelectorAll('[role="tab"]').forEach((btn) => {
       btn.addEventListener("click", () => selectTab(btn.dataset.tab));
     });
+  });
+
+  // Listen to hash changes (e.g. someone clicks <a href="#partners">)
+  window.addEventListener("hashchange", () => {
+    const newTab = window.location.hash.substring(1);
+    if (validTabs.includes(newTab)) {
+      selectTab(newTab, false); // don't rewrite hash again
+    }
   });
 </script>
 
@@ -77,24 +103,7 @@ const tabs = [
     {
       tabs.map(({ id, label, Icon }) => (
         <button
-          class="
-            tab-button
-            flex flex-1 flex-col items-center justify-center
-            px-4 py-2
-            font-semibold
-            text-indigo-200
-            cursor-pointer
-            transition-colors
-
-            border-b border-gray-300 last:border-b-0
-            sm:border-none sm:border-r sm:last:border-r-0
-
-            aria-selected:text-red-600
-            aria-selected:cursor-default
-
-            not-aria-selected:hover:text-blue-500
-            not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
-          "
+          class={buttonStyle}
           role="tab"
           data-tab={id}
           aria-selected="false"

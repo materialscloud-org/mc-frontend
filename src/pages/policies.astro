@@ -1,0 +1,181 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/policies.yml", "utf8");
+const data = yaml.load(file);
+
+const tabs = data.tabs || [];
+
+const tabStyle = `
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline`;
+---
+
+<script type="module">
+  let activeTab = window.location.hash
+    ? window.location.hash.substring(1)
+    : "learn";
+
+  const validTabs = ["learn", "work", "discover", "explore"];
+
+  function selectTab(tab, updateHash = true) {
+    activeTab = tab;
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.setAttribute(
+        "aria-selected",
+        btn.dataset.tab === tab ? "true" : "false"
+      );
+    });
+    document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
+      if (panel.id === `panel-${tab}`) {
+        panel.classList.remove("hidden");
+      } else {
+        panel.classList.add("hidden");
+      }
+    });
+
+    if (updateHash) {
+      history.replaceState(null, "", `/policies#${tab}`);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const initialTab = validTabs.includes(activeTab) ? activeTab : "learn";
+    selectTab(initialTab, false);
+
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.addEventListener("click", () => selectTab(btn.dataset.tab));
+    });
+  });
+</script>
+
+<Layout>
+  <div class="space-y-10 pb-6">
+    <section class="space-y-4">
+      <h2 class="text-3xl mb-4">Policies</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+      <p class="text-gray-900 mb-4">
+        Materials Cloud Policies v1.1, November 2018
+      </p>
+      <ul>
+        <li>
+          <b>Scope:</b> Computational materials science. Content must not violate
+          privacy or copyright.
+        </li>
+        <li>
+          <b>Eligible depositors:</b> The Materials Cloud ARCHIVE is open to the
+          computational materials science community at large. The Materials Cloud
+          LEARN, WORK, DISCOVER and EXPLORE sections are limited to work involving
+          at least one author affiliated with the partnering scientific consortia
+          (while the submission processes are being streamlined).
+        </li>
+        <li>
+          <b>Ownership:</b> Uploading content to Materials Cloud does not affect
+          ownership of the content. In particular, no property rights are transferred
+          to Materials Cloud.
+        </li>
+        <li>
+          <b>Licenses:</b> Users must select licenses for their publicly available
+          contributions. While open licenses, such as <a
+            href="https://creativecommons.org/">Creative Commons</a
+          >, are preferred, users are free to choose from the <a
+            href="https://spdx.org/licenses/">SPDX license list</a
+          >. Details may vary between the sections of Materials Cloud.
+        </li>
+        <li>
+          <b>Language:</b> Please use English for any textual items.
+        </li>
+        <li>
+          <b>Infrastructure:</b> Materials Cloud is hosted (and all data is stored)
+          at the <a href="https://www.cscs.ch/"
+            >Swiss National Supercomputing Centre</a
+          > (CSCS) in Lugano, Switzerland.
+        </li>
+        <li>
+          <b>Availability:</b> The <a href="/team">Materials Cloud team</a> and CSCS
+          do their best to ensure constant availability. We do not sign service-level
+          agreements.
+        </li>
+        <li>
+          <b>Personal Data Protection:</b> See the <a href="#"
+            >Materials Cloud Privacy Policy</a
+          >.
+        </li>
+        <li>
+          <b>Terms of Use:</b> Material contributed to or downloaded from the Materials
+          Cloud is subject to the <a href="#">Materials Cloud Terms of Use</a>.
+          See in particular Sections 3.4 and 4. on User Responsibilities and
+          Liabilities.
+        </li>
+      </ul>
+
+      <p class="text-gray-900">
+        See below for the <b>section-specific</b> policies.
+      </p>
+      <div class="w-full pt-5 pb-2">
+        <div
+          class="tabs flex flex-col sm:flex-row border-b border-gray-300"
+          role="tablist"
+        >
+          {
+            tabs.map(({ id, label, external, href }) =>
+              external ? (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class={tabStyle}
+                >
+                  {label}
+                </a>
+              ) : (
+                <button
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls={`panel-${id}`}
+                  id={`tab-${id}`}
+                  data-tab={id}
+                  type="button"
+                  class={tabStyle}
+                >
+                  {label}
+                </button>
+              )
+            )
+          }
+        </div>
+      </div>
+
+      {
+        tabs
+          .filter((tab) => !tab.external)
+          .map(({ id, content }) => (
+            <div
+              id={`panel-${id}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${id}`}
+              class="tab-content hidden p-4"
+              set:html={content}
+            />
+          ))
+      }
+    </section>
+  </div>
+</Layout>

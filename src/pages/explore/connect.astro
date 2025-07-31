@@ -1,0 +1,99 @@
+---
+// This page is kinda hard to test -- Just templating for now, will figure out the JS later?
+
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="space-y-10 pb-6">
+    <section class="space-y-4">
+      <h3>Connect your REST API</h3>
+      <hr class="border-t border-gray-300 mb-8" />
+
+      <h4 class="text-3xl">ADD THE JS form HERE.</h4>
+    </section>
+
+    <section class="space-y-6 max-w-3xl mx-auto p-4">
+      <h3>Instructions</h3>
+
+      <div class="space-y-4">
+        <h4>Step 1: Running the REST API</h4>
+        <p>On your local AiiDA computer run on the command line:</p>
+        <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2"
+          >$ verdi restapi</code
+        >
+
+        <p>
+          This command starts the REST API with the default parameters (default
+          AiiDA profile, port 5000 of localhost). If your version of AiiDA is
+          equal to 1.0.1 or later, its base URL is:
+        </p>
+        <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2"
+          >http://127.0.0.1:5000/api/v4</code
+        >
+
+        <p>
+          If your version of AiiDA is from 1.0.0b3 to 1.0.0b6, the base URL is:
+        </p>
+        <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2"
+          >http://127.0.0.1:5000/api/v3</code
+        >
+
+        <p>
+          If your version of AiiDA is previous or equal to 1.0.0b2, the base URL
+          is:
+        </p>
+        <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2"
+          >http://127.0.0.1:5000/api/v2</code
+        >
+
+        <p class="italic text-gray-700">
+          Note that the REST API of the AiiDA 1.0.0 version is not supported;
+          you should upgrade to 1.0.1 or to a later version to use the "Connect
+          to your AiiDA REST API" feature.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <h4>Step 2: Connecting to your REST API</h4>
+
+        <p>
+          Type the base URL in the input box above and click <span
+            class="font-semibold">"GO!"</span
+          > to browse your own data in the Explore section. To directly connect to
+          your AiiDA REST API you can also pass the <em>base_url</em> parameter to
+          the url query string, e.g.:
+        </p>
+
+        <p>
+          <a
+            href="https://dev-www.materialscloud.org/explore/ownrestapi?base_url=http://127.0.0.1:5000/api/v4"
+            >https://dev-www.materialscloud.org/explore/ownrestapi?base_url=http://127.0.0.1:5000/api/v4</a
+          >
+        </p>
+
+        <p>
+          Note that if the backend of your AiiDA profile is SQLAlchemy, you
+          might have to reload the page after the first connection to your REST
+          API in order to correctly load the nodes dashboard.
+          <br />
+          If you notice other issues please report them
+          <a href="https://github.com/materialscloud-org/issues">here</a>.
+        </p>
+
+        <p class="font-semibold">
+          Note: all data remains local to your computer and is not transferred
+          to Materials Cloud.
+        </p>
+
+        <p>
+          For more information on the REST API see the
+          <a
+            href="https://aiida-core.readthedocs.io/en/latest/restapi/index.html"
+            target="_blank">AiiDA documentation</a
+          >.
+        </p>
+      </div>
+    </section>
+  </div>
+</Layout>

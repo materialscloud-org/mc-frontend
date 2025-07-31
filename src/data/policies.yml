@@ -1,0 +1,62 @@
+tabs:
+  - id: learn
+    label: Learn
+    content: |
+      <ul>
+        <li><b>Scope:</b> Educational materials, such as video lectures, slides and exercises.</li>
+        <li><b>Copyright:</b> Copyrights are held by EPFL unless otherwise indicated.</li>
+        <li><b>Licenses:</b> <a href="https://spdx.org/licenses/CC-BY-SA-4.0.html">CC-BY-SA 4.0</a> unless otherwise indicated.</li>
+      </ul>
+      <i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+        zenodo research data repository</a>
+        and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+      </i>
+
+  - id: work
+    label: Work
+    content: |
+      <h4 class="mb-2">Tools</h4>
+      <ul>
+        <li><b>Scope:</b> Stand-alone tools with web frontends, hosted by Materials Cloud.</li>
+      </ul>
+      <h4 class="mt-6 mb-2">AiiDA Lab</h4>
+      <ul>
+        <li><b>Scope:</b> Running and developing materials science workflows using jupyter notebooks and AiiDA.</li>
+        <li><b>Quotas:</b> We reserve the rights to impose quotas on disk, RAM or CPU usage when necessary.</li>
+        <li><b>Backups:</b> During the alpha phase, users are responsible for making their own backups.</li>
+        <li><b>Availability:</b> During the alpha phase, despite best efforts the service may be unavailable for a day or more.</li>
+        <li><b>Privacy:</b> User data is stored in their own docker container and is not accessible by other users, except for administrators.</li>
+      </ul>
+      <i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+        zenodo research data repository</a>
+        and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+      </i>
+
+  - id: discover
+    label: Discover
+    content: |
+      <ul>
+        <li><b>Scope:</b> Web frontends that provide intuitive entry points to existing records in EXPLORE.</li>
+      </ul>
+      <i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+        zenodo research data repository</a>
+        and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+      </i>
+
+  - id: explore
+    label: Explore
+    content: |
+      <ul>
+        <li><b>Scope:</b> AiiDA databases of research data.</li>
+        <li><b>File formats:</b> Submissions must use the <a href="http://aiida-core.readthedocs.io/en/latest/import_export/main.html#file-format" >AiiDA export file format</a> as produced using the <i>verdi export</i> command.</li>
+        <li><b>Volume and size limitations:</b> 50 GB for AiiDA databases. For larger datasets please <a href="/team" >contact us</a>.</li>
+      </ul>
+      <i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+        zenodo research data repository</a>
+        and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+      </i>
+
+  - id: archive
+    label: Archive
+    external: true
+    href: "https://archive.materialscloud.org/deposit/information#archive_policies"
