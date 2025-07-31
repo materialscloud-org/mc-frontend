@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 const breadcrumbs = [
   { name: "Home", href: "" },
@@ -8,165 +8,160 @@ const breadcrumbs = [
 ---
 
 <Layout breadcrumbs={breadcrumbs}>
+  <div ng-controller="InfrastructureCtrl" class="mcloud-page-container">
+    <div class="mcloud-page-content panel panel-default">
+      <div ncy-breadcrumb></div>
 
-<div ng-controller="InfrastructureCtrl" class="mcloud-page-container">
-  <div class="mcloud-page-content panel panel-default">
-    <div ncy-breadcrumb></div>
-
-    <div class="techframework-container info-page">
-      <div class="page-header">
-        <h2>Infrastructure</h2>
-      </div>
-
-      <div class="page-container">
-        <h3>Organisational</h3>
-        <ul>
-          <li>
-            <b>Operator:</b> Materials Cloud is operated by the
-            <a href="/team" target="_blank">Materials Cloud team</a>, a group of
-            developers working at the
-            <a href="https://epfl.ch" target="_blank"
-              >École Polytechnique Fédérale de Lausanne</a
-            >
-            (EPFL).
-          </li>
-          <li>
-            <b>Host:</b> Materials Cloud is hosted at the
-            <a href="https://cscs.ch" target="_blank"
-              >Swiss National Supercomputing Centre</a
-            >
-            (CSCS) in Lugano. CSCS is an autonomous unit of the
-            <a href="https://www.ethz.ch" target="_blank"
-              >Swiss Federal Institute of Technology</a
-            >
-            in Zurich (ETH Zurich) and closely collaborates with the local
-            <a href="https://www.usi.ch/en" target="_blank"
-              >University of Lugano</a
-            >
-            (USI).
-          </li>
-          <li>
-            <b>Funding:</b> Materials Cloud started thanks to funding from the
-            <a href="http://www.snf.ch" target="_blank"
-              >Swiss National Science Foundation</a
-            >
-            (SNF) and <a href="https://epfl.ch" target="_blank">EPFL</a> through
-            the
-            <a href="http://nccr-marvel.ch" target="_blank"
-              >MARVEL National Centre of Competence in Research</a
-            >
-            (MARVEL NCCR). Today, it has become a partnership between many
-            <a href="/home#partners" target="_blank">consortia</a>.
-          </li>
-        </ul>
-      </div>
-
-      <div class="page-container">
-        <h3>Technical</h3>
-        <ul>
-          <li>
-            <b>Virtual Hardware:</b> Materials Cloud runs on the
-            <a href="https://user.cscs.ch/tools/openstack/" target="_blank"
-              >OpenStack installation at CSCS</a
-            >, which provides virtual machines, virtual disks and object
-            storage. The entire technical infrastructure of Materials Cloud is
-            physically located on CSCS premises.
-          </li>
-          <li>
-            <b>Server Management:</b> Materials Cloud servers are managed via
-            <a href="https://www.ansible.com" target="_blank">ansible</a> for
-            automation and transferability to other platforms in view of future
-            federation of services. For all servers we maintain independent
-            duplicates where changes are validated before they go into
-            production.
-          </li>
-          <li>
-            <b>Frontend:</b> The Materials Cloud frontend application is written
-            in
-            <a href="https://angularjs.org/" target="_blank">AngularJS</a> and
-            is served using
-            <a href="https://www.apache.org/" target="_blank">apache</a>.
-          </li>
-          <li>
-            <b>Backend:</b> The individual Materials Cloud sections are powered
-            by different backends, including
-            <a href="https://slideshot.epfl.ch/" target="_blank">slideshot</a>
-            (LEARN), docker/<a href="http://dokku.viewdocs.io/dokku/">dokku</a>
-            (WORK/TOOLS, DISCOVER),
-            <a
-              href="https://jupyterhub.readthedocs.io/en/latest/"
-              target="_blank"
-              >JupyterHub</a
-            >
-            (WORK/AiiDA lab), the
-            <a href="https://www.aiida.net" target="_blank">AiiDA</a> REST API
-            (EXPLORE), and
-            <a href="https://invenio-software.org/" target="_blank"
-              >Invenio 3</a
-            >
-            (ARCHIVE).
-          </li>
-          <li>
-            <b>Data storage:</b> Data uploaded to or generated in Materials
-            Cloud is stored either in Cinder volumes or in the Swift object
-            store.
-          </li>
-          <li>
-            <b>Backups:</b> As of December 2017, the object store is backed up
-            daily by CSCS for disaster recovery purposes. Efforts at CSCS are
-            ongoing to provide more fine-grained backups and versioning for both
-            the object store and Cinder volumes.
-          </li>
-          <li>
-            <b>DOIs:</b> Materials Cloud partners with the
-            <a href="http://www.library.ethz.ch/en/" target="_blank"
-              >ETH library</a
-            >, a founding
-            <a href="https://datacite.org/" target="_blank">DataCite</a> member,
-            to provide DOIs for Materials Cloud Archive records.
-          </li>
-        </ul>
-      </div>
-      <hr />
-
-      <div class="page-container">
-        <div style="text-align: center">
-          <h3>Architecture Diagram</h3>
-          <em>Click on the figure to enlarge</em>
+      <div class="techframework-container info-page">
+        <div class="page-header">
+          <h2>Infrastructure</h2>
         </div>
-        <br />
-        <div class="diagram">
+
+        <div class="page-container">
+          <h3>Organisational</h3>
+          <ul>
+            <li>
+              <b>Operator:</b> Materials Cloud is operated by the
+              <a href="team" target="_blank">Materials Cloud team</a>, a group
+              of developers working at the
+              <a href="https://epfl.ch" target="_blank"
+                >École Polytechnique Fédérale de Lausanne</a
+              >
+              (EPFL).
+            </li>
+            <li>
+              <b>Host:</b> Materials Cloud is hosted at the
+              <a href="https://cscs.ch" target="_blank"
+                >Swiss National Supercomputing Centre</a
+              >
+              (CSCS) in Lugano. CSCS is an autonomous unit of the
+              <a href="https://www.ethz.ch" target="_blank"
+                >Swiss Federal Institute of Technology</a
+              >
+              in Zurich (ETH Zurich) and closely collaborates with the local
+              <a href="https://www.usi.ch/en" target="_blank"
+                >University of Lugano</a
+              >
+              (USI).
+            </li>
+            <li>
+              <b>Funding:</b> Materials Cloud started thanks to funding from the
+              <a href="http://www.snf.ch" target="_blank"
+                >Swiss National Science Foundation</a
+              >
+              (SNF) and <a href="https://epfl.ch" target="_blank">EPFL</a> through
+              the
+              <a href="http://nccr-marvel.ch" target="_blank"
+                >MARVEL National Centre of Competence in Research</a
+              >
+              (MARVEL NCCR). Today, it has become a partnership between many
+              <a href="home#partners" target="_blank">consortia</a>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-container">
+          <h3>Technical</h3>
+          <ul>
+            <li>
+              <b>Virtual Hardware:</b> Materials Cloud runs on the
+              <a href="https://user.cscs.ch/tools/openstack/" target="_blank"
+                >OpenStack installation at CSCS</a
+              >, which provides virtual machines, virtual disks and object
+              storage. The entire technical infrastructure of Materials Cloud is
+              physically located on CSCS premises.
+            </li>
+            <li>
+              <b>Server Management:</b> Materials Cloud servers are managed via
+              <a href="https://www.ansible.com" target="_blank">ansible</a> for automation
+              and transferability to other platforms in view of future federation
+              of services. For all servers we maintain independent duplicates where
+              changes are validated before they go into production.
+            </li>
+            <li>
+              <b>Frontend:</b> The Materials Cloud frontend application is written
+              in
+              <a href="https://angularjs.org/" target="_blank">AngularJS</a> and
+              is served using
+              <a href="https://www.apache.org/" target="_blank">apache</a>.
+            </li>
+            <li>
+              <b>Backend:</b> The individual Materials Cloud sections are powered
+              by different backends, including
+              <a href="https://slideshot.epfl.ch/" target="_blank">slideshot</a>
+              (LEARN), docker/<a href="http://dokku.viewdocs.io/dokku/">dokku</a
+              >
+              (WORK/TOOLS, DISCOVER),
+              <a
+                href="https://jupyterhub.readthedocs.io/en/latest/"
+                target="_blank">JupyterHub</a
+              >
+              (WORK/AiiDA lab), the
+              <a href="https://www.aiida.net" target="_blank">AiiDA</a> REST API
+              (EXPLORE), and
+              <a href="https://invenio-software.org/" target="_blank"
+                >Invenio 3</a
+              >
+              (ARCHIVE).
+            </li>
+            <li>
+              <b>Data storage:</b> Data uploaded to or generated in Materials Cloud
+              is stored either in Cinder volumes or in the Swift object store.
+            </li>
+            <li>
+              <b>Backups:</b> As of December 2017, the object store is backed up
+              daily by CSCS for disaster recovery purposes. Efforts at CSCS are ongoing
+              to provide more fine-grained backups and versioning for both the object
+              store and Cinder volumes.
+            </li>
+            <li>
+              <b>DOIs:</b> Materials Cloud partners with the
+              <a href="http://www.library.ethz.ch/en/" target="_blank"
+                >ETH library</a
+              >, a founding
+              <a href="https://datacite.org/" target="_blank">DataCite</a> member,
+              to provide DOIs for Materials Cloud Archive records.
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="page-container">
+          <div style="text-align: center">
+            <h3>Architecture Diagram</h3>
+            <em>Click on the figure to enlarge</em>
+          </div>
+          <br />
+          <div class="diagram">
             <img
-            src="images/architecture_diagram.png"
-            style="max-width: 100%"
+              src="images/architecture_diagram.png"
+              style="max-width: 100%"
             />
+          </div>
         </div>
-      </div>
-      <hr />
+        <hr />
 
-      <div class="page-container">
-        <div style="text-align: center">
-          <h3>Deployment Diagram</h3>
-        </div>
-        <br />
-        <div class="diagram">
-          <img src="images/mcloud_deployment.png" />
+        <div class="page-container">
+          <div style="text-align: center">
+            <h3>Deployment Diagram</h3>
+          </div>
+          <br />
+          <div class="diagram">
+            <img src="images/mcloud_deployment.png" />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </Layout>
 
-
 <style>
-.mc-home {
-  font-family: 'Inter', Arial, sans-serif;
-  background: url('/assets/background.svg') no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+  .mc-home {
+    font-family: "Inter", Arial, sans-serif;
+    background: url("/assets/background.svg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 </style>
-

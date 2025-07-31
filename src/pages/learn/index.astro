@@ -1,0 +1,68 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/learn-sections.yml", "utf8");
+const data = yaml.load(file);
+
+const buttonStyle =
+  "px-2 py-1 bg-blue-800 text-white text-md rounded hover:bg-blue-900";
+
+const headingStyle =
+  "submenu-title text-lg font-semibold text-gray-900 hover:underline";
+
+const flexContainerStyle =
+  "submenu-entry flex items-center space-x-4 p-4 rounded shadow hover:shadow-lg transition cursor-pointer";
+
+const linkStyle = "flex-shrink-0 block w-24 h-16 overflow-hidden rounded";
+
+const imageStyle = "object-contain w-full h-full w-36 h-36";
+---
+
+<Layout title="Learn">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <div class="flex items-center justify-between w-full mb-6">
+        <h3 class="text-3xl">Learn with videos and slides</h3>
+        <button class={buttonStyle}> Add new video </button>
+      </div>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>
+        Lecture recordings and tutorial videos on computational materials
+        science topics for students and experts alike. You can find more videos
+        on the
+        <a href="https://www.youtube.com/channel/UC-NZvRRQ5VzT2wKE5DM1N3A"
+          >Materials Cloud Youtube channel</a
+        >.
+      </p>
+
+      <div class="space-y-4">
+        {
+          data.entries
+            .filter((entry) => !entry.parent)
+            .map((entry) => (
+              <a
+                href={`learn/sections/${entry.url}`}
+                class={flexContainerStyle}
+              >
+                <div class={linkStyle}>
+                  <img
+                    src={`${entry.img}`}
+                    alt={entry.title}
+                    class={imageStyle}
+                  />
+                </div>
+                <div>
+                  <h4 class={headingStyle}>{entry.title}</h4>
+                  <p class="text-gray-700">{entry.description}</p>
+                </div>
+              </a>
+            ))
+        }
+      </div>
+    </section>
+  </div>
+</Layout>

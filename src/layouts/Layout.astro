@@ -5,6 +5,9 @@ import "../styles/global.css";
 
 const { breadcrumbs = [] } = Astro.props;
 
+const { title = "DEV Materials Cloud" } = Astro.props;
+const { maxWidth = "max-w-[1000px]" } = Astro.props;
+
 const activeSection =
   breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
 
@@ -37,7 +40,7 @@ const LogoSvg = `
 
     <base href={baseHref} />
 
-    <title>DEV Materials Cloud</title>
+    <title>{title}</title>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const moreLink = document.getElementById("mc-more-link");
@@ -120,7 +123,7 @@ const LogoSvg = `
     }
     <div style="display: flex; justify-content: center;">
       <div
-        class="mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm inline-block min-w-[350px] max-w-[1000px] w-full"
+        class={`mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm min-w-[350px] w-full ${maxWidth}`}
       >
         <slot />
       </div>

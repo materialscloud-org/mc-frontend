@@ -1,0 +1,119 @@
+---
+menu:
+  main_tools:
+    - link: https://qeinputgenerator.matcloud.xyz
+      title: Quantum ESPRESSO input generator and structure visualizer
+      authors: Kristjan Eimre, Jusong Yu, Gabriel M. Nascimento, Elsa Passaro, Sebastiaan P. Huber, Giovanni Pizzi, Nicola Marzari
+      description: |
+        A tool to generate the input file of the Quantum ESPRESSO PWscf code and to visualize the corresponding structure.
+      logo: qe-logo.png
+
+    - link: https://seekpath.materialscloud.xyz
+      title: "SeeK-path: the k-path finder and visualizer"
+      authors: Yoyo Hinuma, Giovanni Pizzi, Yu Kumagai, Fumiyasu Oba, Isao Tanaka
+      description: |
+        A k-path finder that provides band paths compatible with space group symmetry, and an interactive 3D visualizer.
+      logo: seekpath.png
+
+    - link: https://optimadeclient.matcloud.xyz
+      title: "OPTIMADE-Client"
+      authors: Casper Welzel Andersen
+      description: |
+        A friendly client to search through materials databases and other implementations exposing an OPTIMADE RESTful API.
+      logo: optimade.png
+
+    - link: https://interactivephonon.matcloud.xyz
+      title: Interactive phonon visualizer
+      authors: Snehal Kumbhar, Giovanni Pizzi, Thibault Sohier, Henrique Miranda
+      description: |
+        A tool for the interactive visualization and inspection of lattice vibrations.
+      logo: interactivephonon.png
+
+  contributed_tools:
+    - link: https://rho-prediction.matcloud.xyz
+      title: "ρ predict: machine learning prediction of molecular electron density"
+      authors: K. R. Briling, O. Hernandez-Cuellar, J. W. Abbott, M. Ceriotti, C. Corminboeuf
+      description: >
+        This tool predicts the electronic density of molecules using a symmetry-adapted Gaussian process regression model.
+      logo: rho_predict.png
+
+    - link: https://cell2mol.matcloud.xyz
+      title: "cell2mol: unit cell to molecule interpretation"
+      authors: O. Hernandez-Cuellar, Y. Cho, R. Laplaza, L. O. Marsh, S. Vela, C. Corminboeuf
+      description: >
+        A tool to interpret crystallographic data and retrieve the connectivity, total charge, and spin of molecular complexes and
+        their components including the oxidation state (OS) of metal atoms and the charge of ligands.
+      logo: cell2mol.png
+      doi: 10.5281/zenodo.10204037
+
+    - link: https://ml-layer-finder.matcloud.xyz
+      title: Machine-learning accelerated identification of exfoliable two-dimensional materials
+      authors: Mohammad Tohidi Vahdat, Kumar Agrawal Varoon, Giovanni Pizzi
+      description: >
+        This tool allows users to upload the bulk crystal structure in several standard formats (or to choose from a few examples),
+        and then layered structures are identified based on geometrical criteria. Finally, after generating feature vectors
+        representing the crystal structure, the tool uses a machine learning model to see if the crystal structure can be exfoliated
+        or have high binding energy.
+      logo: ML-layer-finder-logo.png
+
+    - link: "work/tools/tgkp"
+      title: "Band structure of twisted mixed multilayer graphene in k • p model"
+      authors: Leo P. Goutte, Oleg V. Yazyev, QuanSheng Wu
+      description: |
+        A tunable model for the energy spectrum of twisted mixed multilayer graphene.
+      logo: tgkp.png
+
+    - link: "work/tools/oximachine"
+      doi: 10.24435/materialscloud:2018.0003/v3
+      title: "oxiMACHINE: Predicting oxidation states for MOFs"
+      authors: K. M. Jablonka, D. Ongari, S. M. Moosavi, B. Smit
+      description: |
+        This tool takes a crystal structure and predicts the oxidation state for each metal site.
+      logo: oximachine.png
+
+    - link: https://layer-raman-ir.matcloud.xyz/
+      title: "Fan diagrams and optically-active modes of layered materials"
+      authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
+      description: >
+        A tool to upload the bulk crystal structure of a layered material and determine the symmetry of the inter-layer force-constant
+        matrices and the corresponding optical-activity fan diagram.
+      logo: layer-raman.png
+
+    # - link: https://mybinder.org/v2/gh/PabloPiaggi/EnvironmentFinder/v1.0.1?urlpath=apps%2FApp.ipynb
+    #   title: Environment finder
+    #   authors: Pablo Piaggi
+    #   description: |
+    #     A tool for finding and analyzing atomic environments in crystal structures.
+    #   logo: logo-env-finder.png
+
+    - link: https://tbeta.matcloud.xyz/voila/render/Tight-Binding%20Electronic%20Transport%20Application.ipynb
+      title: Tight-Binding Electronic Transport Application (TBETA) for graphene nanoribbon junctions
+      authors: Kristiāns Čerņevičs, Valeria Granata, Oleg V. Yazyev
+      description: |
+        A tool for building and analyzing electronic transport properties of graphene nanoribbon junctions.
+      logo: TBETA_logo.png
+      doi: 10.24435/materialscloud:av-24
+
+    - link: work/tools/sycofinder
+      doi: 10.5281/zenodo.1312814
+      title: Synthesis condition finder
+      authors: Seyed Mohamad Moosavi, Leopold Talirz, Berend Smit
+      description: >
+        A tool for optimizing the experimental synthesis conditions for metal-organic frameworks using machine learning and
+        genetic algorithms.
+      logo: sycofinder.png
+
+    - link: work/tools/alphaml
+      title: "AlphaML: machine learning of molecular polarizabilities"
+      authors: David M. Wilkins, Andrea Grisafi, Yang Yang, Ka Un Lao, Robert A. DiStasio Jr., Michele Ceriotti
+      description: |
+        A machine learning framework for the prediction of molecular polarizabilities based on comparisons of local environments.
+      logo: alphaml.png
+
+    - link: work/tools/shiftml
+      title: "ShiftML: chemical shifts in molecular crystals by machine learning"
+      authors: Andrea Anelli, Félix Musil, Federico M. Paruzzo, Albert Hofstetter, Sandip De, Edgar Engel, Lyndon Emsley, Michele Ceriotti
+      description: |
+        A machine learning model to predict the isotropic chemical shielding of molecular crystals containing H, C, N, O
+        and S, including the uncertainty of the prediction, and an interactive 3D visualiser.
+      logo: shiftml.png

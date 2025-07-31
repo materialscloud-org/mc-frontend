@@ -1,15 +1,155 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+// Tools are currently read from the yaml file.
+
+// Some tools are hosted at toolname.mat.xyz, others are /tools/toolname with different methods of deployment / getting the header...
+// there is not a clean strategy for not dynamically loading dev/prod versions of tools
+
+// probably definining a var .env which switches which yml files are read is a nice way to solve this.
+// but it might be wise to try to uniform how all our tools are deployed in general
+// i.e all tools are at
+
+import Layout from "../../../layouts/Layout.astro";
 
 const breadcrumbs = [
+  { name: "Home", href: "." },
   { name: "Work", href: "work" },
   { name: "Tools", href: "work/tools" },
 ];
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/tools.yml", "utf8");
+const data = yaml.load(file);
+const menu = data.menu;
+
+const entriesContainerStyle = "space-y-4 p-2";
+const entryContainerStyle =
+  "flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm ";
+const entryFlexStyle = "flex-shrink-0";
+
+const entryImgStyle = "w-24 h-24 object-contain";
+
+const doiBadgeStyle = "inline-flex items-center ml-2 bg-white rounded text-xs";
+const doiLeftStyle = " mt-0.5 px-1 py-0.5 text-white bg-gray-900 rounded-l";
+const doiRightStyle =
+  "mt-0.5 px-1 py-0.5 text-black bg-[#b3d4fc] break-all rounded-r hover:bg-[rgb(192,219,255)] hover:no-underline";
+
+const TitleTextStyle = "text-md text-[rgb(21,101,192)] hover:no-underline";
+const authorTextStyle = "py-2 text-sm text-gray-900";
+const descriptionTextStyle = "text-sm text-gray-900";
 ---
 
-<Layout breadcrumbs={breadcrumbs}>
-  <h1>Welcome to Materials Cloud TOOLS!</h1>
-  <p>Some content.</p>
-  <p>More content.</p>
-</Layout>
+<Layout breadcrumbs={breadcrumbs} title="Tools">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Tools</h3>
+      <hr class="border-t border-gray-300 mb-6" />
 
+      <p>
+        Computational tools offered as a service: no download, no installation,
+        but click-and-run.
+      </p>
+      <div class={entriesContainerStyle}>
+        {
+          menu.main_tools.map((entry) => {
+            return (
+              <div class={entryContainerStyle}>
+                <div class={entryFlexStyle}>
+                  <a href={entry.link}>
+                    <img
+                      src={`images/logos/${entry.logo}`}
+                      alt={entry.title}
+                      class={entryImgStyle}
+                    />
+                  </a>
+                </div>
+                <div class="flex flex-col flex-1">
+                  <div class="flex items-center flex-wrap">
+                    <a href={entry.link} class={TitleTextStyle}>
+                      {entry.title}
+                    </a>
+                    {entry.doi && (
+                      <span class={doiBadgeStyle}>
+                        <span class={doiLeftStyle}>DOI</span>
+                        <a
+                          href={`https://doi.org/${entry.doi}`}
+                          class={doiRightStyle}
+                        >
+                          {entry.doi}
+                        </a>
+                      </span>
+                    )}
+                  </div>
+                  <div class={authorTextStyle}>
+                    <b>Authors:&nbsp;</b>
+                    {entry.authors}
+                  </div>
+                  <div class={descriptionTextStyle}>
+                    <b>Description: </b>
+                    <span set:html={entry.description} />
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </section>
+    <section>
+      <h3 class="text-xl mb-2">Contributed Tools</h3>
+      <p class="mb-4">
+        The tools below have been contributed and are maintained by authors
+        affiliated with the <a
+          href="https://www.materialscloud.org/home#partners"
+          >Materials Cloud partners</a
+        >.
+      </p>
+      <div class={entriesContainerStyle}>
+        {
+          menu.contributed_tools.map((entry) => {
+            return (
+              <div class={entryContainerStyle}>
+                <div class={entryFlexStyle}>
+                  <a href={entry.link}>
+                    <img
+                      src={`images/logos/${entry.logo}`}
+                      alt={entry.title}
+                      class={entryImgStyle}
+                    />
+                  </a>
+                </div>
+                <div class="flex flex-col flex-1">
+                  <div class="flex items-center flex-wrap">
+                    <a href={entry.link} class={TitleTextStyle}>
+                      {entry.title}
+                    </a>
+                    {entry.doi && (
+                      <span class={doiBadgeStyle}>
+                        <span class={doiLeftStyle}>DOI</span>
+                        <a
+                          href={`https://doi.org/${entry.doi}`}
+                          class={doiRightStyle}
+                        >
+                          {entry.doi}
+                        </a>
+                      </span>
+                    )}
+                  </div>
+                  <div class={authorTextStyle}>
+                    <b>Authors:&nbsp;</b>
+                    {entry.authors}
+                  </div>
+                  <div class={descriptionTextStyle}>
+                    <b>Description: </b>
+                    <span set:html={entry.description} />
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </section>
+  </div>
+</Layout>

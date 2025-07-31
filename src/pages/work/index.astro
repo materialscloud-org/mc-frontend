@@ -1,14 +1,98 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 
 const breadcrumbs = [
+  { name: "Home", href: "" },
   { name: "Work", href: "work" },
 ];
+
+// move into datafile?
+const workButtons = [
+  {
+    href: "work/tools",
+    img: "images/work_tools.png",
+    title: "Tools",
+    subtitle: "Computational tools to work with your data online",
+  },
+  {
+    href: "https://www.aiidalab.net",
+    img: "images/aiidalab_gears.png",
+    title: "AiiDAlab",
+    subtitle: "Run your own simulations using AiiDA on the cloud",
+  },
+  {
+    href: "https://aiidateam.github.io/aiida-registry/",
+    img: "images/aiida-logo-128.png",
+    title: "AiiDA registry",
+    subtitle: "The official registry of AiiDA plugins",
+  },
+  {
+    href: "https://quantum-mobile.readthedocs.io",
+    img: "images/quantum_mobile.png",
+    title: "Quantum Mobile",
+    subtitle: "Quantum simulation codes + AiiDA in a virtual machine",
+  },
+  {
+    href: "https://www.osscar.org/",
+    img: "images/osscar-logo.svg",
+    title: "OSSCAR",
+    subtitle: "Open Software Services for Classrooms and Research",
+  },
+  {
+    href: "optimade",
+    img: "images/logos/optimade.png",
+    title: "OPTIMADE APIs",
+    subtitle:
+      "Access Materials Cloud databases via the standard OPTIMADE APIs.",
+  },
+];
+
+const buttonContainerStyle =
+  "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6";
+const workButtonStyle = `group block
+  flex flex-col justify-center items-center text-center 
+  aspect-square p-6 rounded-sm
+  bg-slate-50 hover:bg-slate-100
+  no-underline hover:no-underline
+  shadow hover:shadow-lg 
+  transition `;
+const workImgStyle = "w-32 h-32 object-contain";
+const workTextHeadingStyle = "mb-2 ";
+const workTextBodyStyle = "";
 ---
 
-<Layout breadcrumbs={breadcrumbs}>
-  <h1>Welcome to Materials Cloud WORK!</h1>
-  <p>Some content.</p>
-  <p>More content.</p>
-</Layout>
+<Layout breadcrumbs={breadcrumbs} title="Work">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Work with your data</h3>
+      <hr class="border-t border-gray-300 mb-6" />
 
+      <p>
+        Tools and services for working with your data and generating new data in
+        the cloud or directly on your machine.
+      </p>
+
+      <div class="py-8">
+        <div class={buttonContainerStyle}>
+          {
+            workButtons.map((tool) => (
+              <a
+                href={tool.href}
+                target={tool.href.startsWith("http") ? "_blank" : undefined}
+                class={workButtonStyle}
+              >
+                <img
+                  src={`${tool.img}`}
+                  alt={tool.title}
+                  class={workImgStyle}
+                />
+                <h3 class={workTextHeadingStyle}>{tool.title}</h3>
+                <p class={workTextBodyStyle}>{tool.subtitle}</p>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

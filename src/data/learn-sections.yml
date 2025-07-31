@@ -1,0 +1,49 @@
+entries:
+  - url: "Btmngu"
+    title: "MARVEL events"
+    description: "Video recordings and educational materials from schools at the Paul Scherrer Institute (PSI), Switzerland."
+    img: "images/endorsers/marvel_nccr.png"
+    children:
+      - "cecam-marvel-classics"
+
+  - url: "mnG1lg"
+    title: "AiiDA and Materials Cloud tutorials"
+    description: "Video recordings and educational material from past AiiDA and Materials Cloud tutorials."
+    img: "images/aiida-logo.png"
+
+  - url: "12A7nC"
+    title: "PSI schools"
+    description: "Video recordings and educational materials from schools at the Paul Scherrer Institute (PSI), Switzerland."
+    img: "images/endorsers/psi.svg"
+
+  - url: "VL0B41"
+    title: "Quantum ESPRESSO schools"
+    description: "Video recordings and educational material from past schools on Quantum ESPRESSO."
+    img: "images/logos/qe-logo.png"
+
+  - url: "kpbmzt"
+    title: "Wannier90 schools"
+    description: "Video recordings and educational material from past schools on Wannier90."
+    img: "images/logos/wannier90-logo.png"
+
+  - url: "spVa3j"
+    title: "Fireside chats for lockdown times"
+    description: "Video recordings and educational materials on computational materials science."
+    img: "images/fireside-chats.jpg"
+
+  - url: "cecam-marvel-classics"
+    parent: "Btmngu"
+    title: "CECAM-MARVEL Classics"
+    description: "Lectures and interviews in collaboration with CECAM."
+    img: "images/marvel-cecam-logo.png"
+    fullSlug: "Btmngu/cecam-marvel-classics"
+    children:
+      - "deep-child"
+
+  - url: "deep-child"
+    parent: "cecam-marvel-classics"
+    title: "Deep Child Example"
+    description: "A deeper child page to test nesting."
+    img: "images/deep-child.png"
+    fullSlug: "Btmngu/cecam-marvel-classics/deep-child"
+    children: []
