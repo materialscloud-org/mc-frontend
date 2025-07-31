@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/favicon.png"><base href="/mc-frontend/"><title>DEV Materials Cloud</title><script type="module">document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("mc-more-link"),n=document.getElementById("mc-drop-menu");!e||!n||(e.addEventListener("click",function(t){t.preventDefault(),n.style.display=n.style.display==="block"?"none":"block"}),document.addEventListener("click",function(t){const o=t.target;!e.contains(o)&&!n.contains(o)&&(n.style.display="none")}))});</script><link rel="stylesheet" href="/mc-frontend/_astro/discover.D7y2uIE_.css"></head> <body data-astro-cid-sckkx6r4> <header class="mc-header" data-astro-cid-sckkx6r4> <nav class="mc-nav" data-astro-cid-sckkx6r4> <a class="mc-navbrand inline-block w-24 h-auto" href="" data-astro-cid-sckkx6r4> <div class="w-full h-full" data-astro-cid-sckkx6r4>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 72">
+  <defs>
+    <path id="r_0" fill="none" d="M334.5 550.23c0-4 3.228-7.2207 7.2086-7.2207 3.980 0 7.207 3.233 7.207 7.2207"/>
+    <path id="r_1" fill="none" d="M334.5 550.4c-3 0-5.36 2.46-5.36 5.5s2.4 5.5 5.36 5.5M348.9 550.4c2.96 0 5.36 2.46 5.36 5.5s-2.4 5.5-5.36 5.5M334.5 561.4h14.47"/>
+  </defs>
+  <g transform="matrix(3.19 0 0 3.19 -1044.4 -1729.5)" stroke="#d21f15" stroke-width="1.2">
+    <use xlink:href="#r_0"/>
+    <use xlink:href="#r_1"/>
+    <path fill="none" d="m335.14 550.19 3.282 5.4764 3.282 5.4764 3.282-5.4764 3.282-5.4764h-6.5641z"/>
+    <circle cx="348.4" cy="550" r="1.4" fill="#fff"/>
+    <circle cx="335" cy="550" r="1.4" fill="#fff"/>
+    <circle cx="341.7" cy="561.5" r="1.4" fill="#fff"/>
+  </g>
+</svg>
+</div> </a> <a class="mc-navlink " href="learn" data-astro-cid-sckkx6r4>LEARN</a> <a class="mc-navlink " href="work" data-astro-cid-sckkx6r4>WORK</a> <a class="mc-navlink " href="discover" data-astro-cid-sckkx6r4>DISCOVER</a> <a class="mc-navlink " href="explore" data-astro-cid-sckkx6r4>EXPLORE</a> <a class="mc-navlink" href="https://materialscloud.org/archive" data-astro-cid-sckkx6r4>ARCHIVE</a> <div class="mc-more-dropdown" style="margin-left: auto; position: relative;" data-astro-cid-sckkx6r4> <a class="mc-navlink" href="#" id="mc-more-link" data-astro-cid-sckkx6r4>More ▾</a> <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;" data-astro-cid-sckkx6r4> <a class="mc-drop-link" href="policies" data-astro-cid-sckkx6r4>Policies</a> <a class="mc-drop-link" href="dmp" data-astro-cid-sckkx6r4>Data Management Plan</a> <a class="mc-drop-link" href="termssummary" data-astro-cid-sckkx6r4>Terms of Use</a> <a class="mc-drop-link" href="infrastructure" data-astro-cid-sckkx6r4>Infrastructure</a> <a class="mc-drop-link" href="team" data-astro-cid-sckkx6r4>Team & Contact</a> <a class="mc-drop-link" href="#partners" data-astro-cid-sckkx6r4>Partners</a> <a class="mc-drop-link" href="explore/connect" data-astro-cid-sckkx6r4>Connect your REST API</a> </div> </div> </nav> </header> <div class="mc-breadcrumb-placeholder" data-astro-cid-sckkx6r4></div> <div style="display: flex; justify-content: center;" data-astro-cid-sckkx6r4> <div class="mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm inline-block min-w-[350px] max-w-[1000px] w-full" data-astro-cid-sckkx6r4>  <div class="space-y-10 pb-6"> <section class="space-y-4"> <h3>Connect your REST API</h3> <hr class="border-t border-gray-300 mb-8"> <h4 class="text-3xl">ADD THE JS form HERE.</h4> </section> <section class="space-y-6 max-w-3xl mx-auto p-4"> <h3>Instructions</h3> <div class="space-y-4"> <h4>Step 1: Running the REST API</h4> <p>On your local AiiDA computer run on the command line:</p> <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2">$ verdi restapi</code> <p>
+This command starts the REST API with the default parameters (default
+          AiiDA profile, port 5000 of localhost). If your version of AiiDA is
+          equal to 1.0.1 or later, its base URL is:
+</p> <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2">http://127.0.0.1:5000/api/v4</code> <p>
+If your version of AiiDA is from 1.0.0b3 to 1.0.0b6, the base URL is:
+</p> <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2">http://127.0.0.1:5000/api/v3</code> <p>
+If your version of AiiDA is previous or equal to 1.0.0b2, the base URL
+          is:
+</p> <code class="block bg-gray-100 rounded px-3 py-1 font-mono text-sm mb-2">http://127.0.0.1:5000/api/v2</code> <p class="italic text-gray-700">
+Note that the REST API of the AiiDA 1.0.0 version is not supported;
+          you should upgrade to 1.0.1 or to a later version to use the "Connect
+          to your AiiDA REST API" feature.
+</p> </div> <div class="space-y-4"> <h4>Step 2: Connecting to your REST API</h4> <p>
+Type the base URL in the input box above and click <span class="font-semibold">"GO!"</span> to browse your own data in the Explore section. To directly connect to
+          your AiiDA REST API you can also pass the <em>base_url</em> parameter to
+          the url query string, e.g.:
+</p> <p> <a href="https://dev-www.materialscloud.org/explore/ownrestapi?base_url=http://127.0.0.1:5000/api/v4">https://dev-www.materialscloud.org/explore/ownrestapi?base_url=http://127.0.0.1:5000/api/v4</a> </p> <p>
+Note that if the backend of your AiiDA profile is SQLAlchemy, you
+          might have to reload the page after the first connection to your REST
+          API in order to correctly load the nodes dashboard.
+<br>
+If you notice other issues please report them
+<a href="https://github.com/materialscloud-org/issues">here</a>.
+</p> <p class="font-semibold">
+Note: all data remains local to your computer and is not transferred
+          to Materials Cloud.
+</p> <p>
+For more information on the REST API see the
+<a href="https://aiida-core.readthedocs.io/en/latest/restapi/index.html" target="_blank">AiiDA documentation</a>.
+</p> </div> </section> </div>  </div> </div> </body></html>

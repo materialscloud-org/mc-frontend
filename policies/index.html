@@ -1,0 +1,200 @@
+<!DOCTYPE html><script type="module">
+  let activeTab = window.location.hash
+    ? window.location.hash.substring(1)
+    : "learn";
+
+  const validTabs = ["learn", "work", "discover", "explore"];
+
+  function selectTab(tab, updateHash = true) {
+    activeTab = tab;
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.setAttribute(
+        "aria-selected",
+        btn.dataset.tab === tab ? "true" : "false"
+      );
+    });
+    document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
+      if (panel.id === `panel-${tab}`) {
+        panel.classList.remove("hidden");
+      } else {
+        panel.classList.add("hidden");
+      }
+    });
+
+    if (updateHash) {
+      history.replaceState(null, "", `/policies#${tab}`);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const initialTab = validTabs.includes(activeTab) ? activeTab : "learn";
+    selectTab(initialTab, false);
+
+    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+      btn.addEventListener("click", () => selectTab(btn.dataset.tab));
+    });
+  });
+</script> <html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/favicon.png"><base href="/mc-frontend/"><title>DEV Materials Cloud</title><script type="module">document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("mc-more-link"),n=document.getElementById("mc-drop-menu");!e||!n||(e.addEventListener("click",function(t){t.preventDefault(),n.style.display=n.style.display==="block"?"none":"block"}),document.addEventListener("click",function(t){const o=t.target;!e.contains(o)&&!n.contains(o)&&(n.style.display="none")}))});</script><link rel="stylesheet" href="/mc-frontend/_astro/discover.D7y2uIE_.css"></head> <body data-astro-cid-sckkx6r4> <header class="mc-header" data-astro-cid-sckkx6r4> <nav class="mc-nav" data-astro-cid-sckkx6r4> <a class="mc-navbrand inline-block w-24 h-auto" href="" data-astro-cid-sckkx6r4> <div class="w-full h-full" data-astro-cid-sckkx6r4>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 72">
+  <defs>
+    <path id="r_0" fill="none" d="M334.5 550.23c0-4 3.228-7.2207 7.2086-7.2207 3.980 0 7.207 3.233 7.207 7.2207"/>
+    <path id="r_1" fill="none" d="M334.5 550.4c-3 0-5.36 2.46-5.36 5.5s2.4 5.5 5.36 5.5M348.9 550.4c2.96 0 5.36 2.46 5.36 5.5s-2.4 5.5-5.36 5.5M334.5 561.4h14.47"/>
+  </defs>
+  <g transform="matrix(3.19 0 0 3.19 -1044.4 -1729.5)" stroke="#d21f15" stroke-width="1.2">
+    <use xlink:href="#r_0"/>
+    <use xlink:href="#r_1"/>
+    <path fill="none" d="m335.14 550.19 3.282 5.4764 3.282 5.4764 3.282-5.4764 3.282-5.4764h-6.5641z"/>
+    <circle cx="348.4" cy="550" r="1.4" fill="#fff"/>
+    <circle cx="335" cy="550" r="1.4" fill="#fff"/>
+    <circle cx="341.7" cy="561.5" r="1.4" fill="#fff"/>
+  </g>
+</svg>
+</div> </a> <a class="mc-navlink " href="learn" data-astro-cid-sckkx6r4>LEARN</a> <a class="mc-navlink " href="work" data-astro-cid-sckkx6r4>WORK</a> <a class="mc-navlink " href="discover" data-astro-cid-sckkx6r4>DISCOVER</a> <a class="mc-navlink " href="explore" data-astro-cid-sckkx6r4>EXPLORE</a> <a class="mc-navlink" href="https://materialscloud.org/archive" data-astro-cid-sckkx6r4>ARCHIVE</a> <div class="mc-more-dropdown" style="margin-left: auto; position: relative;" data-astro-cid-sckkx6r4> <a class="mc-navlink" href="#" id="mc-more-link" data-astro-cid-sckkx6r4>More ▾</a> <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;" data-astro-cid-sckkx6r4> <a class="mc-drop-link" href="policies" data-astro-cid-sckkx6r4>Policies</a> <a class="mc-drop-link" href="dmp" data-astro-cid-sckkx6r4>Data Management Plan</a> <a class="mc-drop-link" href="termssummary" data-astro-cid-sckkx6r4>Terms of Use</a> <a class="mc-drop-link" href="infrastructure" data-astro-cid-sckkx6r4>Infrastructure</a> <a class="mc-drop-link" href="team" data-astro-cid-sckkx6r4>Team & Contact</a> <a class="mc-drop-link" href="#partners" data-astro-cid-sckkx6r4>Partners</a> <a class="mc-drop-link" href="explore/connect" data-astro-cid-sckkx6r4>Connect your REST API</a> </div> </div> </nav> </header> <div class="mc-breadcrumb-placeholder" data-astro-cid-sckkx6r4></div> <div style="display: flex; justify-content: center;" data-astro-cid-sckkx6r4> <div class="mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm inline-block min-w-[350px] max-w-[1000px] w-full" data-astro-cid-sckkx6r4>  <div class="space-y-10 pb-6"> <section class="space-y-4"> <h2 class="text-3xl mb-4">Policies</h2> <hr class="border-t border-gray-300 mb-6"> <p class="text-gray-900 mb-4">
+Materials Cloud Policies v1.1, November 2018
+</p> <ul> <li> <b>Scope:</b> Computational materials science. Content must not violate
+          privacy or copyright.
+</li> <li> <b>Eligible depositors:</b> The Materials Cloud ARCHIVE is open to the
+          computational materials science community at large. The Materials Cloud
+          LEARN, WORK, DISCOVER and EXPLORE sections are limited to work involving
+          at least one author affiliated with the partnering scientific consortia
+          (while the submission processes are being streamlined).
+</li> <li> <b>Ownership:</b> Uploading content to Materials Cloud does not affect
+          ownership of the content. In particular, no property rights are transferred
+          to Materials Cloud.
+</li> <li> <b>Licenses:</b> Users must select licenses for their publicly available
+          contributions. While open licenses, such as <a href="https://creativecommons.org/">Creative Commons</a>, are preferred, users are free to choose from the <a href="https://spdx.org/licenses/">SPDX license list</a>. Details may vary between the sections of Materials Cloud.
+</li> <li> <b>Language:</b> Please use English for any textual items.
+</li> <li> <b>Infrastructure:</b> Materials Cloud is hosted (and all data is stored)
+          at the <a href="https://www.cscs.ch/">Swiss National Supercomputing Centre</a> (CSCS) in Lugano, Switzerland.
+</li> <li> <b>Availability:</b> The <a href="/team">Materials Cloud team</a> and CSCS
+          do their best to ensure constant availability. We do not sign service-level
+          agreements.
+</li> <li> <b>Personal Data Protection:</b> See the <a href="#">Materials Cloud Privacy Policy</a>.
+</li> <li> <b>Terms of Use:</b> Material contributed to or downloaded from the Materials
+          Cloud is subject to the <a href="#">Materials Cloud Terms of Use</a>.
+          See in particular Sections 3.4 and 4. on User Responsibilities and
+          Liabilities.
+</li> </ul> <p class="text-gray-900">
+See below for the <b>section-specific</b> policies.
+</p> <div class="w-full pt-5 pb-2"> <div class="tabs flex flex-col sm:flex-row border-b border-gray-300" role="tablist"> <button role="tab" aria-selected="false" aria-controls="panel-learn" id="tab-learn" data-tab="learn" type="button" class="
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline"> Learn </button><button role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" data-tab="work" type="button" class="
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline"> Work </button><button role="tab" aria-selected="false" aria-controls="panel-discover" id="tab-discover" data-tab="discover" type="button" class="
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline"> Discover </button><button role="tab" aria-selected="false" aria-controls="panel-explore" id="tab-explore" data-tab="explore" type="button" class="
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline"> Explore </button><a href="https://archive.materialscloud.org/deposit/information#archive_policies" target="_blank" rel="noopener noreferrer" class="
+    flex flex-1 flex-col items-center justify-center
+    px-4 py-2
+    font-semibold
+    text-gray-500
+    cursor-pointer
+    transition-colors
+
+    border-b border-gray-300 last:border-b-0
+    sm:border-none sm:border-r sm:last:border-r-0
+
+    aria-selected:text-gray-900
+    aria-selected:cursor-default
+
+    not-aria-selected:hover:text-gray-600
+    not-aria-selected:hover:bg-gradient-to-t not-aria-selected:hover:from-indigo-50 not-aria-selected:hover:to-white
+    not-aria-selected:hover:no-underline"> Archive </a> </div> </div> <div id="panel-learn" role="tabpanel" aria-labelledby="tab-learn" class="tab-content hidden p-4"><ul>
+  <li><b>Scope:</b> Educational materials, such as video lectures, slides and exercises.</li>
+  <li><b>Copyright:</b> Copyrights are held by EPFL unless otherwise indicated.</li>
+  <li><b>Licenses:</b> <a href="https://spdx.org/licenses/CC-BY-SA-4.0.html">CC-BY-SA 4.0</a> unless otherwise indicated.</li>
+</ul>
+<i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+  zenodo research data repository</a>
+  and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+</i>
+</div><div id="panel-work" role="tabpanel" aria-labelledby="tab-work" class="tab-content hidden p-4"><h4 class="mb-2">Tools</h4>
+<ul>
+  <li><b>Scope:</b> Stand-alone tools with web frontends, hosted by Materials Cloud.</li>
+</ul>
+<h4 class="mt-6 mb-2">AiiDA Lab</h4>
+<ul>
+  <li><b>Scope:</b> Running and developing materials science workflows using jupyter notebooks and AiiDA.</li>
+  <li><b>Quotas:</b> We reserve the rights to impose quotas on disk, RAM or CPU usage when necessary.</li>
+  <li><b>Backups:</b> During the alpha phase, users are responsible for making their own backups.</li>
+  <li><b>Availability:</b> During the alpha phase, despite best efforts the service may be unavailable for a day or more.</li>
+  <li><b>Privacy:</b> User data is stored in their own docker container and is not accessible by other users, except for administrators.</li>
+</ul>
+<i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+  zenodo research data repository</a>
+  and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+</i>
+</div><div id="panel-discover" role="tabpanel" aria-labelledby="tab-discover" class="tab-content hidden p-4"><ul>
+  <li><b>Scope:</b> Web frontends that provide intuitive entry points to existing records in EXPLORE.</li>
+</ul>
+<i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+  zenodo research data repository</a>
+  and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+</i>
+</div><div id="panel-explore" role="tabpanel" aria-labelledby="tab-explore" class="tab-content hidden p-4"><ul>
+  <li><b>Scope:</b> AiiDA databases of research data.</li>
+  <li><b>File formats:</b> Submissions must use the <a href="http://aiida-core.readthedocs.io/en/latest/import_export/main.html#file-format" >AiiDA export file format</a> as produced using the <i>verdi export</i> command.</li>
+  <li><b>Volume and size limitations:</b> 50 GB for AiiDA databases. For larger datasets please <a href="/team" >contact us</a>.</li>
+</ul>
+<i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
+  zenodo research data repository</a>
+  and the <a href="https://arxiv.org/">arXiv preprint server</a>.
+</i>
+</div> </section> </div>  </div> </div> </body></html>
