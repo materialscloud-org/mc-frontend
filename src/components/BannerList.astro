@@ -1,0 +1,69 @@
+---
+const { entries, rootPath } = Astro.props;
+
+const entriesContainerStyle = "space-y-4 p-2";
+const entryContainerStyle =
+  "flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm ";
+const entryFlexStyle = "flex-shrink-0";
+
+const entryImgStyle = "w-24 h-24 object-contain";
+
+const TitleTextStyle = "text-md text-[rgb(21,101,192)] hover:no-underline";
+const authorTextStyle = "py-2 text-sm text-gray-900";
+const descriptionTextStyle = "text-sm text-gray-900";
+---
+
+<div class={entriesContainerStyle}>
+  {
+    entries.map((entry) => (
+      <div class={entryContainerStyle}>
+        <div class={entryFlexStyle}>
+          <a
+            href={
+              entry.link.startsWith("http")
+                ? entry.link
+                : `${rootPath}/${entry.link}`
+            }
+          >
+            <img
+              src={`images/logos/${entry.logo}`}
+              alt={entry.title}
+              class={entryImgStyle}
+            />
+          </a>
+        </div>
+        <div class="flex flex-col flex-1">
+          <div class="flex items-center flex-wrap">
+            <a
+              href={
+                entry.link.startsWith("http")
+                  ? entry.link
+                  : `${rootPath}/${entry.link}`
+              }
+              class={TitleTextStyle}
+            >
+              {entry.title}
+            </a>
+            {entry.doi &&
+              entry.doi.map((doi) => (
+                <span class="doi-badge">
+                  <span class="doi-left">DOI</span>
+                  <a href={`https://doi.org/${doi}`} class="doi-right">
+                    {doi}
+                  </a>
+                </span>
+              ))}
+          </div>
+          <div class={authorTextStyle}>
+            <b>Authors:&nbsp;</b>
+            {entry.authors}
+          </div>
+          <div class={descriptionTextStyle}>
+            <b>Description: </b>
+            <span set:html={entry.description} />
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>

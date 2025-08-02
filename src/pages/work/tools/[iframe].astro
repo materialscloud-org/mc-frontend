@@ -1,0 +1,77 @@
+---
+//
+import Layout from "./src/layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/tools.yml");
+  const tools = yaml.load(file);
+  const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
+  // Filter iframe tools:
+  const iframeTools = allTools
+    .filter((tool) => tool.iframe === true)
+    .map((tool) => ({
+      slug: tool.link,
+      ...tool,
+    }));
+
+  return iframeTools.map((tool) => ({
+    params: { iframe: tool.slug },
+  }));
+}
+
+const file = fs.readFileSync("./src/data/tools.yml");
+const tools = yaml.load(file);
+
+const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
+const iframeTools = allTools
+  .filter((tool) => tool.iframe === true)
+  .map((tool) => ({
+    slug: tool.link,
+    ...tool,
+  }));
+
+const { iframe } = Astro.params;
+const page = iframeTools.find((tool) => tool.slug === iframe);
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Work", href: "/work" },
+  { name: "Tools", href: "/work/tools" },
+  { name: page.title, href: `/work/tools/${iframe}` },
+];
+---
+
+<Layout
+  breadcrumbs={breadcrumbs}
+  title={page.title}
+  maxWidth={page.iframe_maxWidth}
+>
+  <iframe
+    id="contentiframe"
+    class="w-full"
+    style="overflow:auto;"
+    src={page.iframe_src}
+    allowfullscreen></iframe>
+</Layout>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js"
+></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    iFrameResize(
+      {
+        license: "GPLv3",
+        checkOrigin: false,
+        log: true,
+        heightCalculationMethod: "taggedElement",
+        inPageLinks: true,
+        minHeight: "100px",
+      },
+      "#contentiframe"
+    );
+  });
+</script>

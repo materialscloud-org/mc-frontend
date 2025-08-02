@@ -1,0 +1,423 @@
+---
+menu:
+  main_discover:
+    - link: https://mc3d.materialscloud.org
+      title: Materials Cloud three-dimensional crystals database (MC3D)
+      authors: Sebastiaan Huber, Marnik Bercx, Kristjan Eimre, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi
+      description: |
+        Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
+      logo: mc3d.png
+      doi:
+        - 10.24435/materialscloud:rw-t0
+
+    - link: https://mc2d.materialscloud.org
+      title: Materials Cloud two-dimensional crystals database (MC2D)
+      authors: |
+        Davide Campi, Davide Grassano, Nicolas Mounet, Marco Gibertini, Philippe Schwaller, Andrius Merkys,
+        Antimo Marrazzo, Thibault Sohier, Ivano E. Castelli, Andrea Cepellotti, Snehal Kumbhar, Elsa Passaro,
+        Kristjan Eimre, Giovanni Pizzi, Nicola Marzari
+      description: |
+        Results from screening known 3D crystal structures finding those that can be computationally exfoliated, producing 2D materials candidates.
+      logo: mc2d.png
+      doi:
+        - 10.24435/materialscloud:az-b2
+        - 10.24435/materialscloud:36-nd
+
+    - link: sssp
+      title: "Standard solid-state pseudopotentials (SSSP)"
+      authors: Gianluca Prandini, Antimo Marrazzo, Ivano E. Castelli, Nicolas Mounet, Snehal Kumbhar, Elsa Passaro, Nicola Marzari
+      description: |
+        A Standard Solid State Pseudopotentials (SSSP) library optimized for precision or efficiency.
+      logo: sssp.png
+
+    - link: https://acwf-verification.materialscloud.org
+      title: Verification of the precision of DFT implementations via AiiDA common workflows
+      authors: |
+        E. Bosoni, L. Beal, M. Bercx, P. Blaha, S. Blügel, J. Bröder, M. Callsen, S. Cottenier,
+        A. Degomme, V. Dikan, K. Eimre, E. Flage-Larsen, M. Fornari, A. Garcia, L. Genovese, 
+        M. Giantomassi, S. P. Huber, H. Janssen, G. Kastlunger, M. Krack, G. Kresse, T. D. Kühne,
+        K. Lejaeghere, G. K. H. Madsen, M. Marsman, N. Marzari, G. Michalicek, H. Mirhosseini, T. M. A. Müller, 
+        G. Petretto, C. J. Pickard, S. Poncé, G. Rignanese, O. Rubel, T. Ruh, M. Sluydts, D. E. P. Vanpoucke, 
+        S. Vijay, M. Wolloch, D. Wortmann, A. V. Yakutovich, J. Yu, A. Zadoks, B. Zhu, G. Pizzi
+      description: |
+        Reference and verification datasets of equations of state calculated with 
+        different density-functional-theory (DFT) codes and computational approaches, 
+        using the AiiDA common workflows (ACWF) infrastructure.
+      logo: acwf-logo.png
+
+  contributed_discover:
+    - link: https://molecular-vibration-explorer.materialscloud.io
+      title: "Molecular vibration explorer"
+      authors: Zsuzsanna Koczor-Benda, Philippe Roelli, Christophe Galland, Edina Rosta
+      description: |
+        Interactive tool for the exploration of the vibrational spectra
+        of 5k molecules and their applications in surface-enhanced spectroscopies (IR, Raman, SFG).
+      logo: molecular-vibration.png
+      doi:
+        - 10.24435/materialscloud:p7-w6
+
+    - link: isf
+      title: "Donor-acceptor copolymers for intramolecular singlet fission"
+      authors: J. Terence Blaskovits, Maria Fumanal, Sergi Vela, Raimon Fabregat, Clemence Corminboeuf
+      description: |
+        Screening of 2944 conjugated donor-acceptor dimers for intramolecular singlet fission behavior.
+      logo: isf.png
+      doi:
+        - 10.24435/materialscloud:xj-9d
+      iframe: true
+      iframe_src: "https://mol-explorer.materialscloud.io"
+      iframe_maxWidth: "max-w-[1850px]"
+      accordions:
+        - title: "About"
+          content: |
+            <p>This interactive dataset contains 2944 synthetically feasible donor-acceptor
+            systems screened for intramolecular singlet fission capability. The computed
+            properties of the dimer (excitation energies, singlet-triplet energy splitting,
+            excited state character, dihedral angle between units) and of the constituent
+            monomers (frontier molecular orbital energies,
+            excitation energies, singlet-triplet energy splitting) are provided.
+            The reader is invited to explore the interplay of these properties by choosing 
+            the variables that are represented in the x, y, z and color axes. Clicking on a 
+            point in the plot provides the DFT-optimized geometry and relevant properties for 
+            that dimer alongside its SMILES string, which allows for rapid transferability 
+            of the structure to other chemistry software. </p><p class="mt-2">Further information on methods,
+            results and the full dataset are given in the references shown below.
+
+    - link: pyrene-mofs
+      title: "Donor-acceptor copolymers for intramolecular singlet fission"
+      authors: F. Pelin Kinik, Andres Ortega-Guerrero, Daniele Ongari, Christopher P. Ireland, Berend Smit
+      description: |
+        Atomic structures of experimentally synthesized pyrene-based metal-organic frameworks.
+      logo: pyrene-mofs.png
+      doi:
+        - 10.24435/materialscloud:z5-ct
+      iframe: true
+      iframe_src: "https://pyrene-mofs.materialscloud.io/select_pyrenemofs"
+      iframe_maxWidth: "max-w-[1850px]"
+      accordions:
+        - title: "About"
+          content: |
+            <p>Pyrene-based metal organic frameworks.</p> <p class="mt-2">Interactive
+            visualization of the crystal structures of pyrene-based MOFs,
+            as an extension of Table 1 of the review "Pyrene-based metal organic frameworks:
+            From synthesis to applications". The crystal structures have been manually
+            curated to fix partial occupancy and remove solvent, and, if charge neutral, 
+            submitted to DFT cell optimization following the CURATED protocol described in 
+            <a href="http://doi.org/10.1021/acscentsci.9b00619", target="_blank">10.1021/acscentsci.9b00619</a>.
+            In this DISCOVER page the reader can browse through the list of MOFs, 
+            lend to the reference paper, visualize the crystal structures, and visualize 
+            their properties in a scatter plot. For the structures that are charges or 
+            failed the DFT optimization the properties and the unit cell of the original 
+            (manually cleaned) structure are shown.</p>
+
+    - link: kpcovr
+      title: "Kernel principle covariates regression"
+      authors: Benjamin A. Helfrecht, Rose K. Cersonsky, Guillaume Fraux, Michele Ceriotti
+      description: |
+        Illustration of the Kernel Principal Covariates Regression method on various datasets.
+      logo: kpcovr.png
+      doi:
+        - 10.24435/materialscloud:ay-eq
+
+    - link: autowannier
+      title: "Automated high-throughput wannierisation"
+      authors: |
+        Valerio Vitale, Giovanni Pizzi, Antimo Marrazzo, Snehal Kumbhar, Elsa Passaro,
+        Jonathan R. Yates, Nicola Marzari, Arash A. Mostofi
+      description: |
+        Validation results of an automated protocol for generating maximally-localized Wannier functions in a high-throughput framework.
+      logo: scdm.png
+      doi:
+        - 10.24435/materialscloud:dd-nz
+
+    - link: hcofs-co2
+      title: "Covalent organic frameworks for carbon capture"
+      authors: |
+        Kathryn S. Deeg, Daiane Damasceno Borges, Daniele Ongari,
+         Nakul Rampal, Leopold Talirz, Aliaksandr V. Yakutovich, Johanna M. Huck, Berend Smit
+      description: |
+        A database of 70k two- and three-dimensional covalent organic frameworks, screened for carbon capture.
+      logo: hcofs-co2.png
+      doi:
+        - 10.24435/materialscloud:2020.0029/v1
+      iframe: true
+      iframe_src: "https://hcofs-co2.materialscloud.io"
+      iframe_maxWidth: "max-w-[1850px]"
+      accordions:
+        - title: "About"
+          content: |
+            We screen a database of more than 69,000 hypothetical covalent organic frameworks (COFs)
+            for carbon capture, using parasitic energy as a metric. In order to compute CO2-framework
+            interactions in molecular simulations, we develop a genetic algorithm to tune the charge
+            equilibration method and derive accurate framework partial charges. Nearly 400 COFs are
+            identified with parasitic energy lower than that of an amine scrubbing process using
+            monoethanolamine; over 70 are better performers than the best experimental COFs;
+            and several perform similarly to Mg-MOF-74. We analyze the effect of pore topology
+            on carbon capture performance in order to guide development of improved carbon capture materials.
+
+    - link: mofs
+      title: "Metal-organic frameworks for carbon capture"
+      authors: |
+        Peter G. Boyd, Arunraj Chidambaram, Enrique García-Díez,
+        Christopher P. Ireland, Thomas D. Daff, Richard Bounds, Andrzej Gładysiak,
+        Pascal Schouwink, Seyed Mohamad Moosavi, Leopold Talirz,
+        M. Mercedes Maroto-Valer, Jeffrey A. Reimer, Jorge A. R. Navarro,
+        Tom K. Woo, Susana Garcia, Kyriakos C. Stylianou, Berend Smit
+      description: |
+        A database of 324,426 hypothetical Metal-Organic Frameworks (MOFs) screened for wet flue gas CO2 capture.
+      logo: mofs.png
+      doi:
+        - 10.24435/materialscloud:2018.0016/v3
+      iframe: true
+      iframe_src: "https://mofs.materialscloud.io/select-figure"
+      iframe_maxWidth: "max-w-[1850px]"
+      accordions:
+        - title: About
+          content: |
+            <p>We present a database of <b>324,426 hypothetical Metal-Organic Frameworks (MOFs)</b>
+            screened for potential carbon dioxide scrubbers. Using a method to assemble these
+            materials with topological blueprints, we only selected materials that could be
+            accurately represented with the MEPO-QEq charge generation method. By ensuring that the
+            electrostatic potential is accurately represented in these materials, screening for CO2 
+            adsorption properties should result in very few false positives/negatives. </p> 
+            <p class="mt-2">Post-combustion flue gas was simulated at a temperature of both 298K and 0.15 bar CO2,
+            and 313K and 0.15 bar CO2. Mixture adsorption was simulated with the conditions 298K and 
+            0.15:0.85 CO2/N2 with a total pressure of 1 bar. We report working capacities, i.e. the 
+            difference of adsorption of CO2 between two thermodynamic state points. 
+            The adsorption state point(s) are mentioned above, and two desorption values were simulated;
+            <p class="mt-2">0.1 bar CO2 at 363K (vacuum swing adsorption) and 0.7 bar CO2 at 413K (temperature swing adsorption). </p>
+            Over <b>8,000 materials were selected for more refined simulations,</b> including re-defining partial atomic charges with
+             the REPEAT method, and more detailed simulations to obtain common chemical patterns surrounding CO2 binding sites (adsorbaphores). </p>
+            <p class="mt-2">The interactive figure allows to explore the full database of assembled structures,
+            together with their properties. All structures and properties can be downloaded in bulk from the Materials Cloud archive entry linked above.</p>
+
+    - link: 2dtopo
+      title: "2D topological insulators"
+      authors: |
+        Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Snehal Kumbhar, Nicola Marzari
+      description: |
+        Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
+      logo: hcofs-co2.png
+      doi:
+        - 10.24435/materialscloud:2019.0081/v1
+
+    - link: tc-applicability
+      title: "Applicability of tail-corrections in the molecular simulations of porous materials"
+      authors: |
+        Kevin M. Jablonka, Daniele Ongari, Berend Smit
+      description: |
+        Systematic study on the applicability of tail-corrections in the molecular simulations of porous materials.
+      logo: tcapplicability.png
+      doi:
+        - 10.24435/materialscloud:2019.0024/v3
+      iframe: true
+      iframe_src: "https://tc-applicability.materialscloud.io/select-figure"
+      iframe_maxWidth: "max-w-[1150px]"
+      accordions:
+        - title: About
+          content: |
+            Molecular simulations with periodic boundary conditions
+            require to define a certain cutoff distance beyond which
+            pairwise dispersion interactions are neglected. For the
+            simulation of homogeneous phases it is well-established
+            to use tail-corrections, that can remedy this truncation
+            of the potential. These corrections are built under the 
+            assumption that beyond the cutoff the radial distribution 
+            function is equal to one. In this work we shed some light 
+            on the discussion whether or not tail corrections should 
+            be used in the modelling of heterogeneous systems. We show 
+            that for the adsorption of gasses in a diverse set nanoporous 
+            crystalline materials (zeolites, Covalent Organic Frameworks 
+            (COFs), and Metal Organic Frameworks (MOFs)), tail-corrections
+            are an appropriate choice with which the results are much less
+            sensitive to the details of the truncation.
+
+    - link: curated-cofs
+      title: "CURATED covalent oragnic frameworks database"
+      authors: |
+        Daniele Ongari, Aliaksandr V. Yakutovich, Leopold Talirz, Berend Smit
+      description: |
+        A database of Covalent-Organic Frameworks (COFs) experimentally reported,
+        provided with DFT-optimized geometry and DDEC partial charges for
+        molecular simulations. They have been evaluated for CO2 capture and storage
+      logo: curated-cofs.png
+      doi:
+        - 10.24435/materialscloud:z6-jn
+      iframe: true
+      iframe_src: "https://curated-cofs.materialscloud.io/select-figure"
+      iframe_maxWidth: "max-w-[1150px]"
+      accordions:
+        - title: About
+          content: |
+            <p>"Clean, Uniform, Refined with Automatic Tracking from Experimental Database" (CURATED) of Covalent Organic Frameworks (COFs).</p>
+            <ul>
+              <li>324 COFs parsed from the literature and conveniently labelled</li>
+              <li>308 provided with DFT-optimized unit cell and geometry, with DDEC partial charges
+                  for molecular simulations (14 excluded because they contain counter-ions, 2 failed
+                  the DFT calculation)
+              </li>
+              <li>geometric pore properties computed for both the original 
+                  and the optimized structures
+              </li>
+              <li>296 porous COFs evaluated for Carbon Capture &amp;
+                  Storage (CCS), considering simulated CO<sub>2</sub> and N<sub>2</sub> isotherms.
+              </li>
+            </ul>
+            <p class="mt-2"></p>
+            <b>Note:</b> Charged structures (i.e., containing counterions) 
+            are excluded from the DFT optimization and non-porous structures are further excluded from
+            CCS evaluation. 
+            <h4> Update December 2019</h4>
+            <ul>
+              <li>Upgrade workflows to AiiDA
+                  v1.0
+              </li>
+              <li>Include COFs reported January-August 2019.</li>
+              <li>In total, 417 COFs parsed 
+                  from the literature, 395 DFT-optimized with DDEC charges, 376 evaluated for CCS.
+              </li>
+            </ul>
+            <h4> Update February 2020</h4>
+            <ul>
+              <li>Include COFs reported until February 1st 2020 (505 COFs in total).</li>
+            </ul>
+            <h4> Update June 2020</h4>
+            <ul>
+              <li>Include COFs reported until June 1st 2020 (574 COFs in total).</li>
+            </ul>
+            <h4> Update September 2020</h4>
+            <ul>
+              <li>Include further applications (H<sub>2</sub> storage, O<sub>2</sub> storage, Xe/Kr separation, 
+              H<sub>2</sub>S separation) for the same set of 574 COFs.</li>
+            </ul>
+            <h4> Update October 2020</h4>
+            <ul>
+              <li>Include COFs reported until October 1st 2020 (626 COFs in total).</li>
+            </ul>
+            <h4> Update February 2021</h4>
+            <ul>
+              <li>Include COFs reported until February 1st 2021 (632 COFs in total).</li>
+              <li>Discard duplicates; make conventional names unique.</li>
+              <li>Discard unobserved stacking variants / unobserved n-fold interpenetration.</li>
+              <li>Various corrections of structures.</li>
+            </ul>
+            <h4> Update June 2021</h4>
+            <ul>
+              <li>Include COFs reported until June 1st 2021 (648 COFs in total).</li>
+              <li>41 new COFs, 25 discarded (mostly duplicates).</li>
+            </ul>
+            <h4> Update July 2022</h4>
+            <ul>
+              <li>Include COFs reported until July 1st 2022 (871 COFs in total).</li>
+              <li>226 new COFs, 30 discarded (mostly duplicates).</li>
+            </ul>
+
+    - link: ccg
+      title: "C-C cross-coupling genome"
+      authors: |
+        Boodsarin Sawatlon, Alberto Fabrizio, Benjamin Meyer, Matthew D. Wodrich, Clémence Corminboeuf
+      description: |
+        Energy-based screening of catalysts for various cross-coupling reactions.
+      logo: ccg.png
+      doi:
+        - 10.24435/materialscloud:2019.0007/v3
+      iframe: true
+      iframe_src: "https://ccg.materialscloud.io/select-figure"
+      iframe_maxWidth: "max-w-[1150px]"
+      accordions:
+        - title: About
+          content: |
+            <p> We present sketch-maps for <b>25,112 catalysts</b>, categorized by metal type. 
+            Each catalyst's name is expressed in the form metal_L1_L2 and is colored by the
+            value of its energy-based descriptor (i.e., substrate binding energy) for different 
+            cross-coupling reactions. The color code corresponds to the volcano plateau of the different reactions, 
+            where black represents the plateau region for Suzuki coupling. 
+            Green and red shades (see color bar) indicate catalysts with ideal thermodynamics 
+            (i.e., species that fall of the plateau) for other cross-coupling reactions 
+            (i.e., Kumada, Negishi, Stille, and Hiyama). Catalysts depicted in gray are not 
+            ideal for any of the coupling reactions studied. </p>
+            <p class="mt-2"> The chemical structures of the 91 ligands are available in the 
+            <a target="_blank" href="https://doi.org/10.24435/materialscloud:2019.0007/v3">archive record</a>. </p>
+
+    - link: cofs
+      title: "Covalent organic frameworks for methane storage applications"
+      authors: |
+        Rocío Mercado, Rueih-Sheng Fu, Aliaksandr V. Yakutovich, Leopold Talirz, Maciej Haranczyk, Berend Smit
+      description: |
+        A database of 70k two- and three-dimensional covalent organic frameworks, screened for methane storage.
+      logo: cofs.png
+      doi:
+        - 10.24435/materialscloud:2018.0003/v3
+      iframe: true
+      iframe_src: "https://cofs.materialscloud.io/select-figure"
+      iframe_maxWidth: "max-w-[1150px]"
+      accordions:
+        title: About
+        content: |
+          <p>We present <b>69,840 covalent organic frameworks</b>
+          (COFs) assembled <i>in silico</i> from a set of 666 
+          distinct organic linkers into 2D layers and 3D networks. 
+          We investigate the feasibility of using these COFs for methane
+          storage by using grand-canonical Monte Carlo (GCMC) simulations
+          to calculate their deliverable capacities (DCs). </p>
+          <p class="mt-2"> This interactive figure allows to explore the full
+          database of assembled COF structures, together with their properties.
+          All structures and properties can be downloaded in bulk from the
+          Materials Cloud archive entry linked above. </p>
+
+    - link: topomat
+      title: "TopoMat: a database of high-throughput first-principles calculations of topological materials"
+      authors: |
+        Gabriel Autès, QuanSheng Wu, Nicolas Mounet, Oleg V. Yazyev
+      description: |
+        The database contains the results of high-throughput first-principles screening
+        of known crystal structures for topological materials (topological insulators,
+        Dirac and Weyl semimetals, etc.). If you use this work please cite
+        the following publication in progress: G. Autès, Q. S. Wu, N. Mounet, O. V. Yazyev,
+        “TopoMat: a database of high-throughput first-principles
+        calculations of topological materials”, in preparation (2018).
+      logo: topomat.png
+      doi:
+        - 10.24435/materialscloud:2019.0019/v1
+      iframe: true
+      iframe_src: "https://topomat.materialscloud.io/"
+      iframe_maxWidth: "max-w-[1150px]"
+      accordions:
+        - title: About
+          content: |
+            <p> The database (version 0.1, 8-Aug-2018) contains 16705 unique entries, 
+            of which 4482 compounds show non-trivial Z2 indices. Each entry contains 
+            basic information about the materials, its crystal structure, Brillouin zone,
+            calculated band structure, Wannier charge center plots (when available),
+            and other data. </p>
+            <p class="mt-2"> The crystal structures originate 
+            from ICSD [1] and COD [2] databases subject to the following pre-screening filters: </p>
+            <ul>
+              <li> 20 atoms or fewer in the unit cell; </li>
+              <li> even number of electrons per unit cell; </li>
+              <li> no rare-earth elements. </li>
+            </ul>
+            <p class="mt-2">The first-principle calculations have been performed using the Quantum-ESPRESSO package [3]
+            on experimental crystal structures without relaxation. 
+            Our computational methodology relies on the PBE exchange-correlations functional, 
+            pseudopotentials from the SSSP library [4], and take into account the spin-orbit coupling. 
+            The Z2 indices have been calculated using either the parity analysis for the centrosymmetric materials,
+            or the Z2Pack methodology [5] for noncentrosymmetric crystal structures. </p>
+            <p class="mt-2">If you use this work please cite the following publication in progress: 
+            <p class="italic ml-2 mt-1">G. Autès, Q. S. Wu, N. Mounet &amp; O. V. Yazyev, 
+            “TopoMat: a database of high-throughput first-principles calculations of topological materials”,
+            in preparation (2018).</p>
+        - title: Acknowledgements
+          content: |
+            <p>[1] Inorganic Crystal Structure Database,
+            <a href="http://www.fiz-karlsruhe.com/icsd.html" target="_blank">http://www.fiz-karlsruhe.com/icsd.html</a>.
+            <br> 
+            [2] S. Gražulis et al. Crystallography open database (COD): an open-access collection of crystal 
+            structures and platform for world-wide collaboration. Nucleic Acids Research, 40:D420–D427, 2012,
+            <a href="http://www.crystallography.net" target="_blank">http://www.crystallography.net</a> <br>
+            [3] P. Giannozzi et al. QUANTUM ESPRESSO: a modular and open-source software project for quantum 
+            simulations of materials. Journal of Physics: Condensed Matter, 21(39):395502, 2009. <br>
+            [4] G. Prandini, A. Marrazzo, I. E. Castelli, N. Mounet and N. Marzari, npj Computational Materials
+            4, 72 (2018). <a href="http://www.materialscloud.org/sssp/" target="_blank">http://www.materialscloud.org/sssp/</a>.
+            <br> [5] D. Gresch et al.&nbsp;Z2Pack: Numerical implementation of hybrid Wannier centers for identifying
+            topological materials.&nbsp; Phys. Rev. B 95, 075146, 2017. </p>

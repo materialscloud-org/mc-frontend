@@ -44,7 +44,8 @@ menu:
         A tool to interpret crystallographic data and retrieve the connectivity, total charge, and spin of molecular complexes and
         their components including the oxidation state (OS) of metal atoms and the charge of ligands.
       logo: cell2mol.png
-      doi: 10.5281/zenodo.10204037
+      doi:
+        - 10.5281/zenodo.10204037
 
     - link: https://ml-layer-finder.matcloud.xyz
       title: Machine-learning accelerated identification of exfoliable two-dimensional materials
@@ -56,20 +57,28 @@ menu:
         or have high binding energy.
       logo: ML-layer-finder-logo.png
 
-    - link: "work/tools/tgkp"
+    - link: "tgkp"
       title: "Band structure of twisted mixed multilayer graphene in k • p model"
       authors: Leo P. Goutte, Oleg V. Yazyev, QuanSheng Wu
       description: |
         A tunable model for the energy spectrum of twisted mixed multilayer graphene.
       logo: tgkp.png
+      iframe: true
+      iframe_src: "https://tgkp.materialscloud.io"
+      iframe_maxWidth: "max-w-[1850px]"
 
-    - link: "work/tools/oximachine"
-      doi: 10.24435/materialscloud:2018.0003/v3
+    - link: "oximachine"
       title: "oxiMACHINE: Predicting oxidation states for MOFs"
       authors: K. M. Jablonka, D. Ongari, S. M. Moosavi, B. Smit
       description: |
         This tool takes a crystal structure and predicts the oxidation state for each metal site.
       logo: oximachine.png
+      doi:
+        - 10.24435/materialscloud:2018.0003/v3
+
+      iframe: true
+      iframe_src: "https://oximachine.materialscloud.io"
+      maxWidth: "max-w-[1200px]"
 
     - link: https://layer-raman-ir.matcloud.xyz/
       title: "Fan diagrams and optically-active modes of layered materials"
@@ -92,28 +101,39 @@ menu:
       description: |
         A tool for building and analyzing electronic transport properties of graphene nanoribbon junctions.
       logo: TBETA_logo.png
-      doi: 10.24435/materialscloud:av-24
+      doi:
+        - 10.24435/materialscloud:av-24
 
-    - link: work/tools/sycofinder
-      doi: 10.5281/zenodo.1312814
+    - link: sycofinder
       title: Synthesis condition finder
       authors: Seyed Mohamad Moosavi, Leopold Talirz, Berend Smit
       description: >
         A tool for optimizing the experimental synthesis conditions for metal-organic frameworks using machine learning and
         genetic algorithms.
       logo: sycofinder.png
+      doi:
+        - 10.5281/zenodo.1312814
+      iframe: true
+      iframe_src: "https://sycofinder.materialscloud.io"
+      iframe_maxWidth: "max-w-[1550px]"
 
-    - link: work/tools/alphaml
+    - link: alphaml
       title: "AlphaML: machine learning of molecular polarizabilities"
       authors: David M. Wilkins, Andrea Grisafi, Yang Yang, Ka Un Lao, Robert A. DiStasio Jr., Michele Ceriotti
       description: |
         A machine learning framework for the prediction of molecular polarizabilities based on comparisons of local environments.
       logo: alphaml.png
+      iframe: true
+      iframe_src: "https://alphaml.materialscloud.io"
+      maxWidth: "max-w-[1450px]"
 
-    - link: work/tools/shiftml
+    - link: shiftml
       title: "ShiftML: chemical shifts in molecular crystals by machine learning"
       authors: Andrea Anelli, Félix Musil, Federico M. Paruzzo, Albert Hofstetter, Sandip De, Edgar Engel, Lyndon Emsley, Michele Ceriotti
       description: |
         A machine learning model to predict the isotropic chemical shielding of molecular crystals containing H, C, N, O
         and S, including the uncertainty of the prediction, and an interactive 3D visualiser.
       logo: shiftml.png
+      iframe: true
+      iframe_src: "https://shiftml.materialscloud.io"
+      maxWidth: "max-w-[1450px]"

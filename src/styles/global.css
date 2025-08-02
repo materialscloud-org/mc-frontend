@@ -7,6 +7,20 @@ the default tailwind ul doesnt indent or have a disc
   ul {
     @apply list-disc text-gray-900 ml-8;
   }
+
+  /* this is referenced multiple times 
+  */
+  .doi-badge {
+    @apply inline-flex items-center ml-2 bg-white rounded text-xs;
+  }
+
+  .doi-left {
+    @apply mt-0.5 px-1 py-0.5 text-white bg-gray-900 rounded-l;
+  }
+
+  .doi-right {
+    @apply mt-0.5 px-1 py-0.5 text-black bg-[#b3d4fc] break-all rounded-r hover:bg-[rgb(192,219,255)] hover:no-underline;
+  }
   /* 
 The following define sitewide styles 
 and are remnants from the legacy codebase.

@@ -1,0 +1,130 @@
+---
+// some discover sections do not have the iframe resizer script...
+// additionally some content is outside of the iframe...
+// for now ive added a new flag in the yaml called accordions?
+// this may be a little silly.
+
+import Layout from "./src/layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/discover.yml");
+  const discover = yaml.load(file);
+  const alldiscover = [
+    ...discover.menu.main_discover,
+    ...discover.menu.contributed_discover,
+  ];
+  // Filter iframe discover:
+  const iframediscover = alldiscover
+    .filter((discover) => discover.iframe === true)
+    .map((discover) => ({
+      slug: discover.link,
+      ...discover,
+    }));
+
+  return iframediscover.map((discover) => ({
+    params: { iframe: discover.slug },
+  }));
+}
+
+const file = fs.readFileSync("./src/data/discover.yml");
+const discover = yaml.load(file);
+
+const alldiscover = [
+  ...discover.menu.main_discover,
+  ...discover.menu.contributed_discover,
+];
+const iframediscover = alldiscover
+  .filter((discover) => discover.iframe === true)
+  .map((discover) => ({
+    slug: discover.link,
+    ...discover,
+  }));
+
+const { iframe } = Astro.params;
+const page = iframediscover.find((discover) => discover.slug === iframe);
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Discover", href: "/discover" },
+  { name: page.title, href: `/discover/${iframe}` },
+];
+
+const accordionContainerStyle = "bg-gray-50 rounded p-4 shadow-sm";
+const accordionTitleStyle = "cursor-pointer font-semibold";
+const accordionContentStyle = "mt-2 ml-2";
+---
+
+<Layout
+  breadcrumbs={breadcrumbs}
+  title={page.title}
+  maxWidth={page.iframe_maxWidth}
+>
+  <section class="space-y-4">
+    <div class="flex items-center flex-wrap gap-2">
+      <h3 class="text-2xl">{page.title}</h3>
+      {
+        page.doi &&
+          page.doi.map((doi) => (
+            <span class="doi-badge">
+              <span class="doi-left">DOI</span>
+              <a href={`https://doi.org/${doi}`} class="doi-right">
+                {doi}
+              </a>
+            </span>
+          ))
+      }
+    </div>
+    <hr class="border-t border-gray-300 mb-6" />
+
+    {
+      page.accordions &&
+        page.accordions.map((accordion, index) => (
+          <details class={accordionContainerStyle} key={index}>
+            <summary class={accordionTitleStyle}>{accordion.title}</summary>
+            <div class={accordionContentStyle} set:html={accordion.content} />
+          </details>
+        ))
+    }
+
+    <details class={accordionContainerStyle}>
+      <summary class={accordionTitleStyle}>How to cite</summary>
+      <div class={accordionContentStyle}>
+        <p>
+          Please find the appropriate journal reference in
+          <a href=`https://doi.org/${page.doi}` target="_blank"
+            >10.24435/materialscloud:2020.0029/v1.
+          </a>
+        </p>
+      </div>
+    </details>
+
+    <iframe
+      id="contentiframe"
+      class="w-full"
+      src={page.iframe_src}
+      height="1500"
+      allowfullscreen></iframe>
+  </section>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/iframe-resizer/js/iframeResizer.min.js"
+  ></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      iFrameResize(
+        {
+          license: "GPLv3",
+          checkOrigin: false,
+          log: true,
+          heightCalculationMethod: "taggedElement",
+          inPageLinks: true,
+          minHeight: "100px",
+        },
+        "#contentiframe"
+      );
+    });
+  </script>
+</Layout>

@@ -1,0 +1,45 @@
+---
+// Discover is currently read from yaml
+
+import Layout from "./src/layouts/Layout.astro";
+
+import BannerList from "./src/components/BannerList.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Discover", href: "discover" },
+];
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/discover.yml", "utf8");
+const data = yaml.load(file);
+const menu = data.menu;
+---
+
+<Layout breadcrumbs={breadcrumbs} title="Discover">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Discover curated data sets</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>
+        Curated research data sets with tailored visualizations maintained by
+        the Materials Cloud team.
+      </p>
+      <BannerList entries={menu.main_discover} rootPath="discover" />
+    </section>
+    <section>
+      <h3 class="text-xl mb-2">Contributed Discover sections</h3>
+      <p class="mb-4">
+        The apps below have been contributed and are maintained by authors
+        affiliated with the <a
+          href="https://www.materialscloud.org/home#partners"
+          >Materials Cloud partners</a
+        >.
+      </p>
+      <BannerList entries={menu.contributed_discover} rootPath="discover" />
+    </section>
+  </div>
+</Layout>

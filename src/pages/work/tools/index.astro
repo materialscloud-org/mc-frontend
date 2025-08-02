@@ -1,14 +1,15 @@
 ---
-// Tools are currently read from the yaml file.
+// Tools are currently read from yaml
 
 // Some tools are hosted at toolname.mat.xyz, others are /tools/toolname with different methods of deployment / getting the header...
 // there is not a clean strategy for not dynamically loading dev/prod versions of tools
 
 // probably definining a var .env which switches which yml files are read is a nice way to solve this.
-// but it might be wise to try to uniform how all our tools are deployed in general
-// i.e all tools are at
+// but it might be wise to try to uniform how all our tools are deployed in general.
+// as this will involve encoding whether some tools are iframed or not.
 
-import Layout from "../../../layouts/Layout.astro";
+import Layout from "./src/layouts/Layout.astro";
+import BannerList from "./src/components/BannerList.astro";
 
 const breadcrumbs = [
   { name: "Home", href: "." },
@@ -22,22 +23,6 @@ import yaml from "js-yaml";
 const file = fs.readFileSync("./src/data/tools.yml", "utf8");
 const data = yaml.load(file);
 const menu = data.menu;
-
-const entriesContainerStyle = "space-y-4 p-2";
-const entryContainerStyle =
-  "flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm ";
-const entryFlexStyle = "flex-shrink-0";
-
-const entryImgStyle = "w-24 h-24 object-contain";
-
-const doiBadgeStyle = "inline-flex items-center ml-2 bg-white rounded text-xs";
-const doiLeftStyle = " mt-0.5 px-1 py-0.5 text-white bg-gray-900 rounded-l";
-const doiRightStyle =
-  "mt-0.5 px-1 py-0.5 text-black bg-[#b3d4fc] break-all rounded-r hover:bg-[rgb(192,219,255)] hover:no-underline";
-
-const TitleTextStyle = "text-md text-[rgb(21,101,192)] hover:no-underline";
-const authorTextStyle = "py-2 text-sm text-gray-900";
-const descriptionTextStyle = "text-sm text-gray-900";
 ---
 
 <Layout breadcrumbs={breadcrumbs} title="Tools">
@@ -50,51 +35,7 @@ const descriptionTextStyle = "text-sm text-gray-900";
         Computational tools offered as a service: no download, no installation,
         but click-and-run.
       </p>
-      <div class={entriesContainerStyle}>
-        {
-          menu.main_tools.map((entry) => {
-            return (
-              <div class={entryContainerStyle}>
-                <div class={entryFlexStyle}>
-                  <a href={entry.link}>
-                    <img
-                      src={`images/logos/${entry.logo}`}
-                      alt={entry.title}
-                      class={entryImgStyle}
-                    />
-                  </a>
-                </div>
-                <div class="flex flex-col flex-1">
-                  <div class="flex items-center flex-wrap">
-                    <a href={entry.link} class={TitleTextStyle}>
-                      {entry.title}
-                    </a>
-                    {entry.doi && (
-                      <span class={doiBadgeStyle}>
-                        <span class={doiLeftStyle}>DOI</span>
-                        <a
-                          href={`https://doi.org/${entry.doi}`}
-                          class={doiRightStyle}
-                        >
-                          {entry.doi}
-                        </a>
-                      </span>
-                    )}
-                  </div>
-                  <div class={authorTextStyle}>
-                    <b>Authors:&nbsp;</b>
-                    {entry.authors}
-                  </div>
-                  <div class={descriptionTextStyle}>
-                    <b>Description: </b>
-                    <span set:html={entry.description} />
-                  </div>
-                </div>
-              </div>
-            );
-          })
-        }
-      </div>
+      <BannerList entries={menu.main_tools} rootPath="work/tools" />
     </section>
     <section>
       <h3 class="text-xl mb-2">Contributed Tools</h3>
@@ -105,51 +46,7 @@ const descriptionTextStyle = "text-sm text-gray-900";
           >Materials Cloud partners</a
         >.
       </p>
-      <div class={entriesContainerStyle}>
-        {
-          menu.contributed_tools.map((entry) => {
-            return (
-              <div class={entryContainerStyle}>
-                <div class={entryFlexStyle}>
-                  <a href={entry.link}>
-                    <img
-                      src={`images/logos/${entry.logo}`}
-                      alt={entry.title}
-                      class={entryImgStyle}
-                    />
-                  </a>
-                </div>
-                <div class="flex flex-col flex-1">
-                  <div class="flex items-center flex-wrap">
-                    <a href={entry.link} class={TitleTextStyle}>
-                      {entry.title}
-                    </a>
-                    {entry.doi && (
-                      <span class={doiBadgeStyle}>
-                        <span class={doiLeftStyle}>DOI</span>
-                        <a
-                          href={`https://doi.org/${entry.doi}`}
-                          class={doiRightStyle}
-                        >
-                          {entry.doi}
-                        </a>
-                      </span>
-                    )}
-                  </div>
-                  <div class={authorTextStyle}>
-                    <b>Authors:&nbsp;</b>
-                    {entry.authors}
-                  </div>
-                  <div class={descriptionTextStyle}>
-                    <b>Description: </b>
-                    <span set:html={entry.description} />
-                  </div>
-                </div>
-              </div>
-            );
-          })
-        }
-      </div>
+      <BannerList entries={menu.contributed_tools} rootPath="work/tools" />
     </section>
   </div>
 </Layout>
