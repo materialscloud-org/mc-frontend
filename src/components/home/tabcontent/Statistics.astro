@@ -9,17 +9,29 @@ import { ENV } from "../../../config/env";
 // we do fetching in the astro header.
 
 // Fetch statistics
-const res = await fetch(
-  `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/archive`
-);
+let archiveStats;
+try {
+  const res = await fetch(
+    `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/archive`
+  );
+  if (!res.ok) throw new Error(`Archive API error: ${res.status}`);
+  archiveStats = await res.json();
+} catch (err) {
+  console.error("Failed to fetch archive statistics, using fallback:", err);
+  archiveStats = {};
+}
 
-const archiveStats = await res.json();
-
-const res2 = await fetch(
-  `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/explore`
-);
-const exploreStats = await res2.json();
-
+let exploreStats;
+try {
+  const res2 = await fetch(
+    `${ENV.COMMON_REST_ENDPOINT}/api/v2/statistics/explore`
+  );
+  if (!res2.ok) throw new Error(`Explore API error: ${res2.status}`);
+  exploreStats = await res2.json();
+} catch (err) {
+  console.error("Failed to fetch explore statistics, using fallback:", err);
+  exploreStats = {};
+}
 // Safely use statistics
 const structureNumber =
   archiveStats?.data?.n_structures?.toLocaleString("de-CH") ?? "N/A";
@@ -119,7 +131,7 @@ const archiveDate =
         <img
           class="w-full"
           title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-          src="/images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
+          src="images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
           alt="Monthly visits"
         />
       </div>
@@ -127,7 +139,7 @@ const archiveDate =
         <img
           class="w-full"
           title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-          src="/images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
+          src="images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
           alt="Visits by country"
         />
       </div>
@@ -138,7 +150,7 @@ const archiveDate =
         <img
           class="w-full"
           title="Statistics of traffic to the archive.materialscloud.org site."
-          src="/images/plausible/archive_materialscloud_org_n_visits_months.png"
+          src="images/plausible/archive_materialscloud_org_n_visits_months.png"
           alt="Archive monthly visits"
         />
       </div>
@@ -146,7 +158,7 @@ const archiveDate =
         <img
           class="w-full"
           title="Statistics of traffic to the archive.materialscloud.org site."
-          src="/images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
+          src="images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
           alt="Archive visits by country"
         />
       </div>

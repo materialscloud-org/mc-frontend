@@ -4,7 +4,7 @@
 // for now ive added a new flag in the yaml called accordions?
 // this may be a little silly.
 
-import Layout from "./src/layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 
 import fs from "fs";
 import yaml from "js-yaml";
@@ -48,8 +48,8 @@ const page = iframediscover.find((discover) => discover.slug === iframe);
 
 const breadcrumbs = [
   { name: "Home", href: "." },
-  { name: "Discover", href: "/discover" },
-  { name: page.title, href: `/discover/${iframe}` },
+  { name: "Discover", href: "discover" },
+  { name: page.title, href: `discover/${iframe}` },
 ];
 
 const accordionContainerStyle = "bg-gray-50 rounded p-4 shadow-sm";
