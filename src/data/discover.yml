@@ -352,18 +352,18 @@ menu:
       iframe_src: "https://cofs.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
       accordions:
-        title: About
-        content: |
-          <p>We present <b>69,840 covalent organic frameworks</b>
-          (COFs) assembled <i>in silico</i> from a set of 666 
-          distinct organic linkers into 2D layers and 3D networks. 
-          We investigate the feasibility of using these COFs for methane
-          storage by using grand-canonical Monte Carlo (GCMC) simulations
-          to calculate their deliverable capacities (DCs). </p>
-          <p class="mt-2"> This interactive figure allows to explore the full
-          database of assembled COF structures, together with their properties.
-          All structures and properties can be downloaded in bulk from the
-          Materials Cloud archive entry linked above. </p>
+        - title: About
+          content: |
+            <p>We present <b>69,840 covalent organic frameworks</b>
+            (COFs) assembled <i>in silico</i> from a set of 666 
+            distinct organic linkers into 2D layers and 3D networks. 
+            We investigate the feasibility of using these COFs for methane
+            storage by using grand-canonical Monte Carlo (GCMC) simulations
+            to calculate their deliverable capacities (DCs). </p>
+            <p class="mt-2"> This interactive figure allows to explore the full
+            database of assembled COF structures, together with their properties.
+            All structures and properties can be downloaded in bulk from the
+            Materials Cloud archive entry linked above. </p>
 
     - link: topomat
       title: "TopoMat: a database of high-throughput first-principles calculations of topological materials"
