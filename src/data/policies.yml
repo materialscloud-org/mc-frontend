@@ -49,7 +49,7 @@ tabs:
       <ul>
         <li><b>Scope:</b> AiiDA databases of research data.</li>
         <li><b>File formats:</b> Submissions must use the <a href="http://aiida-core.readthedocs.io/en/latest/import_export/main.html#file-format" >AiiDA export file format</a> as produced using the <i>verdi export</i> command.</li>
-        <li><b>Volume and size limitations:</b> 50 GB for AiiDA databases. For larger datasets please <a href="/team" >contact us</a>.</li>
+        <li><b>Volume and size limitations:</b> 50 GB for AiiDA databases. For larger datasets please <a href="team" >contact us</a>.</li>
       </ul>
       <i class="block mt-4">Acknowledgement: This document is loosely based on the policies of the <a href="https://zenodo.org/">
         zenodo research data repository</a>
@@ -59,4 +59,4 @@ tabs:
   - id: archive
     label: Archive
     external: true
-    href: "https://archive.materialscloud.org/deposit/information#archive_policies"
+    href: "https://archive.materialscloud.org/information#archive_policies"

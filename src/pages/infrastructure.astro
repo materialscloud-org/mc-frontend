@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 
 const breadcrumbs = [
-  { name: "Home", href: "" },
+  { name: "Home", href: "." },
   { name: "Infrastructure", href: "infrastructure" },
 ];
 ---
@@ -55,7 +55,7 @@ const breadcrumbs = [
                 >MARVEL National Centre of Competence in Research</a
               >
               (MARVEL NCCR). Today, it has become a partnership between many
-              <a href="home#partners" target="_blank">consortia</a>.
+              <a href="#partners" target="_blank">consortia</a>.
             </li>
           </ul>
         </div>
@@ -89,7 +89,9 @@ const breadcrumbs = [
               <b>Backend:</b> The individual Materials Cloud sections are powered
               by different backends, including
               <a href="https://slideshot.epfl.ch/" target="_blank">slideshot</a>
-              (LEARN), docker/<a href="http://dokku.viewdocs.io/dokku/">dokku</a
+              (LEARN), docker/<a
+                href="https://dokku.com/docs/getting-started/installation/#what-is-dokku"
+                >dokku</a
               >
               (WORK/TOOLS, DISCOVER),
               <a
@@ -154,14 +156,3 @@ const breadcrumbs = [
     </div>
   </div>
 </Layout>
-
-<style>
-  .mc-home {
-    font-family: "Inter", Arial, sans-serif;
-    background: url("/assets/background.svg") no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-</style>
