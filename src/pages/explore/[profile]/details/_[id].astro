@@ -1,10 +1,32 @@
 ---
+/*
+method for building an index for each node in a given profile...
+THIS PROBABLY NEEDS TO CHANGE:
+
+Issues: 
+  1. API Hit on profile.link/api/v4/nodes only returns 400 nodes, this means only the first 400 nodes for a given profile get rendered.
+  2. Currently on local machine we can export prerender as false; allowing us to
+  not have to index every page on build.
+     This does not work for GH pages and will need to configure an SSR (Vercel)? for deployment via gh pages.
+      Attempting to run with:
+     'npx astro build' and export const prerender = true; 
+     results in a build time just over 6minutes and 4500 pages... This is stupid.
+
+I think in the legacy deployment we instead:
+  have explore/[profile] be a singular static page that determines what content to load
+  via react buttons / URLSearchParams. 
+
+  This avoids both of the issues stated above ^ by spoofing urls instead of 
+  using clever astro dynamic pathing
+
+*/
 import Layout from "@layouts/Layout.astro";
 
 import fs from "fs";
 import yaml from "js-yaml";
 
-export const prerender = false; // Disable build-time generation, use SSR
+// for final build this will likely NEED to be false with an SSR adapter.
+export const prerender = true;
 
 // Generate static pat</Layout>hs if you want some pre-rendered pages (optional)
 export async function getStaticPaths() {
