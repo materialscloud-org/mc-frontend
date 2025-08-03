@@ -1,0 +1,33 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Explore", href: "explore" },
+];
+
+import BannerList from "@components/BannerList.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const file = fs.readFileSync("./src/data/explore.yml", "utf8");
+const data = yaml.load(file);
+const profiles = data.profiles;
+---
+
+<Layout breadcrumbs={breadcrumbs} title="Explore">
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Explore</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>
+        An interactive browser for exploring AiiDA provenance graphs uploaded to
+        the Materials Cloud Archive.
+      </p>
+
+      <BannerList entries={profiles} rootPath="explore" />
+    </section>
+  </div></Layout
+>

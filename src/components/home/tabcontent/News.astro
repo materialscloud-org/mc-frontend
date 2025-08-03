@@ -1,9 +1,12 @@
 ---
 // currently we render the news via an iframe, using knightlabs API.
-// This may be unsafe if their site goes down and
-// should probably be moved to using inline JS
+// This may be unsafe if the syntax changes
 
-// Need to fix fonts here.
+// Also need to fix fonts.
+
+// Note this may have some caching issues -
+// i think this can cache an invalid state and hang...
+// seems to work consistantly on chrome but required incog for firefox?
 
 const timelineId = "1nSOakYvr0edaU24mZfO7jp2f6OxcqdWBaVbnL5Anm7Q";
 const initialZoom = 5;

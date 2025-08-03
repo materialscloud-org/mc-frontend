@@ -1,0 +1,136 @@
+profiles:
+  - authors: "Sebastiaan Huber, Marnik Bercx, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
+    description: |
+      Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
+      Calculations are performed with the PBE-v1 methodology.
+    link: "mc3d-pbe-v1"
+    doi:
+      - "10.24435/materialscloud:rw-t0"
+    logo: "mc3d.png"
+    profile: "mc3d-pbe-v1"
+    rest_url: "/mc3d-pbe-v1/api/v4"
+    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBE-v1)"
+
+  - authors: "Sebastiaan Huber, Marnik Bercx, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
+    description: |
+      Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
+      Calculations are performed with the PBEsol-v1 methodology
+    link: "mc3d-pbesol-v1"
+    doi:
+      - "10.24435/materialscloud:rw-t0"
+    logo: "mc3d.png"
+    profile: "mc3d-pbesol-v1"
+    rest_url: "/mc3d-pbesol-v1/api/v4"
+    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBEsol-v1)"
+
+  - authors: "Davide Campi, Davide Grassano, Nicolas Mounet, Marco Gibertini, Philippe Schwaller, Andrius Merkys, | Antimo Marrazzo, Thibault Sohier, Ivano E. Castelli, Andrea Cepellotti, Giovanni Pizzi, Nicola Marzari"
+    description: |
+      Results from screening known 3D crystal structures finding
+      those that can be computationally exfoliated, producing 2D materials candidates.
+    link: "mc2d"
+    doi:
+      - "10.24435/materialscloud:az-b2"
+      - "10.24435/materialscloud:36-nd"
+    logo: "mc2d.png"
+    profile: "mc2d"
+    rest_url: "/mc2d/api/v4"
+    title: "Materials Cloud two-dimensional crystals database (MC2D)"
+
+  - authors: "Seán R. Kavanagh, Christopher N. Savory, David O. Scanlon, Aron Walsh"
+    description: |
+      Structural, dynamic and electronic characterisation of a novel mixed-metal chalcohalide revealing hidden symmetry breaking and spontaneous polarisation.
+    link: tin-antimony-sulfoiodide
+    doi:
+      - "10.24435/materialscloud:ge-qt"
+    logo: "Sn2SbS2I3.gif"
+    profile: "tin-antimony-sulfoiodide"
+    rest_url: "/tin-antimony-sulfoiodide/api/v4"
+    title: "Hidden spontaneous polarisation in the chalcohalide photovoltaic Sn2SbS2I3"
+
+  - authors: "F. Pelin Kinik, Andres Ortega-Guerrero, Daniele Ongari, Christopher P. Ireland, Berend Smit"
+    description: |
+      Atomic structures of experimentally synthesized pyrene-based metal-organic frameworks.
+    link: "pyrene-mofs"
+    doi:
+      - "10.24435/materialscloud:z5-ct"
+    logo: "pyrene-mofs.png"
+    profile: "pyrene-mofs"
+    rest_url: "/pyrene-mofs/api/v4"
+    title: "Pyrene-based metal organic frameworks"
+
+  - authors: "Valerio Vitale, Giovanni Pizzi, Antimo Marrazzo, Jonathan R. Yates, Nicola Marzari, Arash A. Mostofi"
+    description: |
+      Validation results of an automated protocol for generating maximally-localized Wannier functions in a high-throughput framework.
+    link: "autowannier"
+    doi:
+      - "10.24435/materialscloud:dd-nz"
+    logo: "scdm.png"
+    profile: "autowannier"
+    rest_url: "/autowannier/api/v4"
+    title: "Automated high-throughput wannierisation"
+
+  - authors: "Kathryn S. Deeg, Daiane Damasceno Borges, Daniele Ongari, Nakul Rampal, Leopold Talirz, Aliaksandr V. Yakutovich, Johanna M. Huck, Berend Smit"
+    description: |
+      Screening of two- and three-dimensional covalent organic frameworks for carbon capture.
+    link: "hcofs-co2"
+    doi:
+      - "10.24435/materialscloud:2020.0029/v1"
+    logo: "hcofs-co2.png"
+    profile: "hcofs-co2"
+    rest_url: "/hcofs-co2/api/v4"
+    title: "Covalent organic frameworks for carbon capture"
+
+  - authors: "Bonan Zhu, Georg Schusteritsch, Ping Lu, Judith L. MacManus-Driscoll, Chris J. Pickard"
+    description: |
+      Refining random structure searching results of SrTiO3-CeO2 interfaces.
+    link: "stoceriaitf"
+    doi:
+      - "10.24435/materialscloud:2019.0025/v1"
+    logo: "stoceriaitf.png"
+    profile: "stoceriaitf"
+    rest_url: "/stoceriaitf/api/v4"
+    title: "Structures of SrTiO3-CeO2 vertical interfaces"
+
+  - authors: "Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Nicola Marzari"
+    description: |
+      Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
+    link: "2dtopo"
+    doi:
+      - "10.24435/materialscloud:2019.0081/v1"
+    logo: "2dtopo.png"
+    profile: "2dtopo"
+    rest_url: "/2dtopo/api/v4"
+    title: "2D topological insulators"
+
+  - authors: "Kevin M. Jablonka, Daniele Ongari, Berend Smit"
+    description: |
+      Systematic study on the applicability of tail-corrections in the molecular simulations of porous materials.
+    link: "tc-applicability"
+    doi:
+      - "10.24435/materialscloud:2019.0024/v3"
+    logo: "tcapplicability.png"
+    profile: "tc-applicability"
+    rest_url: "/tc-applicability/api/v4"
+    title: "Applicability of tail-corrections in the molecular simulations of porous materials"
+
+  - authors: "Daniele Ongari, Aliaksandr V. Yakutovich, Leopold Talirz, Berend Smit"
+    description: |
+      A database of Covalent-Organic Frameworks (COFs), computationally refined from experimental structures, with characterization of CO2 adsorption and partial charges.
+    link: "curated-cofs"
+    doi:
+      - "10.24435/materialscloud:z6-jn"
+    logo: "curated-cofs.png"
+    profile: "curated-cofs"
+    rest_url: "/curated-cofs/api/v4"
+    title: "CURATED covalent organic frameworks database"
+
+  - authors: "Gianluca Prandini, Antimo Marrazzo, Ivano E. Castelli, Nicolas Mounet, Nicola Marzari"
+    description: |
+      It contains data generated from the testing protocol of the standard solid-state pseudopotentials library.
+    link: "sssp"
+    doi:
+      - "10.24435/materialscloud:y8-yw"
+    logo: "sssp.png"
+    profile: "sssp"
+    rest_url: "/sssp/api/v4"
+    title: "Standard solid-state pseudopotentials (SSSP)"

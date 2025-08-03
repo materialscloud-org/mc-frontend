@@ -21,6 +21,13 @@ the default tailwind ul doesnt indent or have a disc
   .doi-right {
     @apply mt-0.5 px-1 py-0.5 text-black bg-[#b3d4fc] break-all rounded-r hover:bg-[rgb(192,219,255)] hover:no-underline;
   }
+
+  /* this is used heavily in explore
+  */
+  .explore-button {
+    @apply px-2.5 py-1.5 rounded bg-[rgb(53,96,160)] text-gray-100 hover:bg-[rgb(68,114,184)] hover:text-gray-100 hover:no-underline;
+  }
+
   /* 
 The following define sitewide styles 
 and are remnants from the legacy codebase.

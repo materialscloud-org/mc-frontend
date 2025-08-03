@@ -1,0 +1,153 @@
+---
+// NOTE
+// the ng Angular Scope logic here is complex and involves many api calls...
+// rather than figure out how to format this nicely/dig through legacy code,
+// for now ive just set up the backend-frontend interfacing logic.
+
+// I was considering writing the rendering logic in inline JS scripting
+// but this may be a good use case for finally writting some react?s
+
+import Layout from "@layouts/Layout.astro";
+import { ENV } from "../../config/env";
+import ExploreTable from "../../components/ExploreTable.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+// build urls
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/explore.yml", "utf8");
+  const data = yaml.load(file);
+  const profiles = data.profiles;
+
+  return profiles.map((profile) => ({
+    params: { profile: profile.link },
+  }));
+}
+
+// get yaml data
+const file = fs.readFileSync("./src/data/explore.yml", "utf8");
+const data = yaml.load(file);
+const profiles = data.profiles;
+
+const { profile } = Astro.params;
+const page = profiles.find((p) => p.link === profile);
+
+// breadcrumbs
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Explore", href: "explore" },
+  { name: page.title, href: `explore/${page.link}` },
+];
+
+// initial API config
+const url = new URL(Astro.request.url);
+const currentPage = Number(url.searchParams.get("page")) || 1;
+const perPage = 10;
+
+const baseApiUrl = `${ENV.HOST_AIIDA}${page.rest_url}`;
+
+const pageApiUrl = `${baseApiUrl}/nodes/page`;
+const userApiUrl = `${baseApiUrl}/users/`;
+const statsApiUrl = `${baseApiUrl}/nodes/full_types_count`;
+---
+
+<Layout
+  title={`Explore: ${page.link}`}
+  breadcrumbs={breadcrumbs}
+  maxWidth="max-w-[1920px]"
+>
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">Explore</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <div class="flex items-center justify-between flex-wrap gap-2 w-full">
+        <div class="flex items-center gap-2 flex-wrap">
+          <h3 class="text-red-700">{page.title}</h3>
+          {
+            page.doi &&
+              page.doi.map((doi) => (
+                <span class="doi-badge">
+                  <span class="doi-left">DOI</span>
+                  <a href={`https://doi.org/${doi}`} class="doi-right">
+                    {doi}
+                  </a>
+                </span>
+              ))
+          }
+        </div>
+        {
+          page.rest_url && (
+            <a
+              href={`${ENV.HOST_AIIDA}${page.rest_url}`}
+              class="explore-button"
+            >
+              Discover this data in a curated manner
+            </a>
+          )
+        }
+      </div>
+
+      <p><strong>Authors:</strong> {page.authors}</p>
+    </section>
+
+    <div
+      id="exploreTableContainer"
+      data-base-api-url={baseApiUrl}
+      data-initial-page={currentPage}
+      data-initial-per-page={perPage}
+    >
+    </div>
+
+    <section id="apiDataSection"></section>
+  </div>
+</Layout>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("exploreTableContainer");
+    const baseApiUrl = container.dataset.baseApiUrl;
+    const initialPage = Number(container.dataset.initialPage);
+    const initialPerPage = Number(container.dataset.initialPerPage);
+
+    const apiSection = document.getElementById("apiDataSection");
+
+    // Compose full URLs
+    const pageApiUrl = `${baseApiUrl}/nodes/page/${initialPage}?perpage=${initialPerPage}`;
+    const userApiUrl = `${baseApiUrl}/users/`;
+    const statsApiUrl = `${baseApiUrl}/nodes/full_types_count`;
+
+    try {
+      // Fetch all APIs in parallel
+      const [pageRes, userRes, statsRes] = await Promise.all([
+        fetch(pageApiUrl),
+        fetch(userApiUrl),
+        fetch(statsApiUrl),
+      ]);
+
+      if (!pageRes.ok || !userRes.ok || !statsRes.ok) {
+        throw new Error("One or more API calls failed");
+      }
+
+      const pageData = await pageRes.json();
+      const userData = await userRes.json();
+      const statsData = await statsRes.json();
+
+      // Render the fetched data as JSON pretty-printed
+      apiSection.innerHTML = `
+        <h3>Page Data</h3>
+        <pre>${JSON.stringify(pageData, null, 2)}</pre>
+
+        <h3>User Data</h3>
+        <pre>${JSON.stringify(userData, null, 2)}</pre>
+
+        <h3>Stats Data</h3>
+        <pre>${JSON.stringify(statsData, null, 2)}</pre>
+      `;
+    } catch (error) {
+      apiSection.innerHTML = `<p class="text-red-600">Failed to load API data: ${error.message}</p>`;
+      console.error(error);
+    }
+  });
+</script>

@@ -1,0 +1,84 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+export const prerender = false; // Disable build-time generation, use SSR
+
+// Generate static pat</Layout>hs if you want some pre-rendered pages (optional)
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/explore.yml", "utf8");
+  const data = yaml.load(file);
+  const profiles = data.profiles;
+
+  const paths = [];
+
+  for (const profile of profiles) {
+    const res = await fetch(
+      `https://aiida.dev.materialscloud.org/${profile.link}/api/v4/nodes/`
+    );
+    if (!res.ok) continue;
+
+    const json = await res.json();
+
+    json.data.nodes.forEach((node) => {
+      paths.push({
+        params: {
+          profile: profile.link,
+          id: node.uuid,
+        },
+      });
+    });
+  }
+
+  return paths;
+}
+
+// Get URL params
+const { profile, id } = Astro.params;
+
+const baseApiUrl = `https://aiida.dev.materialscloud.org/${profile}/api/v4/nodes/`;
+
+// Fetch node data on request (SSR)
+const res = await fetch(`${baseApiUrl}${id}`);
+if (!res.ok) {
+  throw new Error(`Failed to fetch node data for id: ${id}`);
+}
+
+const json = await res.json();
+const node = json.data; // adjust if API differs
+
+// Example: get node type or fallback
+const nodeType = node.attributes?.node_type || "none";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Explore", href: "explore" },
+  { name: profile, href: `explore/${profile}` },
+  { name: id, href: "" },
+];
+---
+
+<Layout
+  title={`Explore: ${profile}`}
+  breadcrumbs={breadcrumbs}
+  maxWidth="max-w-[1920px]"
+>
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">{`Node entry for ${profile}`}</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <div class="flex items-center gap-2 flex-wrap">
+        <h3 class="text-red-700">{profile}</h3>
+      </div>
+      Profile: {profile}
+      <br />
+      Node ID: {id}
+      <br />
+      Node Type: {nodeType}
+    </section>
+    <pre>{JSON.stringify(node, null, 2)}</pre>
+  </div>
+</Layout>
