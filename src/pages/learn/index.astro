@@ -4,6 +4,11 @@ import Layout from "@layouts/Layout.astro";
 import fs from "fs";
 import yaml from "js-yaml";
 
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Learn", href: "learn" },
+];
+
 const file = fs.readFileSync("./src/data/learn-sections.yml", "utf8");
 const data = yaml.load(file);
 
@@ -21,7 +26,7 @@ const linkStyle = "flex-shrink-0 block w-24 h-16 overflow-hidden rounded";
 const imageStyle = "object-contain w-full h-full w-36 h-36";
 ---
 
-<Layout title="Learn">
+<Layout title="Learn" breadcrumbs={breadcrumbs}>
   <div class="space-y-10">
     <section class="space-y-4">
       <div class="flex items-center justify-between w-full mb-6">

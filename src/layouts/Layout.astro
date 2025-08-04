@@ -1,6 +1,4 @@
 ---
-// This will probably be well served by being converted to be tailwinded.
-// It will ease development a little bit if the borderpadding of the main content is controlled in a tailwind style.
 import "../styles/global.css";
 
 const { breadcrumbs = [] } = Astro.props;
@@ -8,10 +6,28 @@ const { breadcrumbs = [] } = Astro.props;
 const { title = "DEV Materials Cloud" } = Astro.props;
 const { maxWidth = "max-w-[1000px]" } = Astro.props;
 
-const activeSection =
-  breadcrumbs.length > 0 ? breadcrumbs[0].name.toLowerCase() : "";
-
 const baseHref = (import.meta.env.BASE_URL || "/").replace(/\/?$/, "/"); // also add trailing slash if not present
+
+const activeSection =
+  breadcrumbs.length > 0 ? breadcrumbs[1].name.toLowerCase() : "";
+
+const navLinks = [
+  { name: "LEARN", href: "learn" },
+  { name: "WORK", href: "work" },
+  { name: "DISCOVER", href: "discover" },
+  { name: "EXPLORE", href: "explore" },
+  { name: "ARCHIVE", href: "archive" },
+];
+
+const moreLinks = [
+  { name: "Policies", href: "policies" },
+  { name: "Data Management Plan", href: "dmp" },
+  { name: "Terms of Use", href: "termssummary" },
+  { name: "Infrastructure", href: "infrastructure" },
+  { name: "Team & Contact", href: "team" },
+  { name: "Partners", href: "#partners" },
+  { name: "Connect your REST API", href: "explore/connect" },
+];
 
 const LogoSvg = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 72">
@@ -29,10 +45,57 @@ const LogoSvg = `
   </g>
 </svg>
 `;
+
+// slot div styling.
+const contentWrapperStyle = `mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm min-w-[350px] w-full ${maxWidth}`;
+
+// header styling
+const htmlStyle = "m-0 w-full h-full bg-[#f0f6f9]";
+const iconStyle = "inline-block w-14 h-auto ml-2 mt-1 flex-shrink-0";
+
+const navLinkBaseStyle =
+  "font-semibold text-gray-700 hover:text-gray-500 hover:no-underline";
+const navLinkSelectedStyle =
+  "text-red-700 bg-gray-100 pointer-events-none cursor-default";
+
+// NavLinks
+const desktopNavLinkStyle = `px-4 h-16 border-b border-gray-200 flex items-center ${navLinkBaseStyle}`;
+const mobileNavLinkStyle = `py-2 px-3 ${navLinkBaseStyle}`;
+
+// More drop down Styling.
+const moreLinkStyle =
+  "block px-4 py-1 text-md text-gray-700 hover:bg-gray-100 hover:no-underline";
 ---
 
-<!doctype html>
-<html lang="en">
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Desktop "More ▾" dropdown
+    const btn = document.getElementById("mc-more-button");
+    const menu = document.getElementById("mc-drop-menu");
+    if (btn && menu) {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menu.classList.toggle("hidden");
+      });
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && e.target !== btn) {
+          menu.classList.add("hidden");
+        }
+      });
+    }
+
+    // Mobile hamburger dropdown
+    const mobileBtn = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+<html lang="en" class={htmlStyle}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -41,257 +104,149 @@ const LogoSvg = `
     <base href={baseHref} />
 
     <title>{title}</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const moreLink = document.getElementById("mc-more-link");
-        const dropMenu = document.getElementById("mc-drop-menu");
-        if (!moreLink || !dropMenu) return;
-        moreLink.addEventListener("click", function (e) {
-          e.preventDefault();
-          dropMenu.style.display =
-            dropMenu.style.display === "block" ? "none" : "block";
-        });
-        document.addEventListener("click", function (e) {
-          const target = e.target as Node;
-          if (!moreLink.contains(target) && !dropMenu.contains(target)) {
-            dropMenu.style.display = "none";
-          }
-        });
-      });
-    </script>
   </head>
+
   <body>
-    <header class="mc-header">
-      <nav class="mc-nav">
-        <a class="mc-navbrand inline-block w-24 h-auto" href="">
+    <header class="w-full bg-white shadow">
+      <nav
+        class="flex items-center justify-between h-16 px-4 border-b border-gray-200"
+      >
+        <a class={iconStyle} href="">
           <div class="w-full h-full" set:html={LogoSvg} />
         </a>
-        <a
-          class={`mc-navlink ${activeSection === "learn" ? "active" : ""}`}
-          href="learn">LEARN</a
-        >
-        <a
-          class={`mc-navlink ${activeSection === "work" ? "active" : ""}`}
-          href=`work`>WORK</a
-        >
-        <a
-          class={`mc-navlink ${activeSection === "discover" ? "active" : ""}`}
-          href=`discover`>DISCOVER</a
-        >
-        <a
-          class={`mc-navlink ${activeSection === "explore" ? "active" : ""}`}
-          href=`explore`>EXPLORE</a
-        >
-        <a class="mc-navlink" href="https://materialscloud.org/archive"
-          >ARCHIVE</a
-        >
-        <div
-          class="mc-more-dropdown"
-          style="margin-left: auto; position: relative;"
-        >
-          <a class="mc-navlink" href="#" id="mc-more-link">More ▾</a>
-          <div class="mc-drop-menu" id="mc-drop-menu" style="display: none;">
-            <a class="mc-drop-link" href="policies">Policies</a>
-            <a class="mc-drop-link" href="dmp">Data Management Plan</a>
-            <a class="mc-drop-link" href="termssummary">Terms of Use</a>
-            <a class="mc-drop-link" href="infrastructure">Infrastructure</a>
-            <a class="mc-drop-link" href="team">Team & Contact</a>
-            <a class="mc-drop-link" href="#partners">Partners</a>
-            <a class="mc-drop-link" href="explore/connect"
-              >Connect your REST API</a
-            >
+
+        <!-- Desktop nav -->
+        <div class="hidden md:flex ml-2">
+          {
+            navLinks.map((link) => (
+              <a
+                class={`${desktopNavLinkStyle} ${activeSection === link.name.toLowerCase() ? navLinkSelectedStyle : ""}`}
+                href={link.href}
+              >
+                {link.name}
+              </a>
+            ))
+          }
+        </div>
+
+        <!-- Desktop more dropdown -->
+        <div class="relative ml-auto hidden md:block">
+          <button
+            id="mc-more-button"
+            type="button"
+            class="px-3 font-semibold text-gray-700 hover:text-gray-500 flex items-center"
+          >
+            More ▾
+          </button>
+          <div
+            id="mc-drop-menu"
+            class="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-1 hidden z-50"
+          >
+            {
+              moreLinks.map((link) => (
+                <a href={link.href} class={moreLinkStyle}>
+                  {link.name}
+                </a>
+              ))
+            }
           </div>
         </div>
+
+        <!-- Mobile hamburger -->
+        <div class="md:hidden ml-auto">
+          <button
+            id="mobile-menu-button"
+            type="button"
+            class="p-2 text-gray-700 hover:text-gray-500"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
       </nav>
+
+      <!-- Mobile dropdown menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 border-b border-gray-200 bg-white"
+      >
+        <div class="flex flex-col">
+          {
+            navLinks.map((link) => (
+              <a
+                class={`${mobileNavLinkStyle} ${activeSection === link.name.toLowerCase() ? navLinkSelectedStyle : ""}`}
+                href={link.href}
+              >
+                {link.name}
+              </a>
+            ))
+          }
+
+          <div class="mt-2 border-t border-gray-100 pt-2">
+            {
+              moreLinks.map((link) => (
+                <a href={link.href} class={moreLinkStyle}>
+                  {link.name}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
     </header>
+
     {
       breadcrumbs.length > 0 ? (
-        <ul class="mc-breadcrumb">
+        <ul
+          id="breadcrumbs"
+          class="flex items-center bg-gray-50 border border-gray-300 rounded px-5 py-1 shadow-sm font-light m-6 overflow-hidden list-none"
+        >
           {breadcrumbs.map((crumb, index) => (
-            <li>
+            <li
+              key={index}
+              class="relative pr-8 pl-2 text-[rgb(62,112,187)] first:pl-0 last:pr-0"
+            >
               {index === breadcrumbs.length - 1 || !crumb.href ? (
-                <a>{crumb.name}</a>
+                <span>{crumb.name}</span>
               ) : (
-                <a href={crumb.href}>{crumb.name}</a>
+                <a href={crumb.href} class="hover:underline">
+                  {crumb.name}
+                </a>
+              )}
+              {index !== breadcrumbs.length - 1 && (
+                <svg
+                  class="absolute top-1/2 right-0 -translate-y-1/2 w-6 h-6 text-gray-300 transform scale-y-300"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.0"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 6 L16 12 L8 18" />
+                </svg>
               )}
             </li>
           ))}
         </ul>
       ) : (
-        <div class="mc-breadcrumb-placeholder" />
+        // Placeholder div with same height & margin to keep spacing
+        <div id="breadcrumbs" class="m-8 py-2" />
       )
     }
+
     <div style="display: flex; justify-content: center;">
-      <div
-        class={`mc-page-content p-5 px-7 bg-white rounded-sm shadow-sm min-w-[350px] w-full ${maxWidth}`}
-      >
+      <div class={contentWrapperStyle}>
         <slot />
       </div>
     </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(240, 246, 249);
-    /* background-color: #ffffff; */
-    /* background-color: orange; */
-  }
-  .mc-header {
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-    margin: 0;
-  }
-  .mc-header .mc-nav {
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #dee6e6;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    box-sizing: border-box;
-    height: 65px;
-    line-height: 65px;
-  }
-  .mc-header .mc-navbrand {
-    min-width: 58px;
-    font-size: 0;
-    padding: 7px 15px 5px 22px;
-    float: left;
-    line-height: 0;
-  }
-  .mc-nav .mc-navlink {
-    display: inline-block;
-    padding: 14px 15px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 32px;
-    height: 60px;
-    box-sizing: border-box;
-    text-align: center;
-    color: #455860;
-    text-decoration: none;
-  }
-  .mc-header .mc-navlink:hover {
-    color: #8fa5af;
-  }
-  .mc-nav .mc-navlink.active {
-    color: #cc1b30;
-    pointer-events: none;
-    cursor: default;
-  }
-  .mc-header .mc-more-dropdown {
-    position: relative;
-    z-index: 200;
-  }
-  .mc-header .mc-drop-menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #fff;
-    min-width: 220px;
-    border-radius: 6px;
-    border: 2px solid #dee6e6;
-    z-index: 100;
-    padding: 5px 0;
-    margin-top: -8px;
-  }
-  .mc-header .mc-drop-menu a {
-    display: block;
-    color: #455860;
-    font-weight: 300;
-    padding: 10px 14px;
-    font-size: 16px;
-    line-height: 10px;
-    text-decoration: none;
-  }
-  .mc-header .mc-drop-menu a:hover {
-    background-color: #fbfcfc;
-  }
-
-  .mc-breadcrumb-placeholder {
-    margin: 20px 15px 30px 15px;
-    height: 30px;
-  }
-
-  .mc-breadcrumb {
-    padding: 7px 10px 7px 20px;
-    list-style: none;
-    /* background-color: #f5f5f5; */
-    /* background-color: #f0f0f0; */
-    /* background-color: #ffffff; */
-    background-color: #fafafa;
-    border-radius: 2px;
-    /* border: 1px solid #b2b2b2; */
-    border: 1px solid #d2d2d2;
-    /* border-bottom: 3px solid #dee6e6; */
-    font-size: 16px;
-    font-weight: 300;
-    font-family: sans-serif;
-    text-align: left;
-    margin: 20px 15px 30px 15px;
-    overflow: hidden;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
-  }
-
-  .mc-breadcrumb li {
-    color: #303f9f;
-    display: inline;
-    line-height: 1;
-    font-size: 16px;
-    margin-right: 46px;
-    position: relative;
-  }
-  .mc-breadcrumb li a {
-    text-decoration: none;
-  }
-  .mc-breadcrumb li a[href]:hover {
-    text-decoration: underline;
-  }
-
-  .mc-breadcrumb li a::after {
-    content: " ";
-    display: block;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    /* border-left: 30px solid #f5f5f5; */
-    border-left: 30px solid #fafafa;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    z-index: 2;
-    right: 0;
-    transform: translate(30px, 0);
-  }
-  .mc-breadcrumb li a::before {
-    content: " ";
-    display: block;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 30px solid #d2d2d2;
-    /* border-left: 30px solid #ffffff; */
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    margin-left: 2px;
-    right: 0;
-    z-index: 1;
-    transform: translate(32px, 0);
-  }
-  .mc-breadcrumb li:last-child a {
-    background: transparent !important;
-    color: #303f9f;
-  }
-  .mc-breadcrumb li:last-child a::after,
-  .mc-breadcrumb li:last-child a::before {
-    border: 0;
-    display: none;
-  }
-</style>
