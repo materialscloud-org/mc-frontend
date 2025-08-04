@@ -1,0 +1,109 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "MARVEL flagship proposal 2010", href: "marvel-propsal-2010" },
+];
+---
+
+<Layout breadcrumbs={breadcrumbs}>
+  <div class="space-y-6 pb-6">
+    <section class="space-y-4">
+      <h2 class="text-3xl mb-4">MARVEL Flagship proposal</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <p>
+        The MARVEL FET Flagship Proposal (Dec 2010), coordinated and conceived
+        by Nicola Marzari, aimed at establishing a Europe-based digital effort
+        in computational materials science. Abstract and objectives are listed
+        below for reference.
+      </p>
+
+      <blockquote
+        class="border-l-3 px-4 py-4 italic text-gray-800 bg-white shadow-sm"
+      >
+        <p>"<br /><b>Abstract</b></p>
+        <p>
+          The goal of our project is to radically transform and accelerate
+          discovery and invention in science and technology. We will achieve
+          this by developing an information-and-communication technology (ICT)
+          infrastructure able to simulate, discover, and invent materials and
+          devices with an accuracy comparable or exceeding that of experiments,
+          and with a speed that exceeds anything achievable in the physical
+          world and that mirrors the speed at which computation, data storage,
+          and processing information improve.
+        </p>
+        <p>
+          The ICT infrastructure we will develop has three core components: (1)
+          a community of interoperable quantum-simulation engines, capable of
+          calculating with predictive accuracy all the properties and
+          performance of existing or yet-undiscovered materials, materials’
+          architectures, and devices, (2) a database of materials, materials’
+          architectures, and devices, together with their properties and
+          performance, that starts with known data and that continuously
+          expands, with the quantum engines computing the missing pieces that
+          represent the vast majority of the database: materials still
+          undiscovered, properties not yet measured, architectures not yet
+          assembled, and (3) an agent that controls the quantum engines, reads
+          the library, directs the effort to expand the library, and addresses
+          the grand challenges posed by this proposal and by the wider community
+          with massive high-performance computing searches.
+        </p>
+        <p>
+          This infrastructure is applied to two vertical grand challenges: to
+          discover the materials, the technologies, and the devices that are (1)
+          necessary to transform our energy economy, remove our dependence from
+          non-renewable sources, and reduce our impact on the environment, and
+          that are (2) able to sustain our information and communication
+          revolution well into the 21st century. It is supported by a third,
+          horizontal grand-challenge of (3) a multiscale, multiphysics platform
+          that allows to predict the performance of complex macroscopic devices
+          and architectures from the microscopic materials' properties.
+        </p>"
+      </blockquote>
+
+      <blockquote
+        class="border-l-3 px-4 py-4 italic text-gray-800 bg-white shadow-sm"
+      >
+        <p>"<br /><b>Objectives</b></p>
+        <ol>
+          <li>
+            Develop a database of stable and metastable materials and materials’
+            architectures and of their properties and performance that will be
+            continuously expanded and perfected by ever more accurate, realistic
+            calculations, as a novel and disruptive research tool.
+          </li>
+          <li>
+            Verify, validate, and advance the methodology to predict material
+            properties from first principles with predictive accuracy under
+            realistic conditions
+          </li>
+          <li>
+            Integrate these efforts into a high-throughput computing environment
+            able to screen tens to hundreds of thousands of compounds or
+            architectures for optimal properties
+          </li>
+          <li>
+            Apply this technology to selected grand challenge problems of
+            strategic, societal impact and importance - from information
+            technology to the energy and environment
+          </li>
+          <li>
+            Develop the multi-scale, multi-physics capabilities needed to scale
+            from materials to devices
+          </li>
+          <li>
+            Embed this technology as a novel and disruptive research tool into
+            experimental settings in Universities and public and private
+            research laboratories, industries, and as a key educational tool in
+            understanding fundamentals and applications of physics, chemistry,
+            earth and planetary sciences, and engineering (materials science,
+            chemical, mechanical, civil)
+          </li>
+          <ol></ol>
+        </ol>"
+      </blockquote>
+    </section>
+  </div>
+</Layout>

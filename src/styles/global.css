@@ -2,10 +2,14 @@
 
 @layer base {
   /* 
-the default tailwind ul doesnt indent or have a disc
+the default tailwind ul doesnt indent, numbers or have a disc
 */
   ul {
-    @apply list-disc text-gray-900 ml-8;
+    @apply list-disc ml-8;
+  }
+
+  ol {
+    @apply list-decimal ml-8;
   }
 
   /* this is referenced multiple times 

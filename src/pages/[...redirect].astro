@@ -1,0 +1,31 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Redirect from "@components/Redirect.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+// Load redirects data
+const file = fs.readFileSync("./src/data/redirects.yml", "utf8");
+const data = yaml.load(file);
+const redirects = data.redirects;
+
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/redirects.yml", "utf8");
+  const redirects = yaml.load(file).redirects;
+  return redirects.map((r) => ({
+    params: { redirect: r.from },
+  }));
+}
+
+// Get redirect param from URL
+const { redirect } = Astro.params;
+
+// Find matching redirect
+const redirectEntry = redirects.find((r) => r.from === redirect);
+const target = redirectEntry?.to;
+---
+
+<Layout title="Redirecting...">
+  <Redirect target={target} />
+</Layout>

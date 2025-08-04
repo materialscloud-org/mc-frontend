@@ -1,0 +1,41 @@
+# Redirects should be handled by nginx/hosting service but we use clientside redirects as a fallback
+redirects:
+  - from: optimade
+    to: "https://optimade.materialscloud.io/"
+  - from: aiidalab
+    to: "https://www.aiidalab.net/"
+  - from: work/aiidalab
+    to: "https://www.aiidalab.net/"
+  # - from: home
+  #   to: ""
+  - from: archive
+    to: https://archive.materialscloud.org/
+
+  - from: moderation
+    to: https://archive.materialscloud.org/information#moderation_policies
+
+  ## tools redirects
+  - from: tools
+    to: work/tools
+
+  ## these should also switch from dev to production?
+  # seekpath
+  - from: seekpath
+    to: https://seekpath.materialscloud.io/
+
+  - from: seekpath
+    to: https://seekpath.materialscloud.io/
+  - from: work/seekpath
+    to: https://seekpath.materialscloud.io/
+  - from: work/tools/seekpath
+    to: https://seekpath.materialscloud.io/
+
+  # qeinputgenerator
+  - from: qeinputgenerator
+    to: https://qeinputgenerator.materialscloud.io/
+  - from: work/qeinputgenerator
+    to: https://qeinputgenerator.materialscloud.io/
+  - from: work/tools/qeinputgenerator
+    to: https://qeinputgenerator.materialscloud.io/
+
+  # etc. etc.

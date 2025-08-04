@@ -1,0 +1,18 @@
+---
+const { target } = Astro.props;
+---
+
+<div
+  class="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-4"
+>
+  <img
+    src="images/mcloud_spinner.svg"
+    class="w-24 h-auto"
+    alt="Materials Cloud logo"
+  />
+  <p class="text-lg">
+    Redirecting you to
+    <a href={target}>{target}</a>...
+  </p>
+  <meta http-equiv="refresh" content={`0;url=${target}`} />
+</div>

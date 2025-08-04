@@ -1,13 +1,6 @@
 ---
 import { ENV } from "../../../config/env";
 
-// Note - images here could do with an update / crop
-// They currently have a lot of white space
-// and dont play nicely with tw-flexbox
-
-// To replace the angular build method (which uses controllers)
-// we do fetching in the astro header.
-
 // Fetch statistics
 let archiveStats;
 try {
@@ -51,9 +44,11 @@ const archiveDate =
   dateObj.getUTCDate() +
   ", " +
   dateObj.getFullYear();
+
+const imageStyle = "w-full max-h-72 object-contain";
 ---
 
-<div id="statistics" class="space-y-2">
+<div id="statistics" class="space-y-2 pb-6">
   <div class="space-y-6">
     <h3 class="text-center">Materials Cloud statistics</h3>
 
@@ -126,42 +121,31 @@ const archiveDate =
       </h6>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
-      <div>
-        <img
-          class="w-full"
-          title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-          src="images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
-          alt="Monthly visits"
-        />
-      </div>
-      <div>
-        <img
-          class="w-full"
-          title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
-          src="images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
-          alt="Visits by country"
-        />
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <img
-          class="w-full"
-          title="Statistics of traffic to the archive.materialscloud.org site."
-          src="images/plausible/archive_materialscloud_org_n_visits_months.png"
-          alt="Archive monthly visits"
-        />
-      </div>
-      <div>
-        <img
-          class="w-full"
-          title="Statistics of traffic to the archive.materialscloud.org site."
-          src="images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
-          alt="Archive visits by country"
-        />
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 px-2">
+      <img
+        class={imageStyle}
+        title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
+        src="images/plausible/plausible-rollup_materialscloud_org_n_visits_months.png"
+        alt="Monthly visits"
+      />
+      <img
+        class={imageStyle}
+        title="Statistics of traffic to the materialscloud.org and materialscloud.io sites."
+        src="images/plausible/plausible-rollup_materialscloud_org_piechart_n_visits_country.png"
+        alt="Visits by country"
+      />
+      <img
+        class={imageStyle}
+        title="Statistics of traffic to the archive.materialscloud.org site."
+        src="images/plausible/archive_materialscloud_org_n_visits_months.png"
+        alt="Archive monthly visits"
+      />
+      <img
+        class={imageStyle}
+        title="Statistics of traffic to the archive.materialscloud.org site."
+        src="images/plausible/archive_materialscloud_org_piechart_n_visits_country.png"
+        alt="Archive visits by country"
+      />
     </div>
   </div>
 </div>
