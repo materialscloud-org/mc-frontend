@@ -1,5 +1,39 @@
 @import "tailwindcss";
 
+@layer components {
+  /* 
+  For consistancy between banner-styled lists (tools/discover/learn)
+  */
+  .entries-container {
+    @apply space-y-4 p-2;
+  }
+  .entry-container {
+    @apply flex gap-4 p-4 rounded-xs bg-[rgba(245,245,245,0.19)] shadow-sm;
+  }
+  .entry-flex-shrink {
+    @apply flex-shrink-0;
+  }
+  .entry-image {
+    @apply w-24 h-24 object-contain rounded-md;
+  }
+  .entry-title {
+    @apply text-base text-[rgb(21,101,192)] hover:no-underline;
+  }
+  .entry-info-container {
+    @apply flex flex-col flex-1 ml-4;
+  }
+
+  .entry-author {
+    @apply py-2 text-base text-gray-900;
+  }
+  .entry-description {
+    @apply text-base text-gray-900;
+  }
+  .greyed-entry-container {
+    @apply flex;
+  }
+}
+
 @layer base {
   /* 
 the default tailwind ul doesnt indent, numbers or have a disc
