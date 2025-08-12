@@ -84,12 +84,19 @@ const moreLinkStyle =
       });
     }
 
-    // Mobile hamburger dropdown
+    // handle smooth hamburger scroll.
     const mobileBtn = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
     if (mobileBtn && mobileMenu) {
       mobileBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+        if (mobileMenu.classList.contains("max-h-0")) {
+          const fullHeight = mobileMenu.scrollHeight;
+          mobileMenu.style.maxHeight = fullHeight + "px";
+          mobileMenu.classList.remove("max-h-0");
+        } else {
+          mobileMenu.style.maxHeight = "0px";
+          mobileMenu.classList.add("max-h-0");
+        }
       });
     }
   });
@@ -134,7 +141,7 @@ const moreLinkStyle =
           <button
             id="mc-more-button"
             type="button"
-            class="px-3 font-semibold text-gray-700 hover:text-gray-500 flex items-center"
+            class="px-3 font-semibold cursor-pointer text-gray-700 hover:text-gray-500 flex items-center"
           >
             More ▾
           </button>
@@ -157,7 +164,7 @@ const moreLinkStyle =
           <button
             id="mobile-menu-button"
             type="button"
-            class="p-2 text-gray-700 hover:text-gray-500"
+            class="p-2 cursor-pointer text-gray-700 hover:text-gray-500"
           >
             <svg
               class="h-6 w-6"
@@ -178,7 +185,7 @@ const moreLinkStyle =
       <!-- Mobile dropdown menu -->
       <div
         id="mobile-menu"
-        class="md:hidden hidden px-4 pb-4 border-b border-gray-200 bg-white"
+        class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4 border-b border-gray-200"
       >
         <div class="flex flex-col">
           {
