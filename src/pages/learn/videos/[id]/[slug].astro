@@ -1,0 +1,86 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import fs from "fs";
+import path from "path";
+
+const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
+const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
+
+export async function getStaticPaths() {
+  const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
+
+  const paths = manifest
+    .filter((item) => item.type === "video")
+    .map((item) => ({
+      params: { id: item.id, slug: item.slug },
+    }));
+
+  return paths;
+}
+
+const { id } = Astro.params;
+
+const video = manifest.find((item) => item.id === id);
+if (!video) throw new Error(`Video not found: ${id}`);
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Learn", href: "learn" },
+];
+
+let current = video;
+const parentTrail = [];
+
+// walk up parent chain
+while (current.parentId) {
+  const parent = manifest.find((item) => item.id === current.parentId);
+  if (!parent) break;
+
+  parentTrail.unshift({
+    name: parent.title,
+    href: `learn/sections/${parent.id}/${parent.slug}`,
+  });
+
+  current = parent;
+}
+
+// add the parent trail
+breadcrumbs.push(...parentTrail);
+
+// current video breadcrumb
+breadcrumbs.push({
+  name: video.title,
+  href: `/learn/videos/${video.id}/${video.slug}`,
+});
+---
+
+<Layout title={id} breadcrumbs={breadcrumbs}>
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">{video.title}</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+    </section>
+  </div>
+
+  <p>{video.description}</p>
+  <p>Date: {video.date}</p>
+  <p>
+    <a href={video.profile_url} target="_blank">Event Profile</a>
+  </p>
+
+  {
+    video.video_source_id && (
+      <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/${video.video_source_id}`}
+        title={video.title}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    )
+  }
+</Layout>

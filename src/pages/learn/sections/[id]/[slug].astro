@@ -1,0 +1,95 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import fs from "fs";
+import path from "path";
+
+const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
+
+// Load manifest once
+const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
+
+export async function getStaticPaths() {
+  const MANIFEST_FILE = path.resolve("./src/data/learn-manifest.json");
+
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_FILE, "utf-8"));
+
+  // Only sections and subsections
+  const paths = manifest
+    .filter((item) => item.type === "section" || item.type === "subsection")
+    .map((item) => ({
+      params: { id: item.id, slug: item.slug },
+    }));
+
+  return paths;
+}
+
+const { id } = Astro.params;
+
+// Find this section/subsection
+const pageData = manifest.find((item) => item.id === id);
+if (!pageData) throw new Error(`No page found for id ${id}`);
+
+// Find children
+const children = manifest.filter((item) => item.parentId === id);
+
+const breadcrumbs = [
+  { name: "Home", href: "." },
+  { name: "Learn", href: "learn" },
+];
+
+let current = pageData;
+const parentTrail = [];
+
+// walk up parent chain
+while (current.parentId) {
+  const parent = manifest.find((item) => item.id === current.parentId);
+  if (!parent) break;
+
+  parentTrail.unshift({
+    name: parent.title,
+    href: `learn/sections/${parent.id}/${parent.slug}`,
+  });
+
+  current = parent;
+}
+
+// add the parent trail
+breadcrumbs.push(...parentTrail);
+
+// current section/subsection breadcrumb
+breadcrumbs.push({
+  name: pageData.title,
+  href: "",
+});
+---
+
+<Layout title={id} breadcrumbs={breadcrumbs}>
+  <div class="space-y-10">
+    <section class="space-y-4">
+      <h3 class="text-2xl">{pageData.title}</h3>
+      <hr class="border-t border-gray-300 mb-6" />
+    </section>
+  </div>
+  <p>{pageData.description}</p>
+
+  {
+    children.length > 0 && (
+      <ul>
+        {children.map((child) => (
+          <li>
+            {child.type === "video" ? (
+              <a href={`learn/videos/${child.id}/${child.slug}`}>
+                {child.title}
+              </a>
+            ) : (
+              <a href={`learn/sections/${child.id}/${child.slug}`}>
+                {child.title}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Layout>
