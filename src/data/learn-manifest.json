@@ -26,7 +26,15 @@
     "thumbnail_url": "Tkatchenko.png",
     "date": "2025-03-06",
     "video_source_id": "QF2m-SWswJ4",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-Tkatchenko"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-Tkatchenko",
+    "speakers": [
+      {
+        "first_name": "Alexandre",
+        "last_name": "Tkatchenko",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "fokKqvrQiFRA",
@@ -38,7 +46,15 @@
     "thumbnail_url": "Ceder.jpeg",
     "date": "2025-01-30",
     "video_source_id": "_ErwzVx_Bng",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GerbrandCeder"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GerbrandCeder",
+    "speakers": [
+      {
+        "first_name": "Gerbrand",
+        "last_name": "Ceder",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "50bGFNYlvece",
@@ -50,7 +66,15 @@
     "thumbnail_url": "Srolovitz.jpeg",
     "date": "2024-06-26",
     "video_source_id": "mRlcz-haaFw",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-DavidSrolovitz"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-DavidSrolovitz",
+    "speakers": [
+      {
+        "first_name": "David",
+        "last_name": "Srolovitz",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "Mo43jlnONth9",
@@ -62,7 +86,15 @@
     "thumbnail_url": "DiVentra.png",
     "date": "2024-05-02",
     "video_source_id": "9QHbVIC-lw0",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-MassimilianoDiVentra"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-MassimilianoDiVentra",
+    "speakers": [
+      {
+        "first_name": "Massimiliano",
+        "last_name": "Di Ventra",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "Dm6ZdhHNbjMA",
@@ -74,7 +106,15 @@
     "thumbnail_url": "DominkaZgid.jpg",
     "date": "2024-04-18",
     "video_source_id": "hid0DfId0p4",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-Dominika-Zgid"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-Dominika-Zgid",
+    "speakers": [
+      {
+        "first_name": "Dominika",
+        "last_name": "Zgid",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "WbDpgklN6uEH",
@@ -86,7 +126,15 @@
     "thumbnail_url": "EmmanouilKioupakis.jpg",
     "date": "2023-06-20",
     "video_source_id": "wHwQsxhoYL4",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-EmmanouilKioupakis"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-EmmanouilKioupakis",
+    "speakers": [
+      {
+        "first_name": "Emmanouil",
+        "last_name": "Kioupakis",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "AJwEIXwgh0oz",
@@ -98,7 +146,15 @@
     "thumbnail_url": "ClaudiaFelser.jpeg",
     "date": "2023-05-02",
     "video_source_id": "L3OHwqnFWOc",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-ClaudiaFelser"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-ClaudiaFelser",
+    "speakers": [
+      {
+        "first_name": "Claudia",
+        "last_name": "Felser",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "cj2hUglCt6wW",
@@ -110,7 +166,15 @@
     "thumbnail_url": "KristianSommerThygesen.jpeg",
     "date": "2023-03-23",
     "video_source_id": "fR7bFv-AIG8",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-KristianThygesen"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-KristianThygesen",
+    "speakers": [
+      {
+        "first_name": "Kristian Sommer",
+        "last_name": "Thygesen",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "5bSvZQgFaVga",
@@ -122,7 +186,15 @@
     "thumbnail_url": "HeatherKulik.png",
     "date": "2022-12-13",
     "video_source_id": "aN-kJPc4KP8",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-HeatherKulik"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-HeatherKulik",
+    "speakers": [
+      {
+        "first_name": "Heather",
+        "last_name": "Kulik",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mRD4WMyu2Rea",
@@ -134,7 +206,15 @@
     "thumbnail_url": "alan_aspuru-guzik.jpg",
     "date": "2022-05-31",
     "video_source_id": "0vfD4_KD_Kw",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-AlanAspuruGuzik"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-AlanAspuruGuzik",
+    "speakers": [
+      {
+        "first_name": "Alán",
+        "last_name": "Aspuru-Guzik",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "Pvu6eMva0Jap",
@@ -146,7 +226,15 @@
     "thumbnail_url": "garnet-chan.jpg",
     "date": "2022-04-05",
     "video_source_id": "O-uSrQuxV68",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GarnetChan"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GarnetChan",
+    "speakers": [
+      {
+        "first_name": "Garnet",
+        "last_name": "Chan",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "OEzEJMz0gUvb",
@@ -158,7 +246,15 @@
     "thumbnail_url": "glotzer.jpg",
     "date": "2022-02-08",
     "video_source_id": "q9_2UR1DsgA",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-SharonGlotzer"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-SharonGlotzer",
+    "speakers": [
+      {
+        "first_name": "Sharon",
+        "last_name": "Glotzer",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mXc3P9ig3ZAI",
@@ -170,7 +266,15 @@
     "thumbnail_url": "ingrid-mertig.jpeg",
     "date": "2021-12-03",
     "video_source_id": "o6YvujjpdE0",
-    "profile_url": "https://nccr-marvel.ch/de/events/marvel-distinguished-lecture-IngridMertig"
+    "profile_url": "https://nccr-marvel.ch/de/events/marvel-distinguished-lecture-IngridMertig",
+    "speakers": [
+      {
+        "first_name": "Ingrid",
+        "last_name": "Mertig",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "3pQeVUOu2i7X",
@@ -182,7 +286,15 @@
     "thumbnail_url": "john-perdew.jpg",
     "date": "2021-11-15",
     "video_source_id": "ZCwNVhoTd6I",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-JohnPerdew"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-JohnPerdew",
+    "speakers": [
+      {
+        "first_name": "John",
+        "last_name": "Perdew",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "vdoKs5V9GxYu",
@@ -194,7 +306,15 @@
     "thumbnail_url": "alex-zunger.jpg",
     "date": "2021-10-20",
     "video_source_id": "CNOm-iYYztk",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-AlexZunger"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-AlexZunger",
+    "speakers": [
+      {
+        "first_name": "Alex",
+        "last_name": "Zunger",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "LnlSc9TbrhXC",
@@ -206,7 +326,15 @@
     "thumbnail_url": "dario-gil.jpg",
     "date": "2021-06-15",
     "video_source_id": "noWzLl-8d0s",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-DarioGil"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-DarioGil",
+    "speakers": [
+      {
+        "first_name": "Darío",
+        "last_name": "Gil",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "6D9TMwVYfrNF",
@@ -218,7 +346,15 @@
     "thumbnail_url": "kresse.jpg",
     "date": "2021-05-18",
     "video_source_id": "X4lvUlas9wg",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GeorgKresse"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-GeorgKresse",
+    "speakers": [
+      {
+        "first_name": "Georg",
+        "last_name": "Kresse",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "3YiYyYvbe5kF",
@@ -230,7 +366,15 @@
     "thumbnail_url": "persson.jpg",
     "date": "2021-04-27",
     "video_source_id": "l4PyCeRyBGY",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-KristinPersson"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-KristinPersson",
+    "speakers": [
+      {
+        "first_name": "Kristin",
+        "last_name": "Persson",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "l9Y5E16M1pcG",
@@ -242,7 +386,15 @@
     "thumbnail_url": "norskov.jpg",
     "date": "2021-02-18",
     "video_source_id": "zs5ovHquLl0",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-jens-norskov"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-jens-norskov",
+    "speakers": [
+      {
+        "first_name": "Jens",
+        "last_name": "K. Nørskov",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mpNKcjT3jtM1",
@@ -254,7 +406,15 @@
     "thumbnail_url": "picozzi.jpg",
     "date": "2020-12-15",
     "video_source_id": "Gsw4oRl4Zvw",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-silvia-picozzi"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-silvia-picozzi",
+    "speakers": [
+      {
+        "first_name": "Silvia",
+        "last_name": "Picozzi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "K6Dvo1fJrApZ",
@@ -266,7 +426,15 @@
     "thumbnail_url": "stefano-baroni.jpeg",
     "date": "2020-11-17",
     "video_source_id": "xBiSW7Vfn84",
-    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-stefano-baroni"
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-stefano-baroni",
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "jyrkELwKUQGJ",
@@ -278,7 +446,15 @@
     "thumbnail_url": "giulia-galli.jpg",
     "date": "2019-11-13",
     "video_source_id": "f9mI44M8du0",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-giulia-galli"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-giulia-galli",
+    "speakers": [
+      {
+        "first_name": "Giulia",
+        "last_name": "Galli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "e6Jn5iZdlQ64",
@@ -290,7 +466,15 @@
     "thumbnail_url": "emily-carter.jpg",
     "date": "2019-06-17",
     "video_source_id": "gBDNcRSM4_c",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-emily-carter"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-emily-carter",
+    "speakers": [
+      {
+        "first_name": "Emily",
+        "last_name": "Carter",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "CFSXSGN7Ygaz",
@@ -302,7 +486,15 @@
     "thumbnail_url": "giustino.jpg",
     "date": "2018-12-05",
     "video_source_id": "RbTFbqeK9AY",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-feliciano-giustino"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-feliciano-giustino",
+    "speakers": [
+      {
+        "first_name": "Feliciano",
+        "last_name": "Giustino",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "LpOseEzXVa77",
@@ -314,7 +506,15 @@
     "thumbnail_url": "price.jpg",
     "date": "2018-09-06",
     "video_source_id": "jcevpenSoB8",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-sally-price"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-sally-price",
+    "speakers": [
+      {
+        "first_name": "Sarah (Sally)",
+        "last_name": "Price",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "EoQ0qK8XazDn",
@@ -326,7 +526,15 @@
     "thumbnail_url": "resta_frame_2.png",
     "date": "2018-05-23",
     "video_source_id": "vZoppjScXDQ",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-raffaele-resta"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-raffaele-resta",
+    "speakers": [
+      {
+        "first_name": "Raffaele",
+        "last_name": "Resta",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "WZhZ6W3LrVM5",
@@ -338,7 +546,22 @@
     "thumbnail_url": "kieron-burke.jpg",
     "date": "2018-02-20",
     "video_source_id": "-TGzd_-QOO4",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-kieron-burke"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-kieron-burke",
+    "speakers": [
+      {
+        "first_name": "Kieron",
+        "last_name": "Burke",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Kieron Burke's slides",
+        "external": true,
+        "name": "Slides (PDF)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/marvel_dist_lectures/2018-burke-slides.pdf"
+      }
+    ]
   },
   {
     "id": "vl36T4CyBwBi",
@@ -350,7 +573,15 @@
     "thumbnail_url": "van-de-walle.jpg",
     "date": "2017-09-21",
     "video_source_id": "AS6ezyR4Qq0",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-van-de-walle"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-van-de-walle",
+    "speakers": [
+      {
+        "first_name": "Chris G.",
+        "last_name": "Van de Walle",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "nC75v4UbZRYm",
@@ -362,7 +593,15 @@
     "thumbnail_url": "shao-horn.jpg",
     "date": "2017-09-11",
     "video_source_id": "qfud6PMKErs",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-shao-horn"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-shao-horn",
+    "speakers": [
+      {
+        "first_name": "Yang",
+        "last_name": "Shao-Horn",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "VwvbPOYOQY7G",
@@ -374,7 +613,15 @@
     "thumbnail_url": "sglouie.jpg",
     "date": "2017-07-21",
     "video_source_id": "CMwZ0pF5h8g",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-louie"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-louie",
+    "speakers": [
+      {
+        "first_name": "Steven G.",
+        "last_name": "Louie",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "MukB14GvM0eM",
@@ -386,7 +633,22 @@
     "thumbnail_url": "selloni.png",
     "date": "2017-05-16",
     "video_source_id": "O46mP3eo2Yg",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-selloni"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-selloni",
+    "speakers": [
+      {
+        "first_name": "Annabella",
+        "last_name": "Selloni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Annabella Selloni's slides",
+        "external": true,
+        "name": "Slides (PDF)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/marvel_dist_lectures/2017-selloni-slides.pdf"
+      }
+    ]
   },
   {
     "id": "fn8KavmOzacQ",
@@ -398,7 +660,15 @@
     "thumbnail_url": "reiher.png",
     "date": "2017-03-08",
     "video_source_id": "kaXrWH8F1fcA",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-reiher"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-reiher",
+    "speakers": [
+      {
+        "first_name": "Markus",
+        "last_name": "Reiher",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "vZZaCHP0PqMs",
@@ -410,7 +680,15 @@
     "thumbnail_url": "littlewood.jpg",
     "date": "2017-03-06",
     "video_source_id": "marvel_littlewood",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Peter",
+        "last_name": "Littlewood",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "hvjtaz1FrNcu",
@@ -422,7 +700,15 @@
     "thumbnail_url": "gagliardi.jpg",
     "date": "2016-12-20",
     "video_source_id": "kQZrSXg8JFto",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-gagliardi"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-gagliardi",
+    "speakers": [
+      {
+        "first_name": "Laura",
+        "last_name": "Gagliardi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "BPOctqsVX5cm",
@@ -434,7 +720,15 @@
     "thumbnail_url": "clare-grey.jpg",
     "date": "2016-10-26",
     "video_source_id": "H4M2SZu_3lk",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-grey"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-grey",
+    "speakers": [
+      {
+        "first_name": "Clare P.",
+        "last_name": "Grey",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "VSyBsKsiUY0V",
@@ -446,7 +740,15 @@
     "thumbnail_url": "ceder.jpg",
     "date": "2016-01-25",
     "video_source_id": "marvel_ceder",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-ceder"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-ceder",
+    "speakers": [
+      {
+        "first_name": "Gerbrand",
+        "last_name": "Ceder",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "GII4V49br0Kz",
@@ -458,7 +760,15 @@
     "thumbnail_url": "villars.jpeg",
     "date": "2015-11-11",
     "video_source_id": "marvel_villars",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-villars"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-villars",
+    "speakers": [
+      {
+        "first_name": "Pierre",
+        "last_name": "Villars",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "idmacKbf7uGw",
@@ -470,7 +780,15 @@
     "thumbnail_url": "levitov.jpg",
     "date": "2015-10-13",
     "video_source_id": "marvel_levitov",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-levitov"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-levitov",
+    "speakers": [
+      {
+        "first_name": "Leonid",
+        "last_name": "Levitov",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "5YcAN0jRqjql",
@@ -482,7 +800,15 @@
     "thumbnail_url": "yip.jpg",
     "date": "2015-08-31",
     "video_source_id": "marvel_yip",
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-yip"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-yip",
+    "speakers": [
+      {
+        "first_name": "Sidney",
+        "last_name": "Yip",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "F9hYgVPpyr7Y",
@@ -494,7 +820,15 @@
     "thumbnail_url": "scuseria.jpg",
     "date": "2015-01-14",
     "video_source_id": null,
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture",
+    "speakers": [
+      {
+        "first_name": "Gustavo",
+        "last_name": "Scuseria",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "niH98Zjieos7",
@@ -506,7 +840,15 @@
     "thumbnail_url": "zunger.jpg",
     "date": "2014-10-09",
     "video_source_id": null,
-    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-1"
+    "profile_url": "http://nccr-marvel.ch/events/marvel-distinguished-lecture-1",
+    "speakers": [
+      {
+        "first_name": "Alex",
+        "last_name": "Zunger",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "AhZ1ry",
@@ -527,7 +869,15 @@
     "thumbnail_url": "Ceperley.jpeg",
     "date": "2025-01-27",
     "video_source_id": "m5vdwlCxuLc",
-    "profile_url": "https://nccr-marvel.ch/events/classics-ceperley"
+    "profile_url": "https://nccr-marvel.ch/events/classics-ceperley",
+    "speakers": [
+      {
+        "first_name": "David",
+        "last_name": "Ceperley",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "M0Fnfc4sGpv0",
@@ -539,7 +889,20 @@
     "thumbnail_url": "BillShoshana.png",
     "date": "2024-06-05",
     "video_source_id": "yLYfy-zygTM",
-    "profile_url": "https://nccr-marvel.ch/events/classics-wodak-jorgensen"
+    "profile_url": "https://nccr-marvel.ch/events/classics-wodak-jorgensen",
+    "speakers": [
+      {
+        "first_name": "Bill",
+        "last_name": "Jorgensen",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Shoshana",
+        "last_name": "Wodak",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "VzYydjdqRJnT",
@@ -551,7 +914,20 @@
     "thumbnail_url": "gross-rubio.jpg",
     "date": "2023-09-28",
     "video_source_id": "_9-Bc3Hc22Q",
-    "profile_url": "https://nccr-marvel.ch/events/classics-gross-rubio"
+    "profile_url": "https://nccr-marvel.ch/events/classics-gross-rubio",
+    "speakers": [
+      {
+        "first_name": "Eberhard",
+        "last_name": "Gross",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Angel",
+        "last_name": "Rubio",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "2Via4x79TCMm",
@@ -563,7 +939,20 @@
     "thumbnail_url": "KotliarGeorges.jpg",
     "date": "2022-12-08",
     "video_source_id": "yZZ9UyJql5A",
-    "profile_url": "https://nccr-marvel.ch/events/classics-kotliar-georges"
+    "profile_url": "https://nccr-marvel.ch/events/classics-kotliar-georges",
+    "speakers": [
+      {
+        "first_name": "Antoine",
+        "last_name": "Georges",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Gabriel",
+        "last_name": "Kotliar",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "JNfKQDkZ2UH5",
@@ -575,7 +964,20 @@
     "thumbnail_url": "ClassicsParisiMezard.jpg",
     "date": "2022-11-03",
     "video_source_id": "9eu9rFNQLYA",
-    "profile_url": "https://nccr-marvel.ch/events/classics-parisi-mezard"
+    "profile_url": "https://nccr-marvel.ch/events/classics-parisi-mezard",
+    "speakers": [
+      {
+        "first_name": "Giorgio",
+        "last_name": "Parisi",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Marc",
+        "last_name": "Mézard",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mpMzKDvXYO8D",
@@ -587,7 +989,25 @@
     "thumbnail_url": "godby-reining-louie.jpg",
     "date": "2022-01-18",
     "video_source_id": "RLc7-z-L2yg",
-    "profile_url": "https://nccr-marvel.ch/events/classics-reining-louie-godby"
+    "profile_url": "https://nccr-marvel.ch/events/classics-reining-louie-godby",
+    "speakers": [
+      {
+        "first_name": "Rex",
+        "last_name": "Godby",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Lucia",
+        "last_name": "Reining",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Steven",
+        "last_name": "Louie",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "JuyY09jMcH95",
@@ -599,7 +1019,20 @@
     "thumbnail_url": "panagiotopoulos_tildesley.jpg",
     "date": "2021-12-09",
     "video_source_id": "1ACMuNyDFfM",
-    "profile_url": "https://nccr-marvel.ch/events/classics-panagiotopoulos-tildesley"
+    "profile_url": "https://nccr-marvel.ch/events/classics-panagiotopoulos-tildesley",
+    "speakers": [
+      {
+        "first_name": "Athanassios",
+        "last_name": "Panagiotopoulos",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Dominic",
+        "last_name": "Tildesley",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "6ofmFdyh2SIB",
@@ -611,7 +1044,20 @@
     "thumbnail_url": "ladd-frenkel.jpg",
     "date": "2021-05-20",
     "video_source_id": "uAkTUi3GuOk",
-    "profile_url": "https://nccr-marvel.ch/events/classics-frenkel-ladd"
+    "profile_url": "https://nccr-marvel.ch/events/classics-frenkel-ladd",
+    "speakers": [
+      {
+        "first_name": "Tony",
+        "last_name": "Ladd",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Daan",
+        "last_name": "Frenkel",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "giDNp7RQ3Jih",
@@ -623,7 +1069,20 @@
     "thumbnail_url": "vanderbilt-resta.jpg",
     "date": "2021-03-23",
     "video_source_id": "1hmBuPn8aQE",
-    "profile_url": "https://nccr-marvel.ch/events/classics-resta-vanderbilt"
+    "profile_url": "https://nccr-marvel.ch/events/classics-resta-vanderbilt",
+    "speakers": [
+      {
+        "first_name": "David",
+        "last_name": "Vanderbilt",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Raffaele",
+        "last_name": "Resta",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "ZeOCc4qlYeNl",
@@ -635,7 +1094,20 @@
     "thumbnail_url": "car-parrinello.jpg",
     "date": "2019-07-25",
     "video_source_id": "tRLItIWDPTc",
-    "profile_url": "http://nccr-marvel.ch/events/cecam-marvel-lecture-car-parrinello"
+    "profile_url": "http://nccr-marvel.ch/events/cecam-marvel-lecture-car-parrinello",
+    "speakers": [
+      {
+        "first_name": "Michele",
+        "last_name": "Parrinello",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Roberto",
+        "last_name": "Car",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "QjOqlSD1df9A",
@@ -647,7 +1119,20 @@
     "thumbnail_url": "ryckaert-ciccotti.jpg",
     "date": "2019-04-30",
     "video_source_id": "_zwgPkBeO_I",
-    "profile_url": "http://nccr-marvel.ch/events/cecam-marvel-lecture-holonomic"
+    "profile_url": "http://nccr-marvel.ch/events/cecam-marvel-lecture-holonomic",
+    "speakers": [
+      {
+        "first_name": "Jean-Paul",
+        "last_name": "Ryckaert",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Ciccotti",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mXTsX1",
@@ -668,7 +1153,30 @@
     "thumbnail_url": "ScienceDiplomacy.png",
     "date": "2025-02-28",
     "video_source_id": "vInM5zo8RRs",
-    "profile_url": "https://nccr-marvel.ch/events/maryannmansigh-sciencediplomacy"
+    "profile_url": "https://nccr-marvel.ch/events/maryannmansigh-sciencediplomacy",
+    "speakers": [
+      {
+        "first_name": "Roland",
+        "last_name": "Bouffanais",
+        "title": ""
+      },
+      {
+        "first_name": "Atish",
+        "last_name": "Dabholkar",
+        "title": ""
+      },
+      {
+        "first_name": "Gihan",
+        "last_name": "Kamel",
+        "title": ""
+      },
+      {
+        "first_name": "Tatsujiro",
+        "last_name": "Suzuki",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "jd9WAJdjibxU",
@@ -680,7 +1188,20 @@
     "thumbnail_url": "NinaMark.jpeg",
     "date": "2024-04-23",
     "video_source_id": "uGGsBJ5FTas",
-    "profile_url": "https://nccr-marvel.ch/events/Science-writing"
+    "profile_url": "https://nccr-marvel.ch/events/Science-writing",
+    "speakers": [
+      {
+        "first_name": "Nina",
+        "last_name": "Meinzer",
+        "title": ""
+      },
+      {
+        "first_name": "Mark",
+        "last_name": "Peplow",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "925hp1XlEJlW",
@@ -692,7 +1213,15 @@
     "thumbnail_url": "Erichwimmer.jpeg",
     "date": "2022-05-05",
     "video_source_id": "M18gPXJRNgQ",
-    "profile_url": "https://www.cecam.org/lecture-details/fascination-and-industrial-value-materials-modeling"
+    "profile_url": "https://www.cecam.org/lecture-details/fascination-and-industrial-value-materials-modeling",
+    "speakers": [
+      {
+        "first_name": "Erich",
+        "last_name": " Wimmer",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "4d6N3kAZSQQ8",
@@ -704,7 +1233,20 @@
     "thumbnail_url": "de-liguori_perotto.jpeg",
     "date": "2021-11-09",
     "video_source_id": "lh4S4l5lsT0",
-    "profile_url": "https://www.cecam.org/workshop-details/1110"
+    "profile_url": "https://www.cecam.org/workshop-details/1110",
+    "speakers": [
+      {
+        "first_name": "Beniamino",
+        "last_name": "de’ Liguori Carino",
+        "title": ""
+      },
+      {
+        "first_name": "Pierpaolo",
+        "last_name": "Perotto",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "O4Qa79GIc9I0",
@@ -716,7 +1258,15 @@
     "thumbnail_url": "massimo-noro.jpg",
     "date": "2019-05-08",
     "video_source_id": "drwgPaQ7mNg",
-    "profile_url": "https://www.cecam.org/lecture-details/computer-modelling-industrial-applications"
+    "profile_url": "https://www.cecam.org/lecture-details/computer-modelling-industrial-applications",
+    "speakers": [
+      {
+        "first_name": "Massimo",
+        "last_name": "Noro",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "QDpitvRUyhmU",
@@ -728,7 +1278,15 @@
     "thumbnail_url": "mary-ann-mansigh.jpg",
     "date": "2017-11-15",
     "video_source_id": "kdZZOaadLEg",
-    "profile_url": "http://nccr-marvel.ch/events/almost-famous-a-woman-behind-the-codes"
+    "profile_url": "http://nccr-marvel.ch/events/almost-famous-a-woman-behind-the-codes",
+    "speakers": [
+      {
+        "first_name": "Mary Ann",
+        "last_name": "Mansigh Karlsen",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "sKI8c5dCVSG3",
@@ -740,7 +1298,15 @@
     "thumbnail_url": "michel-mareschal.jpg",
     "date": "2017-11-15",
     "video_source_id": "Os86RhMgfF8",
-    "profile_url": "http://nccr-marvel.ch/events/almost-famous-a-woman-behind-the-codes"
+    "profile_url": "http://nccr-marvel.ch/events/almost-famous-a-woman-behind-the-codes",
+    "speakers": [
+      {
+        "first_name": "Michel",
+        "last_name": "Mareschal",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "dBwpSN",
@@ -761,7 +1327,15 @@
     "thumbnail_url": "NicolaNosengo.jpg",
     "date": "2023-10-03",
     "video_source_id": "01CFvBNhZlU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Nosengo",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "JwUbKfp4eLCi",
@@ -773,7 +1347,15 @@
     "thumbnail_url": "Michael_Herbst.jpg",
     "date": "2023-05-20",
     "video_source_id": "dujepKxxxkg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Michael",
+        "last_name": "F. Herbst",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "z00TrDvrw9g4",
@@ -785,7 +1367,25 @@
     "thumbnail_url": "spaldin_marzari_pizzi.jpg",
     "date": "2021-06-17",
     "video_source_id": "QwfrtZ8JtPM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Spaldin",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "1AQZX4HFlxwu",
@@ -797,7 +1397,15 @@
     "thumbnail_url": "bligaard.jpg",
     "date": "2017-05-29",
     "video_source_id": "g6zH99J-HdM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Thomas",
+        "last_name": "Bligaard",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "ZovkCDVzKGms",
@@ -809,7 +1417,15 @@
     "thumbnail_url": "sanvito.jpg",
     "date": "2017-05-30",
     "video_source_id": "1Y6kms0C2Bk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Sanvito",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "ZSVcMsTY5wCy",
@@ -821,7 +1437,15 @@
     "thumbnail_url": "pickard.jpg",
     "date": "2017-05-30",
     "video_source_id": "W4OJLCP_0rw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Chris",
+        "last_name": "Pickard",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "rIIm6h9QV0km",
@@ -833,7 +1457,15 @@
     "thumbnail_url": "fornari.jpg",
     "date": "2017-05-31",
     "video_source_id": "tZnzvJE4KII",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Marco",
+        "last_name": "Fornari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "MIduxIcc1xFE",
@@ -845,7 +1477,15 @@
     "thumbnail_url": "paxton.jpg",
     "date": "2015-08-11",
     "video_source_id": "mE17ymjgMck",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Tony",
+        "last_name": "Paxton",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "OYCrizCnZIcq",
@@ -857,7 +1497,15 @@
     "thumbnail_url": "paxton.jpg",
     "date": "2015-08-13",
     "video_source_id": "NPMvOAGP6PA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Tony",
+        "last_name": "Paxton",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "mnG1lg",
@@ -886,7 +1534,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-07",
     "video_source_id": "RtdXXWFLvF8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Bercx",
+        "last_name": "Marnik",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Bercx",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day1_tutorial_overview_Bercx.pdf"
+      }
+    ]
   },
   {
     "id": "akQ7dWPHVKDT",
@@ -898,7 +1561,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-07",
     "video_source_id": "jigMCyWGNAE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Francisco",
+        "last_name": "Ramirez",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Ramirez",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day1_intro_to_AiiDA_Ramirez.pdf"
+      }
+    ]
   },
   {
     "id": "689vnJPDQkUw",
@@ -910,7 +1588,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-07",
     "video_source_id": "vlmjVwGJgEU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Christopher",
+        "last_name": "Sewell",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "UqN2k8pov3O4",
@@ -922,7 +1608,28 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-08",
     "video_source_id": "KpiLIA8ge1w",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan P.",
+        "last_name": "Huber",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Huber (Powerpoint)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day2_provenance_workflows_Huber.pptx"
+      },
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Huber (PDF)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day2_provenance_workflows_Huber.pdf"
+      }
+    ]
   },
   {
     "id": "qTLNF1eGjmQu",
@@ -934,7 +1641,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-09",
     "video_source_id": "bjTUnHXZ6oY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "srlq4Mwqg0T8",
@@ -946,7 +1661,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-10",
     "video_source_id": "_T8HBuOYUyc",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Pizzi",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_Materials_Cloud_Pizzi.pdf"
+      }
+    ]
   },
   {
     "id": "LPpld4coC64S",
@@ -958,7 +1688,28 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-10",
     "video_source_id": "BwtxyTAVugY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Aliaksandr (Sasha)",
+        "last_name": "Yakutovich",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Yakutovich (Keynote)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_aiidalab_Yakutovich.key"
+      },
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Yakutovich (Powerpoint)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_aiidalab_Yakutovich.pptx"
+      }
+    ]
   },
   {
     "id": "U7laxWjHKzQi",
@@ -970,7 +1721,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-10",
     "video_source_id": "F0e3cQHNbNM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Casper",
+        "last_name": "Welzel Andersen",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Andersen",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_optimade_Andersen.pdf"
+      }
+    ]
   },
   {
     "id": "MeX9xMjItmuT",
@@ -982,7 +1748,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-10",
     "video_source_id": "3rkhzYBUuA4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Dou",
+        "last_name": "Du",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Du",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_07_aiida_tutorial/day4_osscar_Du.pdf"
+      }
+    ]
   },
   {
     "id": "R9TdzsrIyQwF",
@@ -994,7 +1775,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "9p_krkdEz_A",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Daniele",
+        "last_name": "Ongari",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "nyEmE9sbEJ5L",
@@ -1006,7 +1795,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "YzHuIrYhyFI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Dominik",
+        "last_name": "Gresch",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "AvhgzbnR7qib",
@@ -1018,7 +1815,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "Uqz-i29JD5U",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Atsushi",
+        "last_name": "Togo",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "GTPR9h7tqrOJ",
@@ -1030,7 +1835,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "X18SiQwVPQo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Bonan",
+        "last_name": "Zhu",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "x1jfhqajcE96",
@@ -1042,7 +1855,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "0S7rvut8gpE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Emanuele",
+        "last_name": "Bosoni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "QgPZziF66TIw",
@@ -1054,7 +1875,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "ccmEWKgVfVc",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Philipp",
+        "last_name": "Rüßmann",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "H8xJq1pa5ZAd",
@@ -1066,7 +1895,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2020-07-11",
     "video_source_id": "NzhN5ce0Sc8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Miki",
+        "last_name": "Bonacci",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "OkHQym",
@@ -1087,7 +1924,33 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-21",
     "video_source_id": "Y2K5eKmEFaQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Marzari",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_intro_Marzari.pdf"
+      },
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Pizzi",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_AiiDA_intro_Pizzi.pdf"
+      }
+    ]
   },
   {
     "id": "uTDlFulcirwK",
@@ -1099,7 +1962,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-21",
     "video_source_id": "8_1KmIOOTnE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day1_practical_information_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "DhZmS4MlYKTo",
@@ -1111,7 +1989,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-22",
     "video_source_id": "4-QYO_vyrdQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefaan",
+        "last_name": "Cottenier",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "OIy8hBmawa2e",
@@ -1123,7 +2009,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-22",
     "video_source_id": "fp9cNalWnPE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Huber",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day2_workflows_intro_Huber.pdf"
+      }
+    ]
   },
   {
     "id": "bgzj4zpMCUoN",
@@ -1135,7 +2036,27 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-22",
     "video_source_id": "wc4HjYYlpqI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Espen",
+        "last_name": "Flage-Larsen",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Huber",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day2_workflows_advanced_intro_Huber_Larsen.pdf"
+      }
+    ]
   },
   {
     "id": "D75s8ZUdEFBF",
@@ -1147,7 +2068,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "cTHInRuvzlQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Fawzi",
+        "last_name": "Mohamed",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Fawzi Mohamed",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_workflows_NOMAD_Mohamed.pdf"
+      }
+    ]
   },
   {
     "id": "kgIQ17jOmA0H",
@@ -1159,7 +2095,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "vbyy9KG2FDU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Aliaksandr (Sasha)",
+        "last_name": "Yakutovich",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Yakutovich",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_aiida_lab_Yakutovich.pdf"
+      }
+    ]
   },
   {
     "id": "PdJaucpo4zwj",
@@ -1171,7 +2122,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "wQx0eRfBSz",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_plugins_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "nhBhb5lJtSj5",
@@ -1183,7 +2149,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "2CxiuiA1uVs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_plugins_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "Kcq50MzJdNrw",
@@ -1195,7 +2176,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "n7zm-xIteQ0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Alberto",
+        "last_name": "Garcia",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Garcia",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_aiida-siesta_Garcia.pdf"
+      }
+    ]
   },
   {
     "id": "hUD5nhINnKNf",
@@ -1207,7 +2203,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-23",
     "video_source_id": "760O2lDB-TM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day3_group_B_plugins_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "gl4FoDjbWSfZ",
@@ -1219,7 +2230,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-24",
     "video_source_id": "b9Slp6GAmAM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Guido",
+        "last_name": "Petretto",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Petretto",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_abipy_Petretto.pdf"
+      }
+    ]
   },
   {
     "id": "pXZOZ4QEu3np",
@@ -1231,7 +2257,27 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-24",
     "video_source_id": "WyhTgalz_Q8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz & Pizzi",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_materials_cloud_Pizzi_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "IIsdHwQkdyd0",
@@ -1243,7 +2289,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-05-24",
     "video_source_id": "NULrl5LrNeI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_05_aiida_tutorial/day4_closing_Talirz.pdf"
+      }
+    ]
   },
   {
     "id": "LzKDQC",
@@ -1264,7 +2325,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-03-25",
     "video_source_id": "zPrSasRFrdc",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Huber",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/sphuber_plugin_migration_workshop.pdf"
+      }
+    ]
   },
   {
     "id": "wezx1KiFuIFP",
@@ -1276,7 +2352,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-03-25",
     "video_source_id": "R0nusNxt73o",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Oscar",
+        "last_name": "Arbelaez Echeverri",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Arbelaez Echeverri",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/Converting_Python_2_to_Python_3.pdf"
+      }
+    ]
   },
   {
     "id": "tcu7diKqoEjj",
@@ -1288,7 +2379,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-03-25",
     "video_source_id": "ZcqeDF0Yq8k",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/plugin-migration-workshop_migration_guide.pdf"
+      }
+    ]
   },
   {
     "id": "Zo1Ejxt4Dvvv",
@@ -1300,7 +2406,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-03-25",
     "video_source_id": "C3gnb1-hoP0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Pizzi",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/2019_03_gitflow.pdf"
+      }
+    ]
   },
   {
     "id": "1RkHQyFfT43n",
@@ -1312,7 +2433,22 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2019-03-25",
     "video_source_id": "CCJek0iJBY4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leopold",
+        "last_name": "Talirz",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Slides Talirz",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2019_03_aiida_workshop/plugin-migration-workshop_testing_short.pdf"
+      }
+    ]
   },
   {
     "id": "zJKqzT",
@@ -1333,7 +2469,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-05-29",
     "video_source_id": "qD2IcaFV4Io",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "AgMJWLTXEqCk",
@@ -1345,7 +2489,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-05-30",
     "video_source_id": "iCUtciU5SCo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Spyros",
+        "last_name": "Zoupanos",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "8buD2u3c8h3s",
@@ -1357,7 +2509,20 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-05-31",
     "video_source_id": "nay1Wee4i7M",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "KGVe3B",
@@ -1378,7 +2543,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "Nd8DKF5Wn6w",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Spyros",
+        "last_name": "Zoupanos",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "J2sAu1FzvmN9",
@@ -1390,7 +2563,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "qDXI-FGABT8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicolas",
+        "last_name": "Mounet",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "edjZlX12Hbxb",
@@ -1402,7 +2583,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "ReoH_CJe7D8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Martin",
+        "last_name": "Uhrin",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "uA9xaUJ27L7M",
@@ -1414,7 +2603,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "F77urjH3OIw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leonid",
+        "last_name": "Kahle",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "uNNi52RCNjfw",
@@ -1426,7 +2623,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "v6nk6WRvFX4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leonid",
+        "last_name": "Kahle",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "G7U7hw4my0Ci",
@@ -1438,7 +2643,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "_9taxVNDQnI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leonid",
+        "last_name": "Kahle",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "NhPOCvs78cRQ",
@@ -1450,7 +2663,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "TJiKxhbMw2s",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Rico Andreas",
+        "last_name": "Häuselmann",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "aMxxvHSnVltj",
@@ -1462,7 +2683,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "bEftuUbs_rk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "fFgiTmt1NexP",
@@ -1474,7 +2703,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-04-26",
     "video_source_id": "HqcKMkZUEo8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "EHV7jl",
@@ -1495,7 +2732,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-03-07",
     "video_source_id": "wnWBFt4rAZw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicolas",
+        "last_name": "Mounet",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "RnmPmfG1hudJ",
@@ -1507,7 +2752,20 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-03-07",
     "video_source_id": "YsI4mx4l7ts",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Martin",
+        "last_name": "Uhrin",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "AzJfgK5LpZ6X",
@@ -1519,7 +2777,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-03-07",
     "video_source_id": "KrQ6-hh52bM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Rico Andreas",
+        "last_name": "Häuselmann",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "VfB4fIG4pSKm",
@@ -1531,7 +2797,20 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2017-03-07",
     "video_source_id": "-xKyDnrrqiQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Spyros",
+        "last_name": "Zoupanos",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "lSS4mh",
@@ -1552,7 +2831,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-22",
     "video_source_id": "qUNYEWClS2U",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "ZXIfOFFsK6KZ",
@@ -1564,7 +2851,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-22",
     "video_source_id": "dS5K2Wovm8k",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicolas",
+        "last_name": "Mounet",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "zAYsvP9pSOiV",
@@ -1576,7 +2871,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-23",
     "video_source_id": "Ru35i6wLQBE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leonid",
+        "last_name": "Kahle",
+        "title": "Mr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "XbyxqzqG46xk",
@@ -1588,7 +2891,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-23",
     "video_source_id": "a_kEPp5y_yU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Martin",
+        "last_name": "Uhrin",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "GvZeZaurb3oT",
@@ -1600,7 +2911,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-24",
     "video_source_id": "hiQ65ztPfMA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "BBSoJMd5wb0d",
@@ -1612,7 +2931,15 @@
     "thumbnail_url": "aiida-logo2.png",
     "date": "2016-06-24",
     "video_source_id": "2-iAxfWlii0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Cepellotti",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "12A7nC",
@@ -1641,7 +2968,20 @@
     "thumbnail_url": "psi_logo.svg",
     "date": "2025-04-03",
     "video_source_id": "8pLEzUV125M",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "2025_04_03-Electronic-structure-at-LSF_PSI-course_Module-1.pdf"
+      }
+    ]
   },
   {
     "id": "lfT8z9nOqLjN",
@@ -1653,7 +2993,20 @@
     "thumbnail_url": "psi_logo.svg",
     "date": "2025-04-04",
     "video_source_id": "c41aQA-aL5c",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "2025_04_04-Electronic-structure-at-LSF_PSI-course_Module-2.pdf"
+      }
+    ]
   },
   {
     "id": "i0BFF0rUGf8j",
@@ -1665,7 +3018,20 @@
     "thumbnail_url": "psi_logo.svg",
     "date": "2025-04-07",
     "video_source_id": "kcEjQ5G8gBU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "2025_04_07-Electronic-structure-at-LSF_PSI-course_Module-3.pdf"
+      }
+    ]
   },
   {
     "id": "Adz6tbxXUGKP",
@@ -1677,7 +3043,36 @@
     "thumbnail_url": "psi_logo.svg",
     "date": "2025-04-09",
     "video_source_id": "pksvH0boPj0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Timo",
+        "last_name": "Reents"
+      },
+      {
+        "first_name": "Miki",
+        "last_name": "Bonacci"
+      },
+      {
+        "first_name": "Andres",
+        "last_name": "Ortega-Guerrero"
+      },
+      {
+        "first_name": "Xing",
+        "last_name": "Wang"
+      },
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "2025_04_09-Electronic-structure-at-LSF_PSI-course_Module-4.pdf"
+      }
+    ]
   },
   {
     "id": "VLoB41",
@@ -1706,7 +3101,20 @@
     "thumbnail_url": "QE2023_1.1_welcome.png",
     "date": "2023-08-28",
     "video_source_id": "bPn8NFUrlz8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_1.1_welcome.pdf"
+      }
+    ]
   },
   {
     "id": "G7fLpB2nZ4Yw",
@@ -1718,7 +3126,20 @@
     "thumbnail_url": "QE2023_1.2_ceresoli.png",
     "date": "2023-08-28",
     "video_source_id": "J6wOD5B2L1w",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Davide",
+        "last_name": "Ceresoli"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_1.2_ceresoli.pdf"
+      }
+    ]
   },
   {
     "id": "D6qPzHx7YjAt",
@@ -1730,7 +3151,20 @@
     "thumbnail_url": "QE2023_1.3_degironcoli.png",
     "date": "2023-08-28",
     "video_source_id": "AtE9FEIVDmg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_1.3_degironcoli.pdf"
+      }
+    ]
   },
   {
     "id": "J3nZ2fUxPq1t",
@@ -1742,7 +3176,20 @@
     "thumbnail_url": "QE2023_1.4_marzari.png",
     "date": "2023-08-28",
     "video_source_id": "0Uh75GODuUo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_1.4_marzari.pdf"
+      }
+    ]
   },
   {
     "id": "H4oKxUjBpP7n",
@@ -1754,7 +3201,20 @@
     "thumbnail_url": "QE2023_2.1_giannozzi.png",
     "date": "2023-08-29",
     "video_source_id": "bAV9VMmrdTE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Giannozzi"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_2.1_giannozzi.pdf"
+      }
+    ]
   },
   {
     "id": "W1tJ3uHvLrSx",
@@ -1766,7 +3226,20 @@
     "thumbnail_url": "QE2023_2.2_ponce.png",
     "date": "2023-08-29",
     "video_source_id": "nMsTVmE1Gjg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Samuel",
+        "last_name": "Poncé"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_2.2_ponce.pdf"
+      }
+    ]
   },
   {
     "id": "K2iL7wXpMf1e",
@@ -1778,7 +3251,20 @@
     "thumbnail_url": "QE2023_2.3_monacelli.png",
     "date": "2023-08-29",
     "video_source_id": "pLL2wP9iUQs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Lorenzo",
+        "last_name": "Monacelli"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_2.3_monacelli.pdf"
+      }
+    ]
   },
   {
     "id": "N3xHxPzQaL7o",
@@ -1790,7 +3276,20 @@
     "thumbnail_url": "QE2023_3.1_cococcioni.png",
     "date": "2023-08-30",
     "video_source_id": "1n4aBip0y8g",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_3.1_cococcioni.pdf"
+      }
+    ]
   },
   {
     "id": "Q4jJrSvHbYpK",
@@ -1802,7 +3301,20 @@
     "thumbnail_url": "QE2023_3.2_timrov.png",
     "date": "2023-08-30",
     "video_source_id": "YTYWWVEH_-w",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_3.2_timrov.pdf"
+      }
+    ]
   },
   {
     "id": "M3aTnZoUvSxP",
@@ -1814,7 +3326,20 @@
     "thumbnail_url": "QE2023_3.3_chiarotti.png",
     "date": "2023-08-30",
     "video_source_id": "FPUtQm-aDCM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Tommaso",
+        "last_name": "Chiarotti"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_3.3_chiarotti.pdf"
+      }
+    ]
   },
   {
     "id": "B7mRqKxPzN3o",
@@ -1826,7 +3351,20 @@
     "thumbnail_url": "QE2023_3.4_picozzi.png",
     "date": "2023-08-30",
     "video_source_id": "lLIT2kHBI2Y",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Silvia",
+        "last_name": "Picozzi"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_3.4_picozzi.pdf"
+      }
+    ]
   },
   {
     "id": "ORBMRVilWP2k",
@@ -1838,7 +3376,20 @@
     "thumbnail_url": "QE2023_3.5_floris.png",
     "date": "2023-08-30",
     "video_source_id": "OpMi1Pmd0jk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Floris"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_3.5_floris.pdf"
+      }
+    ]
   },
   {
     "id": "Q3oLxVpNzKpM",
@@ -1850,7 +3401,20 @@
     "thumbnail_url": "QE2023_4.1_dabo.png",
     "date": "2023-08-31",
     "video_source_id": "zyCouUo6D3k",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ismaila",
+        "last_name": "Dabo"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_4.1_dabo.pdf"
+      }
+    ]
   },
   {
     "id": "X2rHcJtLzSxN",
@@ -1862,7 +3426,20 @@
     "thumbnail_url": "QE2023_4.2_ferretti.png",
     "date": "2023-08-31",
     "video_source_id": "EEK7MEaZBUY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Ferretti"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_4.2_ferretti.pdf"
+      }
+    ]
   },
   {
     "id": "B7pKxSjMzQoN",
@@ -1874,7 +3451,20 @@
     "thumbnail_url": "QE2023_4.3_linscott.png",
     "date": "2023-08-31",
     "video_source_id": "GVmiHSSAAfc",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Edward",
+        "last_name": "Linscott"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_4.3_linscott.pdf"
+      }
+    ]
   },
   {
     "id": "C5oLlXjPzN3K",
@@ -1886,7 +3476,20 @@
     "thumbnail_url": "QE2023_4.4_colonna.png",
     "date": "2023-08-31",
     "video_source_id": "duZ5aT9rw5c",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_4.4_colonna.pdf"
+      }
+    ]
   },
   {
     "id": "M8oLpZzHsNwV",
@@ -1898,7 +3501,20 @@
     "thumbnail_url": "QE2023_4.5_sangalli.png",
     "date": "2023-09-01",
     "video_source_id": "v2IdsecMLes",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Davide",
+        "last_name": "Sangalli"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "abstract",
+        "name": "slides",
+        "url": "QE2023_4.5_sangalli.pdf"
+      }
+    ]
   },
   {
     "id": "X7rCzKpMjLhS",
@@ -1910,7 +3526,20 @@
     "thumbnail_url": "QE2023_5.2_bastonero.png",
     "date": "2023-09-01",
     "video_source_id": "29omlbOK_Y4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Lorenzo",
+        "last_name": "Bastonero"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_5.2_bastonero.pdf"
+      }
+    ]
   },
   {
     "id": "N3xKqPjZvHwM",
@@ -1922,7 +3551,20 @@
     "thumbnail_url": "QE2023_5.3_castelli.png",
     "date": "2023-09-01",
     "video_source_id": "0wwQnhw3QsQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ivano",
+        "last_name": "Castelli"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "abstract",
+        "name": "slides",
+        "url": "QE2023_5.3_castelli.pdf"
+      }
+    ]
   },
   {
     "id": "J4zPmNkLxQ7w",
@@ -1934,7 +3576,24 @@
     "thumbnail_url": "QE2023_5.4_concluding.png",
     "date": "2023-09-01",
     "video_source_id": "Y8gFYsj_bbo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      },
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2023_5.4_concluding.pdf"
+      }
+    ]
   },
   {
     "id": "tctKdH",
@@ -1955,7 +3614,24 @@
     "thumbnail_url": "QE2022D1_Matteo_Cococcioni_and_Iurii_Timrov_welcome.png",
     "date": "2022-11-09",
     "video_source_id": "dmB_7Z6iqMM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      },
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Matteo_Cococcioni_and_Iurii_Timrov_welcome.pdf"
+      }
+    ]
   },
   {
     "id": "qrk3yLFWtqmY",
@@ -1967,7 +3643,20 @@
     "thumbnail_url": "QE2022D1_Nicola_Marzari_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "N3kiBZU_cCs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Nicola_Marzari_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "c8b9qN6rfURB",
@@ -1979,7 +3668,20 @@
     "thumbnail_url": "QE2022D1_Leeor_Kronik_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "YgjP-Hpc2bA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Leoor",
+        "last_name": "Kronik"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Leeor_Kronik_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "vmRBAtgXEcIc",
@@ -1991,7 +3693,20 @@
     "thumbnail_url": "QE2022D1_Marnick_Bercx_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "Tji9_LjDRXc",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Marnik",
+        "last_name": "Bercx"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Marnick_Bercx_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "yhfMVF64KBVq",
@@ -2003,7 +3718,20 @@
     "thumbnail_url": "QE2022D1_Kristjan_Eimre_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "ZgNTQ7btYds",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Kristjan",
+        "last_name": "Eimre"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Kristjan_Eimre_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "oPvTQS0pDlhR",
@@ -2015,7 +3743,20 @@
     "thumbnail_url": "QE2022D1_Andrea_Ferretti_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "olHig48kD3M",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Ferretti"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Andrea_Ferretti_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "bU1O9b2BiFFk",
@@ -2027,7 +3768,24 @@
     "thumbnail_url": "QE2022D1_Nicola_Colonna_and_Iurii_Timrov_handson.png",
     "date": "2022-11-09",
     "video_source_id": "3MFWUzm4cnM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna"
+      },
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Nicola_Colonna_and_Iurii_Timrov_handson.pdf"
+      }
+    ]
   },
   {
     "id": "1AAKTFqfaBtI",
@@ -2039,7 +3797,20 @@
     "thumbnail_url": "QE2022D1_Giovanni_Pizzi_lecture.png",
     "date": "2022-11-09",
     "video_source_id": "eHyqkB4ZMjw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D1_Giovanni_Pizzi_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "fePMNDBn1eNH",
@@ -2051,7 +3822,29 @@
     "thumbnail_url": "QE2022D1_Antimo_Marrazzo_handson.png",
     "date": "2022-11-09",
     "video_source_id": "FhYAEDFYzlk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Antimo",
+        "last_name": "Marrazzo"
+      },
+      {
+        "first_name": "Junfeng",
+        "last_name": "Qiao"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Marrazzo slides",
+        "url": "QE2022D1_Antimo_Marrazzo_handson.pdf"
+      },
+      {
+        "description": "",
+        "name": "Qiao notes",
+        "url": "QE2022D1_Junfeng_Qiao_handson.pdf"
+      }
+    ]
   },
   {
     "id": "fx2ZiU5ebJ7q",
@@ -2063,7 +3856,20 @@
     "thumbnail_url": "QE2022D2_Matteo_Cococcioni_lecture.png",
     "date": "2022-11-10",
     "video_source_id": "erho5_eLUuQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Matteo_Cococcioni_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "cpSGfbPWO6XA",
@@ -2075,7 +3881,20 @@
     "thumbnail_url": "QE2022D2_Iurii_Timrov_lecture.png",
     "date": "2022-11-10",
     "video_source_id": "2AnMt_omCcA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Iurii_Timrov_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "FAHKVeNRIOYM",
@@ -2087,7 +3906,20 @@
     "thumbnail_url": "QE2022D2_Martin_Uhrin_lecture.png",
     "date": "2022-11-10",
     "video_source_id": "Dic4Hkp40Qs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Martin",
+        "last_name": "Uhrin"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Martin_Uhrin_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "pzixYCjocLT7",
@@ -2099,7 +3931,24 @@
     "thumbnail_url": "QE2022D2_Iurii_Timrov_and_Matteo_Cococcioni_handson.png",
     "date": "2022-11-10",
     "video_source_id": "34mHl0Iw2_E",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      },
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Iurii_Timrov_and_Matteo_Cococcioni_handson.pdf"
+      }
+    ]
   },
   {
     "id": "ofq9f8pFtHxA",
@@ -2111,7 +3960,24 @@
     "thumbnail_url": "QE2022D2_Iurii_Timrov_and_Matteo_Cococcioni_handson.png",
     "date": "2022-11-10",
     "video_source_id": "64JKOF5lh2U",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      },
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Iurii_Timrov_and_Matteo_Cococcioni_handson.pdf"
+      }
+    ]
   },
   {
     "id": "teehl8BjS8A4",
@@ -2123,7 +3989,20 @@
     "thumbnail_url": "QE2022D2_Andrea_Floris_lecture.png",
     "date": "2022-11-10",
     "video_source_id": "nxVFJT_kNT8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Floris"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D2_Andrea_Floris_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "97C2nIqdoVYO",
@@ -2135,7 +4014,22 @@
     "thumbnail_url": "QE2022D2_discussion.png",
     "date": "2022-11-10",
     "video_source_id": "x1fCqkcySRs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov"
+      },
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni"
+      },
+      {
+        "first_name": "Andrea",
+        "last_name": "Ferretti"
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "0oeLcDDAPtSV",
@@ -2147,7 +4041,20 @@
     "thumbnail_url": "QE2022D3_Andrea_Ferretti_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "hEF7Hu3UWwk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Ferretti"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Andrea_Ferretti_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "Viu2kWGPX6s9",
@@ -2159,7 +4066,20 @@
     "thumbnail_url": "QE2022D3_Edward_Linscott_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "tgzgs1bp14w",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Edward",
+        "last_name": "Linscott"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Edward_Linscott_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "huLsIJNkA43M",
@@ -2171,7 +4091,20 @@
     "thumbnail_url": "QE2022D3_Yannick_Schubert_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "MSqzfKoEzWM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Yannick",
+        "last_name": "Schubert"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Yannick_Schubert_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "b9FLU1PAUqOr",
@@ -2183,7 +4116,24 @@
     "thumbnail_url": "QE2022D3_Edward_Linscott_and_Riccardo_De_Gennaro_and_Nicola_Colonna_handson.png",
     "date": "2022-11-11",
     "video_source_id": "uaHWhCZoDAk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Edward",
+        "last_name": "Linscott"
+      },
+      {
+        "first_name": "Riccardo",
+        "last_name": "De Gennaro"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Edward_Linscott_and_Riccardo_De_Gennaro_and_Nicola_Colonna_handson.pdf"
+      }
+    ]
   },
   {
     "id": "AJIXM4absqua",
@@ -2195,7 +4145,20 @@
     "thumbnail_url": "QE2022D3_Nicola_Colonna_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "bK7tnNdyhmY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Nicola_Colonna_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "SuSpFsEDefRl",
@@ -2207,7 +4170,24 @@
     "thumbnail_url": "QE2022D3_Edward_Linscott_and_Riccardo_De_Gennaro_and_Nicola_Colonna_handson.png",
     "date": "2022-11-11",
     "video_source_id": "qUGdzi_NkQ8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna"
+      },
+      {
+        "first_name": "Edward",
+        "last_name": "Linscott"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Edward_Linscott_and_Riccardo_De_Gennaro_and_Nicola_Colonna_handson.pdf"
+      }
+    ]
   },
   {
     "id": "mPrGOALR7CEC",
@@ -2219,7 +4199,20 @@
     "thumbnail_url": "QE2022D3_Renata_Wentzcovitch_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "oKWNaqq6FVM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Renata",
+        "last_name": "Wentzcovitch"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Renata_Wentzcovitch_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "BOK64c3f3hKV",
@@ -2231,7 +4224,20 @@
     "thumbnail_url": "QE2022D3_Matteo_Gatti_lecture.png",
     "date": "2022-11-11",
     "video_source_id": "In4DLBwbvs8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Gatti"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Matteo_Gatti_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "mrMZZYmof1wg",
@@ -2243,7 +4249,20 @@
     "thumbnail_url": "QE2022D3_Nicola_Colonna_closing_remarks.png",
     "date": "2022-11-11",
     "video_source_id": "iulSY8tf7VU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna"
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "slides",
+        "url": "QE2022D3_Nicola_Colonna_closing_remarks.pdf"
+      }
+    ]
   },
   {
     "id": "lfYatW",
@@ -2264,7 +4283,21 @@
     "thumbnail_url": "efJj52RJSTcA.png",
     "date": "2017-01-16",
     "video_source_id": "k39fYozQ-ISs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Baroni notes",
+        "url": "1-1_Baroni_QE-at-ICTP.pdf"
+      }
+    ]
   },
   {
     "id": "B74aKUHPWg8E",
@@ -2276,7 +4309,21 @@
     "thumbnail_url": "B74aKUHPWg8E.png",
     "date": "2017-01-16",
     "video_source_id": "ictp_qe2017_Gebauer1",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ralph",
+        "last_name": "Gebauer",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Gebauer notes",
+        "url": "1-2_Gebauer_Planewaves_Pseudopotentials.pdf"
+      }
+    ]
   },
   {
     "id": "RpDQa7DO1CkL",
@@ -2288,7 +4335,21 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-16",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Roberto",
+        "last_name": "Innocente",
+        "title": ""
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Docker containers. Building & running.",
+        "name": "Innocente notes (revised)",
+        "url": "1-3_Innocente_docker-intro_REVISED.pdf"
+      }
+    ]
   },
   {
     "id": "Zem3D6woIu3r",
@@ -2300,7 +4361,26 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-16",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Giannozzi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Giannozzi notes",
+        "url": "1-4a_day1_handson_Giannozzi_.pdf"
+      },
+      {
+        "description": "",
+        "name": "Timrov laboratory session materials",
+        "url": "1-4b_Day1-done_Timrov.tar"
+      }
+    ]
   },
   {
     "id": "BC0o5tNZXL9F",
@@ -2312,7 +4392,21 @@
     "thumbnail_url": "BC0o5tNZXL9F.png",
     "date": "2017-01-17",
     "video_source_id": "kQtOP4iZGwFA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Cococcioni notes (revised)",
+        "url": "2-1_cococcioni_dft+U_revised.pdf"
+      }
+    ]
   },
   {
     "id": "NmFF5ovLpTf8",
@@ -2324,7 +4418,21 @@
     "thumbnail_url": "NmFF5ovLpTf8.png",
     "date": "2017-01-17",
     "video_source_id": "ictp_colonna_1",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Colonna notes",
+        "url": "2-2_talk_colonna.pdf"
+      }
+    ]
   },
   {
     "id": "c6RKmhhXktHw",
@@ -2336,7 +4444,31 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-17",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Nicola",
+        "last_name": "Colonna",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Cococcioni Adv DFT Functionals lab HPC",
+        "url": "2-4a_Cococcioni_Adv_DFT_Functionals_lab_HPC.tar.gz"
+      },
+      {
+        "description": "",
+        "name": "HPC - Quick Guide",
+        "url": "2-4b_HPC-QuickGuide.pdf"
+      }
+    ]
   },
   {
     "id": "vCXVD596FycG",
@@ -2348,7 +4480,15 @@
     "thumbnail_url": null,
     "date": "2017-01-18",
     "video_source_id": "kXN94ecXwZDw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sandro",
+        "last_name": "Scandolo",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "uTG3nHv2vZhb",
@@ -2360,7 +4500,15 @@
     "thumbnail_url": null,
     "date": "2017-01-18",
     "video_source_id": "kTZLxFyfulMo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sandro",
+        "last_name": "Scandolo",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "iTA9FoeHxqu3",
@@ -2372,7 +4520,21 @@
     "thumbnail_url": "iTA9FoeHxqu3.png",
     "date": "2017-01-19",
     "video_source_id": "kAVCGTY4RhWM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Dal Corso notes",
+        "url": "4-1_Dal_Corso_lecture_1.pdf"
+      }
+    ]
   },
   {
     "id": "5TofJegT7l9I",
@@ -2384,7 +4546,21 @@
     "thumbnail_url": "5TofJegT7l9I.png",
     "date": "2017-01-19",
     "video_source_id": "kTyUiSAXrdkU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Dal Corso notes",
+        "url": "4-2_Dal_Corso_lecture_2.pdf"
+      }
+    ]
   },
   {
     "id": "kMsiT0J8xGnf",
@@ -2396,7 +4572,41 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-19",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Leyla",
+        "last_name": "Isaeva",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Mauro",
+        "last_name": "Palumbo",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Dal Corso lab exercises",
+        "url": "4-3_Dal_Corso_exercise_qe_tut_19_01_2017.tgz"
+      },
+      {
+        "description": "",
+        "name": "Isaeva notes",
+        "url": "4-4a_Isaeva_seminar_qe_school.pdf"
+      },
+      {
+        "description": "",
+        "name": "Palumbo notes",
+        "url": "4-4b_Palumbo_QHA_handson_intro.pdf"
+      }
+    ]
   },
   {
     "id": "5m2imHUrj6BL",
@@ -2408,7 +4618,21 @@
     "thumbnail_url": "5m2imHUrj6BL.png",
     "date": "2017-01-20",
     "video_source_id": "k4YOZW3Hs23Q",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Davide",
+        "last_name": "Ceresoli",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Ceresoli notes",
+        "url": "5-1_NMR-EPR-lecture.pdf"
+      }
+    ]
   },
   {
     "id": "FcL2LuYNugz0",
@@ -2420,7 +4644,21 @@
     "thumbnail_url": "FcL2LuYNugz0.png",
     "date": "2017-01-20",
     "video_source_id": "kvRBvGqYr4GY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Lorenzo",
+        "last_name": "Paulatto",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Paulatto notes",
+        "url": "5-2_IR-RAMAN_Paulatto.pdf"
+      }
+    ]
   },
   {
     "id": "SWFBb7cOaqKN",
@@ -2432,7 +4670,21 @@
     "thumbnail_url": "SWFBb7cOaqKN.png",
     "date": "2017-01-23",
     "video_source_id": "k7vWfc8oAjYg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ralph",
+        "last_name": "Gebauer",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Gebauer notes",
+        "url": "6-1_TDDFT_Intro_Gebauer.pdf"
+      }
+    ]
   },
   {
     "id": "efDtiEoAJsCv",
@@ -2444,7 +4696,21 @@
     "thumbnail_url": "efDtiEoAJsCv.png",
     "date": "2017-01-23",
     "video_source_id": "kTXcgALDu1l8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Ferretti",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Ferretti notes",
+        "url": "6-2_2017_GW_Ferretti.pdf"
+      }
+    ]
   },
   {
     "id": "FNJZuj1oxkj6",
@@ -2456,7 +4722,21 @@
     "thumbnail_url": "FNJZuj1oxkj6.png",
     "date": "2017-01-23",
     "video_source_id": "k3r3br9zxm1Y",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Marini",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Yambo notes",
+        "url": "6-3_01Yambo_Ferretti.pdf"
+      }
+    ]
   },
   {
     "id": "o1csdpDg3FKV",
@@ -2468,7 +4748,26 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-23",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ralph",
+        "last_name": "Gebauer",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Timrov notes",
+        "url": "6-4_Hands-on_TDDFPT_ABS_Timrov.pdf"
+      }
+    ]
   },
   {
     "id": "X5uJ8D34mgVm",
@@ -2480,7 +4779,21 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-23",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Marini",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Ferretti Marini lab notes",
+        "url": "6-5_YIntro_Ferretti_Lab.pdf"
+      }
+    ]
   },
   {
     "id": "UOGvGfSz4WBm",
@@ -2492,7 +4805,22 @@
     "thumbnail_url": "UOGvGfSz4WBm.png",
     "date": "2017-01-24",
     "video_source_id": "kI7lPJl_VNoE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Oliviero",
+        "last_name": "Andreussi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "external": true,
+        "name": "Andreussi notes",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2017_01_qe_ictp/Andreussi_Environ_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "Jx6MuuNLiPDs",
@@ -2504,7 +4832,26 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-24",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Oliviero",
+        "last_name": "Andreussi",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Iurii",
+        "last_name": "Timrov",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Andreussi handout",
+        "url": "7-2_Andreussi_Environ_handout.pdf"
+      }
+    ]
   },
   {
     "id": "K5T0EY7hNMBH",
@@ -2516,7 +4863,21 @@
     "thumbnail_url": "K5T0EY7hNMBH.png",
     "date": "2017-01-24",
     "video_source_id": "kSyaCMUmbXtM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Pizzi notes",
+        "url": "7-3_Pizzi_AiiDA_intro_Ts_Jan17.pdf"
+      }
+    ]
   },
   {
     "id": "U2qsSEVaylBd",
@@ -2528,7 +4889,58 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-24",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Fernando",
+        "last_name": "Gargiulo",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Sebastiaan",
+        "last_name": "Huber",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Leonid",
+        "last_name": "Kahle",
+        "title": "Mr."
+      },
+      {
+        "first_name": "Snehal",
+        "last_name": "Kumbhar",
+        "title": "Mrs."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "AiiDA tutorial",
+        "url": "7-5_AiiDA_tutorial.pdf"
+      },
+      {
+        "external": true,
+        "name": "AiiDA tutorial (generic version January 2017)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/marvel-vms/old_tutorials/aiida_tutorial_2017_01_text.pdf"
+      },
+      {
+        "description": "",
+        "external": true,
+        "name": "AiiDA tutorial VirtualBox file (OVA)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/marvel-vms/old_tutorials/aiida_tutorial_2017_01.ova"
+      },
+      {
+        "description": "",
+        "external": true,
+        "name": "Instructions for the VirtualBox image",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/marvel-vms/old_tutorials/aiida_tutorial_2017_01_instructions.pdf"
+      }
+    ]
   },
   {
     "id": "5d84HvIaZLLK",
@@ -2540,7 +4952,21 @@
     "thumbnail_url": "5d84HvIaZLLK.png",
     "date": "2017-01-26",
     "video_source_id": "kIb-hDVtI0uE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Michele",
+        "last_name": "Ceriotti",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "Ceriotti notes",
+        "url": "9-1_ictp-qe-mceriotti.pdf"
+      }
+    ]
   },
   {
     "id": "DB1jJatJzPIi",
@@ -2552,7 +4978,26 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2017-01-26",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Michele",
+        "last_name": "Ceriotti",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Riccardo",
+        "last_name": "Petraglia",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "An Introduction to i-PI: handout",
+        "url": "9-2_An_introduction_to_i-PI_handout.pdf"
+      }
+    ]
   },
   {
     "id": "y3mb51938CtO",
@@ -2564,7 +5009,20 @@
     "thumbnail_url": "y3mb51938CtO.png",
     "date": "2017-01-26",
     "video_source_id": "kkr33a9BItBk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Paolo",
+        "last_name": "Giannozzi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "9QoXgGtlwLWj",
@@ -2576,7 +5034,15 @@
     "thumbnail_url": "9QoXgGtlwLWj.png",
     "date": "2017-01-27",
     "video_source_id": "k6orB6zmqzT8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Carlo",
+        "last_name": "Cavazzoni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "bGv2oPkKiCbG",
@@ -2588,7 +5054,15 @@
     "thumbnail_url": "bGv2oPkKiCbG.png",
     "date": "2017-01-27",
     "video_source_id": "k4KQZatn5rjA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Carlo",
+        "last_name": "Cavazzoni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "Kr5WSY",
@@ -2609,7 +5083,15 @@
     "thumbnail_url": "LRnNWcge5S1X.png",
     "date": "2009-07-19",
     "video_source_id": "k_z0LSrpuWQ0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Walter",
+        "last_name": "Kohn",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "CkKgLHPWIEaM",
@@ -2621,7 +5103,15 @@
     "thumbnail_url": "CkKgLHPWIEaM.png",
     "date": "2009-07-19",
     "video_source_id": "kdVGDIzkfLEo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Walter",
+        "last_name": "Kohn",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "4ExMGfocda5B",
@@ -2633,7 +5123,21 @@
     "thumbnail_url": "4ExMGfocda5B.png",
     "date": "2009-07-20",
     "video_source_id": "kpjKSalE_6wo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Electronic structure, density-functional theory, plane waves: a quick overview of terms and concepts. Stefano Baroni",
+        "name": "Baroni slides",
+        "url": "QESB09_w1d1_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "7fXuZstHU0HC",
@@ -2645,7 +5149,21 @@
     "thumbnail_url": "7fXuZstHU0HC.png",
     "date": "2009-07-20",
     "video_source_id": "kOuWdMTe-sRw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Electronic structure, density-functional theory, plane waves: a quick overview of terms and concepts. Stefano Baroni",
+        "name": "Baroni slides",
+        "url": "../4ExMGfocda5B/QESB09_w1d1_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "Gk718QTG2F5j",
@@ -2657,7 +5175,21 @@
     "thumbnail_url": "Gk718QTG2F5j.png",
     "date": "2009-07-20",
     "video_source_id": "k76W2vhe0C28",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Electronic structure, density-functional theory, plane waves: a quick overview of terms and concepts. Stefano Baroni",
+        "name": "Baroni slides",
+        "url": "../4ExMGfocda5B/QESB09_w1d1_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "tgxZ1lBgv6OE",
@@ -2669,7 +5201,21 @@
     "thumbnail_url": "tgxZ1lBgv6OE.png",
     "date": "2009-07-20",
     "video_source_id": "kTr375Zyt6Qg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Shobhana",
+        "last_name": "Narasimhan",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "",
+        "name": "DFT in practice: Some \"Fundae\"",
+        "url": "Ucsb_sn_lec1.pdf"
+      }
+    ]
   },
   {
     "id": "XG2WmTaX40UT",
@@ -2681,7 +5227,31 @@
     "thumbnail_url": "XG2WmTaX40UT.png",
     "date": "2009-07-20",
     "video_source_id": "kvXmmDRWkTRk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Shobhana",
+        "last_name": "Narasimhan",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Gabriele",
+        "last_name": "Sclauzero",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Brandon",
+        "last_name": "Wood",
+        "title": ""
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises: Energy bands and equation of state of Si, Al, or the like. A few simple molecular applications. G Sclauzero, B. Wood, S. Narashimhan",
+        "name": "Exercises",
+        "url": "W1d1.tar.gz"
+      }
+    ]
   },
   {
     "id": "H6vrgHocEAiU",
@@ -2693,7 +5263,15 @@
     "thumbnail_url": "H6vrgHocEAiU.png",
     "date": "2009-07-20",
     "video_source_id": "klIzPsjVlEdg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Steven G.",
+        "last_name": "Louie",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "B3CaxKdj4ghm",
@@ -2705,7 +5283,15 @@
     "thumbnail_url": "B3CaxKdj4ghm.png",
     "date": "2009-07-20",
     "video_source_id": "k1V6WJl2NqQM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Steven G.",
+        "last_name": "Louie",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "wWvlw0GsLXeY",
@@ -2717,7 +5303,21 @@
     "thumbnail_url": "wWvlw0GsLXeY.png",
     "date": "2009-07-21",
     "video_source_id": "kICK4wfbU2RA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Shobhana",
+        "last_name": "Narasimhan",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Forces: calculating them, and using them. Shobhana Narasimhan",
+        "name": "Slides",
+        "url": "Ucsb_sn_lec2.pdf"
+      }
+    ]
   },
   {
     "id": "6wLjnhtpBHE2",
@@ -2729,7 +5329,21 @@
     "thumbnail_url": "6wLjnhtpBHE2.png",
     "date": "2009-07-21",
     "video_source_id": "kr1B6iGcQsNE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Stress, Enthalpy and Variable Cell Shape Optimization. Stefano De Gironcoli",
+        "name": "Slides",
+        "url": "Tutorial_stress.pdf"
+      }
+    ]
   },
   {
     "id": "pFoojmKRba1G",
@@ -2741,7 +5355,21 @@
     "thumbnail_url": "pFoojmKRba1G.png",
     "date": "2009-07-21",
     "video_source_id": "kkHQ44etNga8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Stress, Enthalpy and Variable Cell Shape Optimization. Stefano De Gironcoli",
+        "name": "Slides",
+        "url": "../6wLjnhtpBHE2/Tutorial_stress.pdf"
+      }
+    ]
   },
   {
     "id": "SpoJPV10Aau9",
@@ -2753,7 +5381,21 @@
     "thumbnail_url": "SpoJPV10Aau9.png",
     "date": "2009-07-21",
     "video_source_id": "kY2bfawqUsoU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Rare Events and Nudged Elastic Band. Stefano De Gironcoli",
+        "name": "Slides",
+        "url": "Tutorial_neb.pdf"
+      }
+    ]
   },
   {
     "id": "KQginkGObrUQ",
@@ -2765,7 +5407,21 @@
     "thumbnail_url": "KQginkGObrUQ.png",
     "date": "2009-07-21",
     "video_source_id": "kqi7LkViAOxM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sadasivan",
+        "last_name": "Shankar",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Top 10+ Challenges for Enabling Computational Materials Design. Sadasivan Shankar",
+        "name": "Slides",
+        "url": "QESB09_Shankar_keynote.pdf"
+      }
+    ]
   },
   {
     "id": "uzttmyo2RGhJ",
@@ -2777,7 +5433,21 @@
     "thumbnail_url": "uzttmyo2RGhJ.png",
     "date": "2009-07-21",
     "video_source_id": "kHrmYL0MnqHY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Sadasivan",
+        "last_name": "Shankar",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Top 10+ Challenges for Enabling Computational Materials Design. Sadasivan Shankar",
+        "name": "Slides",
+        "url": "../KQginkGObrUQ/QESB09_Shankar_keynote.pdf"
+      }
+    ]
   },
   {
     "id": "SIoGqGIf4aC1",
@@ -2789,7 +5459,21 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-21",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Bonini",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Applications to (clean/reconstructed) surfaces, molecules, adsorbates, vacancies. N. Bonini",
+        "name": "Exercises",
+        "url": "W1d2.tar.gz"
+      }
+    ]
   },
   {
     "id": "JosM7Yzq92G0",
@@ -2801,7 +5485,21 @@
     "thumbnail_url": "JosM7Yzq92G0.png",
     "date": "2009-07-22",
     "video_source_id": "keC8aSjxTsHI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory: forces, response functions, phonons, and all that. Stefano Baroni",
+        "name": "Slides",
+        "url": "../zoyyaltuHSOM/QESB09_DFPT_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "zoyyaltuHSOM",
@@ -2813,7 +5511,21 @@
     "thumbnail_url": "zoyyaltuHSOM.png",
     "date": "2009-07-22",
     "video_source_id": "kaTSnkJDbxLA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory: forces, response functions, phonons, and all that. Stefano Baroni",
+        "name": "Slides",
+        "url": "QESB09_DFPT_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "Ld76dKxNchSX",
@@ -2825,7 +5537,21 @@
     "thumbnail_url": "Ld76dKxNchSX.png",
     "date": "2009-07-22",
     "video_source_id": "kr-zhqcpjcnY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory: forces, response functions, phonons, and all that. Stefano Baroni",
+        "name": "Slides",
+        "url": "../zoyyaltuHSOM/QESB09_DFPT_Baroni.pdf"
+      }
+    ]
   },
   {
     "id": "5w9NUZwJib1o",
@@ -2837,7 +5563,26 @@
     "thumbnail_url": "5w9NUZwJib1o.png",
     "date": "2009-07-22",
     "video_source_id": "kwaJZW0_ZniQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to density functional perturbation theory for lattice dynamics. Andrea Dal Corso",
+        "name": "Slides (Part 1)",
+        "url": "QESB09_DFPT_DalCorso1.pdf"
+      },
+      {
+        "description": "Density functional perturbation theory II: phonon dispersions. Andrea Dal Corso",
+        "name": "Slides (Part 2)",
+        "url": "../OVdqa6W18L9U/lecture_dfpt_sb_2009.pdf"
+      }
+    ]
   },
   {
     "id": "OVdqa6W18L9U",
@@ -2849,7 +5594,26 @@
     "thumbnail_url": "OVdqa6W18L9U.png",
     "date": "2009-07-22",
     "video_source_id": "kqOCq890dAJw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to density functional perturbation theory for lattice dynamics. Andrea Dal Corso",
+        "name": "Slides (Part 1)",
+        "url": "../5w9NUZwJib1o/QESB09_DFPT_DalCorso1.pdf"
+      },
+      {
+        "description": "Density functional perturbation theory II: phonon dispersions. Andrea Dal Corso",
+        "name": "Slides (Part 2)",
+        "url": "lecture_dfpt_sb_2009.pdf"
+      }
+    ]
   },
   {
     "id": "CesKiUEiHyYE",
@@ -2861,7 +5625,15 @@
     "thumbnail_url": "CesKiUEiHyYE.png",
     "date": "2009-07-22",
     "video_source_id": "kcQqultSTHhU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Spaldin",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "aT3eRT0QVnbu",
@@ -2873,7 +5645,21 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-22",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Bonini",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises: Examples of phonon calculations with DFPT. Nicola Bonini",
+        "name": "Exercises",
+        "url": "W1d3.tar.gz"
+      }
+    ]
   },
   {
     "id": "ZKJWNi34R39m",
@@ -2885,7 +5671,26 @@
     "thumbnail_url": "ZKJWNi34R39m.png",
     "date": "2009-07-23",
     "video_source_id": "k0A7J-Nhy9Oo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Magnetism and correlation in open-shell systems. Matteo Cococcioni",
+        "name": "Slides",
+        "url": "MagnCorr.pdf"
+      },
+      {
+        "description": "Examples of spin-polarized and DFT+U calculations. Matteo Cococcioni",
+        "name": "Examples / exercises",
+        "url": "W1d4_lsda_ldau.tar.gz"
+      }
+    ]
   },
   {
     "id": "euFoar5nztIO",
@@ -2897,7 +5702,26 @@
     "thumbnail_url": "euFoar5nztIO.png",
     "date": "2009-07-23",
     "video_source_id": "ktJoNsng3NhM",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Matteo",
+        "last_name": "Cococcioni",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Magnetism and correlation in open-shell systems. Matteo Cococcioni",
+        "name": "Slides",
+        "url": "../ZKJWNi34R39m/MagnCorr.pdf"
+      },
+      {
+        "description": "Examples of spin-polarized and DFT+U calculations. Matteo Cococcioni",
+        "name": "Examples / exercises",
+        "url": "../ZKJWNi34R39m/W1d4_lsda_ldau.tar.gz"
+      }
+    ]
   },
   {
     "id": "AtanzrLe52lm",
@@ -2909,7 +5733,26 @@
     "thumbnail_url": "AtanzrLe52lm.png",
     "date": "2009-07-23",
     "video_source_id": "kdzpgB8rcVR4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to noncollinear magnetism and spin-orbit coupling in Quantum ESPRESSO. Andrea Dal Corso",
+        "name": "Slides",
+        "url": "lecture_ncso_sb_2009.pdf"
+      },
+      {
+        "description": "Examples on Noncollinear magnetism and SO coupling. Andrea Dal Corso",
+        "name": "Examples / exercises",
+        "url": "exercise_ncso_sb_2009.tgz"
+      }
+    ]
   },
   {
     "id": "0flyB7GduiHZ",
@@ -2921,7 +5764,26 @@
     "thumbnail_url": "0flyB7GduiHZ.png",
     "date": "2009-07-23",
     "video_source_id": "kl1hp7oszCcs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to noncollinear magnetism and spin-orbit coupling in Quantum ESPRESSO. Andrea Dal Corso",
+        "name": "Slides",
+        "url": "../AtanzrLe52lm/lecture_ncso_sb_2009.pdf"
+      },
+      {
+        "description": "Examples on Noncollinear magnetism and SO coupling. Andrea Dal Corso",
+        "name": "Examples / exercises",
+        "url": "../AtanzrLe52lm/exercise_ncso_sb_2009.tgz"
+      }
+    ]
   },
   {
     "id": "InS0pfNmZ5Y0",
@@ -2933,7 +5795,26 @@
     "thumbnail_url": "InS0pfNmZ5Y0.png",
     "date": "2009-07-23",
     "video_source_id": "kxU9vuLhbeLg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to noncollinear magnetism and spin-orbit coupling in QUANTUM-ESPRESSO. Andrea Dal Corso",
+        "name": "Slides",
+        "url": "../AtanzrLe52lm/lecture_ncso_sb_2009.pdf"
+      },
+      {
+        "description": "Examples on Noncollinear magnetism and SO coupling. Andrea Dal Corso",
+        "name": "Examples / exercises",
+        "url": "../AtanzrLe52lm/exercise_ncso_sb_2009.tgz"
+      }
+    ]
   },
   {
     "id": "7Mi9Cdk8vsBo",
@@ -2945,7 +5826,21 @@
     "thumbnail_url": "7Mi9Cdk8vsBo.png",
     "date": "2009-07-23",
     "video_source_id": "kh9gtSfaSiZY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Richard",
+        "last_name": "Martin",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Electronic Structure from the top down. Predicting the behavior of materials starting from high temperature. Richard M. Martin",
+        "name": "Slides",
+        "url": "QESB09_RM_Martin.pdf"
+      }
+    ]
   },
   {
     "id": "iPQMBWiRF9DD",
@@ -2957,7 +5852,21 @@
     "thumbnail_url": "iPQMBWiRF9DD.png",
     "date": "2009-07-23",
     "video_source_id": "k4vJr8lQj3hw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Richard",
+        "last_name": "Martin",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Electronic Structure from the top down. Predicting the behavior of materials starting from high temperature. Richard M. Martin",
+        "name": "Slides",
+        "url": "../7Mi9Cdk8vsBo/QESB09_RM_Martin.pdf"
+      }
+    ]
   },
   {
     "id": "VS7fbequyUlm",
@@ -2969,7 +5878,26 @@
     "thumbnail_url": "VS7fbequyUlm.png",
     "date": "2009-07-24",
     "video_source_id": "k3ZI_lLoHJvE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Umari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Vibrational spectroscopies by first-principles. Paolo Umari",
+        "name": "Slides",
+        "url": "QESB09_umari1.pdf"
+      },
+      {
+        "description": "Exercises. Paolo Umari",
+        "name": "Exercises",
+        "url": "W1d5_ir_rs.tar.gz"
+      }
+    ]
   },
   {
     "id": "q2naqFBVbZ1f",
@@ -2981,7 +5909,26 @@
     "thumbnail_url": "q2naqFBVbZ1f.png",
     "date": "2009-07-24",
     "video_source_id": "kFnj5l1ChLwA",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Umari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Vibrational spectroscopies by first-principles. Paolo Umari",
+        "name": "Slides",
+        "url": "../VS7fbequyUlm/QESB09_umari1.pdf"
+      },
+      {
+        "description": "Exercises. Paolo Umari",
+        "name": "Exercises",
+        "url": "../VS7fbequyUlm/W1d5_ir_rs.tar.gz"
+      }
+    ]
   },
   {
     "id": "6mAQtxJfeax7",
@@ -2993,7 +5940,26 @@
     "thumbnail_url": "6mAQtxJfeax7.png",
     "date": "2009-07-24",
     "video_source_id": "ki5MnaLb-5bU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises: Using Quantum ESPRESSO to calculate electron-phonon interaction. Stefano De Gironcoli",
+        "name": "Exercises: electron-phonon",
+        "url": "Examples_el-ph.tar.gz"
+      },
+      {
+        "description": "Exercises: Using Quantum ESPRESSO to calculate phonon-phonon interaction. Stefano De Gironcoli",
+        "name": "Exercises: phonon-phonon",
+        "url": "Examples_ph-ph.tar.gz"
+      }
+    ]
   },
   {
     "id": "ljGOwgOxwiFk",
@@ -3005,7 +5971,26 @@
     "thumbnail_url": "ljGOwgOxwiFk.png",
     "date": "2009-07-24",
     "video_source_id": "kYxgGjutvl_g",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "de Gironcoli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises: Using Quantum ESPRESSO to calculate electron-phonon interaction. Stefano De Gironcoli",
+        "name": "Exercises: electron-phonon",
+        "url": "../6mAQtxJfeax7/Examples_el-ph.tar.gz"
+      },
+      {
+        "description": "Exercises: Using Quantum ESPRESSO to calculate phonon-phonon interaction. Stefano De Gironcoli",
+        "name": "Exercises: phonon-phonon",
+        "url": "../6mAQtxJfeax7/Examples_ph-ph.tar.gz"
+      }
+    ]
   },
   {
     "id": "HNK4l3GWEKn7",
@@ -3017,7 +6002,31 @@
     "thumbnail_url": "HNK4l3GWEKn7.png",
     "date": "2009-07-25",
     "video_source_id": "kWWT2nL8Kuss",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Pseudopotential generation and test by the ld1.x atomic code: an introduction. Andrea Dal Corso",
+        "name": "Slides",
+        "url": "lecture_pseudo_sb_2009.pdf"
+      },
+      {
+        "description": "Exercise. Examples of pseudopotential generation and testing. Andrea Dal Corso",
+        "name": "Exercise (v1)",
+        "url": "exercise_pseudo_sb_2009.tgz"
+      },
+      {
+        "description": "Exercise. Examples of pseudopotential generation and testing. Andrea Dal Corso",
+        "name": "Exercise (v2)",
+        "url": "W1d6_pseudo.tar.gz"
+      }
+    ]
   },
   {
     "id": "0rUPmOgeZtXA",
@@ -3029,7 +6038,31 @@
     "thumbnail_url": "0rUPmOgeZtXA.png",
     "date": "2009-07-25",
     "video_source_id": "kKTYEHv2o77M",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Andrea",
+        "last_name": "Dal Corso",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Pseudopotential generation and test by the ld1.x atomic code: an introduction. Andrea Dal Corso",
+        "name": "Slides",
+        "url": "../HNK4l3GWEKn7/lecture_pseudo_sb_2009.pdf"
+      },
+      {
+        "description": "Exercise. Examples of pseudopotential generation and testing. Andrea Dal Corso",
+        "name": "Exercise (v1)",
+        "url": "../HNK4l3GWEKn7/exercise_pseudo_sb_2009.tgz"
+      },
+      {
+        "description": "Exercise. Examples of pseudopotential generation and testing. Andrea Dal Corso",
+        "name": "Exercise (v2)",
+        "url": "../HNK4l3GWEKn7/W1d6_pseudo.tar.gz"
+      }
+    ]
   },
   {
     "id": "SEm34IUQBp6I",
@@ -3041,7 +6074,21 @@
     "thumbnail_url": "SEm34IUQBp6I.png",
     "date": "2009-07-27",
     "video_source_id": "ker--mzsnDhk",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory goes time-dependent. Stefano Baroni",
+        "name": "Slides",
+        "url": "SantaBarbara-2009-lecture3.pdf"
+      }
+    ]
   },
   {
     "id": "fPDpoy3khNBK",
@@ -3053,7 +6100,21 @@
     "thumbnail_url": "fPDpoy3khNBK.png",
     "date": "2009-07-27",
     "video_source_id": "kKubxHA11oc4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory goes time-dependent. Stefano Baroni",
+        "name": "Slides",
+        "url": "../SEm34IUQBp6I/SantaBarbara-2009-lecture3.pdf"
+      }
+    ]
   },
   {
     "id": "6FqXEqrTcfwI",
@@ -3065,7 +6126,21 @@
     "thumbnail_url": "6FqXEqrTcfwI.png",
     "date": "2009-07-27",
     "video_source_id": "kldmSueQOvq4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Stefano",
+        "last_name": "Baroni",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Density-functional perturbation theory goes time-dependent. Stefano Baroni",
+        "name": "Slides",
+        "url": "../SEm34IUQBp6I/SantaBarbara-2009-lecture3.pdf"
+      }
+    ]
   },
   {
     "id": "tBEF2EvSD9o2",
@@ -3077,7 +6152,21 @@
     "thumbnail_url": "tBEF2EvSD9o2.png",
     "date": "2009-07-27",
     "video_source_id": "kl4f-GpUG8rU",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Umari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "GW method: new developments. Paolo Umari",
+        "name": "Slides",
+        "url": "QESP09_gww_umari.pdf"
+      }
+    ]
   },
   {
     "id": "01T4JOhALJiW",
@@ -3089,7 +6178,31 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-27",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Paolo",
+        "last_name": "Umari",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Dario",
+        "last_name": "Rocca",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Slides: Liouville-Lanczos calculation of the TDDFT spectrum of simple molecules. Paolo Umari and Dario Rocca",
+        "name": "Slides",
+        "url": "Tddfpt_tutorial.pdf"
+      },
+      {
+        "description": "Exercises: Liouville-Lanczos calculation of the TDDFT spectrum of simple molecules. Paolo Umari and Dario Rocca",
+        "name": "Exercises",
+        "url": "W2d3.tar.gz"
+      }
+    ]
   },
   {
     "id": "AZDXSc7FZGPv",
@@ -3101,7 +6214,21 @@
     "thumbnail_url": "AZDXSc7FZGPv.png",
     "date": "2009-07-28",
     "video_source_id": "keYhtZQ5DpeY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giulia",
+        "last_name": "Galli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Ab-initio Molecular Dynamics. Giulia Galli",
+        "name": "Slides",
+        "url": "Galli_072809.pdf"
+      }
+    ]
   },
   {
     "id": "JehgpoVIhmAA",
@@ -3113,7 +6240,21 @@
     "thumbnail_url": "JehgpoVIhmAA.png",
     "date": "2009-07-28",
     "video_source_id": "kfZVCqUw8Zb0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giulia",
+        "last_name": "Galli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Ab-initio Molecular Dynamics. Giulia Galli",
+        "name": "Slides",
+        "url": "../AZDXSc7FZGPv/Galli_072809.pdf"
+      }
+    ]
   },
   {
     "id": "wX1JxJDkOwvR",
@@ -3125,7 +6266,21 @@
     "thumbnail_url": "wX1JxJDkOwvR.png",
     "date": "2009-07-28",
     "video_source_id": "kHW0HIlqrqWE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giulia",
+        "last_name": "Galli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Ab-initio Molecular Dynamics. Giulia Galli",
+        "name": "Slides",
+        "url": "../AZDXSc7FZGPv/Galli_072809.pdf"
+      }
+    ]
   },
   {
     "id": "O5snL0UFj0C3",
@@ -3137,7 +6292,21 @@
     "thumbnail_url": "O5snL0UFj0C3.png",
     "date": "2009-07-28",
     "video_source_id": "korrZKLdeI70",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giulia",
+        "last_name": "Galli",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Ab-initio Molecular Dynamics. Giulia Galli",
+        "name": "Slides",
+        "url": "../AZDXSc7FZGPv/Galli_072809.pdf"
+      }
+    ]
   },
   {
     "id": "fnSVfSNi7AO2",
@@ -3149,7 +6318,31 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-28",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "François",
+        "last_name": "Gygi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Introduction to the Qbox code. Slides. François Gygi",
+        "name": "Slides",
+        "url": "Qbox_intro.pdf"
+      },
+      {
+        "description": "Introduction to the Qbox code. Exercises (Part 1). Brandon Wood & François Gygi",
+        "name": "Exercises (Part 1)",
+        "url": "W2d1.tar.gz"
+      },
+      {
+        "description": "Introduction to the Qbox code. Exercises (Part 2). Brandon Wood & François Gygi",
+        "name": "Exercises (Part 2)",
+        "url": "W2d2.tar.gz"
+      }
+    ]
   },
   {
     "id": "JBB0lTPtd2dU",
@@ -3161,7 +6354,21 @@
     "thumbnail_url": "JBB0lTPtd2dU.png",
     "date": "2009-07-29",
     "video_source_id": "kYj7cHZX0k7s",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "François",
+        "last_name": "Gygi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "First-Principles Molecular Dynamics. François Gygi",
+        "name": "Slides",
+        "url": "Gygi_ICMR2009.pdf"
+      }
+    ]
   },
   {
     "id": "b1pTwOmrPknb",
@@ -3173,7 +6380,21 @@
     "thumbnail_url": "b1pTwOmrPknb.png",
     "date": "2009-07-29",
     "video_source_id": "k_--ELxL94mI",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "François",
+        "last_name": "Gygi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "First-Principles Molecular Dynamics. François Gygi",
+        "name": "Slides",
+        "url": "../JBB0lTPtd2dU/Gygi_ICMR2009.pdf"
+      }
+    ]
   },
   {
     "id": "D0XZYyMuXYVy",
@@ -3185,7 +6406,21 @@
     "thumbnail_url": "D0XZYyMuXYVy.png",
     "date": "2009-07-29",
     "video_source_id": "k-CPFwMbUNtw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "François",
+        "last_name": "Gygi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "First-Principles Molecular Dynamics. François Gygi",
+        "name": "Slides",
+        "url": "../JBB0lTPtd2dU/Gygi_ICMR2009.pdf"
+      }
+    ]
   },
   {
     "id": "nvMidDtPj0rz",
@@ -3197,7 +6432,21 @@
     "thumbnail_url": "nvMidDtPj0rz.png",
     "date": "2009-07-29",
     "video_source_id": "k4cINb4uPgeg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "François",
+        "last_name": "Gygi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "First-Principles Molecular Dynamics. François Gygi",
+        "name": "Slides",
+        "url": "../JBB0lTPtd2dU/Gygi_ICMR2009.pdf"
+      }
+    ]
   },
   {
     "id": "B63rlGXNuxRH",
@@ -3209,7 +6458,21 @@
     "thumbnail_url": "B63rlGXNuxRH.png",
     "date": "2009-07-30",
     "video_source_id": "kTcQsE2Vhg1M",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ari",
+        "last_name": "Seitsonen",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "The GIPAW-NMR method. Ari Seitsonen",
+        "name": "Slides",
+        "url": "Seitsonen-nmr_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "7kFhz18uUDW0",
@@ -3221,7 +6484,21 @@
     "thumbnail_url": "7kFhz18uUDW0.png",
     "date": "2009-07-30",
     "video_source_id": "k8Y8Wem8afn8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Ari",
+        "last_name": "Seitsonen",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "The GIPAW-NMR method. Ari Seitsonen",
+        "name": "Slides",
+        "url": "../B63rlGXNuxRH/Seitsonen-nmr_lecture.pdf"
+      }
+    ]
   },
   {
     "id": "KtWGaKnsOFZP",
@@ -3233,7 +6510,21 @@
     "thumbnail_url": "KtWGaKnsOFZP.png",
     "date": "2009-07-30",
     "video_source_id": "kHeY1W3NxXR4",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Davide",
+        "last_name": "Ceresoli",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Ab-initio EPR spectroscopy. Davide Ceresoli",
+        "name": "Slides",
+        "url": "Epr-lecture.pdf"
+      }
+    ]
   },
   {
     "id": "URxSRLqL8Dzc",
@@ -3245,7 +6536,36 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-30",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Davide",
+        "last_name": "Ceresoli",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Ari",
+        "last_name": "Seitsonen",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises",
+        "name": "Exercises",
+        "url": "W2d4.tar.gz"
+      },
+      {
+        "description": "Instructions",
+        "name": "Instructions",
+        "url": "NMR-EPR-lab-instructions.pdf"
+      },
+      {
+        "description": "Results",
+        "name": "Results",
+        "url": "NMR-EPR-lab-results.pdf"
+      }
+    ]
   },
   {
     "id": "LM8AZif0JWVC",
@@ -3257,7 +6577,21 @@
     "thumbnail_url": "LM8AZif0JWVC.png",
     "date": "2009-07-31",
     "video_source_id": "k99q1cF7Mp2A",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Fundamentals of Wannier functions. Nicola Marzari",
+        "name": "Slides",
+        "url": "QESB09_Marzari_1.pdf"
+      }
+    ]
   },
   {
     "id": "mVpYMU410vCZ",
@@ -3269,7 +6603,21 @@
     "thumbnail_url": "mVpYMU410vCZ.png",
     "date": "2009-07-31",
     "video_source_id": "kiKJY87REK_I",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Fundamentals of Wannier functions. Nicola Marzari",
+        "name": "Slides",
+        "url": "../LM8AZif0JWVC/QESB09_Marzari_1.pdf"
+      }
+    ]
   },
   {
     "id": "iCiyNe806OhU",
@@ -3281,7 +6629,21 @@
     "thumbnail_url": "iCiyNe806OhU.png",
     "date": "2009-07-31",
     "video_source_id": "kvBd69FeBrZw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Fundamentals of Wannier functions. Nicola Marzari",
+        "name": "Slides",
+        "url": "../LM8AZif0JWVC/QESB09_Marzari_1.pdf"
+      }
+    ]
   },
   {
     "id": "rk9dVV3TwAX0",
@@ -3293,7 +6655,21 @@
     "thumbnail_url": "rk9dVV3TwAX0.png",
     "date": "2009-07-31",
     "video_source_id": "kynYHtpqnS8g",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Wannier functions in practice. Nicola Marzari",
+        "name": "Slides",
+        "url": "QESB09_Marzari_2.pdf"
+      }
+    ]
   },
   {
     "id": "3svw5qHE1P1L",
@@ -3305,7 +6681,21 @@
     "thumbnail_url": "3svw5qHE1P1L.png",
     "date": "2009-07-31",
     "video_source_id": "kWPh3K8tRx4Q",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Wannier functions in practice. Nicola Marzari",
+        "name": "Slides",
+        "url": "../rk9dVV3TwAX0/QESB09_Marzari_2.pdf"
+      }
+    ]
   },
   {
     "id": "IN7jEODxuIti",
@@ -3317,7 +6707,26 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2009-07-31",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      },
+      {
+        "first_name": "Nicolas",
+        "last_name": "Poilvert",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "description": "Exercises: Tutorial on Wannier90 code. Nicola Marzari and Nicolas Poilvert",
+        "name": "Exercises",
+        "url": "W2d5.tar.gz"
+      }
+    ]
   },
   {
     "id": "kpbmzt",
@@ -3364,7 +6773,26 @@
     "thumbnail_url": "SozCW5vIMn0.jpg",
     "date": "2020-03-25",
     "video_source_id": "SozCW5vIMn0",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Arash",
+        "last_name": "Mostofi",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Mostofi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Mostofi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "HldzXwgjsNHI",
@@ -3376,7 +6804,26 @@
     "thumbnail_url": "B-cURPM1jys.jpg",
     "date": "2020-03-25",
     "video_source_id": "B-cURPM1jys",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "QuanSheng",
+        "last_name": "Wu",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Wu_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Wu_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "L7z5UbVy6vNx",
@@ -3388,7 +6835,26 @@
     "thumbnail_url": "L7z5UbVy6vNx.jpg",
     "date": "2020-03-26",
     "video_source_id": "yMpr8gzGAKw",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Yusuke",
+        "last_name": "Nomura",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Nomura_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Nomura_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "7hF0iiPsFXFT",
@@ -3400,7 +6866,26 @@
     "thumbnail_url": "7hF0iiPsFXFT.jpg",
     "date": "2020-03-26",
     "video_source_id": "Lzqv9-mNMtY",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Anil",
+        "last_name": "Damle",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Damle_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Damle_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "kV0DwXamnV43",
@@ -3412,7 +6897,26 @@
     "thumbnail_url": "kV0DwXamnV43.jpg",
     "date": "2020-03-26",
     "video_source_id": "uBM8-LRzXTE",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Giovanni",
+        "last_name": "Pizzi",
+        "title": "Dr."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Pizzi_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Pizzi_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "DwNZ67wpUn6r",
@@ -3424,7 +6928,26 @@
     "thumbnail_url": "DwNZ67wpUn6r.jpg",
     "date": "2020-03-27",
     "video_source_id": "feT6TrkaKOg",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Roxana",
+        "last_name": "Margine",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Slides",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Margine_SLIDES_Wannier90_School_VirtualEdition_2020.pdf"
+      },
+      {
+        "external": true,
+        "name": "Questions & Answers",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/Margine_QandA_Wannier90_School_VirtualEdition_2020.pdf"
+      }
+    ]
   },
   {
     "id": "nGjfQhJLnQgF",
@@ -3436,7 +6959,15 @@
     "thumbnail_url": "nGjfQhJLnQgF.jpg",
     "date": "2020-03-27",
     "video_source_id": "PcKXm_-Kudo",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Jonathan",
+        "last_name": "Yates",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
   },
   {
     "id": "iOR1Zz2Kppn7",
@@ -3448,7 +6979,25 @@
     "thumbnail_url": "mcloud_logo_novideo2.png",
     "date": "2020-03-27",
     "video_source_id": null,
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Downloadable archive",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_03_wannier90_school/2020_03_Oxford.tar.gz"
+      },
+      {
+        "external": true,
+        "name": "Github repository",
+        "url": "https://github.com/wannier-developers/wannier-tutorials"
+      },
+      {
+        "external": true,
+        "name": "Quantum Mobile v20.03.1",
+        "url": "https://github.com/marvel-nccr/quantum-mobile/releases/tag/20.03.1"
+      }
+    ]
   },
   {
     "id": "spVa3j",
@@ -3477,7 +7026,36 @@
     "thumbnail_url": "fireside-intro-dft.jpg",
     "date": "2020-04-15",
     "video_source_id": "kYxOWYWxYcQ",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Recording (high resolution, video+audio)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (full video).mp4"
+      },
+      {
+        "external": true,
+        "name": "Recording (audio only)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (audio only).m4a"
+      },
+      {
+        "external": true,
+        "name": "Slides (original)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (original slides).pdf"
+      },
+      {
+        "external": true,
+        "name": "Slides (annotated)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 1 (annotated slides).pdf"
+      }
+    ]
   },
   {
     "id": "K6k7mDxlrhUC",
@@ -3489,7 +7067,31 @@
     "thumbnail_url": "fireside-intro-dft.jpg",
     "date": "2020-04-16",
     "video_source_id": "6tLx--alUZ8",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Recording (high resolution, video+audio)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (full video).mp4"
+      },
+      {
+        "external": true,
+        "name": "Recording (audio only)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (audio only).m4a"
+      },
+      {
+        "external": true,
+        "name": "Slides (original)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 2 (original slides).pdf"
+      }
+    ]
   },
   {
     "id": "ZOrjZJ1o20NO",
@@ -3501,6 +7103,35 @@
     "thumbnail_url": "fireside-intro-dft.jpg",
     "date": "2020-04-17",
     "video_source_id": "nRaGp7purBs",
-    "profile_url": null
+    "profile_url": null,
+    "speakers": [
+      {
+        "first_name": "Nicola",
+        "last_name": "Marzari",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": [
+      {
+        "external": true,
+        "name": "Recording (high resolution, video+audio)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (full video).mp4"
+      },
+      {
+        "external": true,
+        "name": "Recording (audio only)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (audio only).m4a"
+      },
+      {
+        "external": true,
+        "name": "Slides (original)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (original slides).pdf"
+      },
+      {
+        "external": true,
+        "name": "Slides (annotated)",
+        "url": "https://object.cscs.ch/v1/AUTH_b1d80408b3d340db9f03d373bbde5c1e/learn-public/materials/2020_04_fireside_dft/2020_04 - Marzari Fireside 3 (annotated slides).pdf"
+      }
+    ]
   }
 ]

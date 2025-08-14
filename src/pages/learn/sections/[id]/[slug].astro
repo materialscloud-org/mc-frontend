@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import LearnBannerList from "@components/LearnBannerList.astro";
 
 import fs from "fs";
 import path from "path";
@@ -75,21 +76,7 @@ breadcrumbs.push({
 
   {
     children.length > 0 && (
-      <ul>
-        {children.map((child) => (
-          <li>
-            {child.type === "video" ? (
-              <a href={`learn/videos/${child.id}/${child.slug}`}>
-                {child.title}
-              </a>
-            ) : (
-              <a href={`learn/sections/${child.id}/${child.slug}`}>
-                {child.title}
-              </a>
-            )}
-          </li>
-        ))}
-      </ul>
+      <LearnBannerList entries={children} rootPath="work/tools" />
     )
   }
 </Layout>

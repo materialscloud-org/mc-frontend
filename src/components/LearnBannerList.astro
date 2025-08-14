@@ -1,0 +1,101 @@
+---
+// Similar to BannerList but with some additional
+//  fields for speaker, file links etc.
+const { entries, rootPath } = Astro.props;
+---
+
+<div class="entries-container">
+  {
+    entries.map((entry, index) => {
+      const isVideo = entry.type === "video";
+      const href = isVideo
+        ? `learn/videos/${entry.id}/${entry.slug}`
+        : `learn/sections/${entry.id}/${entry.slug}`;
+
+      if (isVideo) {
+        return (
+          <div class="entry-container">
+            {/* Media Section */}
+            <div class="flex flex-col items-center w-48">
+              <a href={href}>
+                <img
+                  src={`images/learn/${entry.thumbnail_url}`}
+                  alt={entry.title}
+                  class="entry-image max-w-48 max-h-48 w-auto h-auto object-cover"
+                />
+              </a>
+              <a href={href} class="explore-button mt-2">
+                ▶ WATCH
+              </a>
+            </div>
+
+            <div class="entry-info-container">
+              <a href={href} class="entry-title hover:underline">
+                {entries.length - index}. {entry.title}{" "}
+              </a>
+              {entry.speakers && entry.speakers.length > 0 && (
+                <div class="entry-author italic ml-2">
+                  {entry.speakers.map((speaker, index) => (
+                    <>
+                      <span>
+                        {speaker.title ? speaker.title + " " : ""}
+                        {speaker.first_name} {speaker.last_name}
+                        {index < entry.speakers.length - 1 ? ", " : ""}
+                      </span>
+                    </>
+                  ))}
+                </div>
+              )}
+              <hr class="border-t border-gray-200 mb-2" />
+              <div class="entry-description text-gray-500 pl-1">
+                Date:{" "}
+                {new Date(entry.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}{" "}
+              </div>
+              {/* some videos dont have descriptions*/}
+              {entry.description && (
+                <div class="entry-description pt-1 pl-1">
+                  <b>Description: </b>
+                  <span set:html={entry.description} />
+                </div>
+              )}
+              <div class="entry-description text-gray-500 pt-1 pl-1">
+                <a href={entry.profile_url} target="_blank">
+                  Profile link
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      } else {
+        return (
+          <div class="entry-container">
+            <div class="entry-flex">
+              <a href={href}>
+                <img
+                  src={`images/learn/${entry.thumbnail_url}`}
+                  alt={entry.title}
+                  class="entry-image w-30"
+                />
+              </a>
+            </div>
+            <div class="entry-info-container">
+              <div class="flex items-center flex-wrap">
+                <a href={href} class="entry-title hover:underline">
+                  {entry.title}
+                </a>
+
+                <div class="entry-description pt-1 pl-1">
+                  <span set:html={entry.description} />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    })
+  }
+</div>

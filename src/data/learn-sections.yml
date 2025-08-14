@@ -1,30 +1,31 @@
+### defined top level sections. That are used to populate /learn/index.astro.
 entries:
-  - url: "Btmngu/marvel-events"
-    title: "MARVEL events"
-    description: "Video recordings of MARVEL Events."
+  - url: Btmngu/marvel-events
+    title: MARVEL events
+    description: Video recordings of MARVEL Events.
     img: "images/endorsers/marvel_nccr.png"
 
-  - url: "mnG1lg"
+  - url: mnG1lg/aiida-and-materials-cloud-tutorials
     title: "AiiDA and Materials Cloud tutorials"
     description: "Video recordings and educational material from past AiiDA and Materials Cloud tutorials."
     img: "images/aiida-logo.png"
 
-  - url: "12A7nC"
-    title: "PSI schools"
+  - url: 12A7nC/psi-schools
+    title: PSI schools
     description: "Video recordings and educational materials from schools at the Paul Scherrer Institute (PSI), Switzerland."
     img: "images/endorsers/psi.svg"
 
-  - url: "VL0B41"
+  - url: VL0B41/quantum-espresso-schools
     title: "Quantum ESPRESSO schools"
     description: "Video recordings and educational material from past schools on Quantum ESPRESSO."
     img: "images/logos/qe-logo.png"
 
-  - url: "kpbmzt"
+  - url: kpbmzt/wannier90-schools
     title: "Wannier90 schools"
     description: "Video recordings and educational material from past schools on Wannier90."
     img: "images/logos/wannier90-logo.png"
 
-  - url: "spVa3j"
-    title: "Fireside chats for lockdown times"
+  - url: spVa3j/fireside-chats-for-lockdown-times
+    title: Fireside chats for lockdown times
     description: "Video recordings and educational materials on computational materials science."
     img: "images/fireside-chats.jpg"
