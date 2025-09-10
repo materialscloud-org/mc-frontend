@@ -65,7 +65,7 @@ Date: <span></span> </div>  <div class="entry-description pl-1"> <b>Description:
         const img = el.querySelector(".entry-flex img");
         if (img) {
           img.src = entry.thumbnail_url
-            ? `images/learn/${entry.thumbnail_url}`
+            ? `/images/learn/${entry.thumbnail_url}`
             : "images/placeholder.png";
           img.alt = entry.title || "";
         }
