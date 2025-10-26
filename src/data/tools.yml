@@ -1,28 +1,28 @@
 ---
 menu:
   main_tools:
-    - link: https://qeinputgenerator.materialscloud.xyz
+    - link: https://qeinputgenerator.materialscloud.io
       title: Quantum ESPRESSO input generator and structure visualizer
       authors: Kristjan Eimre, Jusong Yu, Gabriel M. Nascimento, Elsa Passaro, Sebastiaan P. Huber, Giovanni Pizzi, Nicola Marzari
       description: |
         A tool to generate the input file of the Quantum ESPRESSO PWscf code and to visualize the corresponding structure.
       logo: qe-logo.png
 
-    - link: https://seekpath.materialscloud.xyz
+    - link: https://seekpath.materialscloud.io
       title: "SeeK-path: the k-path finder and visualizer"
       authors: Yoyo Hinuma, Giovanni Pizzi, Yu Kumagai, Fumiyasu Oba, Isao Tanaka
       description: |
         A k-path finder that provides band paths compatible with space group symmetry, and an interactive 3D visualizer.
       logo: seekpath.png
 
-    - link: https://optimadeclient.materialscloud.xyz
+    - link: https://optimadeclient.materialscloud.io
       title: "OPTIMADE-Client"
       authors: Casper Welzel Andersen
       description: |
         A friendly client to search through materials databases and other implementations exposing an OPTIMADE RESTful API.
       logo: optimade.png
 
-    - link: https://interactivephonon.materialscloud.xyz
+    - link: https://interactivephonon.materialscloud.io
       title: Interactive phonon visualizer
       authors: Snehal Kumbhar, Giovanni Pizzi, Thibault Sohier, Henrique Miranda
       description: |
@@ -30,14 +30,14 @@ menu:
       logo: interactivephonon.png
 
   contributed_tools:
-    - link: https://rho-prediction.materialscloud.xyz
+    - link: https://rho-prediction.materialscloud.io
       title: "ρ predict: machine learning prediction of molecular electron density"
       authors: K. R. Briling, O. Hernandez-Cuellar, J. W. Abbott, M. Ceriotti, C. Corminboeuf
       description: >
         This tool predicts the electronic density of molecules using a symmetry-adapted Gaussian process regression model.
       logo: rho_predict.png
 
-    - link: https://cell2mol.materialscloud.xyz
+    - link: https://cell2mol.materialscloud.io
       title: "cell2mol: unit cell to molecule interpretation"
       authors: O. Hernandez-Cuellar, Y. Cho, R. Laplaza, L. O. Marsh, S. Vela, C. Corminboeuf
       description: >
@@ -47,7 +47,7 @@ menu:
       doi:
         - 10.5281/zenodo.10204037
 
-    - link: https://ml-layer-finder.materialscloud.xyz
+    - link: https://ml-layer-finder.materialscloud.io
       title: Machine-learning accelerated identification of exfoliable two-dimensional materials
       authors: Mohammad Tohidi Vahdat, Kumar Agrawal Varoon, Giovanni Pizzi
       description: >
@@ -75,12 +75,11 @@ menu:
       logo: oximachine.png
       doi:
         - 10.24435/materialscloud:2018.0003/v3
-
       iframe: true
       iframe_src: "https://oximachine.materialscloud.io"
       maxWidth: "max-w-[1200px]"
 
-    - link: https://layer-raman-ir.materialscloud.xyz/
+    - link: https://layer-raman-ir.materialscloud.io/
       title: "Fan diagrams and optically-active modes of layered materials"
       authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
       description: >
