@@ -23,7 +23,8 @@ menu:
         - 10.24435/materialscloud:az-b2
         - 10.24435/materialscloud:36-nd
 
-    - link: sssp
+    # legacy discover
+    - link: https://legacy.materialscloud.org/discover/sssp
       title: "Standard solid-state pseudopotentials (SSSP)"
       authors: Gianluca Prandini, Antimo Marrazzo, Ivano E. Castelli, Nicolas Mounet, Snehal Kumbhar, Elsa Passaro, Nicola Marzari
       description: |
