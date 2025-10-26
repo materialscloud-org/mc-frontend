@@ -1,27 +1,50 @@
 profiles:
-  - link: "mc3d-pbe-v1"
-    authors: "Sebastiaan Huber, Marnik Bercx, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
+  - link: "mc3d-pbesol-v2"
+    authors: "Sebastiaan Huber, Michail Minotakis, Marnik Bercx, Timo Reents, Kristjan Eimre, Nataliya Paulish, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
     description: |
       Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
-      Calculations are performed with the PBE-v1 methodology.
+      Calculations are performed with the PBEsol-v2 methodology.
     doi:
-      - "10.24435/materialscloud:rw-t0"
+      - "10.24435/materialscloud:23-ge"
     logo: "mc3d.png"
-    profile: "mc3d-pbe-v1"
-    rest_url: "/mc3d-pbe-v1/api/v4"
-    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBE-v1)"
+    profile: "mc3d-pbesol-v2"
+    rest_url: "/mc3d-pbesol-v2/api/v4"
+    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBEsol-v2)"
 
   - link: "mc3d-pbesol-v1"
-    authors: "Sebastiaan Huber, Marnik Bercx, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
+    authors: "Sebastiaan Huber, Michail Minotakis, Marnik Bercx, Timo Reents, Kristjan Eimre, Nataliya Paulish, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
     description: |
       Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
-      Calculations are performed with the PBEsol-v1 methodology
+      Calculations are performed with the PBEsol-v1 methodology.
     doi:
-      - "10.24435/materialscloud:rw-t0"
+      - "10.24435/materialscloud:23-ge"
     logo: "mc3d.png"
     profile: "mc3d-pbesol-v1"
     rest_url: "/mc3d-pbesol-v1/api/v4"
     title: "Materials Cloud three-dimensional crystals database (MC3D) (PBEsol-v1)"
+
+  - link: "mc3d-pbesol-v1-supercon"
+    authors: "Marnik Bercx, Samuel Ponce, Yiming Zhang, Giovanni Trezza, Amir Ghorbani Ghezeljehmeidan, Lorenzo Bastonero, Junfeng Qiao, Fabian O. von Rohr, Giovanni Pizzi, Eliodoro Chiavazzo, Nicola Marzari"
+    description: |
+      High-throughput computational search for novel phonon-mediated superconductors, starting from the MC3D PBEsol-v1 database.
+    doi:
+      - "10.24435/materialscloud:n9-a7"
+    logo: "mc3d.png"
+    profile: "mc3d-pbesol-v1-supercon"
+    rest_url: "/mc3d-pbesol-v1-supercon/api/v4"
+    title: "MC3D contribution: Charting the landscape of Bardeen-Cooper-Schrieffer superconductors in experimentally known compounds (PBEsol-v1-supercon)"
+
+  - link: "mc3d-pbe-v1"
+    authors: "Sebastiaan Huber, Michail Minotakis, Marnik Bercx, Timo Reents, Kristjan Eimre, Nataliya Paulish, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
+    description: |
+      Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
+      Calculations are performed with the PBE-v1 methodology.
+    doi:
+      - "10.24435/materialscloud:23-ge"
+    logo: "mc3d.png"
+    profile: "mc3d-pbe-v1"
+    rest_url: "/mc3d-pbe-v1/api/v4"
+    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBE-v1)"
 
   - link: "mc2d"
     authors: "Davide Campi, Davide Grassano, Nicolas Mounet, Marco Gibertini, Philippe Schwaller, Andrius Merkys, Antimo Marrazzo, Thibault Sohier, Ivano E. Castelli, Andrea Cepellotti, Giovanni Pizzi, Nicola Marzari"
