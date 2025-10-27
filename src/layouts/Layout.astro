@@ -40,8 +40,7 @@ const iconStyle = "inline-block w-14 h-auto ml-2 flex-shrink-0";
 
 const navLinkBaseStyle =
   "font-semibold text-gray-700 hover:text-gray-500 hover:no-underline";
-const navLinkSelectedStyle =
-  "text-red-700 bg-gray-100";
+const navLinkSelectedStyle = "text-red-700 bg-gray-100";
 
 // NavLinks
 const desktopNavLinkStyle = `px-4 h-16 border-b border-gray-200 flex items-center ${navLinkBaseStyle}`;
@@ -132,7 +131,7 @@ const moreLinkStyle =
           </button>
           <div
             id="mc-drop-menu"
-            class="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-1 hidden z-50"
+            class="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg py-1 hidden z-100"
           >
             {
               moreLinks.map((link) => (
@@ -211,7 +210,11 @@ const moreLinkStyle =
               {index === breadcrumbs.length - 1 || !crumb.href ? (
                 <span>{crumb.name}</span>
               ) : (
-                <a href={crumb.href} class="hover:underline" style="color: #3e70bb;">
+                <a
+                  href={crumb.href}
+                  class="hover:underline"
+                  style="color: #3e70bb;"
+                >
                   {crumb.name}
                 </a>
               )}
