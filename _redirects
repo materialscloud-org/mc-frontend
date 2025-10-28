@@ -1,11 +1,14 @@
-# navs away
+# --------------------------------------------------------
+# Redirect configuration file for Cloudflare pages
+# --------------------------------------------------------
+
+# Navitation to external pages
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
 
 # dropping old url syntax
-
 /home / 301
 /learn/sections /learn 301
 /work/menu /work 301
@@ -13,55 +16,63 @@
 /explore/menu /explore 301
 
 # tools and work flatten
-
 /tools /work 301
 /work/tools /work 301
 /work/tools/options /work 301
 
-# -------------- Discover --------------
-## MCXD legacy
-/discover/3dcd https://mc3d.materialscloud.org/ 301
-/explore/3dcd https://mc3d.materialscloud.org/ 301
-/discover/2dstructures https://mc2d.materialscloud.org/ 301
-/explore/2dstructures https://mc2d.materialscloud.org/ 301
-
-# MCXD new
-/mc3d https://mc3d.materialscloud.org/ 301
-/mc2d https://mc2d.materialscloud.org/ 301
-
-# ACWF Legacy
-/acwf-verification https://acwf-verification.materialscloud.org/ 301
-#ACWF New
-/discover/acwf-verification https://acwf-verification.materialscloud.org/ 301
-
-# -------------- Core Tools --------------
-/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-/work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
-
-/seekpath https://seekpath.materialscloud.io/ 301
-/work/seekpath https://seekpath.materialscloud.io/ 301
-/work/tools/seekpath https://seekpath.materialscloud.io/ 301
-
-/optimade https://optimade.materialscloud.org/ 301
-/work/optimade https://optimade.materialscloud.org/ 301
-/work/tools/optimade https://optimade.materialscloud.org/ 301
-
-/interactivephonon https://interactivephonon.materialscloud.io/ 301
-/work/interactivephonon https://interactivephonon.materialscloud.io/ 301
-/work/tools/interactivephonon https://interactivephonon.materialscloud.io/ 301
-
-# -------------- Ext Tools --------------
-/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb 301
-/work/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb 301
-/work/tools/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb/ 301
-
-/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
-/work/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
-/work/tools/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
-
 # Old EXPLORE to new EXPLORE mapping.
 /explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
+
+# -------------- Discover --------------
+
+# Core sections
+/discover/mc3d https://mc3d.materialscloud.org/ 301
+/discover/mc2d https://mc2d.materialscloud.org/ 301
+/discover/sssp https://legacy.materialscloud.org/discover/sssp 302
+/discover/acwf-verification https://acwf-verification.materialscloud.org/ 301
+
+/mc3d /discover/mc3d 301
+/mc2d /discover/mc2d 301
+/sssp /discover/sssp 301
+/acwf-verification /discover/acwf-verification 301
+
+# legacy names
+/discover/3dcd /discover/mc3d 301
+/discover/2dstructures /discover/mc2d 301
+
+# Contributed sections
+/discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
+/discover/kpcovr/arginine https://legacy.materialscloud.org/discover/kpcovr/arginine 302
+/discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
+
+
+# -------------- Tools --------------
+
+# Core tools
+/work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
+/work/tools/seekpath https://seekpath.materialscloud.io/ 301
+/work/tools/optimadeclient https://optimadeclient.materialscloud.org/ 301
+/work/tools/interactivephonon https://interactivephonon.materialscloud.io/ 301
+
+/work/qeinputgenerator /work/tools/qeinputgenerator 301
+/work/seekpath /work/tools/seekpath 301
+/work/optimadeclient /work/tools/optimadeclient 301
+/work/interactivephonon /work/tools/interactivephonon 301
+
+/qeinputgenerator /work/tools/qeinputgenerator 301
+/seekpath /work/tools/seekpath 301
+/optimadeclient /work/tools/optimadeclient 301
+/interactivephonon /work/tools/interactivephonon 301
+
+# Contributed tools
+/work/tools/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb/ 301
+/work/tools/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
+
+/work/tbeta work/tools/tbeta 301
+/work/layer-raman-ir /work/tools/layer-raman-ir 301
+
+/tbeta work/tools/tbeta 301
+/layer-raman-ir /work/tools/layer-raman-ir 301
 
 # -------------- OPTIMADE APIs --------------
 /optimade/main/* https://optimade.materialscloud.org/main/index/:splat 301
