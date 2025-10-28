@@ -20,8 +20,9 @@
     @apply space-y-4 p-2;
   }
 
+  /* entry container handles entries with a col flex on small screens and flex row on big. */
   .entry-container {
-    @apply flex gap-4 p-4 rounded-sm border shadow-sm transition-shadow duration-200;
+    @apply flex flex-col items-center sm:items-start sm:flex-row gap-0 sm:gap-4 p-2 sm:p-4 rounded-sm border shadow-sm transition-shadow duration-200;
     background-color: var(--entry-bg);
     border-color: var(--entry-border);
   }
@@ -30,12 +31,9 @@
     @apply shadow-lg;
     background-color: var(--entry-hover-bg);
   }
-  .entry-flex-shrink {
-    @apply flex-shrink-0;
-  }
 
   .entry-info-container {
-    @apply flex flex-col flex-1 ml-4;
+    @apply flex flex-col flex-1 sm:ml-4 items-center sm:items-start;
   }
 
   .entry-image {
