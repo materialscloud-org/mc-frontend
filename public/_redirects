@@ -34,6 +34,14 @@
 #ACWF New
 /discover/acwf-verification https://acwf-verification.materialscloud.org/ 301
 
+#Old legacy frontend apps.
+discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
+discover/sssp https://legacy.materialscloud.org/discover/sssp 302
+discover/kpcovr/arginine https://legacy.materialscloud.org/discover/kpcovr/arginine 302
+discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
+
+
+
 # -------------- Core Tools --------------
 /qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 /work/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
