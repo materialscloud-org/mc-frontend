@@ -20,9 +20,6 @@
 /work/tools /work 301
 /work/tools/options /work 301
 
-# Old EXPLORE to new EXPLORE mapping.
-/explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
-
 # -------------- Discover --------------
 
 # Core sections
@@ -78,3 +75,12 @@
 /optimade/main/* https://optimade.materialscloud.org/main/index/:splat 301
 /optimade/archive/* https://optimade.materialscloud.org/archive/index/:splat 301
 /optimade https://optimade.materialscloud.org 301
+
+# -------------- Wildcard matches --------------
+# Wildcard matching is better to put as last for best performance
+
+# Old EXPLORE to new EXPLORE mapping.
+/explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
+
+# Support subpaths for sssp (e.g. /table/precision)
+/discover/sssp/* https://legacy.materialscloud.org/discover/sssp/:splat 302
