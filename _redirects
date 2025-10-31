@@ -45,7 +45,7 @@
 /discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
 
 /discover/kpcovr https://kpcovr.materialscloud.io/ 302
-/discover/kpcovr/* https://kpcovr.materialscloud.io/#$1 302
+/discover/kpcovr/:dataset https://kpcovr.materialscloud.io/?dataset=:dataset 302
 
 
 
