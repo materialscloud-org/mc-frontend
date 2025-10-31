@@ -3,7 +3,7 @@ import "../styles/global.css";
 
 const {
   breadcrumbs = [],
-  title = "Materials Cloud",
+  title = "",
   maxWidth = "max-w-[1000px]",
   padding = "py-5 px-7 mb-4",
 } = Astro.props;
@@ -92,7 +92,7 @@ const moreLinkStyle =
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="images/mcloud_logo.png" />
     <base href={baseHref} />
-    <title>{title}</title>
+    <title>Materials Cloud{title ? ` - ${title}` : ''}</title>
     
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-GQDd7PBwcle-S0ycvnfCs.js"></script>
