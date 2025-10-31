@@ -8,6 +8,9 @@
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
 
+# Old file paths match new S3 307 means keep the headers and path
+/learn/data/learn/files/* https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/:splat 302
+
 # dropping old url syntax
 /home / 301
 /learn/sections /learn 301
