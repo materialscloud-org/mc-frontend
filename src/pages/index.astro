@@ -2,11 +2,12 @@
 import Layout from "@layouts/Layout.astro";
 import TabBlock from "@components/home/TabBlock.astro";
 
-const buttonContainerStyle = "flex items-center space-x-4";
+const buttonContainerStyle = "flex items-center space-x-4 leading-tight";
 
 const buttonStyle = `
   min-w-24
   px-1 py-1
+  my-1.5
   text-center font-semibold text-slate-700
   bg-sky-50 hover:bg-sky-100
   border border-slate-600 rounded
@@ -16,22 +17,14 @@ const buttonStyle = `
 
 <Layout>
   {/* stack as cols on small screens */}
-  <div class="flex flex-wrap gap-0 px-4">
+  <div class="flex flex-wrap gap-8 px-4">
     <div
-      class="w-full lg:w-10/24 flex justify-center lg:justify-start items-center"
+      class="w-full lg:w-9/24 flex justify-center lg:justify-start items-center"
     >
-      <div class="logo">
-        <object
-          id="mc_logo"
-          data="images/mcloud-home-dark-links.svg"
-          type="image/svg+xml"></object>
-      </div>
-      <!-- <p class="home-tagline">
-        Built for seamless sharing of resources in computational materials science.
-      </p> -->
+      <img src="images/mcloud-home-dark-links.svg" alt="MC logos" class="h-65" />
     </div>
     <div class="w-full lg:w-14/24 pt-4">
-      <div class="space-y-2">
+      <div class="space-y-0">
         <div class={buttonContainerStyle}>
           <a class={buttonStyle} href="learn">LEARN</a>
           <span>Lectures and tutorials in computational materials science</span>
