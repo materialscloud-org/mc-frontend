@@ -126,7 +126,7 @@ menu:
             </p>
 
     # legacy discover
-    - link: https://legacy.materialscloud.org/discover/kpcovr/arginine
+    - link: https://kpcovr.materialscloud.io
       title: "Kernel principle covariates regression"
       authors: Benjamin A. Helfrecht, Rose K. Cersonsky, Guillaume Fraux, Michele Ceriotti
       description: |
