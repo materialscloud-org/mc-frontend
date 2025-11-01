@@ -37,28 +37,30 @@ const stats = [
   },
 ];
 
-const charts = [
+// when updating statistics - make a new folder with the date and update this.
+const PlausibleDateStr = "10_10_2025";
+const chartData = [
   {
     title: "Materials Cloud all",
-    src: "images/plausible/mc_all_barchart_10_10_2025.png",
-    alt: "Monthly visits",
-  },
-  {
-    title: "Materials Cloud all",
-    src: "images/plausible/mc_all_pie_10_10_2025.png",
-    alt: "Visits by country",
+    name: "mc_all",
+    types: ["barchart", "pie"],
+    alts: ["Monthly visits", "Visits by country"],
   },
   {
     title: "Materials Cloud archive",
-    src: "images/plausible/mc_archive_barchart_10_10_2025.png",
-    alt: "Archive monthly visits",
-  },
-  {
-    title: "Materials Cloud archive",
-    src: "images/plausible/mc_archive_pie_10_10_2025.png",
-    alt: "Archive visits by country",
+    name: "mc_archive",
+    types: ["barchart", "pie"],
+    alts: ["Archive monthly visits", "Archive visits by country"],
   },
 ];
+
+const charts = chartData.flatMap(({ title, name, types, alts }) =>
+  types.map((type, i) => ({
+    title,
+    src: `images/plausible/${PlausibleDateStr}/${name}_${type}.png`,
+    alt: alts[i],
+  }))
+);
 
 const archiveDate = formatDate("2024-10-10");
 const imageStyle = "w-full max-h-72 object-contain";

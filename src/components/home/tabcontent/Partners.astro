@@ -6,135 +6,67 @@ import yaml from "js-yaml";
 const file = fs.readFileSync("./src/data/partners.yml", "utf8");
 const data = yaml.load(file);
 
-const supporters = data.supporters;
-const supercomps = data.supercomps;
-const reccers = data.recommendors;
-const indexers = data.indexed;
+const sections = [
+  { title: "Supported by", entries: data.supporters },
+  { title: "Partners - Supercomputing Centers", entries: data.supercomps },
+  { title: "Recommended by", entries: data.recommendors },
+  { title: "Indexed by", entries: data.indexed },
+];
 
+// Styles
 const partnerCardStyle = "flex items-center space-x-4 px-6 py-2 bg-white";
 const gridStyle = "grid grid-cols-1 md:grid-cols-2 gap-4";
 const logoStyle = "flex-shrink-0 w-24 h-24";
 ---
 
-<div id="supporters" class="space-y-4">
-  <h3 class="text-xl text-center">Supported by</h3>
-  <div class={gridStyle}>
-    {
-      supporters.map((entry) => (
-        <div class={partnerCardStyle}>
-          <div class={logoStyle}>
-            <img
-              src={`images/endorsers/${entry.logo}`}
-              alt={`${entry.name} logo`}
-              class="w-full h-full object-contain"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-lg font-medium">{entry.name}</h4>
-            <a href={entry.url} target="_blank" rel="noopener noreferrer">
-              {new URL(entry.url).hostname}
-            </a>
+<div id="partners" class="space-y-8">
+  {
+    sections.map((section) => (
+      <div class="space-y-4">
+        <h3 class="text-xl text-center">{section.title}</h3>
+        <div class={gridStyle}>
+          {section.entries.map((entry) => (
+            <div class={`${partnerCardStyle}`}>
+              <div class={logoStyle}>
+                <img
+                  src={`images/endorsers/${entry.logo}`}
+                  alt={`${entry.name} logo`}
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-col">
+                <h4 class="text-lg font-medium">{entry.name}</h4>
 
-            {entry.url2 && entry.url2_str && (
-              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
-                {entry.url2_str.replace(/^https?:\/\//, "")}
-              </a>
-            )}
-          </div>
+                {/* First URL */}
+                {entry.url && (
+                  <a
+                    class="break-all"
+                    href={entry.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {new URL(entry.url).hostname}
+                  </a>
+                )}
+
+                {/* Optional second URL */}
+                {entry.url2 && entry.url2_str && (
+                  <a
+                    class="break-all"
+                    href={entry.url2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {entry.url2_str.replace(/^https?:\/\//, "")}
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-      ))
-    }
-  </div>
-
-  <h3 class="text-xl text-center">Partners - Supercomputing Centers</h3>
-  <div class={gridStyle}>
-    {
-      supercomps.map((entry) => (
-        <div class={partnerCardStyle}>
-          <div class={logoStyle}>
-            <img
-              src={`images/endorsers/${entry.logo}`}
-              alt={`${entry.name} logo`}
-              loading="lazy"
-              class="w-full h-full object-contain"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-lg font-medium">{entry.name}</h4>
-            <a href={entry.url} target="_blank" rel="noopener noreferrer">
-              {new URL(entry.url).hostname}
-            </a>
-
-            {entry.url2 && entry.url2_str && (
-              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
-                {entry.url2_str.replace(/^https?:\/\//, "")}
-              </a>
-            )}
-          </div>
-        </div>
-      ))
-    }
-  </div>
-
-  <h3 class="text-xl text-center">Recommended by</h3>
-  <div class={gridStyle}>
-    {
-      reccers.map((entry) => (
-        <div class={partnerCardStyle}>
-          <div class={logoStyle}>
-            <img
-              src={`images/endorsers/${entry.logo}`}
-              alt={`${entry.name} logo`}
-              loading="lazy"
-              class="w-full h-full object-contain"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-lg font-medium">{entry.name}</h4>
-            <a href={entry.url} target="_blank" rel="noopener noreferrer">
-              {new URL(entry.url).hostname}
-            </a>
-
-            {entry.url2 && entry.url2_str && (
-              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
-                {entry.url2_str.replace(/^https?:\/\//, "")}
-              </a>
-            )}
-          </div>
-        </div>
-      ))
-    }
-  </div>
-
-  <h3 class="text-xl text-center">Indexed by</h3>
-  <div class={gridStyle}>
-    {
-      indexers.map((entry) => (
-        <div class={partnerCardStyle}>
-          <div class={logoStyle}>
-            <img
-              src={`images/endorsers/${entry.logo}`}
-              alt={`${entry.name} logo`}
-              loading="lazy"
-              class="w-full h-full object-contain"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-lg font-medium">{entry.name}</h4>
-            <a href={entry.url} target="_blank" rel="noopener noreferrer">
-              {new URL(entry.url).hostname}
-            </a>
-
-            {entry.url2 && entry.url2_str && (
-              <a href={entry.url2} target="_blank" rel="noopener noreferrer">
-                {entry.url2_str.replace(/^https?:\/\//, "")}
-              </a>
-            )}
-          </div>
-        </div>
-      ))
-    }
-  </div>
+      </div>
+    ))
+  }
 </div>
