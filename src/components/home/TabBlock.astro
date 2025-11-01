@@ -1,11 +1,10 @@
 ---
-import Info from '@lucide/astro/icons/info';
-import Globe from '@lucide/astro/icons/globe';
-import Newspaper from '@lucide/astro/icons/newspaper';
-import ChartNoAxesColumn from '@lucide/astro/icons/chart-no-axes-column';
-import Users from '@lucide/astro/icons/users';
-import FileText from '@lucide/astro/icons/file-text';
-
+import Info from "@lucide/astro/icons/info";
+import Globe from "@lucide/astro/icons/globe";
+import Newspaper from "@lucide/astro/icons/newspaper";
+import ChartNoAxesColumn from "@lucide/astro/icons/chart-no-axes-column";
+import Users from "@lucide/astro/icons/users";
+import FileText from "@lucide/astro/icons/file-text";
 
 import Vision from "./tabcontent/Vision.astro";
 import News from "./tabcontent/News.astro";
@@ -63,6 +62,12 @@ const buttonStyle = `
         panel.classList.add("hidden");
       }
     });
+
+    // we fire a Event if and only if the news tab is clicked,
+    // since timeline.js is expensive.
+    if (tab === "news") {
+      window.dispatchEvent(new Event("newsTabActivated"));
+    }
 
     if (updateHash) {
       history.replaceState(null, "", `#${tab}`);

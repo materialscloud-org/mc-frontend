@@ -1,34 +1,63 @@
 ---
-// TODO - refactor this; move the knightlab code inside the project as a dep?
-// Might even be wise to drop this as a thing altogether; since its actually quite heavy.
+// Knightlab timeline from their CDN.
+// Script only fires on loading of the news tab allowing efficient
+const timelineUrl =
+  "https://docs.google.com/spreadsheets/d/1nSOakYvr0edaU24mZfO7jp2f6OxcqdWBaVbnL5Anm7Q/pubhtml";
 
-// currently we render the news via an iframe, using knightlabs API.
-// This may be unsafe if the syntax changes
-
-// Also need to fix fonts.
-
-// Note this may have some caching issues -
-// i think this can cache an invalid state and hang...
-// seems to work consistantly on chrome but required incog for firefox?
-
-const timelineId = "1nSOakYvr0edaU24mZfO7jp2f6OxcqdWBaVbnL5Anm7Q";
-const initialZoom = 5;
-const height = 500;
-const timenavHeight = 200;
-const animation = 250;
-
-const iframeSrc =
-  `https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html
-   ?source=${timelineId}
-   &initial_zoom=${initialZoom}
-   &height=${height}
-   &start_at_end=true
-   &timenav_height=${timenavHeight}
-   &animation=${animation}`.replace(/\s+/g, "");
+const options = {
+  initial_zoom: 5,
+  height: 500,
+  timenav_height: 150,
+  timenav_height_min: 150,
+  start_at_end: true,
+  animation: 250,
+  marker_padding: 4,
+};
 ---
 
-<h3 class="text-xl font-medium pb-4">Latest News</h3>
-<div class="flex justify-center">
-  <iframe src={iframeSrc} width="950px" height={`${height}px`} allowfullscreen
-  ></iframe>
-</div>
+<!-- TimelineJS CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+/>
+
+<!-- News tab content container -->
+<div id="news-timeline-container"></div>
+
+<script type="module" define:vars={{ timelineUrl, options }}>
+  let initialized = false;
+
+  function initTimeline() {
+    if (initialized) return;
+
+    const container = document.createElement("div");
+    container.id = "timeline-embed";
+    container.style.width = "100%";
+    container.style.height = "500px";
+
+    document.getElementById("news-timeline-container").appendChild(container);
+
+    // get the timeline script now.
+    if (!window.TL) {
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.knightlab.com/libs/timeline3/latest/js/timeline-min.js";
+      script.onload = () => {
+        new TL.Timeline("timeline-embed", timelineUrl, options);
+      };
+      document.body.appendChild(script);
+    } else {
+      new TL.Timeline("timeline-embed", timelineUrl, options);
+    }
+
+    initialized = true;
+  }
+
+  // init if newsEvent fires
+  window.addEventListener("newsTabActivated", initTimeline);
+
+  // init if #news is entered into URL.
+  if (window.location.hash === "#news") {
+    initTimeline();
+  }
+</script>
