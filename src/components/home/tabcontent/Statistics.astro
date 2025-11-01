@@ -109,7 +109,12 @@ const imageStyle = "w-full max-h-72 object-contain";
             <span class="mb-0 text-center text-lg text-gray-700">
               {chart.title}
             </span>
-            <img class={imageStyle} src={chart.src} alt={chart.alt} />
+            <img
+              class={imageStyle}
+              loading="lazy"
+              src={chart.src}
+              alt={chart.alt}
+            />
           </div>
         ))
       }

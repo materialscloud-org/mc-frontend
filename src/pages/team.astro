@@ -60,7 +60,12 @@ const breadcrumbs = [
         {
           projectLeaders.map((p) => (
             <div class={flexContainerStyle}>
-              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <img
+                src={p.img}
+                alt={p.name}
+                loading="lazy"
+                class={personImageStyle}
+              />
               <div class={personDetailsStyle}>
                 <h4>{p.name}</h4>
                 <p class={personTitleStyle}>{p.title}</p>
@@ -82,7 +87,12 @@ const breadcrumbs = [
         {
           teamLeaders.map((p) => (
             <div class={flexContainerStyle}>
-              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <img
+                src={p.img}
+                alt={p.name}
+                loading="lazy"
+                class={personImageStyle}
+              />
               <div class={personDetailsStyle}>
                 <h4>{p.name}</h4>
                 <p class={personTitleStyle}>{p.title}</p>
@@ -104,7 +114,12 @@ const breadcrumbs = [
         {
           coreDevelopers.map((p) => (
             <div class={flexContainerStyle}>
-              <img src={p.img} alt={p.name} class={personImageStyle} />
+              <img
+                src={p.img}
+                alt={p.name}
+                loading="lazy"
+                class={personImageStyle}
+              />
               <div class={personDetailsStyle}>
                 <h4>{p.name}</h4>
                 <p class={personTitleStyle}>{p.title}</p>
