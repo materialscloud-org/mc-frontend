@@ -2,7 +2,7 @@
 menu:
   main_discover:
     - link: https://mc3d.materialscloud.org
-      title: Materials Cloud three-dimensional crystals database (MC3D)
+      title: Materials Cloud three-dimensional structure Database (MC3D)
       authors: Sebastiaan Huber, Marnik Bercx, Kristjan Eimre, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi
       description: |
         Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
@@ -11,7 +11,7 @@ menu:
         - 10.24435/materialscloud:rw-t0
 
     - link: https://mc2d.materialscloud.org
-      title: Materials Cloud two-dimensional crystals database (MC2D)
+      title: Materials Cloud two-dimensional structure Database (MC2D)
       authors: |
         Davide Campi, Davide Grassano, Nicolas Mounet, Marco Gibertini, Philippe Schwaller, Andrius Merkys,
         Antimo Marrazzo, Thibault Sohier, Ivano E. Castelli, Andrea Cepellotti, Snehal Kumbhar, Elsa Passaro,

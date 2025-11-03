@@ -9,7 +9,7 @@ profiles:
     logo: "mc3d.png"
     profile: "mc3d-pbesol-v2"
     rest_url: "/mc3d-pbesol-v2/api/v4"
-    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBEsol-v2)"
+    title: "Materials Cloud three-dimensional structure Database (MC3D) (PBEsol-v2)"
 
   - link: "mc3d-pbesol-v1"
     authors: "Sebastiaan Huber, Michail Minotakis, Marnik Bercx, Timo Reents, Kristjan Eimre, Nataliya Paulish, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
@@ -21,7 +21,7 @@ profiles:
     logo: "mc3d.png"
     profile: "mc3d-pbesol-v1"
     rest_url: "/mc3d-pbesol-v1/api/v4"
-    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBEsol-v1)"
+    title: "Materials Cloud three-dimensional structure Database (MC3D) (PBEsol-v1)"
 
   - link: "mc3d-pbesol-v1-supercon"
     authors: "Marnik Bercx, Samuel Ponce, Yiming Zhang, Giovanni Trezza, Amir Ghorbani Ghezeljehmeidan, Lorenzo Bastonero, Junfeng Qiao, Fabian O. von Rohr, Giovanni Pizzi, Eliodoro Chiavazzo, Nicola Marzari"
@@ -44,7 +44,7 @@ profiles:
     logo: "mc3d.png"
     profile: "mc3d-pbe-v1"
     rest_url: "/mc3d-pbe-v1/api/v4"
-    title: "Materials Cloud three-dimensional crystals database (MC3D) (PBE-v1)"
+    title: "Materials Cloud three-dimensional structure Database (MC3D) (PBE-v1)"
 
   - link: "mc2d"
     authors: "Davide Campi, Davide Grassano, Nicolas Mounet, Marco Gibertini, Philippe Schwaller, Andrius Merkys, Antimo Marrazzo, Thibault Sohier, Ivano E. Castelli, Andrea Cepellotti, Giovanni Pizzi, Nicola Marzari"
@@ -57,7 +57,7 @@ profiles:
     logo: "mc2d.png"
     profile: "mc2d"
     rest_url: "/mc2d/api/v4"
-    title: "Materials Cloud two-dimensional crystals database (MC2D)"
+    title: "Materials Cloud two-dimensional structure Database (MC2D)"
 
   - link: tin-antimony-sulfoiodide
     authors: "Seán R. Kavanagh, Christopher N. Savory, David O. Scanlon, Aron Walsh"
