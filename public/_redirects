@@ -2,9 +2,6 @@
 # Redirect configuration file for Cloudflare pages
 # --------------------------------------------------------
 
-# drop trailing slash from pathnames.
-/:pathname/  /:pathname  301
-
 # Navitation to external pages
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
@@ -43,6 +40,13 @@
 # legacy names
 /discover/3dcd /discover/mc3d 301
 /discover/2dstructures /discover/mc2d 301
+
+# trailing slash names
+/discover/mc3d/ /discover/mc3d 301
+/discover/mc2d/ /discover/mc2d 301
+/discover/sssp/ /discover/sssp 301
+/discover/acwf-verification/ /discover/acwf-verification 301
+
 
 # Contributed sections
 /discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
