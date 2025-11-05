@@ -2,11 +2,15 @@
 # Redirect configuration file for Cloudflare pages
 # --------------------------------------------------------
 
+# drop trailing slash from pathnames.
+/:pathname/  /:pathname  301
+
 # Navitation to external pages
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
+/work/quantum-mobile https://quantum-mobile.readthedocs.io/en/latest/ 301
 
 # Old file paths match new S3 307 means keep the headers and path
 /learn/data/learn/files/* https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/:splat 302
