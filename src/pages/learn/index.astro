@@ -33,35 +33,28 @@ const learnButtons = [
       <h3 class="text-2xl">Associated educational platforms</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
-      <div class="mx-auto flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 items-center">
-        {
-          learnButtons.map((btn) => (
-            <RectangleButton {...btn} />
-          ))
-        }
+      <div
+        class="mx-auto flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 items-center"
+      >
+        {learnButtons.map((btn) => <RectangleButton {...btn} />)}
       </div>
     </section>
 
     {/*  heading */}
     <section class="flex mb-4">
-      <h3 class="text-2xl">Materials Cloud legacy learn</h3>
+      <h3 class="text-2xl">Materials Cloud Learn</h3>
     </section>
 
     <hr class="border-t border-gray-300 mb-6" />
   </div>
 
-  <p class="px-2 pb-2 italic text-gray-700">
-    The Materials Cloud Learn has entered an archival state. All new content
-    will be added to the Lhumos platform instead.
-  </p>
-
   <p class="px-2 pb-2">
     Lecture recordings and video tutorials on computational materials science
     for students and experts alike. You can find more videos on the <a
       href="https://www.youtube.com/materialscloud"
-      target="_blank"
-      >Materials Cloud Youtube channel.
-    </a>
+      target="_blank">Materials Cloud Youtube channel.</a
+    >
+    <i>This content has now been mirrored to the Lhumos platform.</i>
   </p>
 
   <LearnBannerList entries={data.entries} rootPath="learn/sections" />
