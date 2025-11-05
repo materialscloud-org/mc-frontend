@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { AiidaExplorerWrapper } from '../../components/AiidaExplorerWrapper.jsx';
+import { AiidaExplorerWrapper } from "../../components/AiidaExplorerWrapper.jsx";
 
 import fs from "fs";
 import yaml from "js-yaml";
@@ -46,8 +46,9 @@ const breadcrumbs = [
           ))
       }
     </div>
-    <div class="h-[calc(100vh-224px)] min-h-[400px]">
-      <AiidaExplorerWrapper client:only="react"
+    <div class="h-[calc(100vh-224px)] min-h-[400px] px-0.5">
+      <AiidaExplorerWrapper
+        client:only="react"
         restApiUrl=`${PUBLIC_URL_HOST_AIIDA}${profile.rest_url}`
       />
     </div>
