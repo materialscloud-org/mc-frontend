@@ -7,6 +7,7 @@
 /work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
+/work/quantum-mobile https://quantum-mobile.readthedocs.io/en/latest/ 301
 
 # Old file paths match new S3 307 means keep the headers and path
 /learn/data/learn/files/* https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/:splat 302
@@ -39,6 +40,13 @@
 # legacy names
 /discover/3dcd /discover/mc3d 301
 /discover/2dstructures /discover/mc2d 301
+
+# trailing slash names
+/discover/mc3d/ /discover/mc3d 301
+/discover/mc2d/ /discover/mc2d 301
+/discover/sssp/ /discover/sssp 301
+/discover/acwf-verification/ /discover/acwf-verification 301
+
 
 # Contributed sections
 /discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
