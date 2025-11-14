@@ -54,6 +54,7 @@ export function AiidaExplorerWrapper({ restApiUrl }) {
       restApiUrl={restApiUrl}
       rootNode={rootNode}
       onRootNodeChange={setrootNode}
+      debugMode={false}
     />
   );
 }
