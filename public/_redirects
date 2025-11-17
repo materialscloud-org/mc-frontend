@@ -95,6 +95,9 @@
 # Wildcard matching is better to put as last for best performance
 
 # Old EXPLORE to new EXPLORE mapping.
+/tools/* /work/tools/:splat 301
+
+# Old EXPLORE to new EXPLORE mapping.
 /explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
 
 # Support subpaths for sssp (e.g. /table/precision)
