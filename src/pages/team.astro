@@ -32,20 +32,26 @@ const breadcrumbs = [
       <table class="min-w-full">
         <tbody>
           {
-            contacts.map((c) => (
-              <tr class="odd:bg-gray-50">
-                <td class="p-2 py-2">
-                  <a
-                    href={`mailto:${c.email}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {c.email}
-                  </a>
-                </td>
-                <td class="py-2" set:html={c.desc} />
-              </tr>
-            ))
+            contacts.map((c) => {
+              const href = c.link.includes("@")
+                ? `mailto:${c.link}`
+                : c.link;
+
+              return (
+                <tr class="odd:bg-gray-50">
+                  <td class="p-2 py-2">
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {c.link}
+                    </a>
+                  </td>
+                  <td class="py-2" set:html={c.desc} />
+                </tr>
+              );
+            })
           }
         </tbody>
       </table>
