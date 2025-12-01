@@ -1,7 +1,7 @@
 contacts:
   - link: info@materialscloud.org
     desc: For general inquiries concerning Materials Cloud
-  - link: https://github.com/materialscloud-org/issues
+  - link: https://github.com/materialscloud-org/issues/issues
     desc: For reporting issues encountered on Materials Cloud
   - link: aiidalab@materialscloud.org
     desc: 'For questions concerning the <a href="https://aiidalab.materialscloud.org" target="_blank">AiiDAlab</a>'
