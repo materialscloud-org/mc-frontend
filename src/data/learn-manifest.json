@@ -17,6 +17,26 @@
     "thumbnail_url": "marvel-nccr-logo.png"
   },
   {
+    "id": "x1uK4P0YYTw",
+    "slug": "2025-jonsson",
+    "type": "video",
+    "parentId": "bWQUKy",
+    "title": "41. Calculations of excited electronic states using saddle point searches",
+    "description": "The 41st NCCR MARVEL Distinguished Lecture will be given by Prof. Hannes Jónsson (University of Iceland). He will be presenting a lecture entitled: Calculations of excited electronic states using saddle point searches and self-interaction corrected density functionals, with comparison to neural-network selective configuration interaction.",
+    "thumbnail_url": "HannesJonsson.png",
+    "date": "2025-11-11",
+    "video_source_id": "x1uK4P0YYTw",
+    "profile_url": "https://nccr-marvel.ch/events/marvel-distinguished-lecture-hannes-jonsson",
+    "speakers": [
+      {
+        "first_name": "Hannes",
+        "last_name": "Jonsson",
+        "title": "Prof."
+      }
+    ],
+    "additional_resources": []
+  },
+  {
     "id": "syKm2x3SAm9k",
     "slug": "2025-tkatchenko-realizing-schr-dinger-s-dream-with-ai-enabled-molecular-simulati",
     "type": "video",
