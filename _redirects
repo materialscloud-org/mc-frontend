@@ -63,7 +63,7 @@
 # Core tools
 /work/tools/qeinputgenerator https://qeinputgenerator.materialscloud.io/ 301
 /work/tools/seekpath https://seekpath.materialscloud.io/ 301
-/work/tools/optimadeclient https://optimadeclient.materialscloud.org/ 301
+/work/tools/optimadeclient https://optimadeclient.materialscloud.io/ 301
 /work/tools/interactivephonon https://interactivephonon.materialscloud.io/ 301
 
 /work/qeinputgenerator /work/tools/qeinputgenerator 301
