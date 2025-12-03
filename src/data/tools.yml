@@ -17,7 +17,7 @@ menu:
 
     - link: https://optimadeclient.materialscloud.io
       title: "OPTIMADE-Client"
-      authors: Casper Welzel Andersen
+      authors: Bud Macaulay
       description: |
         A friendly client to search through materials databases and other implementations exposing an OPTIMADE RESTful API.
       logo: optimade.png
