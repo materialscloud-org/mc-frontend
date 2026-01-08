@@ -8,7 +8,8 @@ menu:
         Curated set of relaxed three-dimensional crystal structures based on raw CIF data from the experimental databases MPDS, COD, and ICSD.
       logo: mc3d.png
       doi:
-        - 10.24435/materialscloud:rw-t0
+        - id: 10.24435/materialscloud:rw-t0
+          type: data
 
     - link: https://mc2d.materialscloud.org
       title: Materials Cloud two-dimensional structure database (MC2D)
@@ -20,8 +21,10 @@ menu:
         Results from screening known 3D crystal structures finding those that can be computationally exfoliated, producing 2D materials candidates.
       logo: mc2d.png
       doi:
-        - 10.24435/materialscloud:az-b2
-        - 10.24435/materialscloud:36-nd
+        - id: 10.24435/materialscloud:az-b2
+          type: data
+        - id: 10.24435/materialscloud:36-nd
+          type: data
 
     # legacy discover
     - link: https://legacy.materialscloud.org/discover/sssp
@@ -55,7 +58,8 @@ menu:
         of 5k molecules and their applications in surface-enhanced spectroscopies (IR, Raman, SFG).
       logo: molecular-vibration.png
       doi:
-        - 10.24435/materialscloud:p7-w6
+        - id: 10.24435/materialscloud:p7-w6
+          type: data
 
     - link: isf
       title: "Donor-acceptor copolymers for intramolecular singlet fission"
@@ -64,7 +68,8 @@ menu:
         Screening of 2944 conjugated donor-acceptor dimers for intramolecular singlet fission behavior.
       logo: isf.png
       doi:
-        - 10.24435/materialscloud:xj-9d
+        - id: 10.24435/materialscloud:xj-9d
+          type: data
       iframe: true
       iframe_src: "https://mol-explorer.materialscloud.io"
       iframe_maxWidth: "max-w-[1850px]"
@@ -98,7 +103,8 @@ menu:
         Atomic structures of experimentally synthesized pyrene-based metal-organic frameworks.
       logo: pyrene-mofs.png
       doi:
-        - 10.24435/materialscloud:z5-ct
+        - id: 10.24435/materialscloud:z5-ct
+          type: data
       iframe: true
       iframe_src: "https://pyrene-mofs.materialscloud.io/select_pyrenemofs"
       iframe_maxWidth: "max-w-[1850px]"
@@ -133,7 +139,8 @@ menu:
         Illustration of the Kernel Principal Covariates Regression method on various datasets.
       logo: kpcovr.png
       doi:
-        - 10.24435/materialscloud:ay-eq
+        - id: 10.24435/materialscloud:ay-eq
+          type: data
 
     # legacy discover
     - link: https://legacy.materialscloud.org/discover/autowannier
@@ -145,7 +152,8 @@ menu:
         Validation results of an automated protocol for generating maximally-localized Wannier functions in a high-throughput framework.
       logo: scdm.png
       doi:
-        - 10.24435/materialscloud:dd-nz
+        - id: 10.24435/materialscloud:dd-nz
+          type: data
 
     - link: hcofs-co2
       title: "Covalent organic frameworks for carbon capture"
@@ -156,7 +164,8 @@ menu:
         A database of 70k two- and three-dimensional covalent organic frameworks, screened for carbon capture.
       logo: hcofs-co2.png
       doi:
-        - 10.24435/materialscloud:2020.0029/v1
+        - id: 10.24435/materialscloud:2020.0029/v1
+          type: data
       iframe: true
       iframe_src: "https://hcofs-co2.materialscloud.io"
       iframe_maxWidth: "max-w-[1050px]"
@@ -191,7 +200,8 @@ menu:
         A database of 324,426 hypothetical Metal-Organic Frameworks (MOFs) screened for wet flue gas CO2 capture.
       logo: mofs.png
       doi:
-        - 10.24435/materialscloud:2018.0016/v3
+        - id: 10.24435/materialscloud:2018.0016/v3
+          type: data
       iframe: true
       iframe_src: "https://mofs.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1050px]"
@@ -228,7 +238,8 @@ menu:
         Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
       logo: 2dtopo.png
       doi:
-        - 10.24435/materialscloud:2019.0081/v1
+        - id: 10.24435/materialscloud:2019.0081/v1
+          type: data
 
     - link: tc-applicability
       title: "Applicability of tail-corrections in the molecular simulations of porous materials"
@@ -238,7 +249,8 @@ menu:
         Systematic study on the applicability of tail-corrections in the molecular simulations of porous materials.
       logo: tcapplicability.png
       doi:
-        - 10.24435/materialscloud:2019.0024/v3
+        - id: 10.24435/materialscloud:2019.0024/v3
+          type: data
       iframe: true
       iframe_src: "https://tc-applicability.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
@@ -277,12 +289,12 @@ menu:
         molecular simulations. They have been evaluated for CO2 capture and storage
       logo: curated-cofs.png
       doi:
-        - 10.24435/materialscloud:z6-jn
+        - id: 10.24435/materialscloud:z6-jn
+          type: data
       iframe: true
       iframe_src: "https://curated-cofs.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1250px]"
       iframe_height: 30200
-
       accordions:
         - title: About
           content: |
@@ -360,7 +372,8 @@ menu:
         Energy-based screening of catalysts for various cross-coupling reactions.
       logo: ccg.png
       doi:
-        - 10.24435/materialscloud:2019.0007/v3
+        - id: 10.24435/materialscloud:2019.0007/v3
+          type: data
       iframe: true
       iframe_src: "https://ccg.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
@@ -394,7 +407,8 @@ menu:
         A database of 70k two- and three-dimensional covalent organic frameworks, screened for methane storage.
       logo: cofs.png
       doi:
-        - 10.24435/materialscloud:2018.0003/v3
+        - id: 10.24435/materialscloud:2018.0003/v3
+          type: data
       iframe: true
       iframe_src: "https://cofs.materialscloud.io/select-figure"
       iframe_maxWidth: "max-w-[1150px]"
@@ -429,7 +443,8 @@ menu:
         Dirac and Weyl semimetals, etc.)
       logo: topomat.png
       doi:
-        - 10.24435/materialscloud:2019.0019/v1
+        - id: 10.24435/materialscloud:2019.0019/v1
+          type: data
       iframe: true
       iframe_src: "https://topomat.materialscloud.io/"
       iframe_maxWidth: "max-w-[1150px]"

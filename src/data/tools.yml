@@ -45,7 +45,8 @@ menu:
         their components including the oxidation state (OS) of metal atoms and the charge of ligands.
       logo: cell2mol.png
       doi:
-        - 10.5281/zenodo.10204037
+        - id: 10.5281/zenodo.10204037
+          type: data
 
     - link: https://ml-layer-finder.materialscloud.io
       title: Machine-learning accelerated identification of exfoliable two-dimensional materials
@@ -74,7 +75,8 @@ menu:
         This tool takes a crystal structure and predicts the oxidation state for each metal site.
       logo: oximachine.png
       doi:
-        - 10.24435/materialscloud:2018.0003/v3
+        - id: 10.24435/materialscloud:2018.0003/v3
+          type: data
       iframe: true
       iframe_src: "https://oximachine.materialscloud.io"
       maxWidth: "max-w-[1200px]"
@@ -94,7 +96,8 @@ menu:
         A tool for building and analyzing electronic transport properties of graphene nanoribbon junctions.
       logo: TBETA_logo.png
       doi:
-        - 10.24435/materialscloud:av-24
+        - id: 10.24435/materialscloud:av-24
+          type: data
 
     - link: sycofinder
       title: Synthesis condition finder
@@ -104,7 +107,8 @@ menu:
         genetic algorithms.
       logo: sycofinder.png
       doi:
-        - 10.5281/zenodo.1312814
+        - id: 10.5281/zenodo.1312814
+          type: data
       iframe: true
       iframe_src: "https://sycofinder.materialscloud.io"
       iframe_maxWidth: "max-w-[1550px]"

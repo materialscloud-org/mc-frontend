@@ -71,14 +71,24 @@ the default tailwind ul doesnt indent, numbers or have a disc
   }
 
   .doi-left {
-    @apply mt-0.5 px-1 py-0.5 text-white bg-gray-900 rounded-l;
+    @apply mt-0.5 px-1 py-0.5 text-white bg-gray-900 rounded-l-sm;
   }
 
   .doi-right {
-    @apply mt-0.5 px-1 py-0.5 text-black bg-[#b3d4fc] break-all rounded-r hover:bg-[rgb(192,219,255)] hover:no-underline;
+    @apply mt-0.5 px-1 py-0.5 text-black  break-all rounded-r-sm  hover:no-underline;
   }
 
-  /* this is used heavily in explore
+  /* Data DOI → blue */
+  .doi-right.doi-data {
+    @apply bg-[#b3d4fc] hover:bg-[rgb(192,219,255)];
+  }
+
+  /* Paper DOI → green */
+  .doi-right.doi-paper {
+    @apply bg-[#a2e5b7] hover:bg-green-300;
+  }
+
+  /* this is used heavily in explore/learn.
   */
   .explore-button {
     @apply px-2.5 py-1.5 rounded bg-[rgb(53,96,160)] text-gray-100 hover:bg-[rgb(68,114,184)] hover:text-gray-100 hover:no-underline;

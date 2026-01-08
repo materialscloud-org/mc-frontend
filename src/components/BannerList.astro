@@ -49,11 +49,16 @@ const { entries, rootPath } = Astro.props;
               {entry.title}
             </a>
             {entry.doi &&
-              entry.doi.map((doi) => (
+              entry.doi.map(({ id, type }) => (
                 <span class="doi-badge">
-                  <span class="doi-left">DOI</span>
-                  <a href={`https://doi.org/${doi}`} class="doi-right">
-                    {doi}
+                  <span class="doi-left">
+                    {type === "data" ? "Data DOI" : "Paper DOI"}
+                  </span>
+                  <a
+                    href={`https://doi.org/${id}`}
+                    class={`doi-right ${type === "data" ? "doi-data" : "doi-paper"}`}
+                  >
+                    {id}
                   </a>
                 </span>
               ))}
