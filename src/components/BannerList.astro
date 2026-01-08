@@ -56,6 +56,8 @@ const { entries, rootPath } = Astro.props;
                   </span>
                   <a
                     href={`https://doi.org/${id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class={`doi-right ${type === "data" ? "doi-data" : "doi-paper"}`}
                   >
                     {id}
