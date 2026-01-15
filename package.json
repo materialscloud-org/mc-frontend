@@ -15,7 +15,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
-    "aiida-explorer": "^0.3.7",
+    "aiida-explorer": "^0.3.8",
     "astro": "^5.11.2",
     "js-yaml": "^4.1.0",
     "react": "^19.2.0",
