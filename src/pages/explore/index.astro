@@ -41,7 +41,14 @@ const optimade = {
         the Materials Cloud Archive.
       </p>
 
-      <BannerList entries={profiles} rootPath="explore" />
+      <BannerList entries={profiles} rootPath="explore">
+        <span
+          slot="image-overlay"
+          class="absolute bottom-0 right-0 w-8 h-8 rounded-full border border-gray-300 bg-gray-100 shadow flex items-center justify-center pointer-events-none"
+        >
+          <img src="/images/aiida-logo-128.png" class="w-6 h-auto" alt="" />
+        </span>
+      </BannerList>
     </section>
   </div></Layout
 >
