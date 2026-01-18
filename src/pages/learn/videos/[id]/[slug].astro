@@ -2,7 +2,7 @@
 import fs from "fs";
 import path from "path";
 
-import Download from '@lucide/astro/icons/download';
+import Download from "@lucide/astro/icons/download";
 
 import Layout from "@layouts/Layout.astro";
 
@@ -79,7 +79,7 @@ const title = video.title;
               <>
                 <span>
                   {speaker.title ? speaker.title + " " : ""}
-                  {speaker.first_name}{" "}{speaker.last_name}
+                  {speaker.first_name} {speaker.last_name}
                   {index < video.speakers.length - 1 ? "& " : ""}
                 </span>
                 {video.profile_url && (
@@ -147,27 +147,27 @@ const title = video.title;
   }
   {
     video.video_source_id && (
-      <section class="pt-4 border-t border-gray-300 mb-6 mt-4 flex flex-col items-center text-center">
-        {video.vidType === "slideshot" ? (
-          <iframe
-            width="1200"
-            height="600"
-            src={`https://slideshot.epfl.ch/eplay/${video.video_source_id}`}
-            title={video.title}
-            frameborder="0"
-            allowfullscreen
-          />
-        ) : (
-          <iframe
-            width="1100"
-            height="619"
-            src={`https://www.youtube.com/embed/${video.video_source_id}`}
-            title={video.title}
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        )}
+      <section class="pt-4 border-t border-gray-300 mb-6 mt-4 flex justify-center">
+        <div class="w-full max-w-[1400px] aspect-video">
+          {video.vidType === "slideshot" ? (
+            <iframe
+              src={`https://slideshot.epfl.ch/eplay/${video.video_source_id}`}
+              title={video.title}
+              class="w-full h-full rounded"
+              frameborder="0"
+              allowfullscreen
+            />
+          ) : (
+            <iframe
+              src={`https://www.youtube.com/embed/${video.video_source_id}`}
+              title={video.title}
+              class="w-full h-full rounded"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          )}
+        </div>
       </section>
     )
   }
