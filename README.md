@@ -1,8 +1,24 @@
 # Materials Cloud main frontend
 
-Built with Astro, which allows for a simple but powerful way to create the static frontend.
+Built with Astro, which allows for a simple but powerful and flexible way to create the static frontend.
 
-`main` branch is automatically deployed to https://materialscloud-org.github.io/mc-frontend.
+## Deployment
+
+### Cloudflare pages - Production
+
+The main/production deployment is performed with Cloudflare pages to https://www.materialscloud.org.
+
+In addition to the production deployment, each commit and branch also get a preview deployment at `<branch/commit>.mc-frontend.pages.dev`, such as
+
+- https://develop.mc-frontend.pages.dev
+
+But note that special characters in branch names (e.g. `_`, `/`) get replaced with `-` in the URL.
+
+### Github pages
+
+Additionally, the `main` branch is automatically deployed to https://materialscloud-org.github.io/mc-frontend via a Github action.
+
+This, however, doesn't contain the redirects that are present on Cloudflare.
 
 ## Development notes
 
@@ -19,9 +35,9 @@ Legacy repositories:
 - [frontend-explore](https://github.com/materialscloud-org/frontend-explore)
 - [legacy-frontend-docker](https://github.com/materialscloud-org/legacy-frontend-docker)
 
-# Astro quickstart
+# Astro notes
 
-Created with
+This repo was created with
 
 ```sh
 npm create astro@latest -- --template basics
@@ -29,7 +45,7 @@ npm create astro@latest -- --template basics
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## Commands
+## Astro commands
 
 All commands are run from the root of the project, from a terminal:
 
