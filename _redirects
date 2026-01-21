@@ -88,6 +88,8 @@
 
 # -------------- OPTIMADE APIs --------------
 /optimade https://optimade.materialscloud.org 301
+/optimade/main https://optimade.materialscloud.org/main/index/links 301
+/optimade/archive https://optimade.materialscloud.org/archive/index/links 301
 /optimade/main/* https://optimade.materialscloud.org/main/index/:splat 301
 /optimade/archive/* https://optimade.materialscloud.org/archive/index/:splat 301
 
