@@ -2,6 +2,12 @@
 import Layout from "@layouts/Layout.astro";
 import TabBlock from "@components/home/TabBlock.astro";
 
+import Carousel from "../components/Carousel.astro";
+import RectangleButton from "@components/RectangleButton.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
 const buttonContainerStyle = "flex items-center space-x-4 leading-tight";
 
 const buttonStyle = `
@@ -13,6 +19,9 @@ const buttonStyle = `
   border border-slate-600 rounded
   transition duration-300
 `;
+
+const cfile = fs.readFileSync("./src/data/carousel-highlights.yml", "utf8");
+const carouselData = yaml.load(cfile);
 ---
 
 <Layout>
@@ -72,6 +81,23 @@ const buttonStyle = `
         >, if you use Materials Cloud in your research.
       </p>
     </div>
+  </div>
+
+  <div class="pt-8">
+    <Carousel>
+      {
+        carouselData.carousel.map((btn) => (
+          <div class="px-2">
+            <RectangleButton
+              href={btn.href}
+              img={btn.img}
+              title={btn.title}
+              subtitle={btn.subtitle}
+            />
+          </div>
+        ))
+      }
+    </Carousel>
   </div>
 
   <TabBlock />

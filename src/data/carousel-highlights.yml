@@ -1,0 +1,40 @@
+carousel:
+  - href: "https://www.aiidalab.net"
+    img: "images/aiidalab_gears.png"
+    title: "AiiDAlab"
+    subtitle: "Run your own simulations using AiiDA on the cloud"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/mcloud_logo.png"
+    title: "MCLOUD"
+    subtitle: "Long Test description 1, hopefully this centers"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/osscar-logo.svg"
+    title: "OSSCAR"
+    subtitle: "OSSCAR TEST RESULT 1 TEXT BOX 1000"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/work_tools.png"
+    title: "TOOLS"
+    subtitle: "Test Descriptions should be 20"
+
+  - href: "https://www.aiidalab.net"
+    img: "images/aiidalab_gears.png"
+    title: "AiiDAlab"
+    subtitle: "Run your own simulations using AiiDA on the cloud"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/mcloud_logo.png"
+    title: "MCLOUD"
+    subtitle: "Long Test description 1, hopefully this centers"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/osscar-logo.svg"
+    title: "OSSCAR"
+    subtitle: "OSSCAR TEST RESULT 1 TEXT BOX 1000"
+
+  - href: "https://quantum-mobile.readthedocs.io"
+    img: "images/work_tools.png"
+    title: "TOOLS"
+    subtitle: "Test Descriptions should be 20"

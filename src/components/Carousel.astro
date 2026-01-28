@@ -1,0 +1,113 @@
+---
+// custom carousel component.
+// Note this is not particularly flexible as its
+// only in used in one place.
+
+const { className = "" } = Astro.props;
+
+const carouselStyle = `absolute text-[70px] text-black/20 px-1 
+rounded-xl z-10 top-1/2 
+-translate-y-1/2 py-12
+ transition-colors duration-300 hover:cursor-pointer hover:text-slate-500/80`;
+
+const carouselOverlay =
+  "pointer-events-none absolute h-full w-16 from-white/100 to-transparent ";
+const carouselOverlayLeft = carouselOverlay + " left-0 top-0  bg-linear-to-r";
+
+const carouselOverlayRight = carouselOverlay + " right-0 top-0 bg-linear-to-l";
+---
+
+<div class={`relative overflow-hidden ${className}`}>
+  <div
+    id="carousel-track"
+    class="flex transition-transform duration-500 ease-in-out py-4"
+  >
+    {
+      /* we use two slots to make the back-scroll look nicer. if carousel is long we can probably get away with just one.*/
+    }
+    <slot />
+  </div>
+
+  <button id="carousel-prev" class=`${carouselStyle} left-2 pr-10`>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><circle cx="12" cy="12" r="10"></circle><path d="m14 16-4-4 4-4"
+      ></path></svg
+    >
+  </button>
+
+  <button id="carousel-next" class=`${carouselStyle} right-0 pl-10`>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><circle cx="12" cy="12" r="10"></circle><path d="m10 8 4 4-4 4"
+      ></path></svg
+    >
+  </button>
+
+  <div class={carouselOverlayLeft}></div>
+  <div class={carouselOverlayRight}></div>
+</div>
+
+<script is:inline>
+  const track = document.getElementById("carousel-track");
+  let items = Array.from(track.children);
+  const prevBtn = document.getElementById("carousel-prev");
+  const nextBtn = document.getElementById("carousel-next");
+  let index = 0;
+
+  // Clone first 4 slides at the end for smooth looping
+  const cloneCount = Math.min(4, items.length);
+  for (let i = 0; i < cloneCount; i++) {
+    const clone = items[i].cloneNode(true);
+    clone.dataset.clone = "true";
+    track.appendChild(clone);
+  }
+
+  items = Array.from(track.children);
+
+  function updateCarousel(animate = true) {
+    const width = items[0].getBoundingClientRect().width;
+    if (!animate) {
+      track.style.transition = "none";
+    } else {
+      track.style.transition = "transform 0.5s ease-in-out";
+    }
+    track.style.transform = `translateX(-${index * width}px)`;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    index = index === 0 ? items.length - cloneCount - 1 : index - 1;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    index++;
+    updateCarousel();
+
+    // If we reach cloned slides, reset to real first slide (no animation)
+    if (index >= items.length - cloneCount) {
+      setTimeout(() => {
+        index = 0;
+        updateCarousel(false);
+      }, 500); // match transition duration
+    }
+  });
+
+  window.addEventListener("resize", () => updateCarousel(false));
+</script>
