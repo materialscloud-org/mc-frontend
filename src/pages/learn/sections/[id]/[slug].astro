@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import LearnBannerList from "@components/LearnBannerList.astro";
 
-import ExternalLink from '@lucide/astro/icons/external-link';
+import ExternalLink from "@lucide/astro/icons/external-link";
 
 import fs from "fs";
 import path from "path";
@@ -68,7 +68,7 @@ breadcrumbs.push({
 const title = pageData.title;
 ---
 
-<Layout title={title} breadcrumbs={breadcrumbs}>
+<Layout title={title} breadcrumbs={breadcrumbs} description={pageData.title}>
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">{pageData.title}</h3>

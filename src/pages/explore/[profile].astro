@@ -30,27 +30,28 @@ const breadcrumbs = [
   breadcrumbs={breadcrumbs}
   maxWidth="max-w-full"
   padding=""
+  description=`Materials Cloud - Explore: ${profile.title}`
 >
   <div class="space-y-10">
     <div class="px-4 py-4 m-0">
       <h3 class="text-xl">AiiDA profile: {profile.title}</h3>
       {
-    profile.doi &&
-      profile.doi.map(({ id, type }) => (
-        <span class="doi-badge" key={id}>
-          <span class="doi-left">
-            {type === "data" ? "Data DOI" : "Paper DOI"}
-          </span>
-          <a
-            href={`https://doi.org/${id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class={`doi-right ${type === "data" ? "doi-data" : "doi-paper"}`}
-          >
-            {id}
-          </a>
-        </span>
-      ))
+        profile.doi &&
+          profile.doi.map(({ id, type }) => (
+            <span class="doi-badge" key={id}>
+              <span class="doi-left">
+                {type === "data" ? "Data DOI" : "Paper DOI"}
+              </span>
+              <a
+                href={`https://doi.org/${id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class={`doi-right ${type === "data" ? "doi-data" : "doi-paper"}`}
+              >
+                {id}
+              </a>
+            </span>
+          ))
       }
     </div>
     <div class="h-[calc(100vh-224px)] min-h-[400px] px-0.5">

@@ -4,6 +4,7 @@ import "../styles/global.css";
 const {
   breadcrumbs = [],
   title = "",
+  description = null,
   maxWidth = "max-w-[1000px]",
   padding = "py-5 px-7 mb-4",
 } = Astro.props;
@@ -30,6 +31,23 @@ const moreLinks = [
   { name: "Partners", href: "#partners" },
   // { name: "Connect your REST API", href: "explore/connect" },
 ];
+
+let metaDescription = description;
+// Only generate if not passed
+if (!metaDescription) {
+  const pathSegments = Astro.url.pathname.split("/").filter(Boolean);
+
+  if (pathSegments.length > 0) {
+    // Take last segment as human-readable description
+    const lastSegment = pathSegments[pathSegments.length - 1]
+      .replace(/[-_]/g, " ") // hyphens/underscores → spaces
+      .replace(/\b\w/g, (c) => c.toUpperCase()); // capitalize words
+
+    metaDescription = `Materials Cloud - ${lastSegment}`;
+  } else {
+    metaDescription = "Materials Cloud - Explore scientific datasets and tools";
+  }
+}
 
 // slot div styling
 const contentWrapperStyle = `bg-white rounded-sm shadow-md min-w-[350px] w-full ${padding} ${maxWidth} `;
@@ -93,6 +111,8 @@ const moreLinkStyle =
     <link rel="icon" type="image/svg" href="images/mcloud-logo.svg" />
     <base href={baseHref} />
     <title>Materials Cloud{title ? ` - ${title}` : ""}</title>
+
+    <meta name="description" content={metaDescription} />
 
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-GQDd7PBwcle-S0ycvnfCs.js"

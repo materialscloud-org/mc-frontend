@@ -9,8 +9,7 @@ export async function getStaticPaths() {
   const tools = yaml.load(file);
   const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
   // Filter iframe tools:
-  const iframeTools = allTools
-    .filter((tool) => tool.iframe === true);
+  const iframeTools = allTools.filter((tool) => tool.iframe === true);
 
   return iframeTools.map((tool) => ({
     params: { iframe: tool.link },
@@ -31,6 +30,7 @@ const breadcrumbs = [
   breadcrumbs={breadcrumbs}
   title={page.title}
   maxWidth={page.iframe_maxWidth}
+  description=`Materials Cloud - Work. ${page.description}`
 >
   <iframe
     id="contentiframe"
@@ -54,7 +54,7 @@ const breadcrumbs = [
         inPageLinks: true,
         minHeight: "100px",
       },
-      "#contentiframe"
+      "#contentiframe",
     );
   });
 </script>

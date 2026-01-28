@@ -27,15 +27,19 @@ const workButtons = [
 const breadcrumbs = [{ name: "Work", href: "work" }];
 ---
 
-<Layout breadcrumbs={breadcrumbs} title="Work">
+<Layout
+  breadcrumbs={breadcrumbs}
+  title="Work"
+  description=`Materials Cloud Work - Simulation tools and services, in the cloud or on your computer`
+>
   <div class="space-y-10">
     <section class="space-y-4">
       <h3 class="text-2xl">Work with your data</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
-      <!-- <h3 class="text-xl">Run</h3> -->
-
-      <div class="mx-auto flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 items-center">
+      <div
+        class="mx-auto flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 items-center"
+      >
         {
           workButtons.map((btn) => (
             <RectangleButton
