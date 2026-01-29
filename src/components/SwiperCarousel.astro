@@ -1,0 +1,100 @@
+---
+import { Swiper, SwiperWrapper, SwiperSlide } from "astro-swiper";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const cfile = fs.readFileSync("./src/data/carousel-highlights.yml", "utf8");
+const carouselData = yaml.load(cfile);
+
+import RectangleButton from "@components/RectangleButton.astro";
+---
+
+<div class="mt-8 bg-slate-200 px-2 pb-0.5 rounded-sm shadow-inner">
+  <h4 class="p-2 text-center">Featured sections:</h4>
+
+  <Swiper
+    options={{
+      spaceBetween: 4,
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        640: { slidesPerView: 2 },
+        880: { slidesPerView: 3 },
+      },
+
+      pagination: { el: ".custom-pagination", clickable: true },
+      loop: true,
+    }}
+  >
+    <SwiperWrapper>
+      {
+        carouselData.carousel.map((btn, i) => (
+          <SwiperSlide key={i}>
+            <RectangleButton
+              href={btn.href}
+              img={btn.img}
+              title={btn.title}
+              subtitle={btn.subtitle}
+              width="w-80"
+              height="h-40"
+            />
+
+            <div class="absolute top-1 left-2 text-slate-600 text-xs pointer-events-none">
+              {btn.canonicalpath
+                ?.split("/")
+                .filter(Boolean)
+                .map((part, index, arr) => (
+                  <>
+                    <span>{part}</span>
+                    {index < arr.length - 1 && (
+                      <span class="mx-0 text-gray-800">›</span>
+                    )}
+                  </>
+                ))}
+            </div>
+          </SwiperSlide>
+        ))
+      }
+    </SwiperWrapper>
+  </Swiper>
+
+  <!-- Pagination dots below the container -->
+  <div class="custom-pagination mt-6"></div>
+</div>
+
+<style>
+  /* Swiper container fills parent width */
+  .swiper {
+    width: 100%;
+  }
+
+  /* Slides center the button */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* shrink to button */
+  }
+
+  /* Custom pagination styling */
+  .custom-pagination {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #333;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000;
+  }
+</style>

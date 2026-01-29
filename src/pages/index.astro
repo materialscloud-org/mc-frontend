@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import TabBlock from "@components/home/TabBlock.astro";
 
-import Carousel from "../components/Carousel.astro";
+// import Carousel from "../components/Carousel.astro";
 import RectangleButton from "@components/RectangleButton.astro";
 
 import fs from "fs";
@@ -22,6 +22,10 @@ const buttonStyle = `
 
 const cfile = fs.readFileSync("./src/data/carousel-highlights.yml", "utf8");
 const carouselData = yaml.load(cfile);
+
+import { SwiperCarouser } from "./components/SwiperCarousel.astro";
+import Swiper from "swiper";
+import SwiperCarousel from "@components/SwiperCarousel.astro";
 ---
 
 <Layout>
@@ -83,22 +87,7 @@ const carouselData = yaml.load(cfile);
     </div>
   </div>
 
-  <div class="pt-8">
-    <Carousel>
-      {
-        carouselData.carousel.map((btn) => (
-          <div class="px-2">
-            <RectangleButton
-              href={btn.href}
-              img={btn.img}
-              title={btn.title}
-              subtitle={btn.subtitle}
-            />
-          </div>
-        ))
-      }
-    </Carousel>
-  </div>
+  <SwiperCarousel />
 
   <TabBlock />
 </Layout>
