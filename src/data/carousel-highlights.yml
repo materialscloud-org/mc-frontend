@@ -1,4 +1,10 @@
 carousel:
+  - href: "http://materialscloud.org/learn"
+    img: "images/mcloud_logo.png"
+    title: "Materials Cloud - Learn"
+    subtitle: "Lectures and tutorials in computational materials science"
+    canonicalpath: learn
+
   - href: "https://www.aiidalab.net"
     img: "images/aiidalab_gears.png"
     title: "AiiDAlab"
@@ -34,3 +40,9 @@ carousel:
     title: "SSSP"
     subtitle: "A Standard Solid State Pseudopotentials library"
     canonicalpath: discover/sssp
+
+  - href: "http://materialscloud.org/archive"
+    img: "images/mcloud_logo.png"
+    title: "Materials Cloud - Archive"
+    subtitle: "An open-access, research data repository for materials science"
+    canonicalpath: archive
