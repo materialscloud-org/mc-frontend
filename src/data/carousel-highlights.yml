@@ -1,48 +1,42 @@
 carousel:
-  - href: "http://materialscloud.org/learn"
-    img: "images/mcloud_logo.png"
-    title: "Materials Cloud - Learn"
-    subtitle: "Lectures and tutorials in computational materials science"
-    canonicalpath: learn
-
   - href: "https://www.aiidalab.net"
     img: "images/aiidalab_gears.png"
     title: "AiiDAlab"
     subtitle: "Run your own simulations using AiiDA on the cloud"
-    canonicalpath: work/aiidalab
+    canonicalpath: Work/AiiDAlab
 
   - href: "https://qeinputgenerator.materialscloud.io/"
     img: "images/logos/qe-logo.png"
     title: "Quantum ESPRESSO input generator"
     subtitle: "Easily generate input files"
-    canonicalpath: work/qeinputgenerator
+    canonicalpath: Work/qeinputgenerator
 
   - href: "https://seekpath.materialscloud.io"
     img: "images/logos/seekpath.png"
     title: "SeeK-path"
     subtitle: "A k-path finder that provides efficent band paths"
-    canonicalpath: work/seekpath
+    canonicalpath: work/SeeKPath
 
   - href: "https://optimadeclient.materialscloud.io"
     img: "images/logos/optimade.png"
     title: "OPTIMADE-Client"
     subtitle: "Explore OPTIMADE compliant materials databases"
-    canonicalpath: explore/optimadeclient
+    canonicalpath: Work/optimadeclient
 
   - href: "https://mc3d.materialscloud.org"
     img: "images/logos/mc3d.png"
     title: "MC3D"
     subtitle: "Curated set of relaxed 3D crystal structures"
-    canonicalpath: discover/mc3d
+    canonicalpath: Discover/MC3D
+
+  - href: "https://mc2d.materialscloud.org"
+    img: "images/logos/mc2d.png"
+    title: "MC2D"
+    subtitle: "Curated set of relaxed 2D crystal structures"
+    canonicalpath: Discover/MC2D
 
   - href: "https://legacy.materialscloud.org/discover/sssp"
     img: "images/logos/sssp.png"
     title: "SSSP"
     subtitle: "A Standard Solid State Pseudopotentials library"
-    canonicalpath: discover/sssp
-
-  - href: "http://materialscloud.org/archive"
-    img: "images/mcloud_logo.png"
-    title: "Materials Cloud - Archive"
-    subtitle: "An open-access, research data repository for materials science"
-    canonicalpath: archive
+    canonicalpath: Discover/SSSP
