@@ -123,13 +123,10 @@ menu:
       iframe_src: "https://alphaml.materialscloud.io"
       maxWidth: "max-w-[1450px]"
 
-    - link: shiftml
+    - link: https://shiftml.materialscloud.io/
       title: "ShiftML: chemical shifts in molecular crystals by machine learning"
-      authors: Andrea Anelli, Félix Musil, Federico M. Paruzzo, Albert Hofstetter, Sandip De, Edgar Engel, Lyndon Emsley, Michele Ceriotti
+      authors: Matthias Kellner,  Jacob B. Holmes, Ruben Rodriguez-Madrid, Florian Viscosi, Yuxuan Zhang, Lyndon Emsley, and Michele Ceriotti
       description: |
-        A machine learning model to predict the isotropic chemical shielding of molecular crystals containing H, C, N, O
-        and S, including the uncertainty of the prediction, and an interactive 3D visualiser.
+        A machine learning model to predict the isotropic chemical shielding of molecular crystals containing H, C, N, O, S, F, P, Cl, Na, Ca,
+        Mg and K, including the uncertainty of the prediction, and an interactive 3D visualiser.
       logo: shiftml.png
-      iframe: true
-      iframe_src: "https://shiftml.materialscloud.io"
-      maxWidth: "max-w-[1450px]"
