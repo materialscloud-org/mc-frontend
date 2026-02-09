@@ -86,7 +86,7 @@
 /tbeta /work/tools/tbeta 301
 /layer-raman-ir /work/tools/layer-raman-ir 301
 
-/work/tools/shiftml https://shiftml.materialscloud.io/ 301
+/work/tools/shiftml* https://shiftml.materialscloud.io/ 301
 
 
 # -------------- OPTIMADE APIs --------------
