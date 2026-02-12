@@ -7,32 +7,32 @@ carousel:
 
   - href: "https://qeinputgenerator.materialscloud.io/"
     img: "images/logos/qe-logo.png"
-    title: "Quantum ESPRESSO input generator"
-    subtitle: "Easily generate input files"
-    canonicalpath: Work/qeinputgenerator
+    title: "QE input generator"
+    subtitle: "Generate Quantum ESPRESSO (QE) input files"
+    canonicalpath: Work/Tools/QE input generator
 
   - href: "https://seekpath.materialscloud.io"
     img: "images/logos/seekpath.png"
     title: "SeeK-path"
-    subtitle: "A k-path finder that provides efficent band paths"
-    canonicalpath: work/SeeKPath
+    subtitle: "A tool that provides standard k-point paths for crystals"
+    canonicalpath: Work/Tools/SeeK-path
 
   - href: "https://optimadeclient.materialscloud.io"
     img: "images/logos/optimade.png"
     title: "OPTIMADE-Client"
-    subtitle: "Explore OPTIMADE compliant materials databases"
-    canonicalpath: Work/optimadeclient
+    subtitle: "Browse OPTIMADE compliant materials databases"
+    canonicalpath: Work/Tools/OPTIMADE-Client
 
   - href: "https://mc3d.materialscloud.org"
     img: "images/logos/mc3d.png"
     title: "MC3D"
-    subtitle: "Curated set of relaxed 3D crystal structures"
+    subtitle: "Browse the Materials Cloud 3D Structure Database"
     canonicalpath: Discover/MC3D
 
   - href: "https://mc2d.materialscloud.org"
     img: "images/logos/mc2d.png"
     title: "MC2D"
-    subtitle: "Curated set of relaxed 2D crystal structures"
+    subtitle: "Browse the Materials Cloud 2D Structure Database"
     canonicalpath: Discover/MC2D
 
   - href: "https://legacy.materialscloud.org/discover/sssp"

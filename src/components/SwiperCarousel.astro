@@ -11,12 +11,12 @@ import RectangleButton from "@components/RectangleButton.astro";
 ---
 
 <h3 class="pt-6 p-2 text-xl">Featured sections</h3>
-<div
-  class="px-1 pt-3 pb:0 md:px-3 md:pt-6 md:pb-0.5 bg-slate-200 rounded shadow-inner"
->
+<div class="pt-3 md:pt-5 bg-slate-200 rounded shadow-inner">
   <Swiper
     options={{
       spaceBetween: 16,
+      slidesOffsetBefore: 16,
+      slidesOffsetAfter: 16,
       breakpoints: {
         0: { slidesPerView: "auto" },
         640: { slidesPerView: 2 },
@@ -46,7 +46,7 @@ import RectangleButton from "@components/RectangleButton.astro";
                 ?.split("/")
                 .filter(Boolean)
                 .join(" › ")}
-              width="w-75"
+              width="w-90"
               height="h-40"
             />
           </SwiperSlide>
@@ -56,7 +56,7 @@ import RectangleButton from "@components/RectangleButton.astro";
   </Swiper>
 
   <!-- Pagination dots below the container -->
-  <div class="custom-pagination text-center mt-0 md:mt-6"></div>
+  <div class="custom-pagination text-center"></div>
 </div>
 
 <style>
