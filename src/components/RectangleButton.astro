@@ -13,7 +13,7 @@ const buttonStyle =
   "block flex flex-col items-center justify-center text-center no-underline relative";
 ---
 
-<div class={`entry-container ${width} ${height} my-0.5`}>
+<div class={`entry-container-carousel ${width} ${height} my-0.5`}>
   <a
     href={href}
     target={href.startsWith("http") ? "_blank" : undefined}
@@ -23,21 +23,12 @@ const buttonStyle =
       breadcrumbText && (
         <div
           class="
-        absolute -top-1 -left-0.5
-        sm:-top-3 sm:-left-2
+        absolute -top-3 -left-2
         text-slate-600 text-xs
         pointer-events-none
       "
         >
-          {/* Small screens: truncate to 15 chars */}
-          <span class="block sm:hidden">
-            {breadcrumbText.length > 15
-              ? `${breadcrumbText.slice(0, 15)}…`
-              : breadcrumbText}
-          </span>
-
-          {/* Medium+ screens: full text */}
-          <span class="hidden sm:block">{breadcrumbText}</span>
+          <span>{breadcrumbText}</span>
         </div>
       )
     }
