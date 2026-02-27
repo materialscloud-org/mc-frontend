@@ -1,0 +1,69 @@
+---
+// custom 2dtopo page.
+import Layout from "@layouts/Layout.astro";
+import RectangleButton from "@components/RectangleButton.astro";
+
+const page = {
+  link: "2dtopo",
+  title: "2D topological insulators",
+  authors: `
+    Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Snehal Kumbhar, Nicola Marzari
+  `,
+  description: `
+    The results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators) has been integrated into MC2D.
+    Click the button below to explore it now!
+  `,
+  logo: "2dtopo.png",
+  doi: [{ id: "10.24435/materialscloud:2019.0081/v1", type: "data" }],
+  accordions: [],
+};
+
+const breadcrumbs = [
+  { name: "Discover", href: "discover" },
+  { name: page.title, href: `discover/${page.link}` },
+];
+---
+
+<Layout
+  breadcrumbs={breadcrumbs}
+  title={page.title}
+  maxWidth={page.iframe_maxWidth}
+  description={`Materials Cloud - Discover: ${page.description}`}
+>
+  <section class="space-y-4">
+    <div class="flex items-center flex-wrap gap-2">
+      <h3 class="text-2xl">{page.title}</h3>
+      {
+        page.doi?.map(({ id, type }) => (
+          <span class="doi-badge" key={id}>
+            <span class="doi-left">
+              {type === "data" ? "Data DOI" : "Paper DOI"}
+            </span>
+            <a
+              href={`https://doi.org/${id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class={`doi-right ${type === "data" ? "doi-data" : "doi-paper"}`}
+            >
+              {id}
+            </a>
+          </span>
+        ))
+      }
+    </div>
+
+    <hr class="border-t border-gray-300 mb-4" />
+
+    <div>{page.description}</div>
+
+    <div class="pt-6 flex justify-center">
+      <RectangleButton
+        href="https://mc2d.materialscloud.org/?preset=2dtopo"
+        img="/images/logos/2dtopo.png"
+        title="Browse 2D topological insulators and their properties on MC2D"
+        width="w-64"
+        height="h-40"
+      />
+    </div>
+  </section>
+</Layout>
