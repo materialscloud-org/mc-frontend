@@ -231,16 +231,16 @@ menu:
             <p>Please find the appropriate journal reference in <a href="https://doi.org/10.24435/materialscloud:2018.0016/v3">10.24435/materialscloud:2018.0016/v3</a>.  </p>
 
     # indexed as its own page with a hyperlink away.
-    # - link: 2dtopo
-    #   title: "2D topological insulators"
-    #   authors: |
-    #     Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Snehal Kumbhar, Nicola Marzari
-    #   description: |
-    #     Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
-    #   logo: 2dtopo.png
-    #   doi:
-    #     - id: 10.24435/materialscloud:2019.0081/v1
-    #       type: data
+    - link: 2dtopo
+      title: "2D topological insulators"
+      authors: |
+        Antimo Marrazzo, Marco Gibertini, Davide Campi, Nicolas Mounet, Snehal Kumbhar, Nicola Marzari
+      description: |
+        Results from screening exfoliable materials for 2D topological insulators (Quantum Spin Hall Insulators).
+      logo: 2dtopo.png
+      doi:
+        - id: 10.24435/materialscloud:2019.0081/v1
+          type: data
 
     - link: tc-applicability
       title: "Applicability of tail-corrections in the molecular simulations of porous materials"
