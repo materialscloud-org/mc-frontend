@@ -49,7 +49,7 @@
 
 
 # Contributed sections
-/discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
+# /discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302 // migrated into mc2d with standalone page
 /discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
 
 /discover/kpcovr https://kpcovr.materialscloud.io/ 302
