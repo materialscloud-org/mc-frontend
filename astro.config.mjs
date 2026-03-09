@@ -5,9 +5,8 @@ import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 
 export default defineConfig({
-  site: process.env.ASTRO_SITE || undefined,
+  site: process.env.ASTRO_SITE || "https://www.materialscloud.org",
   base: process.env.ASTRO_BASE || "/",
-
   vite: {
     resolve: {
       alias: {
@@ -18,7 +17,14 @@ export default defineConfig({
     },
     plugins: [tailwindcss()],
   },
-
-  site: "https://www.materialscloud.org",
   integrations: [react(), sitemap()],
+
+  // ----
+  // Canonicalize URLs without trailing slash
+  trailingSlash: "never",
+  build: {
+    // needed for Cloudflare - otherwise "directory" redirects to trailing slash
+    format: "file",
+  },
+  // ----
 });

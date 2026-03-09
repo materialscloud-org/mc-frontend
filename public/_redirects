@@ -2,6 +2,9 @@
 # Redirect configuration file for Cloudflare pages
 # --------------------------------------------------------
 
+# Strip trailing slashes globally
+/*/ /:splat 301
+
 # Navitation to external pages
 /aiidalab https://www.aiidalab.net/ 301
 /work/aiidalab https://www.aiidalab.net/ 301
@@ -9,7 +12,7 @@
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
 /work/quantum-mobile https://quantum-mobile.readthedocs.io/en/latest/ 301
 
-# Old file paths match new S3 307 means keep the headers and path
+# Old file paths match new S3
 /learn/data/learn/files/* https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/:splat 302
 
 # dropping old url syntax
@@ -41,21 +44,12 @@
 /discover/3dcd /discover/mc3d 301
 /discover/2dstructures /discover/mc2d 301
 
-# trailing slash names
-/discover/mc3d/ /discover/mc3d 301
-/discover/mc2d/ /discover/mc2d 301
-/discover/sssp/ /discover/sssp 301
-/discover/acwf-verification/ /discover/acwf-verification 301
-
-
 # Contributed sections
-# /discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302 // migrated into mc2d with standalone page
+/discover/2dtopo https://legacy.materialscloud.org/discover/2dtopo 302
 /discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
 
 /discover/kpcovr https://kpcovr.materialscloud.io/ 302
 /discover/kpcovr/:dataset https://kpcovr.materialscloud.io/?dataset=:dataset 302
-
-
 
 
 # -------------- Tools --------------
@@ -85,9 +79,6 @@
 
 /tbeta /work/tools/tbeta 301
 /layer-raman-ir /work/tools/layer-raman-ir 301
-
-/work/tools/shiftml* https://shiftml.materialscloud.io/ 301
-
 
 # -------------- OPTIMADE APIs --------------
 /optimade https://optimade.materialscloud.org 301
