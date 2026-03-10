@@ -73,6 +73,7 @@
 # Contributed tools
 /work/tools/tbeta https://tbeta.materialscloud.io/voila/render/index.ipynb/ 301
 /work/tools/layer-raman-ir https://layer-raman-ir.materialscloud.io/ 301
+/work/tools/shiftml* https://shiftml.materialscloud.io/ 301
 
 /work/tbeta /work/tools/tbeta 301
 /work/layer-raman-ir /work/tools/layer-raman-ir 301
