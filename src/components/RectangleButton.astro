@@ -1,16 +1,4 @@
 ---
-/**
- * Single square button with image, title, and optional subtitle.
- *
- * Props:
- *  - href: link target (external links open in new tab)
- *  - img: image path
- *  - title: text below the image
- *  - subtitle: optional smaller text
- *  - width: Tailwind width class (e.g. "w-32")
- *  - height: Tailwind height class (e.g. "h-32")
- */
-
 const {
   href,
   img,
@@ -18,20 +6,34 @@ const {
   subtitle = null,
   width = "w-64",
   height = "h-40",
+  breadcrumbText = null,
 } = Astro.props;
 
-const buttonStyle = `
-  block flex flex-col items-center justify-center text-center no-underline
-`;
+const buttonStyle =
+  "block flex flex-col items-center justify-center text-center no-underline relative";
 ---
 
-<div class=`entry-container ${width} ${height}`>
+<div class={`entry-container-carousel ${width} ${height} my-0.5`}>
   <a
     href={href}
     target={href.startsWith("http") ? "_blank" : undefined}
     class={buttonStyle}
   >
-    <img class=`entry-image h-14` src={img} alt={title} />
+    {
+      breadcrumbText && (
+        <div
+          class="
+        absolute -top-3 -left-2
+        text-slate-600 text-xs
+        pointer-events-none
+      "
+        >
+          <span>{breadcrumbText}</span>
+        </div>
+      )
+    }
+
+    <img class="entry-image h-14" src={img} alt={title} />
     <h3 class="entry-title">{title}</h3>
     {subtitle && <p class="entry-description">{subtitle}</p>}
   </a>

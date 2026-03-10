@@ -1,0 +1,90 @@
+---
+import { Swiper, SwiperWrapper, SwiperSlide } from "astro-swiper";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+const cfile = fs.readFileSync("./src/data/carousel-highlights.yml", "utf8");
+const carouselData = yaml.load(cfile);
+
+import RectangleButton from "@components/RectangleButton.astro";
+---
+
+<h3 class="pt-6 p-2 text-xl">Featured sections</h3>
+<div class="pt-3 md:pt-5 bg-slate-200 rounded shadow-inner">
+  <Swiper
+    options={{
+      spaceBetween: 16,
+      slidesOffsetBefore: 16,
+      slidesOffsetAfter: 16,
+      breakpoints: {
+        0: { slidesPerView: "auto" },
+        640: { slidesPerView: 2 },
+        850: { slidesPerView: 3 },
+      },
+      pagination: { el: ".custom-pagination", clickable: true },
+      mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+    }}
+  >
+    <SwiperWrapper>
+      {
+        carouselData.carousel.map((btn, i) => (
+          <SwiperSlide key={i}>
+            <RectangleButton
+              href={btn.href}
+              img={btn.img}
+              title={btn.title}
+              subtitle={btn.subtitle}
+              breadcrumbText={btn.canonicalpath
+                ?.split("/")
+                .filter(Boolean)
+                .join(" › ")}
+              width="w-65 sm:w-90"
+              height="h-40"
+            />
+          </SwiperSlide>
+        ))
+      }
+    </SwiperWrapper>
+  </Swiper>
+
+  <!-- Pagination dots below the container -->
+  <div class="custom-pagination text-center"></div>
+</div>
+
+<style>
+  /* Swiper container fills parent width */
+  .swiper {
+    width: 100%;
+  }
+
+  /* Slides center the button */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* shrink to button */
+  }
+
+  .swiper-pagination-bullet {
+    background: #333;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000;
+  }
+</style>

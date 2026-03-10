@@ -2,6 +2,12 @@
 import Layout from "@layouts/Layout.astro";
 import TabBlock from "@components/home/TabBlock.astro";
 
+// import Carousel from "../components/Carousel.astro";
+import RectangleButton from "@components/RectangleButton.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
 const buttonContainerStyle = "flex items-center space-x-4 leading-tight";
 
 const buttonStyle = `
@@ -13,6 +19,13 @@ const buttonStyle = `
   border border-slate-600 rounded
   transition duration-300
 `;
+
+const cfile = fs.readFileSync("./src/data/carousel-highlights.yml", "utf8");
+const carouselData = yaml.load(cfile);
+
+import { SwiperCarouser } from "./components/SwiperCarousel.astro";
+import Swiper from "swiper";
+import SwiperCarousel from "@components/SwiperCarousel.astro";
 ---
 
 <Layout>
@@ -73,6 +86,8 @@ const buttonStyle = `
       </p>
     </div>
   </div>
+
+  <SwiperCarousel />
 
   <TabBlock />
 </Layout>

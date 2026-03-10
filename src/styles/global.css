@@ -32,6 +32,12 @@
     background-color: var(--entry-hover-bg);
   }
 
+  .entry-container-carousel {
+    @apply bg-slate-50 border-slate-200 flex flex-col gap-4 p-4 rounded-sm border shadow-sm transition-shadow duration-200;
+    background-color: var(--entry-bg);
+    border-color: var(--entry-border);
+  }
+
   .entry-info-container {
     @apply flex flex-col flex-1 sm:ml-4 items-center sm:items-start;
   }

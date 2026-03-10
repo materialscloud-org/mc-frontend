@@ -29,13 +29,29 @@ const buttonStyle = `
   flex flex-1 flex-col items-center justify-center py-2
   font-semibold text-[#3E70BB]
   cursor-pointer
-  border-b border-gray-300 last:border-b-0 
-  sm:border-none sm:border-r sm:last:border-r-0
+  border-gray-300
+
+  /* --- Mobile layout --- */
+  first:border-t border-b last:border-b
+
+  /* --- Desktop base seams (prevents doubles) --- */
+  sm:border-l sm:border-r sm:border-t
+  
+  /* --- Selected (R + L + T) --- */
+  sm:aria-selected:border-b-0
+
+  /* --- Not selected (B) --- */
+  sm:not-aria-selected:border-b
+  sm:not-aria-selected:border-t-0
+  sm:not-aria-selected:border-r-0
+  sm:not-aria-selected:border-l-0
+
+  /* --- Visual styling --- */
   aria-selected:text-red-600
   aria-selected:cursor-default
+
   not-aria-selected:hover:text-blue-500
   not-aria-selected:hover:bg-slate-100
-  
 `;
 ---
 
@@ -52,7 +68,7 @@ const buttonStyle = `
     document.querySelectorAll('[role="tab"]').forEach((btn) => {
       btn.setAttribute(
         "aria-selected",
-        btn.dataset.tab === tab ? "true" : "false"
+        btn.dataset.tab === tab ? "true" : "false",
       );
     });
     document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
@@ -97,10 +113,7 @@ const buttonStyle = `
 </script>
 
 <div class="w-full py-10">
-  <div
-    class="tabs flex flex-col sm:flex-row border-b border-gray-300"
-    role="tablist"
-  >
+  <div class="tabs flex flex-col sm:flex-row" role="tablist">
     {
       tabs.map(({ id, label, Icon }) => (
         <button

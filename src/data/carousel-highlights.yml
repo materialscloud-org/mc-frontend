@@ -1,0 +1,42 @@
+carousel:
+  - href: "https://qeinputgenerator.materialscloud.io/"
+    img: "images/logos/qe-logo.png"
+    title: "QE input generator"
+    subtitle: "Generate Quantum ESPRESSO (QE) input files"
+    canonicalpath: Work/Tools/QE input generator
+
+  - href: "https://seekpath.materialscloud.io"
+    img: "images/logos/seekpath.png"
+    title: "SeeK-path"
+    subtitle: "A tool that provides standard k-point paths for crystals"
+    canonicalpath: Work/Tools/SeeK-path
+
+  - href: "https://mc3d.materialscloud.org"
+    img: "images/logos/mc3d.png"
+    title: "MC3D"
+    subtitle: "Browse the Materials Cloud 3D Structure Database"
+    canonicalpath: Discover/MC3D
+
+  - href: "https://mc2d.materialscloud.org"
+    img: "images/logos/mc2d.png"
+    title: "MC2D"
+    subtitle: "Browse the Materials Cloud 2D Structure Database"
+    canonicalpath: Discover/MC2D
+
+  - href: "https://optimadeclient.materialscloud.io"
+    img: "images/logos/optimade.png"
+    title: "OPTIMADE-Client"
+    subtitle: "Browse OPTIMADE compliant materials databases"
+    canonicalpath: Work/Tools/OPTIMADE-Client
+
+  - href: "https://materialscloud.org/discover/sssp"
+    img: "images/logos/sssp.png"
+    title: "SSSP"
+    subtitle: "A Standard Solid State Pseudopotentials library"
+    canonicalpath: Discover/SSSP
+
+  - href: "https://www.aiidalab.net"
+    img: "images/aiidalab_gears.png"
+    title: "AiiDAlab"
+    subtitle: "Run your own simulations using AiiDA on the cloud"
+    canonicalpath: Work/AiiDAlab
