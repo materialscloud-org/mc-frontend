@@ -24,17 +24,6 @@ This, however, doesn't contain the redirects that are present on Cloudflare.
 
 - when linking to pages/resources don't use the leading slash (so use e.g. `<a href="work">` or `<img src="images/logos/mc3d.png">`). This will use the `base:` subpath correctly.
 
-## Links
-
-Legacy repositories:
-
-- [frontend-common](https://github.com/materialscloud-org/frontend-common)
-- [frontend-learn](https://github.com/materialscloud-org/frontend-learn)
-- [frontend-work](https://github.com/materialscloud-org/frontend-work)
-- [frontend-discover](https://github.com/materialscloud-org/frontend-discover)
-- [frontend-explore](https://github.com/materialscloud-org/frontend-explore)
-- [legacy-frontend-docker](https://github.com/materialscloud-org/legacy-frontend-docker)
-
 # Astro notes
 
 This repo was created with
