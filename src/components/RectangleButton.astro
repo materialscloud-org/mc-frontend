@@ -7,27 +7,24 @@ const {
   width = "w-64",
   height = "h-40",
   breadcrumbText = null,
+  backgroundColor = null,
+  clickable = true,
 } = Astro.props;
 
-const buttonStyle =
-  "block flex flex-col items-center justify-center text-center no-underline relative";
+const buttonStyle = `block flex flex-col items-center justify-center text-center no-underline relative`;
 ---
 
-<div class={`entry-container-carousel ${width} ${height} my-0.5`}>
+<div
+  class={`entry-container-carousel ${width} ${height} my-0.5 ${backgroundColor}`}
+>
   <a
-    href={href}
-    target={href.startsWith("http") ? "_blank" : undefined}
-    class={buttonStyle}
+    href={clickable ? href : undefined}
+    target={clickable && href.startsWith("http") ? "_blank" : undefined}
+    class={`${buttonStyle} ${!clickable ? "pointer-events-none opacity-50" : ""}`}
   >
     {
       breadcrumbText && (
-        <div
-          class="
-        absolute -top-3 -left-2
-        text-slate-600 text-xs
-        pointer-events-none
-      "
-        >
+        <div class="absolute -top-3 -left-2 text-slate-600 text-xs pointer-events-none">
           <span>{breadcrumbText}</span>
         </div>
       )
