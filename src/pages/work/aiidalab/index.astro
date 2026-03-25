@@ -22,7 +22,7 @@ const workButtons = [
     img: "images/aiidalab_gears.png",
     title: "AiiDAlab",
     subtitle: "Run your own simulations using AiiDA on the cloud",
-    backgroundcolor: "bg-slate-50",
+    backgroundColor: "bg-blue-100",
     clickable: false,
   },
   {
@@ -35,7 +35,7 @@ const workButtons = [
 
 const breadcrumbs = [
   { name: "Work", href: "work" },
-  { name: "Aiidalab", href: "work/aiidalab" },
+  { name: "AiiDAlab", href: "work/AiiDAlab" },
 ];
 ---
 
@@ -59,6 +59,7 @@ const breadcrumbs = [
               img={btn.img}
               title={btn.title}
               subtitle={btn.subtitle}
+              backgroundColor={btn.backgroundColor}
               clickable={btn.clickable}
             />
           ))

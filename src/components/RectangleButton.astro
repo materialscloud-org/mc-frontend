@@ -20,7 +20,7 @@ const buttonStyle = `block flex flex-col items-center justify-center text-center
   <a
     href={clickable ? href : undefined}
     target={clickable && href.startsWith("http") ? "_blank" : undefined}
-    class={`${buttonStyle} ${!clickable ? "pointer-events-none opacity-50" : ""}`}
+    class={`${buttonStyle} ${!clickable ? "pointer-events-none" : ""}`}
   >
     {
       breadcrumbText && (

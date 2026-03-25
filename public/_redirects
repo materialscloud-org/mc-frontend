@@ -6,8 +6,6 @@
 /*/ /:splat 301
 
 # Navitation to external pages
-/aiidalab https://www.aiidalab.net/ 301
-/work/aiidalab https://www.aiidalab.net/ 301
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
 /work/quantum-mobile https://quantum-mobile.readthedocs.io/en/latest/ 301
@@ -23,9 +21,10 @@
 /explore/menu /explore 301
 
 # tools and work flatten
-/tools /work 301
-/work/tools /work 301
-/work/tools/options /work 301
+/tools /work/tools 301
+/work /work/tools 301
+/work/tools/options /work/tools 301
+
 
 # -------------- Discover --------------
 
