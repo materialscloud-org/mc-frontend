@@ -1,10 +1,20 @@
 - link: https://qeinputgenerator.materialscloud.io
   title: AiiDAlab demo server
   description: |
-    Insert desc here
+    Quickstart materials science workflows in the browser using the AiiDAlab demo server deployed on Microsoft Azure.
   logo: aiidalab_gears.png
 - link: https://qeinputgenerator.materialscloud.io
   title: AiiDAlab at empa
   description: |
-    Insert desc here
+    Login to AiiDAlab with your Empa institution account.
   logo: empa.png
+- link: https://qeinputgenerator.materialscloud.io
+  title: AiiDAlab at PSI
+  description: |
+    Login to AiiDAlab with your PSI institution account. (requires the connection to the PSI network).
+  logo: psi.svg
+- link: https://qeinputgenerator.materialscloud.io
+  title: Redeploy your own AiiDAlab
+  description: |
+    AiiDAlab can also be hosted locally, found out how.
+  logo: aiidalab_gears.png
