@@ -3,6 +3,11 @@
   description: |
     Quickstart materials science workflows in the browser using the AiiDAlab demo server without long term data persistence.
   logo: aiidalab_gears.png
+- link: https://aiidalab.readthedocs.io/en/latest/usage/access/launch.html
+  title: Deploy your own AiiDAlab
+  description: |
+    AiiDAlab can also be additionally hosted locally.
+  logo: aiidalab_gears.png
 - link: https://aiidalab.empa.cscs.ch
   title: AiiDAlab at Empa
   description: |
@@ -13,8 +18,3 @@
   description: |
     Login to AiiDAlab with your PSI institution account <strong>(requires a PSI network connection)</strong>.
   logo: psi.svg
-- link: https://aiidalab.readthedocs.io/en/latest/usage/access/launch.html
-  title: Deploy your own AiiDAlab
-  description: |
-    AiiDAlab can also be additionally hosted locally.
-  logo: aiidalab_gears.png
