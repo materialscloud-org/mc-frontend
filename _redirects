@@ -8,7 +8,6 @@
 # Navitation to external pages
 /archive https://archive.materialscloud.org/ 301
 /moderation https://archive.materialscloud.org/information#moderation_policies 301
-/work/quantum-mobile https://quantum-mobile.readthedocs.io/en/latest/ 301
 
 # Old file paths match new S3
 /learn/data/learn/files/* https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/:splat 302
