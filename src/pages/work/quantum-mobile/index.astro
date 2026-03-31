@@ -6,12 +6,8 @@ import BannerList from "@components/BannerList.astro";
 import fs from "fs";
 import yaml from "js-yaml";
 
-const tfile = fs.readFileSync(
-  "./src/data/work/aiidalab-deployments.yml",
-  "utf8",
-);
-
-const aiidalab_deployments = yaml.load(tfile);
+const qmfile = fs.readFileSync("./src/data/work/quantum-mobile.yml", "utf-8");
+const qm = yaml.load(qmfile);
 
 const wbfile = fs.readFileSync("./src/data/work/topButtons.yml", "utf-8");
 const wbData = yaml.load(wbfile);
@@ -19,18 +15,18 @@ const wbData = yaml.load(wbfile);
 const workButtons = wbData.workButtons;
 const style = wbData.style;
 
-workButtons[1].backgroundColor = wbData.style.backgroundColor;
-workButtons[1].clickable = wbData.style.clickable;
+workButtons[2].backgroundColor = wbData.style.backgroundColor;
+workButtons[2].clickable = wbData.style.clickable;
 
 const breadcrumbs = [
   { name: "Work", href: "work" },
-  { name: "AiiDAlab", href: "work/AiiDAlab" },
+  { name: "Quantum Mobile", href: null },
 ];
 ---
 
 <Layout
   breadcrumbs={breadcrumbs}
-  title="Work - AiiDAlab"
+  title="Work - Quantum Mobile"
   description=`Materials Cloud Work - Simulation tools and services, in the cloud or on your computer`
 >
   <div class="space-y-10">
@@ -56,16 +52,16 @@ const breadcrumbs = [
       </div>
     </section>
     <section class="space-y-4">
-      <h3 class="text-xl">AiiDAlab</h3>
+      <h3 class="text-xl">Quantum Mobile</h3>
       <hr class="border-t border-gray-300 mb-6" />
 
       <p>
-        Run complex and robust AiiDA workflows with tailored lightweight web
-        applications directly in the browser. For more information click <a
-          href="https://www.aiidalab.net/"
+        Quantum Mobile provides a uniform environment for quantum mechanical
+        materials simulations. For further information on click <a
+          href="quantum-mobile.readthedocs.io/"
           rel="noopener noreferrer">here</a
-        > to go to the AiiDAlab homepage.
-        <BannerList entries={aiidalab_deployments} rootPath="work/tools" />
+        > to go to the Quantum Mobile homepage.
+        <BannerList entries={qm} />
       </p>
     </section>
   </div>

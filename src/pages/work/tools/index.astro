@@ -6,41 +6,27 @@ import BannerList from "@components/BannerList.astro";
 import fs from "fs";
 import yaml from "js-yaml";
 
-const tfile = fs.readFileSync("./src/data/tools.yml", "utf8");
+const tfile = fs.readFileSync("./src/data/work/tools.yml", "utf8");
 const tools = yaml.load(tfile);
 
-const workButtons = [
-  {
-    href: "work",
-    img: "images/work_tools.png",
-    title: "Tools",
-    subtitle: "Click and run computational tools.",
-    backgroundColor: "bg-blue-100",
-    clickable: false,
-  },
-  {
-    href: "work/aiidalab",
-    img: "images/aiidalab_gears.png",
-    title: "AiiDAlab",
-    subtitle: "Run your own simulations using AiiDA on the cloud",
-  },
-  {
-    href: "https://quantum-mobile.readthedocs.io",
-    img: "images/quantum_mobile.png",
-    title: "Quantum Mobile",
-    subtitle: "Quantum simulation codes + AiiDA in a virtual machine",
-  },
-];
+const wbfile = fs.readFileSync("./src/data/work/topButtons.yml", "utf-8");
+const wbData = yaml.load(wbfile);
+
+const workButtons = wbData.workButtons;
+const style = wbData.style;
+
+workButtons[0].backgroundColor = wbData.style.backgroundColor;
+workButtons[0].clickable = wbData.style.clickable;
 
 const breadcrumbs = [
   { name: "Work", href: "work" },
-  { name: "Tools", href: "work" },
+  { name: "Tools", href: null },
 ];
 ---
 
 <Layout
   breadcrumbs={breadcrumbs}
-  title="Work"
+  title="Work - Tools"
   description=`Materials Cloud Work - Simulation tools and services, in the cloud or on your computer`
 >
   <div class="space-y-10">

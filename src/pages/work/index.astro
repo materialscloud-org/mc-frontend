@@ -2,7 +2,7 @@
 /*
 NOTE: THIS PAGE IS CURRENTLY UNUSED AS IT IS ROUTED OVER USING CLOUDFLARE REDIRECTS.
 IT IS KEPT HERE TO SERVE AS A REFERENCE AS TO WHAT WORK USED TO LOOK LIKE.
-*/ 
+*/
 
 import Layout from "@layouts/Layout.astro";
 import RectangleButton from "@components/RectangleButton.astro";
@@ -11,7 +11,7 @@ import BannerList from "@components/BannerList.astro";
 import fs from "fs";
 import yaml from "js-yaml";
 
-const tfile = fs.readFileSync("./src/data/tools.yml", "utf8");
+const tfile = fs.readFileSync("./src/data/work/tools.yml", "utf8");
 const tools = yaml.load(tfile);
 
 const workButtons = [

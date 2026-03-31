@@ -35,7 +35,7 @@ carousel:
     subtitle: "A Standard Solid State Pseudopotentials library"
     canonicalpath: Discover/SSSP
 
-  - href: "https://www.aiidalab.net"
+  - href: "work/aiidalab"
     img: "images/aiidalab_gears.png"
     title: "AiiDAlab"
     subtitle: "Run your own simulations using AiiDA on the cloud"

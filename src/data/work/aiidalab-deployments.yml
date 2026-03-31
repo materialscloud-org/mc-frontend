@@ -3,15 +3,15 @@
   description: |
     Quickstart materials science workflows in the browser using the AiiDAlab demo server without long term data persistence.
   logo: aiidalab_gears.png
-- link: https://qeinputgenerator.materialscloud.io
+- link: https://aiidalab.empa.cscs.ch
   title: AiiDAlab at Empa
   description: |
     Login to AiiDAlab with your Empa institution account.
   logo: empa.png
-- link: https://aiidalab.empa.cscs.
+- link: https://aiidalab.psi.ch/
   title: AiiDAlab at PSI
   description: |
-    Login to AiiDAlab with your PSI institution account. (requires the connection to the PSI network).
+    Login to AiiDAlab with your PSI institution account <strong>(requires a PSI network connection)</strong>.
   logo: psi.svg
 - link: https://aiidalab.readthedocs.io/en/latest/usage/access/launch.html
   title: Deploy your own AiiDAlab

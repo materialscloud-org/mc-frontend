@@ -1,0 +1,19 @@
+workButtons:
+  - href: work/tools
+    img: images/work_tools.png
+    title: Tools
+    subtitle: Click and run computational tools.
+
+  - href: work/aiidalab
+    img: images/aiidalab_gears.png
+    title: AiiDAlab
+    subtitle: Run your own simulations using AiiDA on the cloud
+
+  - href: work/quantum-mobile
+    img: images/quantum_mobile.png
+    title: Quantum Mobile
+    subtitle: Quantum simulation codes + AiiDA in a virtual machine
+
+style:
+  backgroundColor: bg-blue-100
+  clickable: false
