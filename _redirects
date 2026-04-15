@@ -30,12 +30,10 @@
 # Core sections
 /discover/mc3d https://mc3d.materialscloud.org/ 301
 /discover/mc2d https://mc2d.materialscloud.org/ 301
-/discover/sssp https://legacy.materialscloud.org/discover/sssp 302
 /discover/acwf-verification https://acwf-verification.materialscloud.org/ 301
 
 /mc3d /discover/mc3d 301
 /mc2d /discover/mc2d 301
-/sssp /discover/sssp 301
 /acwf-verification /discover/acwf-verification 301
 
 # legacy names
@@ -96,4 +94,7 @@
 /explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
 
 # Support subpaths for sssp (e.g. /table/precision)
+/sssp/* https://legacy.materialscloud.org/discover/sssp/:splat 302
+/sssp https://legacy.materialscloud.org/discover/sssp 301
 /discover/sssp/* https://legacy.materialscloud.org/discover/sssp/:splat 302
+/discover/sssp https://legacy.materialscloud.org/discover/sssp 302
