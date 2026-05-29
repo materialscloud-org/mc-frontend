@@ -3044,6 +3044,27 @@
     "thumbnail_url": "qe-logo.png"
   },
   {
+    "id": "tctKdH1",
+    "slug": "advanced-quantum-espresso-tutorial-trieste-2026",
+    "type": "subsection",
+    "parentId": "VLoB41",
+    "title": "Advanced Quantum ESPRESSO tutorial - ICPT, Trieste 2026",
+    "description": "The Advanced Quantum ESPRESSO tutorial will take place at Trieste, July 2026. Check back here for uploaded workshop sessions and guest talks.",
+    "thumbnail_url": "qe-logo.png",
+    "additional_resources": [
+      {
+        "description": "Download for ARM64",
+        "name": "Download Quantum Mobile for ARM64",
+        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_triesta_arm64.ova"
+      },
+      {
+        "description": "Download Quantum Mobile for x86",
+        "name": "Download for x86",
+        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_triesta_x86_64.ova"
+      }
+    ]
+  },
+  {
     "id": "9jOWLH",
     "slug": "advanced-quantum-espresso-school-pavia-2023",
     "type": "subsection",
