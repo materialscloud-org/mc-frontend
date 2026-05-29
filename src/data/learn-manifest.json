@@ -3045,11 +3045,11 @@
   },
   {
     "id": "tctKdH1",
-    "slug": "advanced-quantum-espresso-tutorial-trieste-2026",
+    "slug": "joint-ictp-marvel-college-trieste-2026",
     "type": "subsection",
     "parentId": "VLoB41",
-    "title": "Advanced Quantum ESPRESSO tutorial - ICPT, Trieste 2026",
-    "description": "The Advanced Quantum ESPRESSO tutorial will take place at Trieste, July 2026. Check back here for uploaded workshop sessions and guest talks.",
+    "title": "Joint ICTP MARVEL College, Trieste 2026",
+    "description": "The Two-week intensive college begins on June 1st. The college is on electronic-structure and atomistic simulations to understand, predict, and design the properties of materials. Foundational topics cover first-principles methods, molecular dynamics and machine-learning approaches, with lectures and hands-on sessions.",
     "thumbnail_url": "qe-logo.png",
     "additional_resources": [
       {
