@@ -1305,6 +1305,27 @@
     "additional_resources": []
   },
   {
+    "id": "tctKdH1",
+    "slug": "joint-ictp-marvel-college-trieste-2026",
+    "type": "subsection",
+    "parentId": "Btmngu",
+    "title": "Joint ICTP-MARVEL College, Trieste 2026",
+    "description": "A two-week intensive ICTP–MARVEL college for graduate students and early-career researchers covering state-of-the-art computational materials science, from first-principles electronic-structure methods and spectroscopies to statistical mechanics and atomistic simulations.",
+    "thumbnail_url": "marvel-ictp.svg",
+    "additional_resources": [
+      {
+        "description": "Download Quantum Mobile for ARM64",
+        "name": "Download Quantum Mobile for ARM64",
+        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_trieste_arm64.ova"
+      },
+      {
+        "description": "Download Quantum Mobile for x86",
+        "name": "Download Quantum Mobile for x86",
+        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_trieste_x86_64.ova"
+      }
+    ]
+  },
+  {
     "id": "sKI8c5dCVSG3",
     "slug": "2017-mareschal-almost-famous-a-woman-behind-the-codes-part-1-it-s-only-numerics",
     "type": "video",
@@ -3042,27 +3063,6 @@
     "title": "Quantum ESPRESSO schools",
     "description": "Video recordings and educational material from past schools on Quantum ESPRESSO.",
     "thumbnail_url": "qe-logo.png"
-  },
-  {
-    "id": "tctKdH1",
-    "slug": "joint-ictp-marvel-college-trieste-2026",
-    "type": "subsection",
-    "parentId": "VLoB41",
-    "title": "Joint ICTP MARVEL College, Trieste 2026",
-    "description": "The Two-week intensive college begins on June 1st. The college is on electronic-structure and atomistic simulations to understand, predict, and design the properties of materials. Foundational topics cover first-principles methods, molecular dynamics and machine-learning approaches, with lectures and hands-on sessions.",
-    "thumbnail_url": "qe-logo.png",
-    "additional_resources": [
-      {
-        "description": "Download for ARM64",
-        "name": "Download Quantum Mobile for ARM64",
-        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_triesta_arm64.ova"
-      },
-      {
-        "description": "Download Quantum Mobile for x86",
-        "name": "Download for x86",
-        "url": "https://rgw.cscs.ch/matcloud:mc-public/learn-data/files/quantum_mobile_2026_triesta_x86_64.ova"
-      }
-    ]
   },
   {
     "id": "9jOWLH",
