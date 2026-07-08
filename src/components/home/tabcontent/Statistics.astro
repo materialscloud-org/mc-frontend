@@ -38,7 +38,7 @@ const stats = [
 ];
 
 // when updating statistics - make a new folder with the date and update this.
-const PlausibleDateStr = "10_10_2025";
+const PlausibleDateStr = "06_06_2026";
 const chartData = [
   {
     title: "Materials Cloud all",
@@ -59,7 +59,7 @@ const charts = chartData.flatMap(({ title, name, types, alts }) =>
     title,
     src: `images/plausible/${PlausibleDateStr}/${name}_${type}.png`,
     alt: alts[i],
-  }))
+  })),
 );
 
 const archiveDate = formatDate("2024-10-10");
