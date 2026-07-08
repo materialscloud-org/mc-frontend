@@ -94,7 +94,7 @@
 /explore/:profile/details/:uuid /explore/:profile/?uuid=:uuid 301
 
 # Support subpaths for sssp (e.g. /table/precision)
-/sssp/* https://legacy.materialscloud.org/discover/sssp/:splat 302
-/sssp https://legacy.materialscloud.org/discover/sssp 301
-/discover/sssp/* https://legacy.materialscloud.org/discover/sssp/:splat 302
-/discover/sssp https://legacy.materialscloud.org/discover/sssp 302
+/sssp/* https://sssp.materialscloud.org/ 301
+/discover/sssp/table/efficiency https://sssp.materialscloud.org/ 301
+/discover/sssp/table/precision https://sssp.materialscloud.org/pseudopotentials/PBE/precision 301
+/discover/sssp https://sssp.materialscloud.org/ 301
