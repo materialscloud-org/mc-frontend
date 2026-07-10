@@ -26,10 +26,12 @@ const { entries, rootPath } = Astro.props;
                 ? entry.link
                 : `${rootPath}/${entry.link}`
             }
+            aria-label={entry.title}
+            tabindex="-1"
           >
             <img
               src={`images/logos/${entry.logo}`}
-              alt={entry.title}
+              alt=""
               class="entry-image"
               loading="lazy"
               decoding="async"

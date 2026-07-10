@@ -37,10 +37,9 @@ const breadcrumbs = [
   function selectTab(tab, updateHash = true) {
     activeTab = tab;
     document.querySelectorAll('[role="tab"]').forEach((btn) => {
-      btn.setAttribute(
-        "aria-selected",
-        btn.dataset.tab === tab ? "true" : "false"
-      );
+      const isSelected = btn.dataset.tab === tab;
+      btn.setAttribute("aria-selected", isSelected ? "true" : "false");
+      btn.setAttribute("tabindex", isSelected ? "0" : "-1");
     });
     document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
       if (panel.id === `panel-${tab}`) {
@@ -59,8 +58,28 @@ const breadcrumbs = [
     const initialTab = validTabs.includes(activeTab) ? activeTab : "learn";
     selectTab(initialTab, false);
 
-    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+    const tabButtons = Array.from(document.querySelectorAll('[role="tab"]'));
+    tabButtons.forEach((btn, index) => {
       btn.addEventListener("click", () => selectTab(btn.dataset.tab));
+
+      btn.addEventListener("keydown", (e) => {
+        let nextIndex = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          nextIndex = (index + 1) % tabButtons.length;
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          nextIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+        } else if (e.key === "Home") {
+          nextIndex = 0;
+        } else if (e.key === "End") {
+          nextIndex = tabButtons.length - 1;
+        }
+        if (nextIndex !== null) {
+          e.preventDefault();
+          const nextBtn = tabButtons[nextIndex];
+          selectTab(nextBtn.dataset.tab);
+          nextBtn.focus();
+        }
+      });
     });
   });
 </script>
@@ -68,7 +87,7 @@ const breadcrumbs = [
 <Layout breadcrumbs={breadcrumbs}>
   <div class="space-y-10 pb-6">
     <section class="space-y-4">
-      <h2 class="text-3xl mb-4">Policies</h2>
+      <h1 class="text-3xl mb-4">Policies</h1>
       <hr class="border-t border-gray-300 mb-6" />
       <p class="text-gray-900 mb-4">
         Materials Cloud Policies v1.1, November 2018
@@ -133,6 +152,7 @@ const breadcrumbs = [
         <div
           class="tabs flex flex-col sm:flex-row border-b border-gray-300"
           role="tablist"
+          aria-label="Section-specific policies"
         >
           {
             tabs.map(({ id, label, external, href }) =>
@@ -171,6 +191,7 @@ const breadcrumbs = [
               id={`panel-${id}`}
               role="tabpanel"
               aria-labelledby={`tab-${id}`}
+              tabindex="0"
               class="tab-content hidden p-4"
               set:html={content}
             />

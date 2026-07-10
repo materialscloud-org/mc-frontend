@@ -25,10 +25,10 @@ const { entries, rootPath } = Astro.props;
           <div class="entry-container items-center">
             {/* Media Section */}
             <div class="flex flex-col items-center w-48">
-              <a href={href}>
+              <a href={href} aria-label={entry.title} tabindex="-1">
                 <img
                   src={`images/learn/${entry.thumbnail_url}`}
-                  alt={entry.title}
+                  alt=""
                   class="entry-image max-w-48 max-h-48 w-auto h-auto object-cover"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                   loading="lazy"
@@ -122,10 +122,10 @@ const { entries, rootPath } = Astro.props;
         return (
           <div class="entry-container">
             <div class="entry-flex">
-              <a href={href}>
+              <a href={href} aria-label={entry.title} tabindex="-1">
                 <img
                   src={`images/learn/${entry.thumbnail_url}`}
-                  alt={entry.title}
+                  alt=""
                   class="entry-image w-30"
                 />
               </a>
