@@ -1,0 +1,170 @@
+country_code,country_name,visitors
+CN,China,38407
+US,United States,28816
+IN,India,24354
+JP,Japan,11127
+DE,Germany,7016
+KR,South Korea,6884
+MA,Morocco,6688
+IT,Italy,5818
+HK,Hong Kong SAR China,5643
+CH,Switzerland,5485
+GB,United Kingdom,4911
+TW,Taiwan,4465
+FR,France,3939
+RU,Russia,3820
+BR,Brazil,3780
+SG,Singapore,3742
+BD,Bangladesh,3568
+PK,Pakistan,3100
+ES,Spain,2836
+VN,Vietnam,2631
+TR,Türkiye,2262
+DZ,Algeria,2260
+CA,Canada,2205
+MX,Mexico,2005
+NP,Nepal,1962
+NG,Nigeria,1893
+ID,Indonesia,1823
+PL,Poland,1683
+BE,Belgium,1647
+NL,Netherlands,1534
+ET,Ethiopia,1473
+SE,Sweden,1211
+CO,Colombia,1167
+KE,Kenya,1057
+AU,Australia,1023
+ZA,South Africa,987
+IR,Iran,928
+MY,Malaysia,919
+IQ,Iraq,811
+PH,Philippines,781
+FI,Finland,701
+CL,Chile,697
+SA,Saudi Arabia,690
+GH,Ghana,631
+CZ,Czechia,616
+AZ,Azerbaijan,614
+TH,Thailand,590
+AT,Austria,565
+AR,Argentina,510
+UA,Ukraine,489
+LK,Sri Lanka,474
+QA,Qatar,437
+NO,Norway,408
+AE,United Arab Emirates,386
+DK,Denmark,383
+UZ,Uzbekistan,374
+PT,Portugal,368
+TN,Tunisia,362
+IL,Israel,344
+EG,Egypt,334
+RS,Serbia,310
+RO,Romania,283
+EC,Ecuador,279
+GR,Greece,275
+IE,Ireland,264
+RW,Rwanda,203
+PE,Peru,202
+KZ,Kazakhstan,201
+BG,Bulgaria,187
+CM,Cameroon,179
+SI,Slovenia,179
+SC,Seychelles,167
+LT,Lithuania,163
+CG,Congo - Brazzaville,149
+UG,Uganda,143
+HU,Hungary,138
+A1,A1,135
+JO,Jordan,133
+VE,Venezuela,128
+HR,Croatia,126
+LU,Luxembourg,124
+LV,Latvia,121
+SN,Senegal,115
+OM,Oman,109
+MO,Macao SAR China,107
+SK,Slovakia,106
+TG,Togo,103
+AM,Armenia,99
+PR,Puerto Rico,84
+NZ,New Zealand,83
+BY,Belarus,80
+CI,Côte d’Ivoire,74
+CR,Costa Rica,70
+MN,Mongolia,62
+EE,Estonia,59
+LY,Libya,54
+UY,Uruguay,53
+LB,Lebanon,52
+CD,Congo - Kinshasa,51
+GE,Georgia,46
+TJ,Tajikistan,43
+BO,Bolivia,38
+IS,Iceland,37
+PS,Palestinian Territories,36
+DO,Dominican Republic,32
+GM,Gambia,32
+SY,Syria,32
+YE,Yemen,32
+ZM,Zambia,32
+PA,Panama,31
+PY,Paraguay,31
+KW,Kuwait,28
+JM,Jamaica,27
+BH,Bahrain,24
+KH,Cambodia,22
+MM,Myanmar (Burma),22
+MR,Mauritania,22
+AL,Albania,21
+BI,Burundi,20
+MD,Moldova,18
+TZ,Tanzania,16
+AO,Angola,14
+MU,Mauritius,14
+SD,Sudan,14
+SL,Sierra Leone,14
+GT,Guatemala,13
+MT,Malta,13
+ZW,Zimbabwe,13
+LA,Laos,11
+BA,Bosnia & Herzegovina,10
+CY,Cyprus,10
+ME,Montenegro,10
+BF,Burkina Faso,9
+BN,Brunei,8
+HN,Honduras,8
+MK,North Macedonia,8
+MV,Maldives,8
+TT,Trinidad & Tobago,8
+MG,Madagascar,7
+VG,British Virgin Islands,7
+AF,Afghanistan,6
+CU,Cuba,5
+KG,Kyrgyzstan,5
+BB,Barbados,4
+BW,Botswana,4
+GN,Guinea,4
+ML,Mali,4
+NI,Nicaragua,4
+SV,El Salvador,4
+VI,U.S. Virgin Islands,4
+BJ,Benin,3
+BT,Bhutan,3
+MZ,Mozambique,3
+XK,Kosovo,3
+BS,Bahamas,2
+GD,Grenada,2
+GP,Guadeloupe,2
+KY,Cayman Islands,2
+NE,Niger,2
+RE,Réunion,2
+VC,St. Vincent & Grenadines,2
+VU,Vanuatu,2
+AG,Antigua & Barbuda,1
+CW,Curaçao,1
+GA,Gabon,1
+GG,Guernsey,1
+GU,Guam,1
+GW,Guinea-Bissau,1
+LI,Liechtenstein,1

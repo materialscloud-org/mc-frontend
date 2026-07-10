@@ -1,0 +1,165 @@
+country_code,country_name,visitors
+CN,China,10178
+US,United States,8822
+IN,India,2534
+CH,Switzerland,2384
+DE,Germany,2119
+JP,Japan,1635
+IT,Italy,1519
+HK,Hong Kong SAR China,1471
+KR,South Korea,1412
+GB,United Kingdom,1316
+SG,Singapore,1121
+BR,Brazil,1067
+VN,Vietnam,1040
+FR,France,834
+RU,Russia,833
+CA,Canada,780
+TW,Taiwan,643
+ES,Spain,567
+NL,Netherlands,536
+BE,Belgium,519
+TR,Türkiye,461
+MX,Mexico,392
+SE,Sweden,345
+BD,Bangladesh,315
+ID,Indonesia,290
+MA,Morocco,289
+PK,Pakistan,282
+SA,Saudi Arabia,244
+MY,Malaysia,239
+FI,Finland,216
+AR,Argentina,209
+CO,Colombia,209
+UA,Ukraine,199
+PL,Poland,190
+DZ,Algeria,189
+AU,Australia,180
+CL,Chile,176
+ZA,South Africa,176
+AT,Austria,162
+PT,Portugal,160
+DK,Denmark,158
+PH,Philippines,146
+IQ,Iraq,144
+BG,Bulgaria,130
+RO,Romania,130
+CZ,Czechia,122
+NG,Nigeria,113
+SC,Seychelles,111
+LT,Lithuania,106
+TH,Thailand,91
+AE,United Arab Emirates,86
+ET,Ethiopia,86
+GR,Greece,85
+AZ,Azerbaijan,83
+EG,Egypt,83
+KE,Kenya,79
+TN,Tunisia,77
+NO,Norway,75
+VE,Venezuela,71
+IE,Ireland,70
+IR,Iran,69
+NP,Nepal,69
+EC,Ecuador,58
+IL,Israel,55
+KZ,Kazakhstan,55
+PE,Peru,53
+UZ,Uzbekistan,52
+RS,Serbia,50
+QA,Qatar,44
+HU,Hungary,31
+LU,Luxembourg,30
+GH,Ghana,29
+SI,Slovenia,29
+A1,A1,28
+JO,Jordan,28
+PY,Paraguay,23
+MO,Macao SAR China,22
+UY,Uruguay,22
+BO,Bolivia,21
+RW,Rwanda,21
+BY,Belarus,19
+HR,Croatia,19
+LK,Sri Lanka,19
+NZ,New Zealand,19
+LB,Lebanon,18
+TG,Togo,18
+LV,Latvia,17
+PA,Panama,17
+DO,Dominican Republic,16
+AL,Albania,15
+OM,Oman,15
+SK,Slovakia,15
+CR,Costa Rica,13
+KH,Cambodia,13
+SN,Senegal,12
+AM,Armenia,11
+CI,Côte d’Ivoire,11
+CM,Cameroon,11
+MN,Mongolia,11
+ZW,Zimbabwe,11
+CG,Congo - Brazzaville,10
+LY,Libya,10
+AO,Angola,9
+EE,Estonia,9
+PR,Puerto Rico,9
+BA,Bosnia & Herzegovina,8
+GE,Georgia,8
+JM,Jamaica,8
+SY,Syria,8
+KW,Kuwait,7
+LA,Laos,7
+ZM,Zambia,7
+IS,Iceland,6
+MD,Moldova,6
+MM,Myanmar (Burma),6
+PS,Palestinian Territories,6
+TT,Trinidad & Tobago,6
+CY,Cyprus,5
+HN,Honduras,5
+MK,North Macedonia,5
+SD,Sudan,5
+TJ,Tajikistan,5
+BH,Bahrain,4
+GN,Guinea,4
+KG,Kyrgyzstan,4
+NI,Nicaragua,4
+VG,British Virgin Islands,4
+VI,U.S. Virgin Islands,4
+BB,Barbados,3
+GT,Guatemala,3
+ME,Montenegro,3
+MG,Madagascar,3
+UG,Uganda,3
+YE,Yemen,3
+AF,Afghanistan,2
+BF,Burkina Faso,2
+BI,Burundi,2
+BS,Bahamas,2
+BT,Bhutan,2
+BW,Botswana,2
+CD,Congo - Kinshasa,2
+GD,Grenada,2
+GM,Gambia,2
+KY,Cayman Islands,2
+ML,Mali,2
+MT,Malta,2
+MV,Maldives,2
+RE,Réunion,2
+SL,Sierra Leone,2
+VC,St. Vincent & Grenadines,2
+AG,Antigua & Barbuda,1
+BN,Brunei,1
+CW,Curaçao,1
+GA,Gabon,1
+GP,Guadeloupe,1
+GW,Guinea-Bissau,1
+MR,Mauritania,1
+MU,Mauritius,1
+MZ,Mozambique,1
+NE,Niger,1
+SV,El Salvador,1
+TZ,Tanzania,1
+VU,Vanuatu,1
+XK,Kosovo,1
