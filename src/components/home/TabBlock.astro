@@ -66,10 +66,10 @@ const buttonStyle = `
   function selectTab(tab, updateHash = true) {
     activeTab = tab;
     document.querySelectorAll('[role="tab"]').forEach((btn) => {
-      btn.setAttribute(
-        "aria-selected",
-        btn.dataset.tab === tab ? "true" : "false",
-      );
+      const isSelected = btn.dataset.tab === tab;
+      btn.setAttribute("aria-selected", isSelected ? "true" : "false");
+      // Roving tabindex: only the selected tab is in the tab order.
+      btn.setAttribute("tabindex", isSelected ? "0" : "-1");
     });
     document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
       if (panel.id === `panel-${tab}`) {
@@ -91,15 +91,34 @@ const buttonStyle = `
   }
 
   window.addEventListener("DOMContentLoaded", () => {
-    validTabs = Array.from(document.querySelectorAll('[role="tab"]'))
-      .map((btn) => btn.dataset.tab)
-      .filter(Boolean);
+    const tabButtons = Array.from(document.querySelectorAll('[role="tab"]'));
+    validTabs = tabButtons.map((btn) => btn.dataset.tab).filter(Boolean);
 
     const initialTab = validTabs.includes(activeTab) ? activeTab : validTabs[0];
     selectTab(initialTab, false);
 
-    document.querySelectorAll('[role="tab"]').forEach((btn) => {
+    tabButtons.forEach((btn, index) => {
       btn.addEventListener("click", () => selectTab(btn.dataset.tab));
+
+      // Arrow-key navigation per the WAI-ARIA tabs pattern.
+      btn.addEventListener("keydown", (e) => {
+        let nextIndex = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          nextIndex = (index + 1) % tabButtons.length;
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          nextIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+        } else if (e.key === "Home") {
+          nextIndex = 0;
+        } else if (e.key === "End") {
+          nextIndex = tabButtons.length - 1;
+        }
+        if (nextIndex !== null) {
+          e.preventDefault();
+          const nextBtn = tabButtons[nextIndex];
+          selectTab(nextBtn.dataset.tab);
+          nextBtn.focus();
+        }
+      });
     });
   });
 
@@ -113,7 +132,11 @@ const buttonStyle = `
 </script>
 
 <div class="w-full py-10">
-  <div class="tabs flex flex-col sm:flex-row" role="tablist">
+  <div
+    class="tabs flex flex-col sm:flex-row"
+    role="tablist"
+    aria-label="Home page sections"
+  >
     {
       tabs.map(({ id, label, Icon }) => (
         <button
@@ -135,12 +158,13 @@ const buttonStyle = `
 
 {
   tabs.map(({ id, Content }) => (
-    <div
-      id={`panel-${id}`}
-      class="tab-content hidden"
-      role="tabpanel"
-      aria-labelledby={`tab-${id}`}
-    >
+      <div
+        id={`panel-${id}`}
+        class="tab-content hidden"
+        role="tabpanel"
+        aria-labelledby={`tab-${id}`}
+        tabindex="0"
+      >
       <Content />
     </div>
   ))
