@@ -1,4 +1,22 @@
 /**
+ * Astro middleware.
+ *
+ * Astro auto-detects this file by convention: a module at `src/middleware.js`
+ * (or `src/middleware/index.js`) that exports a function named `onRequest`.
+ * There is nothing to register in `astro.config.mjs` — the file path and the
+ * `onRequest` export are the entire contract.
+ *
+ * `onRequest` runs whenever Astro renders a route. This is a static site
+ * (no adapter, `output: "static"`), so every page is prerendered during
+ * `astro build`; the middleware therefore runs at build time and its output
+ * is baked into the generated `dist/**.html`. No client-side JavaScript is
+ * shipped for it. (In `astro dev` it runs per request on the dev server.)
+ *
+ * Caveat: because it only runs at render/build time, links added later in the
+ * browser (e.g. by a hydrated client component) do not pass through it.
+ */
+
+/**
  * Matches an entire `<a ... target="_blank" ...>...</a>` element.
  * Anchors cannot be nested in valid HTML, so the non-greedy body capture
  * always stops at this anchor's own closing tag.
