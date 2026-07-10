@@ -120,6 +120,27 @@ const moreLinkStyle =
         }
       });
     }
+
+    // Harden links that open in a new tab and let screen-reader users know
+    // they will do so. Runs for every link, including data-driven content.
+    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+      const rel = (link.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
+      if (!rel.includes("noopener")) rel.push("noopener");
+      if (!rel.includes("noreferrer")) rel.push("noreferrer");
+      link.setAttribute("rel", rel.join(" "));
+
+      const hasHint =
+        link.getAttribute("aria-label") ||
+        link.querySelector(".sr-only") ||
+        link.dataset.newtabHinted;
+      if (!hasHint) {
+        const hint = document.createElement("span");
+        hint.className = "sr-only";
+        hint.textContent = " (opens in new tab)";
+        link.appendChild(hint);
+        link.dataset.newtabHinted = "true";
+      }
+    });
   });
 </script>
 
