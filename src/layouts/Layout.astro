@@ -77,13 +77,28 @@ const moreLinkStyle =
     const btn = document.getElementById("mc-more-button");
     const menu = document.getElementById("mc-drop-menu");
     if (btn && menu) {
+      const closeMenu = () => {
+        menu.classList.add("hidden");
+        btn.setAttribute("aria-expanded", "false");
+      };
+      const openMenu = () => {
+        menu.classList.remove("hidden");
+        btn.setAttribute("aria-expanded", "true");
+      };
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
-        menu.classList.toggle("hidden");
+        menu.classList.contains("hidden") ? openMenu() : closeMenu();
       });
       document.addEventListener("click", (e) => {
         if (!menu.contains(e.target) && e.target !== btn) {
-          menu.classList.add("hidden");
+          closeMenu();
+        }
+      });
+      // Allow closing the dropdown with the Escape key and returning focus.
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !menu.classList.contains("hidden")) {
+          closeMenu();
+          btn.focus();
         }
       });
     }
@@ -97,9 +112,11 @@ const moreLinkStyle =
           const fullHeight = mobileMenu.scrollHeight;
           mobileMenu.style.maxHeight = fullHeight + "px";
           mobileMenu.classList.remove("max-h-0");
+          mobileBtn.setAttribute("aria-expanded", "true");
         } else {
           mobileMenu.style.maxHeight = "0px";
           mobileMenu.classList.add("max-h-0");
+          mobileBtn.setAttribute("aria-expanded", "false");
         }
       });
     }
@@ -109,7 +126,7 @@ const moreLinkStyle =
 <html lang="en" class={htmlStyle}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg" href="images/mcloud-logo.svg" />
     <base href={baseHref} />
     <title>Materials Cloud{title ? ` - ${title}` : ""}</title>
@@ -135,12 +152,19 @@ const moreLinkStyle =
   </head>
 
   <body>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:top-2 focus:left-2 focus:bg-white focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded focus:shadow"
+    >
+      Skip to main content
+    </a>
     <header class="w-full bg-white shadow">
       <nav
         class="flex items-center justify-between h-16 px-4 border-b border-gray-200"
+        aria-label="Main navigation"
       >
-        <a class={iconStyle} href="">
-          <img src="images/mcloud-logo.svg" alt="Logo" class="w-full h-full" />
+        <a class={iconStyle} href={baseHref} aria-label="Materials Cloud home">
+          <img src="images/mcloud-logo.svg" alt="" class="w-full h-full" />
         </a>
 
         {/* Desktop nav */}
@@ -162,6 +186,9 @@ const moreLinkStyle =
           <button
             id="mc-more-button"
             type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="mc-drop-menu"
             class="px-1 font-semibold cursor-pointer text-gray-700 hover:text-gray-500 flex items-center"
           >
             {/* <!-- better looking than ▾ */}
@@ -173,6 +200,8 @@ const moreLinkStyle =
               viewBox="0 0 24 24"
               fill="currentColor"
               style={{ marginTop: "4px" }}
+              aria-hidden="true"
+              focusable="false"
             >
               <path d="M12 15l-7-7h14z"></path>
             </svg>
@@ -196,6 +225,9 @@ const moreLinkStyle =
           <button
             id="mobile-menu-button"
             type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
             class="p-2 cursor-pointer text-gray-700 hover:text-gray-500"
           >
             <svg
@@ -204,6 +236,8 @@ const moreLinkStyle =
               stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 stroke-linecap="round"
@@ -247,66 +281,73 @@ const moreLinkStyle =
     {/* long breadcrumbs, we replace middle entries with ... on mobile... */}
     {
       breadcrumbs.length > 0 ? (
-        <ul
-          id="breadcrumbs"
-          class="flex items-center bg-gray-50 border border-gray-300 rounded px-5 py-1 shadow-sm font-light m-5 overflow-hidden list-none"
-        >
-          {breadcrumbs.map((crumb, index) => {
-            const isFirst = index === 0;
-            const isLast = index === breadcrumbs.length - 1;
-            const isMiddle = !isFirst && !isLast && breadcrumbs.length > 3;
+        <nav aria-label="Breadcrumb" class="m-5">
+          <ul
+            id="breadcrumbs"
+            class="flex items-center bg-gray-50 border border-gray-300 rounded px-5 py-1 shadow-sm font-light overflow-hidden list-none"
+          >
+            {breadcrumbs.map((crumb, index) => {
+              const isFirst = index === 0;
+              const isLast = index === breadcrumbs.length - 1;
+              const isMiddle = !isFirst && !isLast && breadcrumbs.length > 3;
 
-            return (
-              <li
-                key={index}
-                class="relative pr-8 pl-2 text-[rgb(62,112,187)] first:pl-0 last:pr-0"
-              >
-                {isMiddle ? (
-                  <>
-                    {/* Ellipsis for mobile */}
+              return (
+                <li
+                  key={index}
+                  class="relative pr-8 pl-2 text-[rgb(62,112,187)] first:pl-0 last:pr-0"
+                >
+                  {isMiddle ? (
+                    <>
+                      {/* Ellipsis for mobile */}
+                      <a
+                        href={crumb.href}
+                        aria-label={crumb.name}
+                        class="hover:underline text-[rgb(62,112,187)] md:hidden"
+                        style="color: #3e70bb;"
+                      >
+                        <span aria-hidden="true">…</span>
+                      </a>
+                      {/* Full breadcrumb name for desktop */}
+                      <a
+                        href={crumb.href}
+                        class="hover:underline hidden md:inline"
+                        style="color: #3e70bb;"
+                      >
+                        {crumb.name}
+                      </a>
+                    </>
+                  ) : crumb.href && !isLast ? (
                     <a
                       href={crumb.href}
-                      class="hover:underline text-[rgb(62,112,187)] md:hidden"
-                      style="color: #3e70bb;"
-                    >
-                      …
-                    </a>
-                    {/* Full breadcrumb name for desktop */}
-                    <a
-                      href={crumb.href}
-                      class="hover:underline hidden md:inline"
+                      class="hover:underline"
                       style="color: #3e70bb;"
                     >
                       {crumb.name}
                     </a>
-                  </>
-                ) : crumb.href ? (
-                  <a
-                    href={crumb.href}
-                    class="hover:underline"
-                    style="color: #3e70bb;"
-                  >
-                    {crumb.name}
-                  </a>
-                ) : (
-                  <span>{crumb.name}</span>
-                )}
+                  ) : (
+                    <span aria-current={isLast ? "page" : undefined}>
+                      {crumb.name}
+                    </span>
+                  )}
 
-                {index !== breadcrumbs.length - 1 && (
-                  <svg
-                    class="absolute top-1/2 right-0 -translate-y-1/2 w-6 h-6 text-gray-300 transform scale-y-300"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.0"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 6 L16 12 L8 18" />
-                  </svg>
-                )}
-              </li>
-            );
-          })}
-        </ul>
+                  {index !== breadcrumbs.length - 1 && (
+                    <svg
+                      class="absolute top-1/2 right-0 -translate-y-1/2 w-6 h-6 text-gray-300 transform scale-y-300"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.0"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M8 6 L16 12 L8 18" />
+                    </svg>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       ) : (
         // Placeholder div with same height & margin to keep spacing
         <div id="breadcrumbs" class="m-5 py-2" />
@@ -322,9 +363,9 @@ const moreLinkStyle =
    -->
 
     <div class="flex justify-center">
-      <div class={contentWrapperStyle}>
+      <main id="main-content" class={contentWrapperStyle}>
         <slot />
-      </div>
+      </main>
     </div>
   </body>
 </html>
