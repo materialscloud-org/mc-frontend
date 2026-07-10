@@ -145,11 +145,11 @@ and are remnants from the legacy codebase.
   }
   a {
     cursor: pointer;
-    color: #7499d1;
+    color: #3e70bb;
   }
   a:hover {
     text-decoration: underline;
-    color: #3e70bb;
+    color: #2b5187;
   }
   blockquote {
     border-left: 3px solid #d7dfe2;
