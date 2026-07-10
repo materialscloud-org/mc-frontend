@@ -7,7 +7,8 @@
     "build": "astro build",
     "build:cf": "if [ \"$CF_PAGES_BRANCH\" = \"main\" ]; then astro build; else astro build --mode development; fi",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "stats": "node scripts/stats.js"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
