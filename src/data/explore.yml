@@ -37,6 +37,18 @@ profiles:
     rest_url: "/mc3d-pbesol-v1-supercon/api/v4"
     title: "MC3D contribution: Charting the landscape of Bardeen-Cooper-Schrieffer superconductors in experimentally known compounds (PBEsol-v1-supercon)"
 
+  - link: "mc3d-pbesol-v1-mechanical"
+    authors: "Marnik Bercx, Samuel Ponce, Yiming Zhang, Giovanni Trezza, Amir Ghorbani Ghezeljehmeidan, Lorenzo Bastonero, Junfeng Qiao, Fabian O. von Rohr, Giovanni Pizzi, Eliodoro Chiavazzo, Nicola Marzari"
+    description: |
+      High-throughput computational search of mechanical properties for potential superconductors, starting from the MC3D PBEsol-v1 database.
+    doi:
+      - id: "10.24435/materialscloud:3m-0e"
+        type: data
+    logo: "mc3d.png"
+    profile: "mc3d-pbesol-v1-mechanical"
+    rest_url: "/mc3d-pbesol-v1-mechanical/api/v4"
+    title: "MC3D contribution: In search of novel ductile superconductors (PBEsol-v1-mechanical)"
+
   - link: "mc3d-pbe-v1"
     authors: "Sebastiaan Huber, Michail Minotakis, Marnik Bercx, Timo Reents, Kristjan Eimre, Nataliya Paulish, Nicolas Hörmann, Martin Uhrin, Nicola Marzari, Giovanni Pizzi"
     description: |
