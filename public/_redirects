@@ -36,7 +36,7 @@
 /mc3d /discover/mc3d 301
 /mc2d /discover/mc2d 301
 /acwf-verification /discover/acwf-verification 301
-/sssp /discover/sssp 301s
+/sssp /discover/sssp 301
 
 # legacy names
 /discover/3dcd /discover/mc3d 301

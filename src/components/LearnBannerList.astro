@@ -1,10 +1,9 @@
 ---
 // Similar to BannerList but with some additional
 //  fields for speaker, file links etc.
-import Play from '@lucide/astro/icons/play';
-import Download from '@lucide/astro/icons/download';
-import CirclePlay from '@lucide/astro/icons/circle-play';
-
+import Play from "@lucide/astro/icons/play";
+import Download from "@lucide/astro/icons/download";
+import CirclePlay from "@lucide/astro/icons/circle-play";
 
 const PUBLIC_URL_S3_FILES = import.meta.env.PUBLIC_URL_S3_FILES || "/";
 
@@ -56,15 +55,17 @@ const { entries, rootPath } = Astro.props;
               </a>
               {entry.speakers && entry.speakers.length > 0 && (
                 <div class="entry-author italic ml-2">
-                  {entry.speakers.map((speaker, index) => (
-                    <>
-                      <span>
-                        {speaker.title ? speaker.title + " " : ""}
-                        {speaker.first_name} {speaker.last_name}
-                        {index < entry.speakers.length - 1 ? ", " : ""}
-                      </span>
-                    </>
-                  ))}
+                  {entry.speakers
+                    .map((speaker) =>
+                      [
+                        speaker.title?.trim(),
+                        speaker.first_name?.trim(),
+                        speaker.last_name?.trim(),
+                      ]
+                        .filter(Boolean)
+                        .join(" "),
+                    )
+                    .join(", ")}
                 </div>
               )}
               <hr class="border-t border-gray-200 mb-2" />

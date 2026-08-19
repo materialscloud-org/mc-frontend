@@ -75,34 +75,35 @@ const title = video.title;
 
   {/* Entry information */}
   <section class="space-y-4 px-2">
-    <p>
-      {
-        video.speakers && video.speakers.length > 0 && (
-          <div class="video-author mt-2 italic">
-            Speakers:
-            {video.speakers.map((speaker, index) => (
-              <>
-                <span>
-                  {speaker.title ? speaker.title + " " : ""}
-                  {speaker.first_name + " "} {speaker.last_name}
-                  {index < video.speakers.length - 1 ? "& " : ""}
-                </span>
-                {video.profile_url && (
-                  <a
-                    href={video.profile_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:underline"
-                  >
-                    Event Profile
-                  </a>
-                )}
-              </>
-            ))}
-          </div>
-        )
-      }
-    </p>
+    {
+      video.speakers && video.speakers.length > 0 && (
+        <div class="video-author mt-2 italic">
+          <span>Speakers: </span>
+
+          {video.speakers.map((speaker, index) => (
+            <span>
+              {speaker.title ? speaker.title + " " : ""}
+              {speaker.first_name + " " + speaker.last_name}
+              {index < video.speakers.length - 1 ? " & " : ""}
+            </span>
+          ))}
+
+          {video.profile_url && (
+            <>
+              {" "}
+              <a
+                href={video.profile_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+              >
+                Event Profile
+              </a>
+            </>
+          )}
+        </div>
+      )
+    }
 
     <div class="entry-description text-gray-500">
       Date:{" "}
@@ -112,7 +113,7 @@ const title = video.title;
           month: "long",
           day: "numeric",
         })
-      }{" "}
+      }
     </div>
 
     {/* Video description */}
