@@ -1160,6 +1160,56 @@
     "thumbnail_url": "marvel-cecam-logo.png"
   },
   {
+    "id": "rtRLl7IHW53R",
+    "slug": "2026-gronau-gronau-transgressing-boundaries-erwin-schr-dinger-and-the-challenges",
+    "type": "video",
+    "parentId": "mXTsX1",
+    "title": "Transgressing boundaries - Erwin Schrödinger and the challenges of scientific biography",
+    "description": "CECAM and MARVEL present a new event in our Mary Ann Mansigh Conversation series. In a discussion with Dr Magdalena Gronau, chemist, and Martin Gronau, classicist and scholar of ancient studies, both at the Leibniz Centre for Literary and Cultural Research in Berlin, drawing on previously unexamined sources, we will reassess the controversy surrounding Erwin Schrödinger's private relationships and offer a new perspective on his complex personal life, taking into account the viewpoints of his female partners, whose voices have remained largely unheard.",
+    "thumbnail_url": "Schroedinger.jpg",
+    "date": "2026-06-29",
+    "video_source_id": "wvR5kREX--I",
+    "profile_url": "https://nccr-marvel.ch/events/cecam-marvel-mary-ann-mansigh-series-transgressing-boundaries-erwin-schrodinger-and-the-challenges-of-scientific-biography",
+    "speakers": [
+      {
+        "first_name": "Magdalena",
+        "last_name": "Gronau",
+        "title": "Dr."
+      },
+      {
+        "first_name": "Martin",
+        "last_name": "Gronau",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
+  },
+  {
+    "id": "FeZPaKkq9yQk",
+    "slug": "2025-ibrahim-natalini-telling-scientific-stories-from-science-journalism-to-comi",
+    "type": "video",
+    "parentId": "mXTsX1",
+    "title": "Telling scientific stories - from science journalism to comics and visual storytelling",
+    "description": "CECAM and MARVEL present a new event in our Mary Ann Mansigh Conversation series. In a discussion with SWI swissinfo.ch science and technology journalist Sara Ibrahim and director of the Istituto per le Applicazioni del Calcolo at the National Research Council of Italy Roberto Natalini, we will explore how scientists can broaden the impact of their work by engaging with diverse forms of science communication, from storytelling to comics. We will see also why clear communication is crucial for building trust between science and society.",
+    "thumbnail_url": "TellingScientificStories.jpg",
+    "date": "2025-11-20",
+    "video_source_id": "CDxUg2HgJFI",
+    "profile_url": "https://nccr-marvel.ch/events/telling-scientific-stories",
+    "speakers": [
+      {
+        "first_name": "Sara",
+        "last_name": "Ibrahim",
+        "title": ""
+      },
+      {
+        "first_name": "Roberto",
+        "last_name": "Natalini",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
+  },
+  {
     "id": "ipmNuihKnBoO",
     "slug": "2025-bouffanais-dabholkar-kamel-science-and-diplomacy",
     "type": "video",
