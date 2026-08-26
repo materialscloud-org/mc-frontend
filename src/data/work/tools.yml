@@ -124,8 +124,43 @@ menu:
 
     - link: https://shiftml.materialscloud.io/
       title: "ShiftML: chemical shifts in molecular crystals by machine learning"
-      authors: Matthias Kellner,  Jacob B. Holmes, Ruben Rodriguez-Madrid, Florian Viscosi, Yuxuan Zhang, Lyndon Emsley, and Michele Ceriotti
+      authors: Matthias Kellner, Jacob B. Holmes, Ruben Rodriguez-Madrid, Florian Viscosi, Yuxuan Zhang, Lyndon Emsley, and Michele Ceriotti
       description: |
         A machine learning model to predict the isotropic chemical shielding of molecular crystals containing H, C, N, O, S, F, P, Cl, Na, Ca,
         Mg and K, including the uncertainty of the prediction, and an interactive 3D visualiser.
       logo: shiftml.png
+
+  external_tools:
+    - link: fandiagrams
+      title: "Fan diagrams and optically-active modes of layered materials"
+      authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
+      description: >
+        A tool to upload the bulk crystal structure of a layered material and determine the symmetry of the inter-layer force-constant
+        matrices and the corresponding optical-activity fan diagram.
+      descriptionExt: |
+        <p>
+          This tool allows users to upload the bulk crystal structure of a layered
+          material in a number of common formats (or to choose from a few examples)
+          and, after detection of bonds and of 2D layers, it determines the symmetry
+          of the inter-layer force-constant matrices and the corresponding
+          optical-activity fan diagram.
+        </p>
+
+        <p>
+          The output page that is displayed includes relevant information on the
+          structure (interactive visualizations of the bulk multilayer and of each
+          layer, information on the coincidence operation and of the symmetry
+          properties of the multilayer), and shows the independent components of the
+          force-constant matrices.
+        </p>
+
+        <p>
+          In input, a skin factor parameter <i>f</i> can also be selected to tune the
+          bond-detection algorithm.
+        </p>
+
+      logo: layer-raman.png
+      dockerhubURL: https://hub.docker.com/r/giovannipizzi/layer-raman-ir-tool
+      dockerhubIMAGE: giovannipizzi/layer-raman-ir-tool:21.11.0
+      externalWebURL: https://materialscloud-layer-raman-ir-tool.onrender.com/
+      sourceCodeURL: https://github.com/psi-lms/tool-layer-raman-ir

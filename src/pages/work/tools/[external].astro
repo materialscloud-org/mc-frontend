@@ -1,0 +1,69 @@
+---
+import Layout from "@layouts/Layout.astro";
+import RectangleButton from "@components/RectangleButton.astro";
+
+import fs from "fs";
+import yaml from "js-yaml";
+
+export async function getStaticPaths() {
+  const file = fs.readFileSync("./src/data/work/tools.yml");
+  const tools = yaml.load(file);
+
+  return tools.menu.external_tools.map((tool) => ({
+    params: { external: tool.link },
+    props: { tool },
+  }));
+}
+
+const { tool: page } = Astro.props;
+
+const breadcrumbs = [
+  { name: "Work", href: "work" },
+  { name: "Tools", href: "work/tools" },
+  { name: page.title, href: `work/tools/${page.link}` },
+];
+
+const dockerPull = `docker pull ${page.dockerhubIMAGE}`;
+const dockerRun = `docker run ${page.dockerhubIMAGE}`;
+---
+
+<Layout
+  breadcrumbs={breadcrumbs}
+  title={page.title}
+  description={`Materials Cloud - Work. ${page.title}`}
+>
+  <h3>{page.title}</h3>
+  <section class="py-4">
+    {
+      page.descriptionExt && (
+        <div class="space-y-6" set:html={page.descriptionExt} />
+      )
+    }
+  </section>
+
+  <p class="italic pt-8 py-4 font-medium text-center">
+    Note: As of September 2026 this tool is hosted external by our affiliated
+    partners.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-4">
+    <RectangleButton
+      href={page.externalWebURL}
+      img={`images/logos/${page.logo}`}
+      title="Visit the webapp onrender"
+      subtitle="This may take a while to load"
+    />
+
+    <RectangleButton
+      href={page.sourceCodeURL}
+      img={`images/logos/github.svg`}
+      title="Find the source code on Github"
+    />
+
+    <RectangleButton
+      href={page.dockerhubURL}
+      img={`images/logos/docker.png`}
+      title="Find the bundled docker image here"
+    />
+  </div>
+</Layout>
