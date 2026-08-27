@@ -28,100 +28,6 @@ menu:
         A tool for the interactive visualization and inspection of lattice vibrations.
       logo: interactivephonon.png
 
-  contributed_tools:
-    - link: https://rho-prediction.materialscloud.io
-      title: "ρ predict: machine learning prediction of molecular electron density"
-      authors: K. R. Briling, O. Hernandez-Cuellar, J. W. Abbott, M. Ceriotti, C. Corminboeuf
-      description: >
-        This tool predicts the electronic density of molecules using a symmetry-adapted Gaussian process regression model.
-      logo: rho_predict.png
-
-    - link: https://cell2mol.materialscloud.io
-      title: "cell2mol: unit cell to molecule interpretation"
-      authors: O. Hernandez-Cuellar, Y. Cho, R. Laplaza, L. O. Marsh, S. Vela, C. Corminboeuf
-      description: >
-        A tool to interpret crystallographic data and retrieve the connectivity, total charge, and spin of molecular complexes and
-        their components including the oxidation state (OS) of metal atoms and the charge of ligands.
-      logo: cell2mol.png
-      doi:
-        - id: 10.5281/zenodo.10204037
-          type: data
-
-    - link: https://ml-layer-finder.materialscloud.io
-      title: Machine-learning accelerated identification of exfoliable two-dimensional materials
-      authors: Mohammad Tohidi Vahdat, Kumar Agrawal Varoon, Giovanni Pizzi
-      description: >
-        This tool allows users to upload the bulk crystal structure in several standard formats (or to choose from a few examples),
-        and then layered structures are identified based on geometrical criteria. Finally, after generating feature vectors
-        representing the crystal structure, the tool uses a machine learning model to see if the crystal structure can be exfoliated
-        or have high binding energy.
-      logo: ML-layer-finder-logo.png
-
-    - link: "tgkp"
-      title: "Band structure of twisted mixed multilayer graphene in k • p model"
-      authors: Leo P. Goutte, Oleg V. Yazyev, QuanSheng Wu
-      description: |
-        A tunable model for the energy spectrum of twisted mixed multilayer graphene.
-      logo: tgkp.png
-      iframe: true
-      iframe_src: "https://tgkp.materialscloud.io"
-      iframe_maxWidth: "max-w-[1850px]"
-
-    - link: "oximachine"
-      title: "oxiMACHINE: Predicting oxidation states for MOFs"
-      authors: K. M. Jablonka, D. Ongari, S. M. Moosavi, B. Smit
-      description: |
-        This tool takes a crystal structure and predicts the oxidation state for each metal site.
-      logo: oximachine.png
-      doi:
-        - id: 10.24435/materialscloud:2018.0003/v3
-          type: data
-      iframe: true
-      iframe_src: "https://oximachine.materialscloud.io"
-      maxWidth: "max-w-[1200px]"
-
-    - link: https://layer-raman-ir.materialscloud.io/
-      title: "Fan diagrams and optically-active modes of layered materials"
-      authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
-      description: >
-        A tool to upload the bulk crystal structure of a layered material and determine the symmetry of the inter-layer force-constant
-        matrices and the corresponding optical-activity fan diagram.
-      logo: layer-raman.png
-
-    - link: https://tbeta.materialscloud.io/voila/render/index.ipynb
-      title: Tight-Binding Electronic Transport Application (TBETA) for graphene nanoribbon junctions
-      authors: Kristiāns Čerņevičs, Valeria Granata, Oleg V. Yazyev
-      description: |
-        A tool for building and analyzing electronic transport properties of graphene nanoribbon junctions.
-      logo: TBETA_logo.png
-      doi:
-        - id: 10.24435/materialscloud:av-24
-          type: data
-
-    - link: sycofinder
-      title: Synthesis condition finder
-      authors: Seyed Mohamad Moosavi, Leopold Talirz, Berend Smit
-      description: >
-        A tool for optimizing the experimental synthesis conditions for metal-organic frameworks using machine learning and
-        genetic algorithms.
-      logo: sycofinder.png
-      doi:
-        - id: 10.5281/zenodo.1312814
-          type: data
-      iframe: true
-      iframe_src: "https://sycofinder.materialscloud.io"
-      iframe_maxWidth: "max-w-[1550px]"
-
-    - link: alphaml
-      title: "AlphaML: machine learning of molecular polarizabilities"
-      authors: David M. Wilkins, Andrea Grisafi, Yang Yang, Ka Un Lao, Robert A. DiStasio Jr., Michele Ceriotti
-      description: |
-        A machine learning framework for the prediction of molecular polarizabilities based on comparisons of local environments.
-      logo: alphaml.png
-      iframe: true
-      iframe_src: "https://alphaml.materialscloud.io"
-      maxWidth: "max-w-[1450px]"
-
     - link: https://shiftml.materialscloud.io/
       title: "ShiftML: chemical shifts in molecular crystals by machine learning"
       authors: Matthias Kellner, Jacob B. Holmes, Ruben Rodriguez-Madrid, Florian Viscosi, Yuxuan Zhang, Lyndon Emsley, and Michele Ceriotti
@@ -131,6 +37,41 @@ menu:
       logo: shiftml.png
 
   external_tools:
+    - link: ml-layer-finder
+      title: Machine-learning accelerated identification of exfoliable two-dimensional materials
+      authors: Mohammad Tohidi Vahdat, Kumar Agrawal Varoon, Giovanni Pizzi
+      description: >
+        This tool allows users to upload the bulk crystal structure in several standard formats (or to choose from a few examples),
+        and then layered structures are identified based on geometrical criteria. Finally, after generating feature vectors
+        representing the crystal structure, the tool uses a machine learning model to see if the crystal structure can be exfoliated
+        or have high binding energy.
+      descriptionExt: |
+        <p>
+          The output page includes relevant information on the structure (interactive visualizations of the bulk multilayer) and whether the structure is suitable for exfoliation based on the geometrical criteria. If yes, the corresponding two-dimensional layers are displayed. In addition, the machine-learning model is run to predict whether the structure might actually have a low binding energy, and the results are displayed.
+        </p>
+
+        <p class="py-2">
+          <strong>Notes:</strong> The tool computes representative feature vectors of the crystal structure in real time, and this step might take some time. The tool considers two atoms A and B bonded if their distance is smaller than rA + rB + Δ, where rA and rB are the corresponding van der Waals radii from S. Alvarez, <em>A cartography of the van der Waals territories</em>, Dalton Trans. 42, 8617–8636 (2013). For Δ, we consider five equally spaced values between 1.1 Å and 1.5 Å to account for possible uncertainties in the van der Waals radii.
+        </p>
+
+        <p>
+          <strong>How to cite</strong>
+        </p>
+
+        <p>
+          If you use this tool, please cite the following work:
+        </p>
+
+        <ul class="">
+          <li class="py-1">G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini, <em>Shear and Breathing Modes of Layered Materials</em>, ACS Nano (2021), <a href="doi.org/10.1021/acsnano.0c10672">doi:10.1021/acsnano.0c10672</a>.</li>
+          <li>You might also want to cite the spglib, ASE and pymatgen libraries that are used internally by the tool.</li>
+        </ul>
+      logo: ML-layer-finder-logo.png
+      dockerhubURL: https://hub.docker.com/r/giovannipizzi/ml-layer-finder-tool
+      dockerhubIMAGE: giovannipizzi/ml-layer-finder-tool:26.05.0
+      externalWebURL: https://materialscloud-ml-layer-finder-tool.onrender.com/
+      sourceCodeURL: https://github.com/psi-lms/tool-ml-layer-finder
+
     - link: fandiagrams
       title: "Fan diagrams and optically-active modes of layered materials"
       authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
@@ -164,3 +105,97 @@ menu:
       dockerhubIMAGE: giovannipizzi/layer-raman-ir-tool:21.11.0
       externalWebURL: https://materialscloud-layer-raman-ir-tool.onrender.com/
       sourceCodeURL: https://github.com/psi-lms/tool-layer-raman-ir
+
+  # contributed_tools:
+  # - link: https://rho-prediction.materialscloud.io
+  #   title: "ρ predict: machine learning prediction of molecular electron density"
+  #   authors: K. R. Briling, O. Hernandez-Cuellar, J. W. Abbott, M. Ceriotti, C. Corminboeuf
+  #   description: >
+  #     This tool predicts the electronic density of molecules using a symmetry-adapted Gaussian process regression model.
+  #   logo: rho_predict.png
+
+  # - link: https://cell2mol.materialscloud.io
+  #   title: "cell2mol: unit cell to molecule interpretation"
+  #   authors: O. Hernandez-Cuellar, Y. Cho, R. Laplaza, L. O. Marsh, S. Vela, C. Corminboeuf
+  #   description: >
+  #     A tool to interpret crystallographic data and retrieve the connectivity, total charge, and spin of molecular complexes and
+  #     their components including the oxidation state (OS) of metal atoms and the charge of ligands.
+  #   logo: cell2mol.png
+  #   doi:
+  #     - id: 10.5281/zenodo.10204037
+  #       type: data
+
+  # - link: https://ml-layer-finder.materialscloud.io
+  #   title: Machine-learning accelerated identification of exfoliable two-dimensional materials
+  #   authors: Mohammad Tohidi Vahdat, Kumar Agrawal Varoon, Giovanni Pizzi
+  #   description: >
+  #     This tool allows users to upload the bulk crystal structure in several standard formats (or to choose from a few examples),
+  #     and then layered structures are identified based on geometrical criteria. Finally, after generating feature vectors
+  #     representing the crystal structure, the tool uses a machine learning model to see if the crystal structure can be exfoliated
+  #     or have high binding energy.
+  #   logo: ML-layer-finder-logo.png
+
+  # - link: "tgkp"
+  #   title: "Band structure of twisted mixed multilayer graphene in k • p model"
+  #   authors: Leo P. Goutte, Oleg V. Yazyev, QuanSheng Wu
+  #   description: |
+  #     A tunable model for the energy spectrum of twisted mixed multilayer graphene.
+  #   logo: tgkp.png
+  #   iframe: true
+  #   iframe_src: "https://tgkp.materialscloud.io"
+  #   iframe_maxWidth: "max-w-[1850px]"
+
+  # - link: "oximachine"
+  #   title: "oxiMACHINE: Predicting oxidation states for MOFs"
+  #   authors: K. M. Jablonka, D. Ongari, S. M. Moosavi, B. Smit
+  #   description: |
+  #     This tool takes a crystal structure and predicts the oxidation state for each metal site.
+  #   logo: oximachine.png
+  #   doi:
+  #     - id: 10.24435/materialscloud:2018.0003/v3
+  #       type: data
+  #   iframe: true
+  #   iframe_src: "https://oximachine.materialscloud.io"
+  #   maxWidth: "max-w-[1200px]"
+
+  # - link: https://layer-raman-ir.materialscloud.io/
+  #   title: "Fan diagrams and optically-active modes of layered materials"
+  #   authors: G. Pizzi, S. Milana, A. C. Ferrari, N. Marzari, M. Gibertini
+  #   description: >
+  #     A tool to upload the bulk crystal structure of a layered material and determine the symmetry of the inter-layer force-constant
+  #     matrices and the corresponding optical-activity fan diagram.
+  #   logo: layer-raman.png
+
+  # - link: https://tbeta.materialscloud.io/voila/render/index.ipynb
+  #   title: Tight-Binding Electronic Transport Application (TBETA) for graphene nanoribbon junctions
+  #   authors: Kristiāns Čerņevičs, Valeria Granata, Oleg V. Yazyev
+  #   description: |
+  #     A tool for building and analyzing electronic transport properties of graphene nanoribbon junctions.
+  #   logo: TBETA_logo.png
+  #   doi:
+  #     - id: 10.24435/materialscloud:av-24
+  #       type: data
+
+  # - link: sycofinder
+  #   title: Synthesis condition finder
+  #   authors: Seyed Mohamad Moosavi, Leopold Talirz, Berend Smit
+  #   description: >
+  #     A tool for optimizing the experimental synthesis conditions for metal-organic frameworks using machine learning and
+  #     genetic algorithms.
+  #   logo: sycofinder.png
+  #   doi:
+  #     - id: 10.5281/zenodo.1312814
+  #       type: data
+  #   iframe: true
+  #   iframe_src: "https://sycofinder.materialscloud.io"
+  #   iframe_maxWidth: "max-w-[1550px]"
+
+  # - link: alphaml
+  #   title: "AlphaML: machine learning of molecular polarizabilities"
+  #   authors: David M. Wilkins, Andrea Grisafi, Yang Yang, Ka Un Lao, Robert A. DiStasio Jr., Michele Ceriotti
+  #   description: |
+  #     A machine learning framework for the prediction of molecular polarizabilities based on comparisons of local environments.
+  #   logo: alphaml.png
+  #   iframe: true
+  #   iframe_src: "https://alphaml.materialscloud.io"
+  #   maxWidth: "max-w-[1450px]"

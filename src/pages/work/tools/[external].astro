@@ -32,38 +32,42 @@ const dockerRun = `docker run ${page.dockerhubIMAGE}`;
   title={page.title}
   description={`Materials Cloud - Work. ${page.title}`}
 >
-  <h3>{page.title}</h3>
+  <h3 class="text-center">{page.title}</h3>
+  <div class="text-center pt-1 pb-2 mb- border-b border-gray-800">
+    {page.authors}
+  </div>
   <section class="py-4">
-    {
-      page.descriptionExt && (
-        <div class="space-y-6" set:html={page.descriptionExt} />
-      )
-    }
+    <span class="font-bold">Description:</span>
+    {page.description}
   </section>
+  <div>
+    {page.descriptionExt && <div set:html={page.descriptionExt} />}
+  </div>
 
   <p class="italic pt-8 py-4 font-medium text-center">
-    Note: As of September 2026 this tool is hosted external by our affiliated
-    partners.
+    Note: this tool is hosted externally by the tool authors.
   </p>
 
   <div class="flex flex-wrap justify-center gap-4">
     <RectangleButton
       href={page.externalWebURL}
       img={`images/logos/${page.logo}`}
-      title="Visit the webapp onrender"
-      subtitle="This may take a while to load"
+      title="Run the tool live"
+      subtitle="on render.com (might take ~1-2 minutes to load)"
     />
 
     <RectangleButton
       href={page.sourceCodeURL}
       img={`images/logos/github.svg`}
-      title="Find the source code on Github"
+      title="Check the source code"
+      subtitle="On GitHub"
     />
 
     <RectangleButton
       href={page.dockerhubURL}
       img={`images/logos/docker.png`}
-      title="Find the bundled docker image here"
+      title="Find the Docker image"
+      subtitle="on DockerHub"
     />
   </div>
 </Layout>
