@@ -16,6 +16,20 @@ const aiidalab_deployments = yaml.load(tfile);
 const wbfile = fs.readFileSync("./src/data/work/topButtons.yml", "utf-8");
 const wbData = yaml.load(wbfile);
 
+const hometfile = fs.readFileSync(
+  "./src/data/work/aiidalab-homepage.yml",
+  "utf8",
+);
+
+const aiidalab_homepage = yaml.load(hometfile);
+
+const hometfile__ = fs.readFileSync(
+  "./src/data/work/aiidalab-deployments_local.yml",
+  "utf8",
+);
+
+const aiidalab_dep_local__ = yaml.load(hometfile__);
+
 const workButtons = wbData.workButtons;
 const style = wbData.style;
 
@@ -56,17 +70,34 @@ const breadcrumbs = [
       </div>
     </section>
     <section class="space-y-4">
-      <h2 class="text-xl">AiiDAlab</h2>
+      <h2 class="text-xl">AiiDAlab deployments</h2>
       <hr class="border-t border-gray-300 mb-6" />
 
       <p>
-        Run complex and robust AiiDA workflows with tailored lightweight web
-        applications directly in the browser. For more information go to the <a
-          href="https://www.aiidalab.net/"
-          rel="noopener noreferrer">AiiDAlab homepage</a
-        >.
+        Materials Cloud and several institutions offer <a
+          href="https://www.aiidalab.net"
+          target="_blank"
+          rel="noopener noreferrer">AiiDAlab</a
+        > as a maintained web deployment.
+
         <BannerList entries={aiidalab_deployments} rootPath="work/tools" />
       </p>
+    </section>
+
+    <section class="space-y-4">
+      <p>
+        Alternatively you can easily deploy AiiDAlab yourself (e.g. on your
+        laptop or workstation).
+
+        <BannerList entries={aiidalab_dep_local__} rootPath="work/tools" />
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl">About AiiDAlab</h2>
+      <hr class="border-t border-gray-300 mb-6" />
+
+      <BannerList entries={aiidalab_homepage} rootPath="work/tools" />
     </section>
   </div>
 </Layout>

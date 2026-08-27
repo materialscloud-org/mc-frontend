@@ -2,7 +2,7 @@ workButtons:
   - href: work/tools
     img: images/work_tools.png
     title: Tools
-    subtitle: Click and run computational tools.
+    subtitle: Click and run computational tools
 
   - href: work/aiidalab
     img: images/aiidalab_gears.png

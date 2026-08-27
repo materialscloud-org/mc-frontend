@@ -1,0 +1,5 @@
+- link: https://aiidalab.readthedocs.io/en/latest/usage/access/launch.html
+  title: Deploy your own AiiDAlab
+  description: |
+    Follow the documentation to deploy AiiDAlab locally.
+  logo: aiidalab_gears.png

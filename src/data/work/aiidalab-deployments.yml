@@ -1,20 +1,17 @@
 - link: https://aiidalab-demo.materialscloud.io/
-  title: AiiDAlab demo server
+  title: Materials Cloud AiiDAlab demo server
   description: |
-    Quickstart materials science workflows in the browser using the AiiDAlab demo server without long term data persistence.
-  logo: aiidalab_gears.png
-- link: https://aiidalab.readthedocs.io/en/latest/usage/access/launch.html
-  title: Deploy your own AiiDAlab
-  description: |
-    AiiDAlab can also be additionally hosted locally.
-  logo: aiidalab_gears.png
+    Quickly start testing AiiDAlab and its flagship apps (e.g. the Quantum ESPRESSO app) on our demo server. <span class="italic">No setup required, only a GitHub login.</span>
+  logo: mcloud.png
+
 - link: https://aiidalab.empa.cscs.ch
-  title: AiiDAlab at Empa
+  title: AiiDAlab institutional deployment at Empa (CH)
   description: |
-    Login to AiiDAlab with your Empa institution account.
+    An AiiDAlab deployment for Empa scientists, hosted at CSCS and maintained by Empa.
   logo: empa.png
+
 - link: https://aiidalab.psi.ch/
-  title: AiiDAlab at PSI
+  title: AiiDAlab institutional deployment at PSI (CH)
   description: |
-    Login to AiiDAlab with your PSI institution account <strong>(requires a PSI network connection)</strong>.
+    An AiiDAlab deployment for PSI scientists, hosted and maintained by PSI. <div><strong>Note:</strong><span> Requires a PSI network connection.</span></div>
   logo: psi.svg
