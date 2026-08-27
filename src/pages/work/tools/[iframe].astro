@@ -7,7 +7,10 @@ import yaml from "js-yaml";
 export async function getStaticPaths() {
   const file = fs.readFileSync("./src/data/work/tools.yml");
   const tools = yaml.load(file);
-  const allTools = [...tools.menu.main_tools, ...tools.menu.contributed_tools];
+  const allTools = [
+    ...(tools.menu.main_tools ?? []),
+    ...(tools.menu.contributed_tools ?? []),
+  ];
   // Filter iframe tools:
   const iframeTools = allTools.filter((tool) => tool.iframe === true);
 
