@@ -1160,6 +1160,51 @@
     "thumbnail_url": "marvel-cecam-logo.png"
   },
   {
+    "id": "xaq5euaUpGQ",
+    "slug": "2026-kresse-marques-ceriotti-who-writes-the-code",
+    "type": "video",
+    "parentId": "mXTsX1",
+    "title": "Who Writes the Code - Algorithms, software, creativity, and reliability in the age of AI",
+    "description": "Artificial intelligence is changing how algorithms are conceived, how software is written, and how its outputs are verified. This conversation takes stock of where the field of simulation and modelling stands today and opens a discussion on future directions and best practices — how to safeguard reliability and scientific creativity, how to adapt notions of authorship and ownership for AI-assisted code, and how to preserve and ideally enhance the rich commercial and academic software ecosystem that has driven the growth of computational science in research and development.",
+    "thumbnail_url": "who-writes-the-code.png",
+    "date": "2026-10-13",
+    "video_source_id": "xaq5euaUpGQ",
+    "profile_url": "https://www.cecam.org/lecture-details/who-writes-code-algorithms-software-creativity-and-reliability-age-ai",
+    "speakers": [
+      {
+        "first_name": "Georg",
+        "last_name": "Kresse",
+        "title": ""
+      },
+      {
+        "first_name": "Miquel",
+        "last_name": "Marques",
+        "title": ""
+      },
+      {
+        "first_name": "Michele",
+        "last_name": "Ceriotti",
+        "title": ""
+      },
+      {
+        "first_name": "Riccardi",
+        "last_name": "Enrico ",
+        "title": ""
+      },
+      {
+        "first_name": "Genovese",
+        "last_name": "Luigi",
+        "title": ""
+      },
+      {
+        "first_name": "Kermode",
+        "last_name": "James",
+        "title": ""
+      }
+    ],
+    "additional_resources": []
+  },
+  {
     "id": "rtRLl7IHW53R",
     "slug": "2026-gronau-gronau-transgressing-boundaries-erwin-schr-dinger-and-the-challenges",
     "type": "video",
