@@ -96,6 +96,19 @@ menu:
             and the database reference at <a href="https://doi.org/10.24435/materialscloud:xj-9d">10.24435/materialscloud:xj-9d</a>.
             </p>
 
+      # legacy discover
+    - link: https://legacy.materialscloud.org/discover/autowannier
+      title: "Automated high-throughput wannierisation"
+      authors: |
+        Valerio Vitale, Giovanni Pizzi, Antimo Marrazzo, Snehal Kumbhar, Elsa Passaro,
+        Jonathan R. Yates, Nicola Marzari, Arash A. Mostofi
+      description: |
+        Validation results of an automated protocol for generating maximally-localized Wannier functions in a high-throughput framework.
+      logo: scdm.png
+      doi:
+        - id: 10.24435/materialscloud:dd-nz
+          type: data
+
     - link: pyrene-mofs
       title: "Pyrene-based metal organic frameworks"
       authors: F. Pelin Kinik, Andres Ortega-Guerrero, Daniele Ongari, Christopher P. Ireland, Berend Smit
