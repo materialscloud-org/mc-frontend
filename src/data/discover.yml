@@ -96,8 +96,7 @@ menu:
             and the database reference at <a href="https://doi.org/10.24435/materialscloud:xj-9d">10.24435/materialscloud:xj-9d</a>.
             </p>
 
-      # legacy discover
-    - link: https://legacy.materialscloud.org/discover/autowannier
+    - link: https://autowannier.materialscloud.io
       title: "Automated high-throughput wannierisation"
       authors: |
         Valerio Vitale, Giovanni Pizzi, Antimo Marrazzo, Snehal Kumbhar, Elsa Passaro,
@@ -144,7 +143,6 @@ menu:
               <a href="https://doi.org/10.24435/materialscloud:z5-ct">10.24435/materialscloud:z5-ct</a>.
             </p>
 
-    # legacy discover
     - link: https://kpcovr.materialscloud.io
       title: "Kernel principle covariates regression"
       authors: Benjamin A. Helfrecht, Rose K. Cersonsky, Guillaume Fraux, Michele Ceriotti

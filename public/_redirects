@@ -43,7 +43,8 @@
 /discover/2dstructures /discover/mc2d 301
 
 # Contributed sections
-/discover/autowannier https://legacy.materialscloud.org/discover/autowannier 302
+/discover/autowannier https://autowannier.materialscloud.io 301
+/discover/autowannier/*   https://autowannier.materialscloud.io/:splat  302
 
 /discover/kpcovr https://kpcovr.materialscloud.io/ 302
 /discover/kpcovr/:dataset https://kpcovr.materialscloud.io/?dataset=:dataset 302
